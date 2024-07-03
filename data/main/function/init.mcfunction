@@ -154,7 +154,7 @@ team modify guardian friendlyFire false
 team modify guardian nametagVisibility hideForOtherTeams
 team remove dead
 team add dead "死亡"
-team modify dead color gray
+team modify dead color dark_gray
 team modify dead collisionRule never
 team modify dead deathMessageVisibility never
 team modify dead seeFriendlyInvisibles false
@@ -167,13 +167,13 @@ team modify finish seeFriendlyInvisibles false
 
 team remove prepare
 team add prepare "已准备"
-team modify prepare color yellow
+team modify prepare color white
 team modify prepare collisionRule never
 team modify prepare deathMessageVisibility never
 team modify prepare seeFriendlyInvisibles false
 team remove spectator
 team add spectator "旁观者"
-team modify spectator color white
+team modify spectator color gray
 team modify spectator collisionRule never
 team modify spectator deathMessageVisibility never
 team modify spectator seeFriendlyInvisibles false
@@ -192,7 +192,7 @@ team add lamp "灵魂之灯"
 team modify lamp color gold
 team remove portal
 team add portal "传送门"
-team modify portal color light_purple
+team modify portal color dark_purple
 team remove chest
 team add chest "灵魂宝物箱"
 team modify chest color gray

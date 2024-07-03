@@ -29,4 +29,5 @@ $scoreboard players set $(target) stat_gacha_rec 0
 $scoreboard players set $(target) stat_gacha_ssr 0
 $scoreboard players set $(target) stat_record 0
 
+# 数值初始化
 $attribute $(target) generic.attack_damage base set 0

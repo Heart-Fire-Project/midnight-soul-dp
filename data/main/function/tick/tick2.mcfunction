@@ -1,0 +1,1 @@
+schedule function main:tick/tick2 2t replace
