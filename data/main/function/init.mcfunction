@@ -1,4 +1,4 @@
-tellraw @a [{"selector":"@s"},{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.info.init","fallback":"执行初始化流程","color":"#7367F0"}]
+tellraw @a [{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.info.init","fallback":"%s 正在执行初始化流程","bold":false,"with":[{"selector":"@s"}]},"\n "]
 
 # 规则设定
 setworldspawn 0 0 0
@@ -250,8 +250,8 @@ bossbar remove midsoul:16
 bossbar add midsoul:16 "P"
 
 # 伤害侦测初始化
-advancement revoke @a only base:damage_dealt
-advancement revoke @a only base:damage_taken
+advancement revoke @a only main:damage_dealt
+advancement revoke @a only main:damage_taken
 
 # 重置默认设置
 scoreboard players set $settinglock data 0
@@ -262,7 +262,7 @@ scoreboard players set $ability_apply data 0
 scoreboard players set $cooldown_speed data 10
 scoreboard players set $collect_speed data 10
 scoreboard players set $show_mark data 0
-scoreboard players set $initcheck data 51121
+scoreboard players set $initcheck data 7419147
 scoreboard players set $echo_chance data 40
 
 # 常数项
