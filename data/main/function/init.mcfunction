@@ -66,8 +66,14 @@ scoreboard objectives remove health
 scoreboard objectives add health health "生命检测"
 scoreboard objectives remove data
 scoreboard objectives add data dummy "全局数据"
+scoreboard objectives remove setting
+scoreboard objectives add setting dummy "游戏设置"
 scoreboard objectives remove player_id
 scoreboard objectives add player_id dummy "玩家编号"
+scoreboard objectives remove music
+scoreboard objectives add music dummy "背景音乐"
+scoreboard objectives remove music_time
+scoreboard objectives add music_time dummy "音乐时间"
 scoreboard objectives remove sneak_time
 scoreboard objectives add sneak_time minecraft.custom:sneak_time "蹲下时间"
 scoreboard objectives remove sleep_detect
@@ -254,16 +260,18 @@ advancement revoke @a only main:damage_dealt
 advancement revoke @a only main:damage_taken
 
 # 重置默认设置
-scoreboard players set $settinglock data 0
-scoreboard players set $gamelock data 0
-scoreboard players set $gamemode data 1
-scoreboard players set $gamemap data 0
-scoreboard players set $ability_apply data 0
-scoreboard players set $cooldown_speed data 10
-scoreboard players set $collect_speed data 10
-scoreboard players set $show_mark data 0
+scoreboard players set $settinglock setting 0
+scoreboard players set $gamelock setting 0
+scoreboard players set $gamemode setting 1
+scoreboard players set $gamemap setting 0
+scoreboard players set $ability_apply setting 0
+scoreboard players set $cooldown_speed setting 10
+scoreboard players set $collect_speed setting 10
+scoreboard players set $show_mark setting 0
+scoreboard players set $show_f3 setting 0
+scoreboard players set $show_feedback setting 0
+scoreboard players set $echo_chance setting 40
 scoreboard players set $initcheck data 7419147
-scoreboard players set $echo_chance data 40
 
 # 常数项
 scoreboard players set #-1 data -1
