@@ -277,7 +277,6 @@ scoreboard players set #3 data 3
 scoreboard players set #4 data 4
 scoreboard players set #5 data 5
 scoreboard players set #6 data 6
-scoreboard players set #7 data 7
 scoreboard players set #10 data 10
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20
