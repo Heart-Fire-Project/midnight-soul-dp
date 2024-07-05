@@ -105,6 +105,8 @@ scoreboard objectives remove temp_time
 scoreboard objectives add temp_time dummy "单局游玩时间"
 scoreboard objectives remove temp_track
 scoreboard objectives add temp_track dummy "单局追踪时间"
+scoreboard objectives remove temp_tie
+scoreboard objectives add temp_tie dummy "单局牵制时间"
 
 scoreboard objectives add stat_collect dummy "总碎片搜集"
 scoreboard objectives add stat_heal dummy "总队友救助"
@@ -260,17 +262,12 @@ advancement revoke @a only main:damage_dealt
 advancement revoke @a only main:damage_taken
 
 # 重置默认设置
-scoreboard players set $settinglock setting 0
-scoreboard players set $gamelock setting 0
 scoreboard players set $gamemode setting 1
 scoreboard players set $gamemap setting 0
-scoreboard players set $ability_apply setting 0
 scoreboard players set $cooldown_speed setting 10
 scoreboard players set $collect_speed setting 10
-scoreboard players set $show_mark setting 0
-scoreboard players set $show_f3 setting 0
-scoreboard players set $show_feedback setting 0
 scoreboard players set $echo_chance setting 40
+scoreboard players set $ingamescore setting 1
 scoreboard players set $initcheck data 7419147
 
 # 常数项
@@ -280,6 +277,7 @@ scoreboard players set #3 data 3
 scoreboard players set #4 data 4
 scoreboard players set #5 data 5
 scoreboard players set #6 data 6
+scoreboard players set #7 data 7
 scoreboard players set #10 data 10
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20
