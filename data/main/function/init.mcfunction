@@ -1,4 +1,4 @@
-tellraw @a [{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.info.init","fallback":"%s 正在执行初始化流程","bold":false,"with":[{"selector":"@s"}]},"\n "]
+tellraw @a [{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.info.init","fallback":"%s 正在执行初始化流程","bold":false,"with":[{"selector":"@s"}]}]
 
 # 规则设定
 setworldspawn 0 0 0
@@ -200,7 +200,7 @@ team add lamp "灵魂之灯"
 team modify lamp color gold
 team remove portal
 team add portal "传送门"
-team modify portal color dark_purple
+team modify portal color light_purple
 team remove chest
 team add chest "灵魂宝物箱"
 team modify chest color gray
@@ -262,12 +262,12 @@ advancement revoke @a only main:damage_dealt
 advancement revoke @a only main:damage_taken
 
 # 重置默认设置
-scoreboard players set $gamemode setting 1
-scoreboard players set $gamemap setting 0
+scoreboard players set $mode setting 1
+scoreboard players set $map setting 0
 scoreboard players set $cooldown_speed setting 10
 scoreboard players set $collect_speed setting 10
-scoreboard players set $echo_chance setting 40
-scoreboard players set $ingamescore setting 1
+scoreboard players set $echo_chance setting 30
+scoreboard players set $ingame_score setting 1
 scoreboard players set $initcheck data 7419147
 
 # 常数项
