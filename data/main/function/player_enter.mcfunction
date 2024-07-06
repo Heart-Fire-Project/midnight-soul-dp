@@ -7,6 +7,8 @@ attribute @s generic.movement_speed base set 0.1
 
 
 # 重新设置各个 Bossbar
-
+execute if score $state data matches 0 run bossbar set midsoul:info players @a
 
 # 按照状态进行不同入场流程
+scoreboard players reset @s music
+execute if score $state data matches 0 run function main:state/0/player_enter

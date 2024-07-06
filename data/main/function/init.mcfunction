@@ -258,8 +258,8 @@ bossbar remove midsoul:16
 bossbar add midsoul:16 "P"
 
 # 伤害侦测初始化
-advancement revoke @a only main:damage_dealt
-advancement revoke @a only main:damage_taken
+advancement revoke @a only main:damage/dealt
+advancement revoke @a only main:damage/taken
 
 # 重置默认设置
 scoreboard players set $mode setting 1

@@ -12,6 +12,10 @@ execute as @a unless score @s leave_game matches -2147483648..2147483647 run fun
 execute as @a unless score @s leave_game matches 0 run function main:player_enter
 execute as @a[x=-1.5,y=-6,z=-1.5,dx=3,dy=3,dz=3] run function main:player_death
 execute as @a unless score @s interact_check matches 0 run scoreboard players enable @s interact_check
+execute as @a[team=!admin,gamemode=creative] run function debug:join_admin
+
+# 掐掉经验声
+stopsound @a * entity.player.levelup
 
 # 重设重生点
 spawnpoint @a 0 -5 0
