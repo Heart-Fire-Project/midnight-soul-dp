@@ -7,6 +7,7 @@ bossbar set midsoul:info style notched_10
 bossbar set midsoul:info players @a
 
 # 刷新
+function main:state/0/refresh/block
 function main:state/0/refresh/sign
 function main:state/0/refresh/entity
 
