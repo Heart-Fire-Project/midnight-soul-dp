@@ -16,9 +16,13 @@ $scoreboard players set $(target) stat_item 0
 $scoreboard players set $(target) stat_kill 0
 $scoreboard players set $(target) stat_time 0
 $scoreboard players set $(target) stat_win 0
+$scoreboard players set $(target) stat_win_soul 0
+$scoreboard players set $(target) stat_win_guar 0
 $scoreboard players set $(target) stat_draw 0
 $scoreboard players set $(target) stat_lose 0
 $scoreboard players set $(target) stat_play 0
+$scoreboard players set $(target) stat_play_soul 0
+$scoreboard players set $(target) stat_play_guar 0
 $scoreboard players set $(target) stat_mvp 0
 $scoreboard players set $(target) stat_level 0
 $scoreboard players set $(target) stat_exp 0
@@ -28,6 +32,8 @@ $scoreboard players set $(target) stat_gacha 0
 $scoreboard players set $(target) stat_gacha_rec 0
 $scoreboard players set $(target) stat_gacha_ssr 0
 $scoreboard players set $(target) stat_record 0
+$scoreboard players set $(target) stat_parkour_5 -1
+$scoreboard players set $(target) stat_parkour_7 -1
 
 # 数值初始化
 $attribute $(target) generic.attack_damage base set 0

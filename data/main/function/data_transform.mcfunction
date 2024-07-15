@@ -11,9 +11,13 @@ $scoreboard players operation $(to) stat_item += $(from) stat_item
 $scoreboard players operation $(to) stat_kill += $(from) stat_kill
 $scoreboard players operation $(to) stat_time += $(from) stat_time
 $scoreboard players operation $(to) stat_win += $(from) stat_win
+$scoreboard players operation $(to) stat_win_soul += $(from) stat_win_soul
+$scoreboard players operation $(to) stat_win_guar += $(from) stat_win_guar
 $scoreboard players operation $(to) stat_draw += $(from) stat_draw
 $scoreboard players operation $(to) stat_lose += $(from) stat_lose
 $scoreboard players operation $(to) stat_play += $(from) stat_play
+$scoreboard players operation $(to) stat_play_soul += $(from) stat_play_soul
+$scoreboard players operation $(to) stat_play_guar += $(from) stat_play_guar
 $scoreboard players operation $(to) stat_mvp += $(from) stat_mvp
 $scoreboard players operation $(to) stat_level += $(from) stat_level
 $scoreboard players operation $(to) stat_exp += $(from) stat_exp
@@ -23,6 +27,8 @@ $scoreboard players operation $(to) stat_gacha += $(from) stat_gacha
 $scoreboard players operation $(to) stat_gacha_rec += $(from) stat_gacha_rec
 $scoreboard players operation $(to) stat_gacha_ssr += $(from) stat_gacha_ssr
 $scoreboard players operation $(to) stat_record += $(from) stat_record
+$scoreboard players operation $(to) stat_parkour_5 < $(from) stat_parkour_5
+$scoreboard players operation $(to) stat_parkour_7 < $(from) stat_parkour_7
 
 # 装饰品转移
 $execute store result storage ms:$(to)_deco short 1 run data get storage ms:$(from)_deco 1
