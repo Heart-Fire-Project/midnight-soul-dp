@@ -13,8 +13,9 @@ effect give @s regeneration infinite 4 true
 
 # 杂项
 scoreboard players set @s countdown 0
+scoreboard players set @s state 0
 scoreboard players enable @s interact_check
-gamemode adventure @s[team=!admin]
+gamemode adventure @s
 team join spectator @s
-execute unless entity @s[x=-12,y=-1,z=-12,dx=17,dy=17,dz=17] unless entity @s[x=-1011,y=-2,z=-1015,dx=33,dy=19,dz=31] run tp @s[team=!admin] 0 0 0 135.0 -15.0
+execute unless entity @s[x=-12,y=-1,z=-12,dx=16,dy=16,dz=16] unless entity @s[x=-1011,y=-2,z=-1015,dx=32,dy=18,dz=30] run tp @s[team=!admin] 0 0 0 135.0 -15.0
 execute unless score @s music matches -1 run function main:state/0/music_roll
