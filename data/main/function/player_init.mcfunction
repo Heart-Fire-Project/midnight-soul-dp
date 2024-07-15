@@ -31,3 +31,6 @@ $scoreboard players set $(target) stat_record 0
 
 # 数值初始化
 $attribute $(target) generic.attack_damage base set 0
+
+# 装饰初始化
+$data merge storage ms:$(target)_deco {}

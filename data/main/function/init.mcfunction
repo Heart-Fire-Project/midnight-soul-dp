@@ -14,6 +14,8 @@ gamerule randomTickSpeed 0
 gamerule announceAdvancements true
 gamerule doDaylightCycle false
 gamerule doEntityDrops false
+gamerule doFireTick false
+gamerule doVinesSpread false
 gamerule doImmediateRespawn true
 gamerule doMobLoot false
 gamerule doMobSpawning false
@@ -62,6 +64,8 @@ scoreboard objectives remove state
 scoreboard objectives add state dummy "个人状态"
 scoreboard objectives remove countdown
 scoreboard objectives add countdown dummy "全局计时"
+scoreboard objectives remove parkour_tick
+scoreboard objectives add parkour_tick dummy "跑酷计时"
 scoreboard objectives remove health
 scoreboard objectives add health health "生命检测"
 scoreboard objectives remove data
@@ -120,9 +124,13 @@ scoreboard objectives add stat_item dummy "总宝物使用"
 scoreboard objectives add stat_kill dummy "总有效击杀"
 scoreboard objectives add stat_time dummy "总游玩时间"
 scoreboard objectives add stat_win dummy "总获胜次数"
+scoreboard objectives add stat_win_soul dummy "总获胜次数 - 灵魂"
+scoreboard objectives add stat_win_guar dummy "总获胜次数 - 守卫"
 scoreboard objectives add stat_draw dummy "总平局次数"
 scoreboard objectives add stat_lose dummy "总落败次数"
 scoreboard objectives add stat_play dummy "总游玩次数"
+scoreboard objectives add stat_play_soul dummy "总游玩次数 - 灵魂"
+scoreboard objectives add stat_play_guar dummy "总游玩次数 - 守卫"
 scoreboard objectives add stat_mvp dummy "全场最佳次数"
 scoreboard objectives add stat_level dummy "玩家等级"
 scoreboard objectives add stat_exp dummy "玩家经验"
@@ -132,6 +140,8 @@ scoreboard objectives add stat_gacha dummy "灵唤总次数"
 scoreboard objectives add stat_gacha_rec dummy "灵唤保底记录"
 scoreboard objectives add stat_gacha_ssr dummy "灵唤出货次数"
 scoreboard objectives add stat_record dummy "最高表现分记录"
+scoreboard objectives add stat_parkour_5 dummy "普通跑酷记录"
+scoreboard objectives add stat_parkour_7 dummy "隐藏跑酷记录"
 
 scoreboard objectives add bonus_particle dummy "粒子效果"
 scoreboard objectives add bonus_headset dummy "饰品装配"
@@ -264,11 +274,19 @@ advancement revoke @a only main:damage/taken
 # 重置默认设置
 scoreboard players set $mode setting 1
 scoreboard players set $map setting 0
+scoreboard players set $show_mark setting 0
+scoreboard players set $ability_apply setting 0
 scoreboard players set $cooldown_speed setting 10
 scoreboard players set $collect_speed setting 10
 scoreboard players set $echo_chance setting 30
+scoreboard players set $setting_lock setting 0
+scoreboard players set $game_lock setting 0
 scoreboard players set $ingame_score setting 1
+scoreboard players set $show_f3 setting 0
+scoreboard players set $send_feedback setting 0
 scoreboard players set $initcheck data 7419147
+scoreboard players set $echo_page setting 1
+data merge storage ms:echo {"01":true,"02":true,"03":true,"04":true,"05":true,"06":true,"07":true,"08":true,"09":true}
 
 # 常数项
 scoreboard players set #-1 data -1
