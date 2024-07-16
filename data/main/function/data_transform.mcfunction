@@ -31,11 +31,11 @@ $scoreboard players operation $(to) stat_parkour_5 < $(from) stat_parkour_5
 $scoreboard players operation $(to) stat_parkour_7 < $(from) stat_parkour_7
 
 # 装饰品转移
-$execute store result storage ms:$(to)_deco short 1 run data get storage ms:$(from)_deco 1
+
 
 # 删号
 $scoreboard players reset $(from)
-$data merge storage ms:$(from)_deco {}
+
 
 # 输出
 $tellraw @s [{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.infp.datatran","fallback":"已将 %s 的游戏数据转移至 %s","with":[{"text":"$(from)","color":"#BC78EC"},{"text":"$(to)","color":"#BC78EC"}],"bold":false}]
