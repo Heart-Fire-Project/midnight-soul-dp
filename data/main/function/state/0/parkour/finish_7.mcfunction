@@ -18,7 +18,7 @@ execute if score @s stat_parkour_7 matches ..0 run tellraw @s ["   ",{"translate
 execute if score @s stat_parkour_7 matches 1.. run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ",{"storage":"ms:string","nbt":"result"}]
 
 # 个人最佳
-execute if score @s temp2 < @s stat_parkour_7 run scoreboard players set @s parkour_tick -50
-execute if score @s stat_parkour_7 matches ..0 run scoreboard players set @s parkour_tick -50
-execute if score @s parkour_tick matches -50 run scoreboard players operation @s stat_parkour_7 = @s temp2
-tag @s[scores={parkour_tick=-50}] add hidden_parkour
+execute if score @s temp2 < @s stat_parkour_7 run scoreboard players set @s parkour_tick -52
+execute if score @s stat_parkour_7 matches ..0 run scoreboard players set @s parkour_tick -52
+execute if score @s parkour_tick matches -52 run scoreboard players operation @s stat_parkour_7 = @s temp2
+tag @s[scores={parkour_tick=-52}] add hidden_parkour
