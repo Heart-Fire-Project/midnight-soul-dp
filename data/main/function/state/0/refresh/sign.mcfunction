@@ -25,8 +25,8 @@ function base:merge_sign {x:"-1",y:"7",z:"3",glow:"1",color:"white",trans_2:"",t
 function base:merge_sign {x:"1",y:"7",z:"3",glow:"1",color:"white",trans_2:"",trans_3:"",fallb_2:"<<<",fallb_3:"-5%",command:"trigger interact_check set 302"}
 
 # 回响禁用
-function base:merge_sign {x:"-3",y:"6",z:"3",glow:"1",color:"white",trans_2:"",trans_3:"ms.setting.next",fallb_2:"<<<",fallb_3:"下一页",command:"trigger interact_check set 303"}
-function base:merge_sign {x:"-9",y:"6",z:"3",glow:"1",color:"white",trans_2:"",trans_3:"ms.setting.prev",fallb_2:">>>",fallb_3:"上一页",command:"trigger interact_check set 304"}
+function base:merge_sign {x:"-3",y:"6",z:"3",glow:"1",color:"white",trans_2:"",trans_3:"ms.setting.next",fallb_2:"<<<",fallb_3:"上一页",command:"trigger interact_check set 303"}
+function base:merge_sign {x:"-9",y:"6",z:"3",glow:"1",color:"white",trans_2:"",trans_3:"ms.setting.prev",fallb_2:">>>",fallb_3:"下一页",command:"trigger interact_check set 304"}
 execute if score $echo_page setting matches 1 if data storage ms:echo {"01":true} run function base:merge_sign {x:"-4",y:"6",z:"3",glow:"1",color:"green",trans_2:"",trans_3:"ms.echo.1",fallb_2:"01",fallb_3:"强制性引导",command:"trigger interact_check set 401"}
 execute if score $echo_page setting matches 1 if data storage ms:echo {"01":false} run function base:merge_sign {x:"-4",y:"6",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.echo.1",fallb_2:"01",fallb_3:"强制性引导",command:"trigger interact_check set 401"}
 execute if score $echo_page setting matches 1 if data storage ms:echo {"02":true} run function base:merge_sign {x:"-5",y:"6",z:"3",glow:"1",color:"green",trans_2:"",trans_3:"ms.echo.2",fallb_2:"02",fallb_3:"真实与虚伪",command:"trigger interact_check set 402"}

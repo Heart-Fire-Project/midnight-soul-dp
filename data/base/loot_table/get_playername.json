@@ -4,12 +4,12 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:item",
-            "name": "minecraft:player_head",
+            "type":"item",
+            "name":"player_head",
             "functions": [
               {
-                "function": "minecraft:fill_player_head",
-                "entity": "this"
+                "function":"fill_player_head",
+                "entity":"this"
               }
             ]
           }

@@ -9,7 +9,7 @@ function main:state/0/parkour/time_format {source:"parkour_tick"}
 
 # 完成特效
 playsound entity.firework_rocket.blast player @s 0 1000000 0 1000000
-execute at @s anchored eyes positioned ^ ^ ^0.1 run particle minecraft:flash ~ ~ ~ 0 0 0 1 1 force @s
+execute at @s anchored eyes positioned ^ ^ ^0.1 run particle flash ~ ~ ~ 0 0 0 1 1 force @s
 
 # 停止计时
 title @s actionbar [{"translate":"ms.parkour.finish","fallback":"跑酷已完成","color":"green"}," | ",{"storage":"ms:string","nbt":"result"}]

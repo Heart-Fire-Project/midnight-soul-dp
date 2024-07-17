@@ -3,7 +3,7 @@
 $scoreboard players set $random_max temp $(max)
 $scoreboard players set $random_min temp $(min)
 
-summon minecraft:area_effect_cloud 0 -64 0 {Tags:["random"],Duration:1}
+summon area_effect_cloud 0 -64 0 {Tags:["random"],Duration:1}
 execute store result score $random temp2 run data get entity @e[tag=random,limit=1] UUID[0]
 kill @e[tag=random]
 scoreboard players operation $random_max temp -= $random_min temp

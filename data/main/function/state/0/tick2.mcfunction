@@ -1,5 +1,5 @@
 # 粒子特效
-particle minecraft:campfire_cosy_smoke -6.0 17.7 -6.0 0.1 0.1 0.1 0.1 96
+particle campfire_cosy_smoke -6.0 17.7 -6.0 0.1 0.1 0.1 0.1 96
 
 # II 区往返侦测
 execute as @a[x=-8,y=-24,z=-8,dx=3,dy=5,dz=3] run function main:state/0/extra_enter
