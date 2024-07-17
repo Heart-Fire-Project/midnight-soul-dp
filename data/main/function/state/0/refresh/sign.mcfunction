@@ -48,11 +48,11 @@ execute if score $echo_page setting matches 2 if data storage ms:echo {"09":fals
 execute if score $echo_page setting matches 2 run function base:merge_sign {x:"-8",y:"6",z:"3",glow:"0",color:"white",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 
 # 图鉴SS
-function base:merge_sign {x:"-1",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.skill.001",fallb_2:"S001",fallb_3:"幻影迷踪",command:"trigger interact_check set 1001"}
-function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.skill.002",fallb_2:"S002",fallb_3:"灵灯之筑",command:"trigger interact_check set 1002"}
-function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.skill.003",fallb_2:"S003",fallb_3:"逆向追踪",command:"trigger interact_check set 1003"}
-function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.skill.004",fallb_2:"S004",fallb_3:"铤而走险",command:"trigger interact_check set 1004"}
-function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.skill.005",fallb_2:"S005",fallb_3:"锚定虚影",command:"trigger interact_check set 1005"}
+function base:merge_sign {x:"-1",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.001",fallb_2:"S001",fallb_3:"幻影迷踪",command:"trigger interact_check set 1001"}
+function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.002",fallb_2:"S002",fallb_3:"灵灯之筑",command:"trigger interact_check set 1002"}
+function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.003",fallb_2:"S003",fallb_3:"逆向追踪",command:"trigger interact_check set 1003"}
+function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.004",fallb_2:"S004",fallb_3:"铤而走险",command:"trigger interact_check set 1004"}
+function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.005",fallb_2:"S005",fallb_3:"锚定虚影",command:"trigger interact_check set 1005"}
 
 # 图鉴GS
 function base:merge_sign {x:"3",y:"11",z:"-1",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.101",fallb_2:"S101",fallb_3:"虔诚力场",command:"trigger interact_check set 1101"}
@@ -62,13 +62,13 @@ function base:merge_sign {x:"3",y:"11",z:"-4",glow:"1",color:"red",trans_2:"",tr
 function base:merge_sign {x:"3",y:"11",z:"-5",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.105",fallb_2:"S105",fallb_3:"残影迷踪",command:"trigger interact_check set 1105"}
 
 # 图鉴ST
-function base:merge_sign {x:"-11",y:"11",z:"-1",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.talent.001",fallb_2:"T001",fallb_3:"全神贯注",command:"trigger interact_check set 2001"}
-function base:merge_sign {x:"-11",y:"11",z:"-2",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.talent.002",fallb_2:"T002",fallb_3:"赴汤蹈火",command:"trigger interact_check set 2002"}
-function base:merge_sign {x:"-11",y:"11",z:"-3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.talent.003",fallb_2:"T003",fallb_3:"同生共死",command:"trigger interact_check set 2003"}
-function base:merge_sign {x:"-11",y:"11",z:"-4",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.talent.004",fallb_2:"T004",fallb_3:"魂魄汲取",command:"trigger interact_check set 2004"}
-function base:merge_sign {x:"-11",y:"11",z:"-5",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.talent.005",fallb_2:"T005",fallb_3:"蹑手蹑脚",command:"trigger interact_check set 2005"}
-function base:merge_sign {x:"-11",y:"11",z:"-6",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.talent.006",fallb_2:"T006",fallb_3:"碎片注入",command:"trigger interact_check set 2006"}
-function base:merge_sign {x:"-11",y:"11",z:"-7",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.talent.007",fallb_2:"T007",fallb_3:"灵气感知",command:"trigger interact_check set 2007"}
+function base:merge_sign {x:"-11",y:"11",z:"-1",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.001",fallb_2:"T001",fallb_3:"全神贯注",command:"trigger interact_check set 2001"}
+function base:merge_sign {x:"-11",y:"11",z:"-2",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.002",fallb_2:"T002",fallb_3:"赴汤蹈火",command:"trigger interact_check set 2002"}
+function base:merge_sign {x:"-11",y:"11",z:"-3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.003",fallb_2:"T003",fallb_3:"同生共死",command:"trigger interact_check set 2003"}
+function base:merge_sign {x:"-11",y:"11",z:"-4",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.004",fallb_2:"T004",fallb_3:"魂魄汲取",command:"trigger interact_check set 2004"}
+function base:merge_sign {x:"-11",y:"11",z:"-5",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.005",fallb_2:"T005",fallb_3:"蹑手蹑脚",command:"trigger interact_check set 2005"}
+function base:merge_sign {x:"-11",y:"11",z:"-6",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.006",fallb_2:"T006",fallb_3:"碎片注入",command:"trigger interact_check set 2006"}
+function base:merge_sign {x:"-11",y:"11",z:"-7",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.007",fallb_2:"T007",fallb_3:"灵气感知",command:"trigger interact_check set 2007"}
 
 # 图鉴GT
 function base:merge_sign {x:"-1",y:"11",z:"-11",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.101",fallb_2:"T101",fallb_3:"抱火寝薪",command:"trigger interact_check set 2101"}
