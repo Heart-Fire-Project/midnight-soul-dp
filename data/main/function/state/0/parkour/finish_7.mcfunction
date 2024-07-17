@@ -13,7 +13,7 @@ title @s actionbar [{"translate":"ms.parkour.finish","fallback":"跑酷已完成
 # 展示成绩
 tellraw @s [{"text":" » ","bold":true,"color":"gold"},{"translate":"ms.parkour.7","fallback":"隐藏跑酷完成","bold":false}]
 tellraw @s ["   ",{"translate":"ms.parkour.time","fallback":"本次用时"}," » ",{"storage":"ms:string","nbt":"result"}]
-execute if entity @s[scores={stat_parkour_5=1..}] run function main:state/0/parkour/time_format {source:"stat_parkour_5"}
+execute if entity @s[scores={stat_parkour_5=1..}] run function main:state/0/parkour/time_format {source:"stat_parkour_7"}
 execute if score @s stat_parkour_7 matches ..0 run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ","--:--.--"]
 execute if score @s stat_parkour_7 matches 1.. run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ",{"storage":"ms:string","nbt":"result"}]
 
