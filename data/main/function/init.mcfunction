@@ -136,9 +136,6 @@ scoreboard objectives add stat_level dummy "玩家等级"
 scoreboard objectives add stat_exp dummy "玩家经验"
 scoreboard objectives add stat_adv dummy "达成进度数"
 scoreboard objectives add stat_adv_pt dummy "进度点数"
-scoreboard objectives add stat_gacha dummy "灵唤总次数"
-scoreboard objectives add stat_gacha_rec dummy "灵唤保底记录"
-scoreboard objectives add stat_gacha_ssr dummy "灵唤出货次数"
 scoreboard objectives add stat_record dummy "最高表现分记录"
 scoreboard objectives add stat_parkour_5 dummy "普通跑酷记录"
 scoreboard objectives add stat_parkour_7 dummy "隐藏跑酷记录"
@@ -150,7 +147,6 @@ scoreboard objectives add bonus_ability dummy "额外能力"
 scoreboard objectives add bonus_weapon dummy "武器皮肤"
 
 scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
-scoreboard objectives add soul_glaze dummy "灵唤璃"
 scoreboard objectives add soul_combo dummy "灵魂连击"
 
 # 队伍

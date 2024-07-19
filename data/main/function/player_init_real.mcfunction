@@ -28,14 +28,9 @@ $scoreboard players set $(target) stat_level 0
 $scoreboard players set $(target) stat_exp 0
 $scoreboard players set $(target) stat_adv 0
 $scoreboard players set $(target) stat_adv_pt 0
-$scoreboard players set $(target) stat_gacha 0
-$scoreboard players set $(target) stat_gacha_rec 0
-$scoreboard players set $(target) stat_gacha_ssr 0
 $scoreboard players set $(target) stat_record 0
 $scoreboard players set $(target) stat_parkour_5 -1
 $scoreboard players set $(target) stat_parkour_7 -1
 
 # 数值初始化
 $attribute $(target) generic.attack_damage base set 0
-
-# 装饰初始化

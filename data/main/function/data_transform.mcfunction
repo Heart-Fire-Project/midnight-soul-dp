@@ -23,19 +23,12 @@ $scoreboard players operation $(to) stat_level += $(from) stat_level
 $scoreboard players operation $(to) stat_exp += $(from) stat_exp
 $scoreboard players operation $(to) stat_adv += $(from) stat_adv
 $scoreboard players operation $(to) stat_adv_pt += $(from) stat_adv_pt
-$scoreboard players operation $(to) stat_gacha += $(from) stat_gacha
-$scoreboard players operation $(to) stat_gacha_rec += $(from) stat_gacha_rec
-$scoreboard players operation $(to) stat_gacha_ssr += $(from) stat_gacha_ssr
 $scoreboard players operation $(to) stat_record += $(from) stat_record
 $scoreboard players operation $(to) stat_parkour_5 < $(from) stat_parkour_5
 $scoreboard players operation $(to) stat_parkour_7 < $(from) stat_parkour_7
 
-# 装饰品转移
-
-
 # 删号
 $scoreboard players reset $(from)
-
 
 # 输出
 $tellraw @s [{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.infp.datatran","fallback":"已将 %s 的游戏数据转移至 %s","with":[{"text":"$(from)","color":"#BC78EC"},{"text":"$(to)","color":"#BC78EC"}],"bold":false}]
