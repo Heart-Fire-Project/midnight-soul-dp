@@ -5,6 +5,8 @@ attribute @s generic.movement_speed base set 0.1
 
 # 去除游戏内标签
 tag @s remove hidden_parkour
+tag @s remove stat_query
+tag @s remove quering
 
 # 重新设置各个 Bossbar
 execute if score $state data matches 0 run bossbar set midsoul:info players @a

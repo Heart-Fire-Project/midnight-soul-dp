@@ -23,7 +23,9 @@ $scoreboard players operation $(to) stat_level += $(from) stat_level
 $scoreboard players operation $(to) stat_exp += $(from) stat_exp
 $scoreboard players operation $(to) stat_adv += $(from) stat_adv
 $scoreboard players operation $(to) stat_adv_pt += $(from) stat_adv_pt
-$scoreboard players operation $(to) stat_record += $(from) stat_record
+$scoreboard players operation $(to) stat_rating = $(from) stat_rating
+$scoreboard players operation $(to) stat_record > $(from) stat_record
+$scoreboard players operation $(to) stat_rating_record > $(from) stat_rating_record
 $scoreboard players operation $(to) stat_parkour_5 < $(from) stat_parkour_5
 $scoreboard players operation $(to) stat_parkour_7 < $(from) stat_parkour_7
 
