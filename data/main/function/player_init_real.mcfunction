@@ -14,6 +14,8 @@ $scoreboard players set $(target) stat_skill 0
 $scoreboard players set $(target) stat_talent 0
 $scoreboard players set $(target) stat_item 0
 $scoreboard players set $(target) stat_kill 0
+$scoreboard players set $(target) stat_death 0
+$scoreboard players set $(target) stat_finish 0
 $scoreboard players set $(target) stat_time 0
 $scoreboard players set $(target) stat_win 0
 $scoreboard players set $(target) stat_win_soul 0
