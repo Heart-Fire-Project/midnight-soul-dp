@@ -25,3 +25,15 @@ tag @a[tag=!stat_query] remove quering
 execute as @a[tag=stat_query,tag=!quering] run function main:state/0/stat_query
 tag @a remove stat_query
 execute unless entity @a[x=-990,y=-1,z=-1001,dx=0,dy=1.2,dz=0] run setblock -990 -2 -1001 redstone_lamp[lit=false]
+
+# 额外区域粒子效果
+execute as @e[tag=particle_1] at @s run particle electric_spark ~ ~0.2 ~ 0.1 0.1 0.1 0 1
+execute as @e[tag=particle_2] at @s run particle glow ~ ~0.2 ~ 0.15 0.15 0.15 0 1
+execute as @e[tag=particle_3] at @s run particle ominous_spawning ~ ~0.2 ~ 0.15 0.05 0.15 0 1
+execute as @e[tag=particle_4] at @s run particle wax_on ~ ~0.2 ~ 0.15 0.15 0.15 1 1
+execute as @e[tag=particle_5] at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0 1
+execute as @e[tag=particle_6] at @s run particle witch ~ ~0.2 ~ 0.15 0.05 0.15 0 1
+execute as @e[tag=particle_7] at @s run particle dust{color:[5,5,5],scale:1} ~ ~0.2 ~ 0.1 0.1 0.1 0 2
+execute as @e[tag=particle_8] at @s run particle cherry_leaves ~ ~0.4 ~ 0.12 0.12 0.12 0 1
+execute as @e[tag=particle_9] at @s run particle flame ~ ~0.2 ~ 0.12 0.12 0.12 0 1
+execute as @e[tag=particle_9] at @s run particle soul_fire_flame ~ ~0.2 ~ 0.1 0.1 0.1 0 1
