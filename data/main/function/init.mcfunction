@@ -82,6 +82,8 @@ scoreboard objectives remove sneak_time
 scoreboard objectives add sneak_time minecraft.custom:sneak_time "蹲下时间"
 scoreboard objectives remove sleep_detect
 scoreboard objectives add sleep_detect minecraft.custom:sleep_in_bed "睡眠检测"
+scoreboard objectives remove ender_detect
+scoreboard objectives add ender_detect minecraft.custom:open_enderchest "末影箱检测"
 scoreboard objectives remove interact_check
 scoreboard objectives add interact_check trigger "交互检测"
 
@@ -144,11 +146,11 @@ scoreboard objectives add stat_rating_record dummy "最高短期分记录"
 scoreboard objectives add stat_parkour_5 dummy "普通跑酷记录"
 scoreboard objectives add stat_parkour_7 dummy "隐藏跑酷记录"
 
-scoreboard objectives add bonus_particle dummy "粒子效果"
-scoreboard objectives add bonus_headset dummy "饰品装配"
-scoreboard objectives add bonus_text dummy "文本套组"
-scoreboard objectives add bonus_ability dummy "额外能力"
-scoreboard objectives add bonus_weapon dummy "武器皮肤"
+scoreboard objectives add deco_particle dummy "粒子效果"
+scoreboard objectives add deco_headset dummy "饰品装配"
+scoreboard objectives add deco_text dummy "文本套组"
+scoreboard objectives add deco_ability dummy "额外能力"
+scoreboard objectives add deco_weapon dummy "武器样式"
 
 scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
 scoreboard objectives add soul_combo dummy "灵魂连击"
@@ -295,6 +297,7 @@ scoreboard players set #3 data 3
 scoreboard players set #4 data 4
 scoreboard players set #5 data 5
 scoreboard players set #6 data 6
+scoreboard players set #9 data 9
 scoreboard players set #10 data 10
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20

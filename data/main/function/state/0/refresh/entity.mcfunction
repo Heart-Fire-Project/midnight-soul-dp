@@ -68,7 +68,7 @@ summon item -5 12.1 -8 {Tags:[lobby_entity],Item:{id:"shaper_armor_trim_smithing
 summon item -2 12.1 -8 {Tags:[lobby_entity],Item:{id:"player_head",components:{custom_model_data:73005,profile:{id:[I;-2028710611,-535870698,-1464817086,-1561423040],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk4Njc5NDUyMTg2OWU4MzI3ZWY4MWRiYzM1Yzk4NTZiYzQwNTFkZjk4ODhkODFlYWIyMTI0NDJiMTc2YTgyZiJ9fX0="}]}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 summon item 1 12.1 -8 {Tags:[lobby_entity],Item:{id:"quartz",components:{custom_model_data:73006}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
-summon item -8 12.1 -8 {Tags:[lobby_entity],Item:{id:"golden_sword",components:{enchantments:{mending:1}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -8 12.1 -8 {Tags:[lobby_entity],Item:{id:"golden_sword",components:{custom_model_data:73100,enchantments:{mending:1}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 跑酷区的和平鸽
 execute unless entity @e[tag=parkour_entity] run summon skeleton 8 22 25 {CustomName:'"P1ge0nGG"',ArmorItems:[{id:leather_boots},{id:netherite_leggings},{id:golden_chestplate},{id:player_head,components:{profile:P1ge0nGG}}],HandItems:[{id:bow,components:{enchantments:{punch:2}}},{}],LeftHanded:false,Invulnerable:true,PersistenceRequired:true,Tags:[parkour_entity]}
