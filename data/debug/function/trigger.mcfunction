@@ -7,7 +7,7 @@ execute if score @s interact_check matches -202 run function debug:sub/select {t
 execute if score @s interact_check matches -203 run function debug:sub/select {type:"map",num:"3"}
 execute if score @s interact_check matches -299 run function debug:sub/map_tp
 
-execute if score @s interact_check matches -300 run function debug:sub/next {type:"show_mark",limit:"2"}
+execute if score @s interact_check matches -300 run function debug:sub/binary {storage:"setting",target:"show_mark"}
 execute if score @s interact_check matches -301 run give @s warden_spawn_egg[custom_name='{"translate":"ms.blue","fallback":"灵魂碎片","color":"blue","italic":false}',custom_model_data=79011,hide_additional_tooltip={},entity_data={id:shulker,Color:11,Tags:[summon_marker,summon_blue]}]
 execute if score @s interact_check matches -302 run give @s blaze_spawn_egg[custom_name='{"translate":"ms.purple","fallback":"灵魂之灯","color":"gold","italic":false}',custom_model_data=79001,hide_additional_tooltip={},entity_data={id:shulker,Color:1,Tags:[summon_marker,summon_gold]}]
 execute if score @s interact_check matches -303 run give @s breeze_spawn_egg[custom_name='{"translate":"ms.gold","fallback":"传送门","color":"light_purple","italic":false}',custom_model_data=79002,hide_additional_tooltip={},entity_data={id:shulker,Color:2,Tags:[summon_marker,summon_purple]}]
@@ -28,11 +28,11 @@ execute if score @s interact_check matches -432 run function debug:sub/chance_ad
 execute if score @s interact_check matches -500 run function debug:sub/init_confirm
 execute if score @s interact_check matches -501 run function debug:sub/state1
 execute if score @s interact_check matches -502 run function debug:sub/state5
-execute if score @s interact_check matches -503 run function debug:sub/next {type:"setting_lock",limit:"2"}
-execute if score @s interact_check matches -504 run function debug:sub/next {type:"game_lock",limit:"2"}
-execute if score @s interact_check matches -505 run function debug:sub/next {type:"ingame_score",limit:"2"}
-execute if score @s interact_check matches -506 run function debug:sub/next {type:"show_f3",limit:"2"}
-execute if score @s interact_check matches -507 run function debug:sub/next {type:"send_feedback",limit:"2"}
+execute if score @s interact_check matches -503 run function debug:sub/binary {storage:"setting",target:"setting_lock"}
+execute if score @s interact_check matches -504 run function debug:sub/binary {storage:"setting",target:"game_lock"}
+execute if score @s interact_check matches -505 run function debug:sub/binary {storage:"setting",target:"ingame_score"}
+execute if score @s interact_check matches -506 run function debug:sub/binary {storage:"setting",target:"show_f3"}
+execute if score @s interact_check matches -507 run function debug:sub/binary {storage:"setting",target:"send_feedback"}
 execute if score @s interact_check matches -599 run function main:init
 
 execute if score @s interact_check matches -999 run function debug:leave_admin
