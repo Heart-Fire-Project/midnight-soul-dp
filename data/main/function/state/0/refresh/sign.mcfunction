@@ -47,6 +47,14 @@ execute if score $echo_page setting matches 2 if data storage ms:echo {"09":true
 execute if score $echo_page setting matches 2 if data storage ms:echo {"09":false} run function base:merge_sign {x:"-7",y:"6",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.echo.9",fallb_2:"09",fallb_3:"开门仍如旧",command:"trigger interact_check set 409"}
 execute if score $echo_page setting matches 2 run function base:merge_sign {x:"-8",y:"6",z:"3",glow:"0",color:"white",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 
+# 能力分配
+execute if score $ability_apply setting matches 0 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.ability.0",fallb_2:"◆◇◇◇◇◇",fallb_3:"全部随机",command:"trigger interact_check set 500"}
+execute if score $ability_apply setting matches 1 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.1",fallb_2:"◇◆◇◇◇◇",fallb_3:"仅自选技能",command:"trigger interact_check set 500"}
+execute if score $ability_apply setting matches 2 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.2",fallb_2:"◇◇◆◇◇◇",fallb_3:"仅自选天赋",command:"trigger interact_check set 500"}
+execute if score $ability_apply setting matches 3 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.3",fallb_2:"◇◇◇◆◇◇",fallb_3:"仅自选一天赋",command:"trigger interact_check set 500"}
+execute if score $ability_apply setting matches 4 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.4",fallb_2:"◇◇◇◇◆◇",fallb_3:"自选技能与一天赋",command:"trigger interact_check set 500"}
+execute if score $ability_apply setting matches 5 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.ability.5",fallb_2:"◇◇◇◇◇◆",fallb_3:"全部自选",command:"trigger interact_check set 500"}
+
 # 图鉴SS
 function base:merge_sign {x:"-1",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.001",fallb_2:"S001",fallb_3:"幻影迷踪",command:"trigger interact_check set 1001"}
 function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.002",fallb_2:"S002",fallb_3:"灵灯之筑",command:"trigger interact_check set 1002"}
@@ -87,4 +95,4 @@ function base:merge_sign {x:"-5",y:"11",z:"-7",glow:"1",color:"lime",trans_2:"",
 function base:merge_sign {x:"-2",y:"11",z:"-7",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.05",fallb_2:"I05",fallb_3:"高效制冷",command:"trigger interact_check set 3005"}
 function base:merge_sign {x:"1",y:"11",z:"-7",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.06",fallb_2:"I06",fallb_3:"太空体验",command:"trigger interact_check set 3006"}
 
-function base:merge_sign {x:"-8",y:"14",z:"-8",glow:"1",color:"purple",trans_2:"",trans_3:"ms.weapon",fallb_2:"EX",fallb_3:"祛灵刃",command:"trigger interact_check set 3999"}
+function base:merge_sign {x:"-8",y:"14",z:"-8",glow:"1",color:"purple",trans_2:"",trans_3:"ms.weapon",fallb_2:"EX",fallb_3:"祛灵刃",command:"trigger interact_check set 3100"}
