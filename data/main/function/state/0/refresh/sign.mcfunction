@@ -14,9 +14,9 @@ execute if score $map setting matches 3 run function base:merge_sign {x:"-11",y:
 execute unless score $map setting matches 3 run function base:merge_sign {x:"-11",y:"6",z:"-5",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.3",fallb_2:"03",fallb_3:"山间湖谷",command:"trigger interact_check set 103"}
 
 # 模式设置
-execute if score $mode setting matches 1 run function base:merge_sign {x:"-8",y:"6",z:"-11",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.mode.1",fallb_2:"01",fallb_3:"灵气碎片",command:"trigger interact_check set 101"}
+execute if score $mode setting matches 1 run function base:merge_sign {x:"-8",y:"6",z:"-11",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.mode.1",fallb_2:"01",fallb_3:"灵气碎片",command:"trigger interact_check set 201"}
 execute unless score $mode setting matches 1 run function base:merge_sign {x:"-8",y:"6",z:"-11",glow:"1",color:"white",trans_2:"",trans_3:"ms.mode.1",fallb_2:"01",fallb_3:"灵气碎片",command:"trigger interact_check set 201"}
-execute if score $mode setting matches 2 run function base:merge_sign {x:"-7",y:"6",z:"-11",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.mode.2",fallb_2:"02",fallb_3:"针锋奔逃",command:"trigger interact_check set 102"}
+execute if score $mode setting matches 2 run function base:merge_sign {x:"-7",y:"6",z:"-11",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.mode.2",fallb_2:"02",fallb_3:"针锋奔逃",command:"trigger interact_check set 202"}
 execute unless score $mode setting matches 2 run function base:merge_sign {x:"-7",y:"6",z:"-11",glow:"1",color:"white",trans_2:"",trans_3:"ms.mode.2",fallb_2:"02",fallb_3:"针锋奔逃",command:"trigger interact_check set 202"}
 
 # 回响概率

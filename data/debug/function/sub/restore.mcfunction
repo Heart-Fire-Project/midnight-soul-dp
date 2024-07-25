@@ -2,4 +2,5 @@ scoreboard players set $collect_speed setting 10
 scoreboard players set $cooldown_speed setting 10
 scoreboard players set $echo_chance setting 30
 
-function debug:panel
+execute if score @s interact_check matches ..-1 run function debug:panel
+execute unless score @s interact_check matches ..-1 run playsound ui.button.click player @s 0 1000000 0 1000000

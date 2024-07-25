@@ -1,3 +1,8 @@
+# 告示牌交互侦测
+execute if score $setting_lock setting matches 0 as @a[scores={interact_check=100..500}] run function main:state/0/trigger/check_setting
+execute if score $setting_lock setting matches 1 as @a[scores={interact_check=100..500},team=admin] run function main:state/0/trigger/check_setting
+scoreboard players set @a[scores={interact_check=100..500}] interact_check 0
+
 # 跑酷计时
 execute as @a[scores={state=1}] run scoreboard players add @s parkour_tick 1
 execute as @a[scores={state=1}] run function main:state/0/parkour/timer

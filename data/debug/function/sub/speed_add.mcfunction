@@ -4,4 +4,5 @@ $execute if score $$(type)_speed setting matches 20..45 run scoreboard players a
 $execute if score $$(type)_speed setting matches 0..18 run scoreboard players add $$(type)_speed setting 2
 $execute if score $$(type)_speed setting matches 1010000 run scoreboard players set $$(type)_speed setting 0
 $execute if score $$(type)_speed setting matches 1000000 run scoreboard players add $$(type)_speed setting 10000
-function debug:panel
+execute if score @s interact_check matches ..-1 run function debug:panel
+execute unless score @s interact_check matches ..-1 run playsound ui.button.click player @s 0 1000000 0 1000000
