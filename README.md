@@ -25,4 +25,4 @@
 - [下载地图](https://alpha.hfpro.top/maps/9-midsoul/) **旧**地图下载
 - [进行资助](https://afdian.net/@HfPro) 激励我们进行开发
 - [团队官网](https://hfpro.top/) 在这里看到我们团队的其他作品
-- [反馈群聊](https://qm.qq.com/cgi-bin/qm/qr?k=YNaHDYBSXIR-Fo-bBjaANk5GCmKOZogo&jump_from=webapi&authKey=t4k2yVndCqo/5jzIxYEpL1hxHRu44roVJ32G8meHgPHCMen05GsvcGLVz+f9LQGK) 不想反馈也可以进来聊天打游戏的
+- [反馈群聊](https://qm.qq.com/cgi-bin/qm/qr?k=YNaHDYBSXIR-Fo-bBjaANk5GCmKOZogo&authKey=t4k2yVndCqo/5jzIxYEpL1hxHRu44roVJ32G8meHgPHCMen05GsvcGLVz+f9LQGK) 不想反馈也可以进来聊天打游戏的
