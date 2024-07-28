@@ -67,7 +67,7 @@ function base:merge_sign {x:"3",y:"11",z:"-1",glow:"1",color:"red",trans_2:"",tr
 function base:merge_sign {x:"3",y:"11",z:"-2",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.102",fallb_2:"S102",fallb_3:"灵力掌控",command:"trigger interact_check set 1102"}
 function base:merge_sign {x:"3",y:"11",z:"-3",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.103",fallb_2:"S103",fallb_3:"唤灵留迹",command:"trigger interact_check set 1103"}
 function base:merge_sign {x:"3",y:"11",z:"-4",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.104",fallb_2:"S104",fallb_3:"恶灵诅咒",command:"trigger interact_check set 1104"}
-function base:merge_sign {x:"3",y:"11",z:"-5",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.105",fallb_2:"S105",fallb_3:"残影迷踪",command:"trigger interact_check set 1105"}
+function base:merge_sign {x:"3",y:"11",z:"-5",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.105",fallb_2:"S105",fallb_3:"雾影阴霾",command:"trigger interact_check set 1105"}
 
 # 图鉴ST
 function base:merge_sign {x:"-11",y:"11",z:"-1",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.001",fallb_2:"T001",fallb_3:"全神贯注",command:"trigger interact_check set 2001"}

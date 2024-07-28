@@ -35,4 +35,4 @@ $scoreboard players operation $(to) stat_parkour_7 < $(from) stat_parkour_7
 $scoreboard players reset $(from)
 
 # 输出
-$tellraw @s [{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.infp.datatran","fallback":"已将 %s 的游戏数据转移至 %s","with":[{"text":"$(from)","color":"#BC78EC"},{"text":"$(to)","color":"#BC78EC"}],"bold":false}]
+$tellraw @s [{"text":"» ","bold":true,"color":"#7367F0"},{"translate":"ms.infp.datatran","fallback":"已将 %s 的游戏数据转移至 %s","with":[{"text":"$(from)","color":"#BC78EC"},{"text":"$(to)","color":"#BC78EC"}],"bold":false}]

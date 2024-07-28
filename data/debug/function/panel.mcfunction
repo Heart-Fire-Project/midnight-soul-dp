@@ -1,4 +1,4 @@
-tellraw @s [{"text":"\n\n\n\n\n\n\n » ","color":"blue","bold":true},{"translate":"ms.debug.panel","fallback":"调试面板"}]
+tellraw @s [{"text":"\n\n\n\n\n\n\n» ","color":"blue","bold":true},{"translate":"ms.debug.panel","fallback":"调试面板"}]
 kill @e[tag=debug_entity]
 
 tellraw @s {"translate":"ms.debug.mode","fallback":"模式 »","color":"#7367F0"}

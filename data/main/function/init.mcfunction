@@ -1,4 +1,4 @@
-tellraw @a [{"text":" » ","bold":true,"color":"#7367F0"},{"translate":"ms.info.init","fallback":"%s 正在执行初始化流程","bold":false,"with":[{"selector":"@s"}]}]
+tellraw @a [{"text":"» ","bold":true,"color":"#7367F0"},{"translate":"ms.info.init","fallback":"%s 正在执行初始化流程","bold":false,"with":[{"selector":"@s"}]}]
 
 # 规则设定
 setworldspawn 0 0 0
@@ -214,7 +214,7 @@ team remove portal
 team add portal "传送门"
 team modify portal color light_purple
 team remove chest
-team add chest "灵魂宝物箱"
+team add chest "灵魂宝物盒"
 team modify chest color gray
 
 # 边界初始化
