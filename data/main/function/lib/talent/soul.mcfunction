@@ -1,0 +1,25 @@
+execute if score $state data matches 0 run tellraw @s "\n"
+
+$tellraw @s[scores={talent_$(num)=1}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.001","fallback":"全神贯注"}]
+$tellraw @s[scores={talent_$(num)=2}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.002","fallback":"赴汤蹈火"}]
+$tellraw @s[scores={talent_$(num)=3}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.003","fallback":"同生共死"}]
+$tellraw @s[scores={talent_$(num)=4}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.004","fallback":"魂魄汲取"}]
+$tellraw @s[scores={talent_$(num)=5}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.005","fallback":"蹑手蹑脚"}]
+$tellraw @s[scores={talent_$(num)=6}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.006","fallback":"碎片注入"}]
+$tellraw @s[scores={talent_$(num)=7}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.007","fallback":"灵气感知"}]
+
+$tellraw @s[scores={talent_$(num)=1}] [{"text":"⏱ 3s > ","color":"aqua"},{"translate":"ms.tag.collect","fallback":"收集"},"/",{"translate":"ms.tag.survive","fallback":"生存"}]
+$tellraw @s[scores={talent_$(num)=2}] [{"text":"🔁 60s ⏱ 3s > ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"}]
+$tellraw @s[scores={talent_$(num)=3}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"},"/",{"translate":"ms.tag.heal","fallback":"救助"}]
+$tellraw @s[scores={talent_$(num)=4}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"}]
+$tellraw @s[scores={talent_$(num)=5}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"}]
+$tellraw @s[scores={talent_$(num)=6}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.heal","fallback":"救助"}]
+$tellraw @s[scores={talent_$(num)=7}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.collect","fallback":"收集"}]
+
+$tellraw @s[scores={talent_$(num)=1}] [{"translate":"ms.talent.001.0","fallback":"收集灵魂碎片后，移速 +40%；下一次收集时直接获取 0.3s 的进度，收集中断不会返还该效果"}]
+$tellraw @s[scores={talent_$(num)=2}] [{"translate":"ms.talent.002.0","fallback":"周围 12 格内有守卫者时，移速 +80%"}]
+$tellraw @s[scores={talent_$(num)=3}] [{"translate":"ms.talent.003.0","fallback":"当有灵魂处于垂死状态时，移速 +20%"}]
+$tellraw @s[scores={talent_$(num)=4}] [{"translate":"ms.talent.004.0","fallback":"收集到灵魂碎片时，回复 1 血量"}]
+$tellraw @s[scores={talent_$(num)=5}] [{"translate":"ms.talent.005.0","fallback":"蹲下时不作为守卫者气息探测目标"}]
+$tellraw @s[scores={talent_$(num)=6}] [{"translate":"ms.talent.006.0","fallback":"收集到灵魂碎片时，延长所有处于垂死状态的灵魂 5 秒倒计时"}]
+$tellraw @s[scores={talent_$(num)=7}] [{"translate":"ms.talent.007.0","fallback":"碎片收集速度 +5%；灵气等级每提升 1 级额外提升 5%，至多提升至 20%"}]
