@@ -1,0 +1,25 @@
+execute if score $state data matches 0 run tellraw @s "\n"
+
+tellraw @s[scores={item=-1}] [{"translate":"ms.weapon","fallback":"[武器] ","color":"#8A3CF7"},{"translate":"ms.weapon.0","fallback":"祛灵刃"}]
+tellraw @s[scores={item=1}] [{"translate":"ms.item","fallback":"[宝物] ","color":"#33FFAA"},{"translate":"ms.item.01","fallback":"无懈可击"}]
+tellraw @s[scores={item=2}] [{"translate":"ms.item","fallback":"[宝物] ","color":"#33FFAA"},{"translate":"ms.item.02","fallback":"共鸣引力"}]
+tellraw @s[scores={item=3}] [{"translate":"ms.item","fallback":"[宝物] ","color":"#33FFAA"},{"translate":"ms.item.03","fallback":"无垠时界"}]
+tellraw @s[scores={item=4}] [{"translate":"ms.item","fallback":"[宝物] ","color":"#33FFAA"},{"translate":"ms.item.04","fallback":"相位替换"}]
+tellraw @s[scores={item=5}] [{"translate":"ms.item","fallback":"[宝物] ","color":"#33FFAA"},{"translate":"ms.item.05","fallback":"高效制冷"}]
+tellraw @s[scores={item=6}] [{"translate":"ms.item","fallback":"[宝物] ","color":"#33FFAA"},{"translate":"ms.item.06","fallback":"太空体验"}]
+
+tellraw @s[scores={item=-1}] [{"text":"🗡 10 > ","color":"#8A3CF7"}]
+tellraw @s[scores={item=1}] [{"text":"⏱ 0.8s > ","color":"#33FFAA"},{"translate":"ms.tag.survive","fallback":"生存"}]
+tellraw @s[scores={item=2}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.collect","fallback":"收集"}]
+tellraw @s[scores={item=3}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.strategy","fallback":"策略"}]
+tellraw @s[scores={item=4}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.survive","fallback":"生存","strikethrough":true},"/",{"translate":"ms.tag.debuff","fallback":"妨害","strikethrough":true},"/",{"translate":"ms.tag.strategy","fallback":"策略"}]
+tellraw @s[scores={item=5}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
+tellraw @s[scores={item=6}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
+
+tellraw @s[scores={item=-1}] [{"translate":"ms.weapon.desc","fallback":"可用于斩断灵魂；每次击中灵魂将进入 7 秒的擦刀状态"}]
+tellraw @s[scores={item=1}] [{"translate":"ms.item.01.0","fallback":"宝物生效期间不会受到伤害"}]
+tellraw @s[scores={item=2}] [{"translate":"ms.item.02.0","fallback":"将周围 7.5 格内的灵魂碎片聚集至脚下；重叠的碎片可同时收集"}]
+tellraw @s[scores={item=3}] [{"translate":"ms.item.03.0","fallback":"即刻减少 30 秒技能冷却"}]
+tellraw @s[scores={item=4}] [{"translate":"ms.item.04.0","fallback":"与最远的灵魂交换位置"}]
+tellraw @s[scores={item=5}] [{"translate":"ms.item.05.0","fallback":"于当前位置与方向放置一个高效制冷模块，守卫者经过时移速 -45%；另一模块被部署或被拆除时模块消失"}]
+tellraw @s[scores={item=6}] [{"translate":"ms.item.06.0","fallback":"令守卫者无法主动改变高度"}]
