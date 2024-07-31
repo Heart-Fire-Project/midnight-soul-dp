@@ -59,4 +59,25 @@ execute if score @s interact_check matches 4108 run scoreboard players set @s te
 execute if score @s interact_check matches 4109 run scoreboard players set @s temp 9
 execute if score @s interact_check matches 4100..4199 run function main:state/0/extra/particle
 
+# 武器样式
+execute if score @s interact_check matches 4200 run scoreboard players set @s temp 0
+execute if score @s interact_check matches 4201 run scoreboard players set @s temp 1
+execute if score @s interact_check matches 4202 run scoreboard players set @s temp 2
+execute if score @s interact_check matches 4203 run scoreboard players set @s temp 3
+execute if score @s interact_check matches 4204 run scoreboard players set @s temp 4
+execute if score @s interact_check matches 4200..4299 run function main:state/0/extra/weapon
+
+# 饰品装配
+execute if score @s interact_check matches 4300 run scoreboard players set @s temp 0
+execute if score @s interact_check matches 4301 run scoreboard players set @s temp 1
+execute if score @s interact_check matches 4302 run scoreboard players set @s temp 2
+execute if score @s interact_check matches 4303 run scoreboard players set @s temp 3
+execute if score @s interact_check matches 4300..4399 run function main:state/0/extra/headset
+
+# 文本套组
+execute if score @s interact_check matches 4400 run scoreboard players set @s temp 0
+execute if score @s interact_check matches 4401 run scoreboard players set @s temp 1
+execute if score @s interact_check matches 4402 run scoreboard players set @s temp 2
+execute if score @s interact_check matches 4400..4499 run function main:state/0/extra/text
+
 scoreboard players set @s interact_check 0
