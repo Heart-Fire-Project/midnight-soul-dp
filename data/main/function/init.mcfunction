@@ -225,6 +225,7 @@ worldborder warning distance 1000000
 # 全局计时
 schedule function main:tick/tick1 1t replace
 schedule function main:tick/tick2 2t replace
+schedule function main:tick/tick5 5t replace
 schedule function main:tick/tick20 20t replace
 
 # Bossbar 初始化

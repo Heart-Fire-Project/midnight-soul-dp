@@ -19,7 +19,7 @@ function base:merge_sign {x:"-987",y:"0",z:"-1010",glow:"1",color:"white",trans_
 function base:merge_sign {x:"-987",y:"0",z:"-1009",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.6",fallb_2:"Lv.85",fallb_3:"万象环身",command:"trigger interact_check set 4106"}
 function base:merge_sign {x:"-987",y:"0",z:"-1008",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.7",fallb_2:"Lv.100",fallb_3:"绚彩粉墨",command:"trigger interact_check set 4107"}
 function base:merge_sign {x:"-987",y:"0",z:"-1007",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.8",fallb_2:"Lv.114",fallb_3:"桃起樱落",command:"trigger interact_check set 4108"}
-function base:merge_sign {x:"-987",y:"0",z:"-1006",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.9",fallb_2:"Lv.128",fallb_3:"焰火不熄",command:"trigger interact_check set 4109"}
+function base:merge_sign {x:"-987",y:"0",z:"-1006",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.9",fallb_2:"Lv.128",fallb_3:"双生魂焰",command:"trigger interact_check set 4109"}
 summon marker -990 -1 -1012 {Tags:["extra_entity","particle_1"]}
 summon marker -989 -1 -1012 {Tags:["extra_entity","particle_2"]}
 summon marker -988 -1 -1012 {Tags:["extra_entity","particle_3"]}

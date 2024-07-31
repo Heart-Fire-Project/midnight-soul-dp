@@ -46,4 +46,17 @@ execute if score @s interact_check matches 3006 run scoreboard players set @s it
 execute if score @s interact_check matches 3100 run scoreboard players set @s item -1
 execute if score @s interact_check matches 3001..3100 run function main:lib/item
 
+# 粒子效果
+execute if score @s interact_check matches 4100 run scoreboard players set @s temp 0
+execute if score @s interact_check matches 4101 run scoreboard players set @s temp 1
+execute if score @s interact_check matches 4102 run scoreboard players set @s temp 2
+execute if score @s interact_check matches 4103 run scoreboard players set @s temp 3
+execute if score @s interact_check matches 4104 run scoreboard players set @s temp 4
+execute if score @s interact_check matches 4105 run scoreboard players set @s temp 5
+execute if score @s interact_check matches 4106 run scoreboard players set @s temp 6
+execute if score @s interact_check matches 4107 run scoreboard players set @s temp 7
+execute if score @s interact_check matches 4108 run scoreboard players set @s temp 8
+execute if score @s interact_check matches 4109 run scoreboard players set @s temp 9
+execute if score @s interact_check matches 4100..4199 run function main:state/0/extra/particle
+
 scoreboard players set @s interact_check 0

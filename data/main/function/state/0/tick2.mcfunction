@@ -2,7 +2,7 @@
 particle campfire_cosy_smoke -6.0 17.7 -6.0 0.1 0.1 0.1 0.1 96
 
 # II 区往返侦测
-execute as @a[x=-8,y=-24,z=-8,dx=3,dy=5,dz=3] run function main:state/0/extra_enter
+execute as @a[x=-8,y=-24,z=-8,dx=3,dy=5,dz=3] run function main:state/0/extra/enter
 execute as @a[x=-1003,y=-2,z=-1038,dx=2,dy=2,dz=5] at @s run tp @s ~994 ~2 ~1046
 
 # 隐藏跑酷终点返回侦测
@@ -22,7 +22,7 @@ execute if block -8 6 8 air unless entity @a[x=-9,y=0,z=8,dx=2,dy=2,dz=7] unless
 # 数据查询
 execute as @p[x=-990,y=-1,z=-1001,dx=0,dy=1.2,dz=0] run tag @s add stat_query
 tag @a[tag=!stat_query] remove quering
-execute as @a[tag=stat_query,tag=!quering] run function main:state/0/stat_query
+execute as @a[tag=stat_query,tag=!quering] run function main:state/0/extra/query
 tag @a remove stat_query
 execute unless entity @a[x=-990,y=-1,z=-1001,dx=0,dy=1.2,dz=0] run setblock -990 -2 -1001 redstone_lamp[lit=false]
 
