@@ -4,7 +4,6 @@ schedule function main:tick/tick5 5t replace
 execute as @a unless score @s leave_game matches -2147483648..2147483647 run function main:player_init
 execute as @a unless score @s leave_game matches 0 run function main:player_enter
 execute as @a[x=-1.5,y=-6,z=-1.5,dx=2,dy=2,dz=2] run function main:player_death
-execute as @a unless score @s interact_check matches 0 run scoreboard players enable @s interact_check
 execute as @a[team=!admin,gamemode=creative] run function debug:join_admin
 
 # 轻量化粒子 | 玩家个人视角

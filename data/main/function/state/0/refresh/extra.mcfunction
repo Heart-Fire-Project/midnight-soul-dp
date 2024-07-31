@@ -13,7 +13,7 @@ summon text_display -991 -0.85 -1006 {Tags:["extra_entity"],text:'[{"translate":
 function base:merge_sign {x:"-991",y:"0",z:"-1011",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.particle.0",fallb_2:"--",fallb_3:"无粒子效果",command:"trigger interact_check set 4100"}
 function base:merge_sign {x:"-990",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.1",fallb_2:"Lv.10",fallb_3:"午夜繁星",command:"trigger interact_check set 4101"}
 function base:merge_sign {x:"-989",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.2",fallb_2:"Lv.25",fallb_3:"氤氲灵气",command:"trigger interact_check set 4102"}
-function base:merge_sign {x:"-988",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.3",fallb_2:"Lv.40",fallb_3:"凝结冰痕",command:"trigger interact_check set 4103"}
+function base:merge_sign {x:"-988",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.3",fallb_2:"Lv.40",fallb_3:"霜凝冰痕",command:"trigger interact_check set 4103"}
 function base:merge_sign {x:"-987",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.4",fallb_2:"Lv.55",fallb_3:"点灯施援",command:"trigger interact_check set 4104"}
 function base:merge_sign {x:"-987",y:"0",z:"-1010",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.5",fallb_2:"Lv.70",fallb_3:"灵迹随踪",command:"trigger interact_check set 4105"}
 function base:merge_sign {x:"-987",y:"0",z:"-1009",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.6",fallb_2:"Lv.85",fallb_3:"万象环身",command:"trigger interact_check set 4106"}

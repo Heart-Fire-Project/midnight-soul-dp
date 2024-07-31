@@ -10,8 +10,9 @@ execute as @a at @s unless block ~ ~-0.5 ~ farmland run effect clear @s slow_fal
 # 掐掉经验声
 stopsound @a * entity.player.levelup
 
-# 重设重生点
+# 重置玩家部分数据
 spawnpoint @a 0 -5 0
+execute as @a unless score @s interact_check matches 0 run scoreboard players enable @s interact_check
 
 # 定向至其他函数
 function debug:tick1
