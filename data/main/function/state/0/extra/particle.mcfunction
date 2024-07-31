@@ -12,7 +12,7 @@ execute if score @s[scores={stat_level=100..}] temp matches 7 run tag @s add can
 execute if score @s[scores={stat_level=114..}] temp matches 8 run tag @s add can_equip
 execute if score @s[scores={stat_level=128..}] temp matches 9 run tag @s add can_equip
 
-execute as @s[tag=can_equip] run scoreboard players operation @s deco_particle = @s temp
+execute as @s[tag=can_equip] run scoreboard players operation @s extra_particle = @s temp
 playsound entity.arrow.hit_player player @s[tag=can_equip] 0 1000000 0 1000000
 tellraw @s[tag=can_equip,scores={temp=0}] ["",{"text":"» ","color":"green","bold":true},{"translate":"ms.extra.particle","fallback":"粒子效果"},{"translate":"ms.extra.switch","fallback":"已切换至 %s","with":[{"translate":"ms.extra.particle.0","fallback":"无粒子效果","color":"green"}]}]
 tellraw @s[tag=can_equip,scores={temp=1}] ["",{"text":"» ","color":"green","bold":true},{"translate":"ms.extra.particle","fallback":"粒子效果"},{"translate":"ms.extra.switch","fallback":"已切换至 %s","with":[{"translate":"ms.extra.particle.1","fallback":"午夜繁星","color":"green"}]}]

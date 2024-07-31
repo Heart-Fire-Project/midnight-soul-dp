@@ -71,6 +71,6 @@ data merge block -1002 -1 -1008 {patterns:[{pattern:"small_stripes",color:"light
 setblock -1002 -1 -1009 pink_wall_banner[facing=east]
 data merge block -1002 -1 -1009 {patterns:[{pattern:"triangles_top",color:"cyan"},{pattern:"triangles_top",color:"cyan"},{pattern:"gradient_up",color:"cyan"},{pattern:"triangles_bottom",color:"pink"},{pattern:"circle",color:"white"}]}
 
-# 额外能力
-summon text_display -994 -0.2 -990 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.ability","fallback":"额外能力","color":"#072115"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display -994 -0.35 -990 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.ability_desc","fallback":"你没得选，只是给你看一眼罢了 ^^","color":"white"}]',background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+# 里程碑
+summon text_display -994 -0.7 -990 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.milestone","fallback":"里程碑","color":"#072115"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display -994 -0.85 -990 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.milestone_desc","fallback":"这不是通行证，更没有付费内容","color":"white"}]',background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
