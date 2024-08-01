@@ -49,11 +49,11 @@ item replace entity @s hotbar.7 with air
 
 # 准备侦测
 execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70000}}]}] run team join prepare
-execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70000}}]}] run playsound minecraft:entity.experience_orb.pickup player @s 0 1000000 0 1000000 0.1 1
-execute if data storage ms:setting {gamelock:false} if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:gray_dye"}]}] run function main:state/0/starting_check with storage ms:mode
+execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70000}}]}] run playsound block.note_block.bit player @s 0 1000000 0 1000000 1 1
+execute if data storage ms:setting {game_lock:false} as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70000}}]}] run function main:state/0/starting_check with storage ms:mode
 execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70001}}]}] run team join spectator
-execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70001}}]}] run playsound minecraft:entity.experience_orb.pickup player @s 0 1000000 0 1000000 1 1
-execute if data storage ms:setting {gamelock:false} if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:purple_dye"}]}] run function main:state/0/starting_check with storage ms:mode
+execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70001}}]}] run playsound block.note_block.hat player @s 0 1000000 0 1000000 1 1
+execute if data storage ms:setting {game_lock:false} as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70001}}]}] run function main:state/0/starting_check with storage ms:mode
 
 # 刷新物品
 item replace entity @s[team=spectator] hotbar.8 with gray_dye[item_name='{"translate":"ms.lobby.spectator","fallback":"未准备 - 按 [%s] 准备","italic":false,"color":"gray","with":[{"keybind":"key.swapOffhand"}]}',custom_model_data=70000,hide_additional_tooltip={}]

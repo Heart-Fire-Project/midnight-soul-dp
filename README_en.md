@@ -1,6 +1,6 @@
 ## 🔯 Welcome to Midnight Soul ~~Reset^2~~
 
-> Last Edited » +12 | 2024/07/06  
+> Last Edited » +46 | 2024/08/02  
 > 点击[这里](https://github.com/Heart-Fire-Project/Midsoul/blob/plus/README.md)来访问中文版
 
 🚧 UNDER HEAVY CONSTRUCTION 🚧
@@ -19,7 +19,7 @@ Thanks to Mojang, about 2 months after we published the Reset Version, they chan
 Due to it's in construction，**DO NOT** play with this version，also **DO NOT** upload issues based on it.
 
 ### 🛠️ Progress
-🟨🟥🟥🟥🟥🟥🟥
+🟩🟥🟥🟥🟥🟥🟥
 
 ### 🔗 Links
 - [Download](https://alpha.hfpro.top/maps/9-midsoul/) **OLD** Map Download
