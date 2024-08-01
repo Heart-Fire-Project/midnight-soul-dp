@@ -21,3 +21,9 @@ scoreboard players remove @a[scores={countdown=1..}] countdown 1
 scoreboard players add @a[scores={countdown=..-1}] countdown 2
 execute as @a[scores={countdown=..-1}] run function main:state/0/exp/loop
 execute as @a[scores={countdown=0,exp_temp=1..}] run function main:state/0/exp/loop
+
+# 快速背包刷新
+execute as @a[team=!admin] run function main:state/0/refresh/inventory
+
+# 清除掉落物
+kill @e[type=item,tag=!game_entity,tag=!lobby_entity,tag=!extra_entity]
