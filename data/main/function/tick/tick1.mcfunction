@@ -7,9 +7,6 @@ execute unless score $initcheck data matches 7419147 run function main:init
 execute as @a at @s if block ~ ~-0.5 ~ farmland run effect give @s slow_falling 1 0 true
 execute as @a at @s unless block ~ ~-0.5 ~ farmland run effect clear @s slow_falling
 
-# 掐掉经验声
-stopsound @a * entity.player.levelup
-
 # 重置玩家部分数据
 spawnpoint @a 0 -5 0
 execute as @a unless score @s interact_check matches 0 run scoreboard players enable @s interact_check

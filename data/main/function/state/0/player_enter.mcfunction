@@ -19,3 +19,9 @@ gamemode adventure @s
 team join spectator @s
 execute unless entity @s[x=-12,y=-1,z=-12,dx=16,dy=16,dz=16] unless entity @s[x=-1011,y=-2,z=-1015,dx=32,dy=18,dz=30] run tp @s[team=!admin] 0 0 0 135.0 -15.0
 execute unless score @s music matches -1 run function main:state/0/music_roll
+
+# 先计算一次经验上限，然后执行经验结算
+scoreboard players operation @s temp = @s[scores={stat_level=..127}] stat_level
+scoreboard players set @s[scores={stat_level=..127}] temp2 0
+function main:state/0/exp/maximum
+function main:state/0/exp/loop

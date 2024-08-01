@@ -2,8 +2,8 @@ tag @s remove can_equip
 tellraw @s ""
 
 execute if score @s temp matches 0 run tag @s add can_equip
-execute if score @s temp matches 1 run tag @s add can_equip
-execute if score @s temp matches 2 run tag @s add can_equip
+execute if score @s[scores={stat_adv_pt=30..}] temp matches 1 run tag @s add can_equip
+execute if score @s[scores={stat_adv_pt=100..}] temp matches 2 run tag @s add can_equip
 execute if score @s temp matches 3 run tag @s add can_equip
 execute if score @s[scores={extra_milestone=3..}] temp matches 4 run tag @s add can_equip
 
