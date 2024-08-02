@@ -1,0 +1,1 @@
+scoreboard players remove $1_process countdown 1
