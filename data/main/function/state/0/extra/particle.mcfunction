@@ -1,6 +1,7 @@
 tag @s remove can_equip
 tellraw @s ""
 
+# 解锁条件
 execute if score @s[scores={stat_level=000..}] temp matches 0 run tag @s add can_equip
 execute if score @s[scores={stat_level=010..}] temp matches 1 run tag @s add can_equip
 execute if score @s[scores={stat_level=025..}] temp matches 2 run tag @s add can_equip
@@ -12,6 +13,7 @@ execute if score @s[scores={stat_level=100..}] temp matches 7 run tag @s add can
 execute if score @s[scores={stat_level=114..}] temp matches 8 run tag @s add can_equip
 execute if score @s[scores={stat_level=128..}] temp matches 9 run tag @s add can_equip
 
+# 可以使用
 execute as @s[tag=can_equip] run scoreboard players operation @s extra_particle = @s temp
 playsound entity.arrow.hit_player player @s[tag=can_equip] 0 1000000 0 1000000
 tellraw @s[tag=can_equip,scores={temp=0}] ["",{"text":"» ","color":"green","bold":true},{"translate":"ms.extra.particle","fallback":"粒子效果"},{"translate":"ms.extra.switch","fallback":"已切换至 %s","with":[{"translate":"ms.extra.particle.0","fallback":"无粒子效果","color":"green"}]}]
@@ -25,5 +27,6 @@ tellraw @s[tag=can_equip,scores={temp=7}] ["",{"text":"» ","color":"green","bol
 tellraw @s[tag=can_equip,scores={temp=8}] ["",{"text":"» ","color":"green","bold":true},{"translate":"ms.extra.particle","fallback":"粒子效果"},{"translate":"ms.extra.switch","fallback":"已切换至 %s","with":[{"translate":"ms.extra.particle.8","fallback":"桃起樱落","color":"green"}]}]
 tellraw @s[tag=can_equip,scores={temp=9}] ["",{"text":"» ","color":"green","bold":true},{"translate":"ms.extra.particle","fallback":"粒子效果"},{"translate":"ms.extra.switch","fallback":"已切换至 %s","with":[{"translate":"ms.extra.particle.9","fallback":"双生魂焰","color":"green"}]}]
 
+# 不得使用
 playsound block.note_block.didgeridoo player @s[tag=!can_equip] 1000000 0 1000000 1000000
 tellraw @s[tag=!can_equip] [{"text":"» ","color":"red","bold":true},{"translate":"ms.extra.locked","fallback":"你还未解锁该装饰品","bold":false}]

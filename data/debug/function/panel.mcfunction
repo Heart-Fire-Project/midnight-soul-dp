@@ -1,6 +1,7 @@
 tellraw @s [{"text":"\n\n\n\n\n\n\n» ","color":"blue","bold":true},{"translate":"ms.debug.panel","fallback":"调试面板"}]
 kill @e[tag=debug_entity]
 
+# 同步改变了 gamerule 的设定
 execute store result storage ms:setting reduce_f3 byte 1 run gamerule reducedDebugInfo
 execute store result storage ms:setting send_feedback byte 1 run gamerule sendCommandFeedback
 

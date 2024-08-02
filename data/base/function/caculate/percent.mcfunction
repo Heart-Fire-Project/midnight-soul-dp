@@ -1,5 +1,6 @@
 # 计算百分比 A/B
-# 需要参数 输入A 来源A 输入B 来源B
+# 需要参数：valueA sourceA calueB sourceB (计分板记录值)
+# 输出结果：$front(小数点前) $behind(小数点后)
 $scoreboard players operation valueA temp = $(valueA) $(sourceA)
 $scoreboard players operation valueB temp = $(valueB) $(sourceB)
 scoreboard players operation valueA temp *= #10000 data

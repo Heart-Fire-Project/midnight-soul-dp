@@ -1,5 +1,3 @@
-# 合成字符串
-# 可以根据需要往上加
-# 当前版本支持 5 个组件合成
-
+# 合成字符串 [5] | 如果需要更多字符串串起来直接往后加就行
+# 输出结果：r7s:base[string]
 $data modify storage r7s:base string set value "$(A)$(B)$(C)$(D)$(E)"

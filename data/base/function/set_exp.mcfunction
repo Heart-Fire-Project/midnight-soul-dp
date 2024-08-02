@@ -1,5 +1,5 @@
-# 设置经验条
-# 需要参数 当前值来源 最大值来源 等级来源
+# 将经验条用作进度条
+# 需要参数：current(进度当前值) max(进度最大值) level(等级显示值)
 
 # 设置经验
 $scoreboard players operation $exp temp = @s $(current)

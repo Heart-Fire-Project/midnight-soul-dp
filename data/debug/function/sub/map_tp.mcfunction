@@ -1,3 +1,4 @@
+# 如果选择随机，那么我们也随机
 execute if score $map setting matches 0 run function base:random {min:"1",max:"3"}
 execute unless score $map setting matches 0 run scoreboard players operation $random temp2 = $map setting
 
