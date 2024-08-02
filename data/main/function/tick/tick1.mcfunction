@@ -14,3 +14,6 @@ execute as @a unless score @s interact_check matches 0 run scoreboard players en
 # 定向至其他函数
 function debug:tick1
 execute if score $state data matches 0 run function main:state/0/tick1
+
+# 如果仍有交互侦测值，则为无效
+execute as @a unless score @s interact_check matches 0 run scoreboard players set @s interact_check 0

@@ -243,38 +243,26 @@ bossbar set midsoul:heed color yellow
 bossbar remove midsoul:warn
 bossbar add midsoul:warn "马上就寄了"
 bossbar set midsoul:warn color red
-bossbar remove midsoul:01
-bossbar add midsoul:01 "A"
-bossbar remove midsoul:02
-bossbar add midsoul:02 "B"
-bossbar remove midsoul:03
-bossbar add midsoul:03 "C"
-bossbar remove midsoul:04
-bossbar add midsoul:04 "D"
-bossbar remove midsoul:05
-bossbar add midsoul:05 "E"
-bossbar remove midsoul:06
-bossbar add midsoul:06 "F"
-bossbar remove midsoul:07
-bossbar add midsoul:07 "G"
-bossbar remove midsoul:08
-bossbar add midsoul:08 "H"
-bossbar remove midsoul:09
-bossbar add midsoul:09 "I"
+bossbar remove midsoul:1
+bossbar add midsoul:1 "A"
+bossbar remove midsoul:2
+bossbar add midsoul:2 "B"
+bossbar remove midsoul:3
+bossbar add midsoul:3 "C"
+bossbar remove midsoul:4
+bossbar add midsoul:4 "D"
+bossbar remove midsoul:5
+bossbar add midsoul:5 "E"
+bossbar remove midsoul:6
+bossbar add midsoul:6 "F"
+bossbar remove midsoul:7
+bossbar add midsoul:7 "G"
+bossbar remove midsoul:8
+bossbar add midsoul:8 "H"
+bossbar remove midsoul:9
+bossbar add midsoul:9 "I"
 bossbar remove midsoul:10
 bossbar add midsoul:10 "J"
-bossbar remove midsoul:11
-bossbar add midsoul:11 "K"
-bossbar remove midsoul:12
-bossbar add midsoul:12 "L"
-bossbar remove midsoul:13
-bossbar add midsoul:13 "M"
-bossbar remove midsoul:14
-bossbar add midsoul:14 "N"
-bossbar remove midsoul:15
-bossbar add midsoul:15 "O"
-bossbar remove midsoul:16
-bossbar add midsoul:16 "P"
 
 # 伤害侦测初始化
 advancement revoke @a only main:damage/dealt
@@ -289,7 +277,7 @@ scoreboard players set $collect_speed setting 10
 scoreboard players set $echo_chance setting 30
 scoreboard players set $initcheck data 7419147
 scoreboard players set $echo_page setting 1
-data merge storage ms:setting {"show_mark":false,"setting_lock":false,"game_lock":false,"ingame_score":true,"show_f3":false,"send_feedback":false}
+data merge storage ms:setting {"show_mark":false,"setting_lock":false,"game_lock":false,"ingame_score":true,"reduce_f3":true,"send_feedback":false}
 data merge storage ms:echo {"01":true,"02":true,"03":true,"04":true,"05":true,"06":true,"07":true,"08":true,"09":true}
 
 # 常数项
@@ -299,6 +287,8 @@ scoreboard players set #3 data 3
 scoreboard players set #4 data 4
 scoreboard players set #5 data 5
 scoreboard players set #6 data 6
+scoreboard players set #7 data 7
+scoreboard players set #8 data 8
 scoreboard players set #9 data 9
 scoreboard players set #10 data 10
 scoreboard players set #16 data 16

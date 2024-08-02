@@ -50,8 +50,8 @@ execute if score $echo_page setting matches 2 run function base:merge_sign {x:"-
 # 能力分配
 execute if score $ability_apply setting matches 0 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.ability.0",fallb_2:"◆◇◇◇◇◇",fallb_3:"全部随机",command:"trigger interact_check set 500"}
 execute if score $ability_apply setting matches 1 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.1",fallb_2:"◇◆◇◇◇◇",fallb_3:"仅自选技能",command:"trigger interact_check set 500"}
-execute if score $ability_apply setting matches 2 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.2",fallb_2:"◇◇◆◇◇◇",fallb_3:"仅自选天赋",command:"trigger interact_check set 500"}
-execute if score $ability_apply setting matches 3 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.3",fallb_2:"◇◇◇◆◇◇",fallb_3:"仅自选一天赋",command:"trigger interact_check set 500"}
+execute if score $ability_apply setting matches 2 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.2",fallb_2:"◇◇◆◇◇◇",fallb_3:"仅自选一天赋",command:"trigger interact_check set 500"}
+execute if score $ability_apply setting matches 3 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.3",fallb_2:"◇◇◇◆◇◇",fallb_3:"仅自选双天赋",command:"trigger interact_check set 500"}
 execute if score $ability_apply setting matches 4 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"green",trans_2:"",trans_3:"ms.ability.4",fallb_2:"◇◇◇◇◆◇",fallb_3:"自选技能与一天赋",command:"trigger interact_check set 500"}
 execute if score $ability_apply setting matches 5 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.ability.5",fallb_2:"◇◇◇◇◇◆",fallb_3:"全部自选",command:"trigger interact_check set 500"}
 

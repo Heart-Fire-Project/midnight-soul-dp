@@ -46,8 +46,8 @@ execute if score $echo_page setting matches 2 if data storage ms:echo {"09":true
 # 能力分配
 fill 4 7 0 4 7 2 waxed_copper_bulb[lit=false]
 execute if score $ability_apply setting matches 1 run setblock 4 7 0 waxed_copper_bulb[lit=true]
-execute if score $ability_apply setting matches 2 run fill 4 7 1 4 7 2 waxed_copper_bulb[lit=true]
-execute if score $ability_apply setting matches 3 run setblock 4 7 1 waxed_copper_bulb[lit=true]
+execute if score $ability_apply setting matches 2 run setblock 4 7 1 waxed_copper_bulb[lit=true]
+execute if score $ability_apply setting matches 3 run fill 4 7 1 4 7 2 waxed_copper_bulb[lit=true]
 execute if score $ability_apply setting matches 4 run fill 4 7 0 4 7 1 waxed_copper_bulb[lit=true]
 execute if score $ability_apply setting matches 5 run fill 4 7 0 4 7 2 waxed_copper_bulb[lit=true]
 

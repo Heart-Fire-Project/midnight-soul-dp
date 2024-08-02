@@ -31,7 +31,7 @@ execute if score @s interact_check matches -502 run function debug:sub/state5
 execute if score @s interact_check matches -503 run function debug:sub/binary {storage:"setting",target:"setting_lock"}
 execute if score @s interact_check matches -504 run function debug:sub/binary {storage:"setting",target:"game_lock"}
 execute if score @s interact_check matches -505 run function debug:sub/binary {storage:"setting",target:"ingame_score"}
-execute if score @s interact_check matches -506 run function debug:sub/binary {storage:"setting",target:"show_f3"}
+execute if score @s interact_check matches -506 run function debug:sub/binary {storage:"setting",target:"reduce_f3"}
 execute if score @s interact_check matches -507 run function debug:sub/binary {storage:"setting",target:"send_feedback"}
 execute if score @s interact_check matches -599 run function main:init
 
