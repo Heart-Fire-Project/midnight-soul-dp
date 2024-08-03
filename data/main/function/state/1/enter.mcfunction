@@ -3,8 +3,12 @@ scoreboard players set $state data 1
 stopsound @a music
 kill @e[tag=lobby_entity]
 tag @a remove game_player
-tag @a remove play_check
+tag @a remove join_check
 tag @a remove ability_check
+
+# 强制结算经验
+execute as @a run scoreboard players operation @s stat_exp += @s exp_temp
+execute as @a run scoreboard players reset @s exp_temp
 
 # 入场
 clear @a[team=!admin]
@@ -19,7 +23,7 @@ execute if score $player temp matches ..9 as @a[team=admin] run function main:st
 # 计算该部分时间
 # 正常 14s [2+4+5+3] | 管理员决策 6s | 选择能力 20s < 每多选择一项额外加 10s
 scoreboard players set $1_tick countdown 280
-execute as @a[team=admin] run scoreboard players add $1_tick countdown 120
+execute as @p[team=admin] run scoreboard players add $1_tick countdown 120
 execute if score $ability_apply setting matches 1..2 run scoreboard players add $1_tick countdown 400
 execute if score $ability_apply setting matches 3..4 run scoreboard players add $1_tick countdown 600
 execute if score $ability_apply setting matches 5 run scoreboard players add $1_tick countdown 800
