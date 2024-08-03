@@ -1,9 +1,10 @@
 scoreboard players remove $1_process countdown 1
 
 # 1199 | 管理员确认 开始
-execute if score $1_process countdown matches 1199 run scoreboard players set $1_admin countdown 120
+execute if score $1_process countdown matches 1199 unless entity @a[team=admin] run scoreboard players set $1_process countdown 1079
+execute if score $1_process countdown matches 1199 run scoreboard players set $1_single countdown 121
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 color pink
-execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 max 120
+execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 max 121
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 style notched_6
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 players @a[team=!spectator]
 
@@ -14,10 +15,10 @@ execute if score $1_process countdown matches 1080..1199 run tag @a[team=admin,s
 execute if score $1_process countdown matches 1140 run playsound block.note_block.xylophone player @a[team=!spectator] 0 1000000 0 1000000
 execute if score $1_process countdown matches 1120 run playsound block.note_block.xylophone player @a[team=!spectator] 0 1000000 0 1000000
 execute if score $1_process countdown matches 1100 run playsound block.note_block.xylophone player @a[team=!spectator] 0 1000000 0 1000000
-execute unless entity @a[team=admin,tag=!join_check] if score $1_process countdown matches 1081.. run scoreboard players set $1_process countdown 1080
+execute unless entity @a[team=admin,tag=!join_check] if score $1_process countdown matches 1080.. run scoreboard players set $1_process countdown 1080
 
-# 1080 | 管理员确认 结束
-execute if score $1_process countdown matches 1080 run bossbar set midsoul:1 players
-execute if score $1_process countdown matches 1080 run bossbar set midsoul:1 visible true
+# 1080 / 1079 | 管理员确认 结束
 execute if score $1_process countdown matches 1080 run playsound block.note_block.iron_xylophone player @a[team=!spectator] 0 1000000 0 1000000
-execute if score $1_process countdown matches 1080 run scoreboard players operation $1_tick countdown -= $1_admin countdown
+execute if score $1_process countdown matches 1079 run bossbar set midsoul:1 players
+execute if score $1_process countdown matches 1079 run bossbar set midsoul:1 visible true
+execute if entity @a[tag=join_check] if score $1_process countdown matches 1079 run scoreboard players operation $1_tick countdown -= $1_single countdown
