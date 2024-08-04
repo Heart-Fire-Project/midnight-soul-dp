@@ -22,3 +22,12 @@ execute if score $1_process countdown matches 1080 run playsound block.note_bloc
 execute if score $1_process countdown matches 1079 run bossbar set midsoul:1 players
 execute if score $1_process countdown matches 1079 run bossbar set midsoul:1 visible true
 execute if entity @a[tag=join_check] if score $1_process countdown matches 1079 run scoreboard players operation $1_tick countdown -= $1_single countdown
+
+# 1079 | 异象判定
+execute if score $1_process countdown matches 1079 run scoreboard players set $echo data 0
+execute if score $1_process countdown matches 1079 run function base:random {max:"100",min:"1"}
+execute if score $1_process countdown matches 1079 if score $random temp2 <= $echo_chance setting run function main:state/1/echo
+
+# 1079 | 大标题
+execute if score $1_process countdown matches 1079 run title @a[tag=game_player] times 2 55 3
+execute if score $1_process countdown matches 1079 run title @a[tag=game_player] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0"}

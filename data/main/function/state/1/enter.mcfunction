@@ -21,7 +21,7 @@ execute as @a[tag=game_player] run scoreboard players add $player temp 1
 execute if score $player temp matches ..9 as @a[team=admin] run function main:state/1/player_enter/admin
 
 # 计算该部分时间
-# 正常 14s [2+4+5+3] | 管理员决策 6s | 选择能力 20s < 每多选择一项额外加 10s
+# 正常 14s [3+3+5+3] | 管理员决策 6s | 选择能力 20s < 每多选择一项额外加 10s
 scoreboard players set $1_tick countdown 280
 execute as @p[team=admin] run scoreboard players add $1_tick countdown 120
 execute if score $ability_apply setting matches 1..2 run scoreboard players add $1_tick countdown 400

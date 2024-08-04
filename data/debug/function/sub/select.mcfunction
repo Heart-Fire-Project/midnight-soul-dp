@@ -1,4 +1,6 @@
 $scoreboard players set $$(type) setting $(num)
+
+# 刷新
 execute if score $state data matches 0 run function main:state/0/refresh/block
 execute if score $state data matches 0 run function main:state/0/refresh/sign
 execute if score $state data matches 0 run function main:state/0/bossbar
