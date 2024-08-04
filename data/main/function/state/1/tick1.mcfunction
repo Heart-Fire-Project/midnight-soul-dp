@@ -8,3 +8,6 @@ execute as @a[team=spectator] at @s anchored eyes positioned ^ ^ ^7 run particle
 # 每刻一次刷进程
 function main:state/1/bossbar/spectator
 function main:state/1/process
+
+# 如果玩家都没了，则直接回到大厅
+execute unless entity @a[tag=game_player] run function main:state/0/enter
