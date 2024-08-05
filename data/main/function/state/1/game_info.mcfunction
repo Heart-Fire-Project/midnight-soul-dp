@@ -63,5 +63,3 @@ execute if score $echo data matches 6 run scoreboard players display numberforma
 execute if score $echo data matches 7 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.7","fallback":"动能之定理","color":"#F75EEB"}
 execute if score $echo data matches 8 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.8","fallback":"惊喜或惊吓","color":"#F75EEB"}
 execute if score $echo data matches 9 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.9","fallback":"逃离仍如初","color":"#F75EEB"}
-
-scoreboard objectives setdisplay sidebar info

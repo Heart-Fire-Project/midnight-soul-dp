@@ -57,5 +57,28 @@ execute if score $1_process countdown matches 1022 unless score $echo data match
 execute if score $1_process countdown matches 1022 unless score $echo data matches 0 run title @a[tag=game_player] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#F75EEB"}
 execute if score $1_process countdown matches 1021 unless score $echo data matches 0 run title @a[tag=game_player] clear
 
-# 1020 | 本局详情 [包含选择地图]
-execute if score $1_process countdown matches 1020 run function main:state/1/game_info
+# 1025 / 1020 | 本局详情 [包含选择地图]
+execute if score $1_process countdown matches 1025 run function main:state/1/game_info
+execute if score $1_process countdown matches 1024 run scoreboard objectives setdisplay sidebar info
+execute if score $1_process countdown matches 1023 run scoreboard objectives setdisplay sidebar
+execute if score $1_process countdown matches 1022 run scoreboard objectives setdisplay sidebar info
+execute if score $1_process countdown matches 1021 run scoreboard objectives setdisplay sidebar
+execute if score $1_process countdown matches 1020 run scoreboard objectives setdisplay sidebar info
+
+# 1020 | 详情信息
+execute if score $1_process countdown matches 1020 unless score $echo data matches 0 run function main:lib/echo
+
+# 1019 | 阵营分配标题
+execute if score $1_process countdown matches 1019 run title @a times 3 50 2
+execute if score $1_process countdown matches 1019 run title @a subtitle ""
+execute if score $1_process countdown matches 1019 run title @a[tag=game_player] title {"translate":"ms.title.1.team","fallback":"你的身份是"}
+
+# 1015 | 玩家序号
+execute if score $1_process countdown matches 1015 run scoreboard players reset $player_id temp
+execute if score $1_process countdown matches 1015 run scoreboard players reset * player_id
+execute if score $1_process countdown matches 1015 run scoreboard players set @a[tag=game_player] player_id 0
+execute if score $1_process countdown matches 1015 run function main:state/1/player_id
+
+# 1010 | 阵营分配
+execute if score $1_process countdown matches 1010 if score $mode data matches 1 run function main:state/1/team/1
+execute if score $1_process countdown matches 1010 if score $mode data matches 2 run function main:state/1/team/2

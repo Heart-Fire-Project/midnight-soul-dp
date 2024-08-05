@@ -10,4 +10,5 @@ function main:state/1/bossbar/spectator
 function main:state/1/process
 
 # 如果玩家都没了，则直接回到大厅
-execute unless entity @a[tag=game_player] run function main:state/0/enter
+execute unless entity @a[tag=game_player] unless entity @a[team=admin,tag=!join_check] run tellraw @a [{"text":"\n» ","color":"red","bold":true},{"translate":"ms.info.1.return","fallback":"未找到游戏玩家，进程终止","bold":false}]
+execute unless entity @a[tag=game_player] unless entity @a[team=admin,tag=!join_check] run function main:state/0/enter
