@@ -13,4 +13,4 @@ execute if score $1_process countdown matches 1021..1080 run bossbar set midsoul
 execute if score $1_process countdown matches 961..1020 run bossbar set midsoul:info name {"translate":"ms.bossbar.s1.kit","fallback":"分配阵营中 » 预计 %s 秒后开始","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
 execute if score $1_process countdown matches 161..960 run bossbar set midsoul:info name {"translate":"ms.bossbar.s1.choose","fallback":"选择能力中 » 预计 %s 秒后开始","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
 execute if score $1_process countdown matches 61..160 run bossbar set midsoul:info name {"translate":"ms.bossbar.s1.show","fallback":"能力展示中 » 预计 %s 秒后开始","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
-execute if score $1_process countdown matches 0..60 run bossbar set midsoul:info name {"translate":"ms.bossbar.s1.show","fallback":"流程已结束 » 预计 %s 秒后开始","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $1_process countdown matches 1..60 run bossbar set midsoul:info name {"translate":"ms.bossbar.s1.show","fallback":"流程已结束 » 预计 %s 秒后开始","with":[{"score":{"objective":"temp2","name":"$sec"}}]}

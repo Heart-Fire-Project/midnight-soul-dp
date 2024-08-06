@@ -2,9 +2,9 @@ scoreboard players remove $1_process countdown 1
 
 # 1199 | 管理员确认 开始
 execute if score $1_process countdown matches 1199 unless entity @a[team=admin] run scoreboard players set $1_process countdown 1079
-execute if score $1_process countdown matches 1199 run scoreboard players set $1_single countdown 121
+execute if score $1_process countdown matches 1199 run scoreboard players set $1_single countdown 120
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 color pink
-execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 max 121
+execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 max 120
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 style notched_6
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 players @a[team=!spectator]
 
@@ -73,12 +73,20 @@ execute if score $1_process countdown matches 1019 run title @a times 3 50 2
 execute if score $1_process countdown matches 1019 run title @a subtitle ""
 execute if score $1_process countdown matches 1019 run title @a[tag=game_player] title {"translate":"ms.title.1.team","fallback":"你的身份是"}
 
-# 1015 | 玩家序号
-execute if score $1_process countdown matches 1015 run scoreboard players reset $player_id temp
-execute if score $1_process countdown matches 1015 run scoreboard players reset * player_id
-execute if score $1_process countdown matches 1015 run scoreboard players set @a[tag=game_player] player_id 0
-execute if score $1_process countdown matches 1015 run function main:state/1/player_id
+# 1000 | 玩家序号
+execute if score $1_process countdown matches 1000 run scoreboard players reset $player_id temp
+execute if score $1_process countdown matches 1000 run scoreboard players reset * player_id
+execute if score $1_process countdown matches 1000 run scoreboard players set @a[tag=game_player] player_id 0
+execute if score $1_process countdown matches 1000 run function main:state/1/player_id
 
-# 1010 | 阵营分配
-execute if score $1_process countdown matches 1010 if score $mode data matches 1 run function main:state/1/team/1
-execute if score $1_process countdown matches 1010 if score $mode data matches 2 run function main:state/1/team/2
+# 1000 | 阵营分配
+execute if score $1_process countdown matches 1000 if score $mode data matches 1 run function main:state/1/team/1
+execute if score $1_process countdown matches 1000 if score $mode data matches 2 run function main:state/1/team/2
+
+# 1000 | 阵营小标题
+execute if score $1_process countdown matches 1000 run title @a[team=soul] subtitle [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕"]
+execute if score $1_process countdown matches 1000 run title @a[team=guardian] subtitle [{"text":"⚕ ","color":"red"},{"translate":"ms.soul","fallback":"灵魂守卫者"}," ⚕"]
+execute if score $1_process countdown matches 1000 run playsound entity.zombie_villager.converted player @a[team=soul] 0 1000000 0 1000000
+execute if score $1_process countdown matches 1000 run playsound block.respawn_anchor.set_spawn player @a[team=guardian] 0 1000000 0 1000000
+
+# 到 961 就会跳
