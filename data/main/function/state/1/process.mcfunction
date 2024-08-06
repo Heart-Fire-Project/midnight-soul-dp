@@ -6,6 +6,7 @@ execute if score $1_process countdown matches 1199 run scoreboard players set $1
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 color pink
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 max 120
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 style notched_6
+execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 visible true
 execute if score $1_process countdown matches 1199 run bossbar set midsoul:1 players @a[team=!spectator]
 
 # 1199 / 1080 | 管理员确认 中途
@@ -20,7 +21,6 @@ execute unless entity @a[team=admin,tag=!join_check] if score $1_process countdo
 # 1080 / 1079 | 管理员确认 结束
 execute if score $1_process countdown matches 1080 run playsound block.note_block.iron_xylophone player @a[team=!spectator] 0 1000000 0 1000000
 execute if score $1_process countdown matches 1079 run bossbar set midsoul:1 players
-execute if score $1_process countdown matches 1079 run bossbar set midsoul:1 visible true
 execute if entity @a[tag=join_check] if score $1_process countdown matches 1079 run scoreboard players operation $1_tick countdown -= $1_single countdown
 
 # 1079 | 异象判定
@@ -85,8 +85,36 @@ execute if score $1_process countdown matches 1000 if score $mode data matches 2
 
 # 1000 | 阵营小标题
 execute if score $1_process countdown matches 1000 run title @a[team=soul] subtitle [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕"]
-execute if score $1_process countdown matches 1000 run title @a[team=guardian] subtitle [{"text":"⚕ ","color":"red"},{"translate":"ms.soul","fallback":"灵魂守卫者"}," ⚕"]
+execute if score $1_process countdown matches 1000 run title @a[team=guardian] subtitle [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕"]
 execute if score $1_process countdown matches 1000 run playsound entity.zombie_villager.converted player @a[team=soul] 0 1000000 0 1000000
 execute if score $1_process countdown matches 1000 run playsound block.respawn_anchor.set_spawn player @a[team=guardian] 0 1000000 0 1000000
 
-# 到 961 就会跳
+# 980 | 设置阵营 Boss 栏
+execute if score $1_process countdown matches 980 run bossbar set midsoul:2 color blue 
+execute if score $1_process countdown matches 980 if score $ability_apply setting matches 1..2 run bossbar set midsoul:2 max 400
+execute if score $1_process countdown matches 980 if score $ability_apply setting matches 3..4 run bossbar set midsoul:2 max 600
+execute if score $1_process countdown matches 980 if score $ability_apply setting matches 5.. run bossbar set midsoul:2 max 800
+execute if score $1_process countdown matches 980 run bossbar set midsoul:2 style notched_10
+execute if score $1_process countdown matches 980 run bossbar set midsoul:2 value 1010000
+execute if score $1_process countdown matches 980 run bossbar set midsoul:2 name [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕ ",{"translate":"ms.soul.desc","fallback":"收集碎片，于月下复活自己","color":"white"}]
+execute if score $1_process countdown matches 980 run bossbar set midsoul:2 visible true
+execute if score $1_process countdown matches 980 run bossbar set midsoul:2 players @a[team=soul]
+execute if score $1_process countdown matches 980 run bossbar set midsoul:3 color red
+execute if score $1_process countdown matches 980 if score $ability_apply setting matches 1..2 run bossbar set midsoul:3 max 400
+execute if score $1_process countdown matches 980 if score $ability_apply setting matches 3..4 run bossbar set midsoul:3 max 600
+execute if score $1_process countdown matches 980 if score $ability_apply setting matches 5.. run bossbar set midsoul:3 max 800
+execute if score $1_process countdown matches 980 run bossbar set midsoul:3 style notched_10
+execute if score $1_process countdown matches 980 run bossbar set midsoul:3 value 1010000
+execute if score $1_process countdown matches 980 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
+execute if score $1_process countdown matches 980 run bossbar set midsoul:3 visible true
+execute if score $1_process countdown matches 980 run bossbar set midsoul:3 players @a[team=guardian]
+
+# 979 / 976 | 闪
+execute if score $1_process countdown matches 979 run bossbar set midsoul:2 visible false
+execute if score $1_process countdown matches 978 run bossbar set midsoul:2 visible true
+execute if score $1_process countdown matches 977 run bossbar set midsoul:2 visible false
+execute if score $1_process countdown matches 976 run bossbar set midsoul:2 visible true
+execute if score $1_process countdown matches 979 run bossbar set midsoul:3 visible false
+execute if score $1_process countdown matches 978 run bossbar set midsoul:3 visible true
+execute if score $1_process countdown matches 977 run bossbar set midsoul:3 visible false
+execute if score $1_process countdown matches 976 run bossbar set midsoul:3 visible true
