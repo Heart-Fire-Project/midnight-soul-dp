@@ -13,7 +13,7 @@ tag @s remove ability_check
 
 # 重新设置各个 Bossbar
 execute if score $state data matches 0 run bossbar set midsoul:info players @a
-execute if score $state data matches 1 run function main:state/1/bossbar/general
+execute if score $state data matches 1 run bossbar set midsoul:info players @a[team=spectator]
 
 # 按照状态进行不同入场流程
 scoreboard players reset @s music

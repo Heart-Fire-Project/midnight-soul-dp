@@ -34,6 +34,9 @@ scoreboard objectives setdisplay below_name
 scoreboard players reset $player_id temp
 scoreboard players set @a player_id 0
 scoreboard players set $1_process countdown 1200
+scoreboard players reset * skill
+scoreboard players reset * talent_1
+scoreboard players reset * talent_2
 
 # 旁观用 Bossbar
 bossbar set midsoul:info players @a[team=spectator]

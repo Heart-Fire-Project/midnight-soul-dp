@@ -66,7 +66,7 @@ execute if score $1_process countdown matches 1021 run scoreboard objectives set
 execute if score $1_process countdown matches 1020 run scoreboard objectives setdisplay sidebar info
 
 # 1020 | 详情信息
-execute if score $1_process countdown matches 1020 unless score $echo data matches 0 run function main:lib/echo
+execute if score $1_process countdown matches 1020 unless score $echo data matches 0 as @a run function main:lib/echo
 
 # 1019 | 阵营分配标题
 execute if score $1_process countdown matches 1019 run title @a times 3 50 2
@@ -90,19 +90,13 @@ execute if score $1_process countdown matches 1000 run playsound entity.zombie_v
 execute if score $1_process countdown matches 1000 run playsound block.respawn_anchor.set_spawn player @a[team=guardian] 0 1000000 0 1000000
 
 # 980 | 设置阵营 Boss 栏
-execute if score $1_process countdown matches 980 run bossbar set midsoul:2 color blue 
-execute if score $1_process countdown matches 980 if score $ability_apply setting matches 1..2 run bossbar set midsoul:2 max 400
-execute if score $1_process countdown matches 980 if score $ability_apply setting matches 3..4 run bossbar set midsoul:2 max 600
-execute if score $1_process countdown matches 980 if score $ability_apply setting matches 5.. run bossbar set midsoul:2 max 800
+execute if score $1_process countdown matches 980 run bossbar set midsoul:2 color blue
 execute if score $1_process countdown matches 980 run bossbar set midsoul:2 style notched_10
 execute if score $1_process countdown matches 980 run bossbar set midsoul:2 value 1010000
 execute if score $1_process countdown matches 980 run bossbar set midsoul:2 name [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕ ",{"translate":"ms.soul.desc","fallback":"收集碎片，于月下复活自己","color":"white"}]
 execute if score $1_process countdown matches 980 run bossbar set midsoul:2 visible true
 execute if score $1_process countdown matches 980 run bossbar set midsoul:2 players @a[team=soul]
 execute if score $1_process countdown matches 980 run bossbar set midsoul:3 color red
-execute if score $1_process countdown matches 980 if score $ability_apply setting matches 1..2 run bossbar set midsoul:3 max 400
-execute if score $1_process countdown matches 980 if score $ability_apply setting matches 3..4 run bossbar set midsoul:3 max 600
-execute if score $1_process countdown matches 980 if score $ability_apply setting matches 5.. run bossbar set midsoul:3 max 800
 execute if score $1_process countdown matches 980 run bossbar set midsoul:3 style notched_10
 execute if score $1_process countdown matches 980 run bossbar set midsoul:3 value 1010000
 execute if score $1_process countdown matches 980 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
@@ -118,3 +112,46 @@ execute if score $1_process countdown matches 979 run bossbar set midsoul:3 visi
 execute if score $1_process countdown matches 978 run bossbar set midsoul:3 visible true
 execute if score $1_process countdown matches 977 run bossbar set midsoul:3 visible false
 execute if score $1_process countdown matches 976 run bossbar set midsoul:3 visible true
+
+# 960 | 能力选择 预备 | 先判定时间乘数，以基础的 10 秒乘起来
+execute if score $1_process countdown matches 960 run scoreboard players set $ability temp 4
+execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 5 run scoreboard players set $ability temp 3
+execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 3..5 run scoreboard players set $ability temp 2
+execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 1..5 run scoreboard players set $ability temp 0
+execute if score $1_process countdown matches 960 run scoreboard players set $1_single countdown 200
+execute if score $1_process countdown matches 960 run scoreboard players operation $1_single countdown *= $ability temp
+
+# 959 | 能力选择 开始 | 首先过掉无需处理的情况
+execute if score $1_process countdown matches 959 if score $ability temp matches 0 run scoreboard players set $1_process countdown 159
+execute if score $1_process countdown matches 959 store result bossbar midsoul:2 max run scoreboard players get $1_single countdown
+execute if score $1_process countdown matches 959 store result bossbar midsoul:3 max run scoreboard players get $1_single countdown
+execute if score $1_process countdown matches 959 run scoreboard players set @a[tag=game_player] skill 0
+execute if score $1_process countdown matches 959 run scoreboard players set @a[tag=game_player] talent_1 0
+execute if score $1_process countdown matches 959 run scoreboard players set @a[tag=game_player] talent_2 0
+execute if score $1_process countdown matches 959 if score $ability_apply setting matches 1 run data merge storage ms:ability {"0":true,"1":false,"2":false}
+execute if score $1_process countdown matches 959 if score $ability_apply setting matches 2 run data merge storage ms:ability {"0":false,"1":true,"2":false}
+execute if score $1_process countdown matches 959 if score $ability_apply setting matches 3 run data merge storage ms:ability {"0":false,"1":true,"2":true}
+execute if score $1_process countdown matches 959 if score $ability_apply setting matches 4 run data merge storage ms:ability {"0":true,"1":true,"2":false}
+execute if score $1_process countdown matches 959 if score $ability_apply setting matches 5 run data merge storage ms:ability {"0":true,"1":true,"2":true}
+execute if score $1_process countdown matches 959 unless score $ability temp matches 2..4 as @a[team=soul] run function main:state/1/ability/panel_s
+execute if score $1_process countdown matches 959 unless score $ability temp matches 2..4 as @a[team=guardian] run function main:state/1/ability/panel_g
+execute if score $1_process countdown matches 959 if score $ability temp matches 2 run scoreboard players set $1_process countdown 359
+execute if score $1_process countdown matches 959 if score $ability temp matches 3 run scoreboard players set $1_process countdown 759
+
+# 961 / 956 | 过渡性闪几下
+execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible false
+execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible true
+execute if score $1_process countdown matches 959 run bossbar set midsoul:2 visible false
+execute if score $1_process countdown matches 958 run bossbar set midsoul:2 visible true
+execute if score $1_process countdown matches 957 run bossbar set midsoul:2 visible false
+execute if score $1_process countdown matches 956 run bossbar set midsoul:2 visible true
+execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 visible false
+execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 visible true
+execute if score $1_process countdown matches 959 run bossbar set midsoul:3 visible false
+execute if score $1_process countdown matches 958 run bossbar set midsoul:3 visible true
+execute if score $1_process countdown matches 957 run bossbar set midsoul:3 visible false
+execute if score $1_process countdown matches 956 run bossbar set midsoul:3 visible true
+
+# 959 / 160 | 能力选择 中途
+execute if score $1_process countdown matches 160..959 as @a[scores={interact_check=5100..},tag=!ability_check] run function main:state/1/ability
+execute if score $1_process countdown matches 160..959 run function main:state/1/bossbar/selecting
