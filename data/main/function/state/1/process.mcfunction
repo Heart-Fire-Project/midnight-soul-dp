@@ -179,3 +179,30 @@ execute if score $1_process countdown matches 157 unless score $ability_apply se
 
 # 159 | 进行技能随机
 execute if score $1_process countdown matches 159 as @a[tag=game_player] run function main:state/1/ability/random
+
+# 150 / 110 | 告知技能
+execute if score $1_process countdown matches 150 as @a[team=soul] run function main:lib/skill/soul
+execute if score $1_process countdown matches 150 as @a[team=guardian] run function main:lib/skill/guar
+execute if score $1_process countdown matches 150 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 1000000
+execute if score $1_process countdown matches 130 as @a[team=soul] run function main:lib/talent/soul {num:"1"}
+execute if score $1_process countdown matches 130 as @a[team=guardian] run function main:lib/talent/guar {num:"1"}
+execute if score $1_process countdown matches 130 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 1000000
+execute if score $1_process countdown matches 110 as @a[team=soul] run function main:lib/talent/soul {num:"2"}
+execute if score $1_process countdown matches 110 as @a[team=guardian] run function main:lib/talent/guar {num:"2"}
+execute if score $1_process countdown matches 110 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 1000000
+
+# 60 | 小提示
+execute if score $1_process countdown matches 60 run playsound item.book.page_turn player @a[tag=game_player] 0 1000000 0 1000000
+execute if score $1_process countdown matches 60 as @a[tag=game_player,team=soul] run function main:lib/tip/soul
+execute if score $1_process countdown matches 60 as @a[tag=game_player,team=guardian] run function main:lib/tip/guar
+
+# 40 | 预载地图
+forceload remove all
+execute if score $1_process countdown matches 40 if score $map data matches 1 run forceload add 1000 1000 1110 1352
+execute if score $1_process countdown matches 40 if score $map data matches 1 run forceload add 1110 1000 1220 1352
+execute if score $1_process countdown matches 40 if score $map data matches 2 run forceload add 900 -900 1100 -1100
+execute if score $1_process countdown matches 40 if score $map data matches 3 run forceload add -1000 1000 -669 1160
+execute if score $1_process countdown matches 40 if score $map data matches 3 run forceload add -1000 1160 -669 1321
+
+# 0 | 进入阶段 2
+execute if score $1_process countdown matches 0 run function main:state/2/enter

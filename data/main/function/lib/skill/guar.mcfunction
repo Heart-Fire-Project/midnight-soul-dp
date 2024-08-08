@@ -1,4 +1,4 @@
-execute if score $state data matches 0 run tellraw @s "\n"
+tellraw @s "\n"
 
 tellraw @s[scores={skill=1}] [{"translate":"ms.skill","fallback":"[技能] ","color":"red"},{"translate":"ms.skill.101","fallback":"虔诚力场"}]
 tellraw @s[scores={skill=2}] [{"translate":"ms.skill","fallback":"[技能] ","color":"red"},{"translate":"ms.skill.102","fallback":"灵力掌控"}]

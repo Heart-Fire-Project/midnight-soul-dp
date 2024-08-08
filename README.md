@@ -1,6 +1,6 @@
 ## 🔯 欢迎来到午夜灵魂~~的再次重写版~~
 
-> 最后一次编辑版本号 » +48 | 2024/08/02  
+> 最后一次编辑版本号 » +62 | 2024/08/08  
 > Click [Here](https://github.com/Heart-Fire-Project/Midsoul/blob/plus/README_en.md) for English version
 
 🚧 这里是施工重地 🚧
@@ -19,7 +19,7 @@
 由于目前仍处于开发阶段，所以**请不要**使用该版本的数据包进行游戏，也**不要**基于此版本提交 issue
 
 ### 🛠️ 当前进度
-🟩🟨🟥🟥🟥🟥🟥
+🟩🟩🟥🟥🟥🟥🟥
 
 ### 🔗 相关链接
 - [下载地图](https://alpha.hfpro.top/maps/9-midsoul/) **旧**地图下载

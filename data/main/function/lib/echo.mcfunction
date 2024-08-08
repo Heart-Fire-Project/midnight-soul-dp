@@ -1,4 +1,4 @@
-tellraw @a "\n"
+tellraw @s "\n"
 
 execute if score $echo data matches 1 run tellraw @s [{"text":"","color":"light_purple"},{"translate":"ms.echo","fallback":"回响"}," ❖ ",{"translate":"ms.echo.1","fallback":"强制性引导"}]
 execute if score $echo data matches 2 run tellraw @s [{"text":"","color":"light_purple"},{"translate":"ms.echo","fallback":"回响"}," ❖ ",{"translate":"ms.echo.2","fallback":"碎片鉴别课"}]
