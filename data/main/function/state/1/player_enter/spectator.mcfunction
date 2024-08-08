@@ -8,4 +8,4 @@ tp @s 0 777 0
 effect clear @s
 
 # 放首歌
-playsound minecraft:music_disc.chirp music @s 0 1000000 0 1000000
+playsound music_disc.chirp music @s 0 1000000 0 100000

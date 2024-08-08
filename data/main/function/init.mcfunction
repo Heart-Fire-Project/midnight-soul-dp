@@ -164,7 +164,7 @@ scoreboard objectives add soul_combo dummy "灵魂连击"
 # 队伍
 team remove soul
 team add soul "灵魂"
-team modify soul color white
+team modify soul color aqua
 team modify soul collisionRule never
 team modify soul deathMessageVisibility never
 team modify soul seeFriendlyInvisibles false
@@ -193,7 +193,7 @@ team modify finish seeFriendlyInvisibles false
 
 team remove prepare
 team add prepare "已准备"
-team modify prepare color aqua
+team modify prepare color white
 team modify prepare collisionRule never
 team modify prepare deathMessageVisibility never
 team modify prepare seeFriendlyInvisibles false
