@@ -197,7 +197,7 @@ execute if score $1_process countdown matches 60 as @a[tag=game_player,team=soul
 execute if score $1_process countdown matches 60 as @a[tag=game_player,team=guardian] run function main:lib/tip/guar
 
 # 40 | 预载地图
-forceload remove all
+execute if score $1_process countdown matches 40 run forceload remove all
 execute if score $1_process countdown matches 40 if score $map data matches 1 run forceload add 1000 1000 1110 1352
 execute if score $1_process countdown matches 40 if score $map data matches 1 run forceload add 1110 1000 1220 1352
 execute if score $1_process countdown matches 40 if score $map data matches 2 run forceload add 900 -900 1100 -1100

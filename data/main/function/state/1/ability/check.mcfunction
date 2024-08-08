@@ -1,5 +1,5 @@
 tag @s add ability_check
-tellraw @s "\n\n\n\n\n\n\n\n\n\n"
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 playsound block.trial_spawner.open_shutter player @a 0 1000000 0 1000000
 
 # 总人数
