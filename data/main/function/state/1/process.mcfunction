@@ -23,7 +23,7 @@ execute if score $1_process countdown matches 1080 run playsound block.note_bloc
 execute if score $1_process countdown matches 1079 run bossbar set midsoul:1 players
 execute if entity @a[tag=join_check] if score $1_process countdown matches 1079 run scoreboard players operation $1_tick countdown -= $1_single countdown
 
-# 1079 | 异象判定
+# 1079 | 回响判定
 execute if score $1_process countdown matches 1079 run scoreboard players set $echo data 0
 execute if score $1_process countdown matches 1079 run function base:random {max:"100",min:"1"}
 execute if score $1_process countdown matches 1079 if score $random temp2 <= $echo_chance setting run function main:state/1/echo
@@ -125,6 +125,7 @@ execute if score $1_process countdown matches 959 unless score $ability_apply se
 execute if score $1_process countdown matches 959 unless score $ability_apply setting matches 1..5 run scoreboard players set $ability temp 0
 execute if score $1_process countdown matches 959 run scoreboard players set $1_single countdown 200
 execute if score $1_process countdown matches 959 run scoreboard players operation $1_single countdown *= $ability temp
+execute if score $1_process countdown matches 959 run scoreboard players operation $1_max countdown = $1_single countdown
 execute if score $1_process countdown matches 959 if score $ability temp matches 0 run scoreboard players set $1_process countdown 159
 execute if score $1_process countdown matches 959 store result bossbar midsoul:2 max run scoreboard players get $1_single countdown
 execute if score $1_process countdown matches 959 store result bossbar midsoul:3 max run scoreboard players get $1_single countdown
@@ -142,16 +143,8 @@ execute if score $1_process countdown matches 959 if score $ability temp matches
 # 961 / 956 | 过渡性闪几下
 execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible false
 execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible true
-execute if score $1_process countdown matches 959 run bossbar set midsoul:2 visible false
-execute if score $1_process countdown matches 958 run bossbar set midsoul:2 visible true
-execute if score $1_process countdown matches 957 run bossbar set midsoul:2 visible false
-execute if score $1_process countdown matches 956 run bossbar set midsoul:2 visible true
 execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 visible false
 execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 visible true
-execute if score $1_process countdown matches 959 run bossbar set midsoul:3 visible false
-execute if score $1_process countdown matches 958 run bossbar set midsoul:3 visible true
-execute if score $1_process countdown matches 957 run bossbar set midsoul:3 visible false
-execute if score $1_process countdown matches 956 run bossbar set midsoul:3 visible true
 
 # 959 / 160 | 能力选择 中途
 execute if score $1_process countdown matches 160..959 as @a[scores={interact_check=5100..5400},tag=!ability_check,tag=game_player] run function main:state/1/ability/selecting

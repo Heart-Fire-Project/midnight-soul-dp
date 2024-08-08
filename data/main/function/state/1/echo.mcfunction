@@ -9,7 +9,7 @@ execute if data storage ms:echo {"07":true} run function base:spawn_selector {ta
 execute if data storage ms:echo {"08":true} run function base:spawn_selector {tag:"echo_selector",score:"08"}
 execute if data storage ms:echo {"09":true} run function base:spawn_selector {tag:"echo_selector",score:"09"}
 
-# 选择其中的一个 | 若玩家把所有异象都禁用则无目标，也即不会选择
+# 选择其中的一个 | 若玩家把所有回响都禁用则无目标，也即不会选择
 scoreboard players operation $echo data = @e[tag=echo_selector,limit=1,sort=random] temp
 
 # 都杀了
