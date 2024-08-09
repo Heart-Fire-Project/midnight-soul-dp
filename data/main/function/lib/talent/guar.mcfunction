@@ -5,7 +5,7 @@ $tellraw @s[scores={talent_$(num)=2}] [{"translate":"ms.talent","fallback":"[天
 $tellraw @s[scores={talent_$(num)=3}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"gold"},{"translate":"ms.talent.103","fallback":"祛灵十字"}]
 $tellraw @s[scores={talent_$(num)=4}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"gold"},{"translate":"ms.talent.104","fallback":"隐于迷雾"}]
 $tellraw @s[scores={talent_$(num)=5}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"gold"},{"translate":"ms.talent.105","fallback":"舍近求远"}]
-$tellraw @s[scores={talent_$(num)=6}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"gold"},{"translate":"ms.talent.106","fallback":"目标探知"}]
+$tellraw @s[scores={talent_$(num)=6}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"gold"},{"translate":"ms.talent.106","fallback":"共鸣感应"}]
 $tellraw @s[scores={talent_$(num)=7}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"gold"},{"translate":"ms.talent.107","fallback":"碎片侵蚀"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{"text":"> ","color":"gold"},{"translate":"ms.tag.debuff","fallback":"妨害"}]

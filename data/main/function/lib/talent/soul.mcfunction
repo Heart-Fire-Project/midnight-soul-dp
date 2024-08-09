@@ -16,7 +16,7 @@ $tellraw @s[scores={talent_$(num)=5}] [{"text":"> ","color":"aqua"},{"translate"
 $tellraw @s[scores={talent_$(num)=6}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.heal","fallback":"救助"}]
 $tellraw @s[scores={talent_$(num)=7}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.collect","fallback":"收集"}]
 
-$tellraw @s[scores={talent_$(num)=1}] [{"translate":"ms.talent.001.0","fallback":"收集灵魂碎片后，移速 +40%；下一次收集时直接获取 0.3s 的进度，收集中断不会返还该效果"}]
+$tellraw @s[scores={talent_$(num)=1}] [{"translate":"ms.talent.001.0","fallback":"收集灵魂碎片后，移速 +40%；下一次收集时直接获取 0.5s 的进度，收集中断不会返还该效果"}]
 $tellraw @s[scores={talent_$(num)=2}] [{"translate":"ms.talent.002.0","fallback":"周围 12 格内有守卫者时，移速 +80%"}]
 $tellraw @s[scores={talent_$(num)=3}] [{"translate":"ms.talent.003.0","fallback":"当有灵魂处于垂死状态时，移速 +20%"}]
 $tellraw @s[scores={talent_$(num)=4}] [{"translate":"ms.talent.004.0","fallback":"收集到灵魂碎片时，回复 1 血量"}]
