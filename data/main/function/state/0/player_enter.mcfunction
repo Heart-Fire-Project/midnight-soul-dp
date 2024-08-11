@@ -1,7 +1,7 @@
 # 数据重置
 attribute @s generic.movement_speed base set 0.1
 attribute @s generic.scale base set 1.0
-attribute @s generic.gravity base set 0.08
+attribute @s generic.jump_strength base set 0.42
 
 # 刷新状态
 effect clear @s

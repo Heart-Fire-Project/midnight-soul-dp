@@ -7,7 +7,7 @@ tag @e[tag=map_enter] remove map_enter
 # 设置状态
 effect clear @s
 attribute @s generic.movement_speed base set 0
-attribute @s generic.gravity base set 1010000
+attribute @s generic.jump_strength base set 0
 effect give @s darkness 7 6 true
 effect give @s glowing 7 6 true
 

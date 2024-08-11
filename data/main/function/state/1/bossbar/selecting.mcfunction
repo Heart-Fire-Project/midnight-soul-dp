@@ -23,11 +23,3 @@ execute if score $value temp matches 1 run bossbar set midsoul:3 visible false
 execute if score $value temp matches 2 run bossbar set midsoul:3 visible true
 execute if score $value temp matches 3 run bossbar set midsoul:3 visible false
 execute if score $value temp matches 4 run bossbar set midsoul:3 visible true
-
-# 设置闪烁 E | single
-execute if score $1_single countdown matches 3 run bossbar set midsoul:2 visible false
-execute if score $1_single countdown matches 2 run bossbar set midsoul:2 visible true
-execute if score $1_single countdown matches 1 run bossbar set midsoul:2 visible false
-execute if score $1_single countdown matches 3 run bossbar set midsoul:3 visible false
-execute if score $1_single countdown matches 2 run bossbar set midsoul:3 visible true
-execute if score $1_single countdown matches 1 run bossbar set midsoul:3 visible false

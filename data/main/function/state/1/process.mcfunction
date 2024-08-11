@@ -165,11 +165,6 @@ execute if score $1_process countdown matches 159 run bossbar set midsoul:2 name
 execute if score $1_process countdown matches 159 run bossbar set midsoul:3 value 1010000
 execute if score $1_process countdown matches 159 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
 
-# 159 / 157 | 过渡性闪烁
-execute if score $1_process countdown matches 159 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible true
-execute if score $1_process countdown matches 158 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible false
-execute if score $1_process countdown matches 157 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible true
-
 # 159 | 进行技能随机
 execute if score $1_process countdown matches 159 as @a[tag=game_player] run function main:state/1/ability/random
 

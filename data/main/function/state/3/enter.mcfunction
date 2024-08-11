@@ -4,6 +4,7 @@ scoreboard players set $state data 3
 # 重设计分板
 scoreboard players set $shard_collect data 0
 scoreboard players set @a state 0
+scoreboard players set @a item 0
 scoreboard players reset $aura_rank data
 scoreboard players reset $force_end data
 scoreboard players reset $play_time data
@@ -55,32 +56,30 @@ $bossbar set midsoul:info max $(shard_goal)
 $bossbar set midsoul:heed max $(shard_goal)
 $bossbar set midsoul:warn max $(shard_goal)
 
-# 初始冷却 | 以 0.1 刻为单位 | 技能 CD 初始 120%
-# 单次冷却 | 09600 | 10800 | 12000 | 13200 | 14400 | 15600 | 16800 | 18000 | 19200 | 20400 | 21600
-# 实际写入 |  4 0  |  4 5  |  5 0  |  5 5  |  6 0  |  6 5  |  7 0  |  7 5  |  8 0  |  8 5  |  9 0
+# 初始冷却 | 以 0.1 刻为单位
+# 单次冷却 |  40  |  45  |  50  |  55  |  60  |  65  |  70  |  75  |  80  |  85  |  90
+# 实际写入 |  08  |  09  |  10  |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  
 scoreboard players reset * skill_tick
 scoreboard players reset * talent_1_tick
 scoreboard players reset * talent_2_tick
-scoreboard players set @a[team=soul,scores={skill=1}] skill_tick 14400
-scoreboard players set @a[team=soul,scores={skill=2}] skill_tick 18000
-scoreboard players set @a[team=soul,scores={skill=3}] skill_tick 16800
-scoreboard players set @a[team=soul,scores={skill=4}] skill_tick 14400
-scoreboard players set @a[team=soul,scores={skill=5}] skill_tick 10800
-scoreboard players set @a[team=guardian,scores={skill=1}] skill_tick 16800
-scoreboard players set @a[team=guardian,scores={skill=2}] skill_tick 09600
-scoreboard players set @a[team=guardian,scores={skill=3}] skill_tick 14400
-scoreboard players set @a[team=guardian,scores={skill=4}] skill_tick 14400
-scoreboard players set @a[team=guardian,scores={skill=5}] skill_tick 18000
-scoreboard players set @a[team=soul,scores={talent_1=2}] talent_1_tick 14400
-scoreboard players set @a[team=guardian,scores={talent_1=2}] talent_1_tick 14400
-scoreboard players set @a[team=guardian,scores={talent_1=4}] talent_1_tick 21600
-scoreboard players set @a[team=guardian,scores={talent_1=5}] talent_1_tick 14400
-scoreboard players set @a[team=guardian,scores={talent_1=7}] talent_1_tick 09600
-scoreboard players set @a[team=soul,scores={talent_2=2}] talent_2_tick 14400
-scoreboard players set @a[team=guardian,scores={talent_2=2}] talent_2_tick 14400
-scoreboard players set @a[team=guardian,scores={talent_2=4}] talent_2_tick 21600
-scoreboard players set @a[team=guardian,scores={talent_2=5}] talent_2_tick 14400
-scoreboard players set @a[team=guardian,scores={talent_2=7}] talent_2_tick 09600
+scoreboard players set @a[team=soul,scores={skill=1}] skill_tick 12000
+scoreboard players set @a[team=soul,scores={skill=2}] skill_tick 15000
+scoreboard players set @a[team=soul,scores={skill=3}] skill_tick 14000
+scoreboard players set @a[team=soul,scores={skill=4}] skill_tick 12000
+scoreboard players set @a[team=soul,scores={skill=5}] skill_tick 09000
+scoreboard players set @a[team=guardian,scores={skill=1}] skill_tick 14000
+scoreboard players set @a[team=guardian,scores={skill=2}] skill_tick 08000
+scoreboard players set @a[team=guardian,scores={skill=3}] skill_tick 12000
+scoreboard players set @a[team=guardian,scores={skill=4}] skill_tick 12000
+scoreboard players set @a[team=guardian,scores={skill=5}] skill_tick 15000
+scoreboard players set @a[team=soul,scores={talent_1=2}] talent_1_tick 12000
+scoreboard players set @a[team=guardian,scores={talent_1=4}] talent_1_tick 18000
+scoreboard players set @a[team=guardian,scores={talent_1=5}] talent_1_tick 12000
+scoreboard players set @a[team=guardian,scores={talent_1=7}] talent_1_tick 08000
+scoreboard players set @a[team=soul,scores={talent_2=2}] talent_2_tick 12000
+scoreboard players set @a[team=guardian,scores={talent_2=4}] talent_2_tick 18000
+scoreboard players set @a[team=guardian,scores={talent_2=5}] talent_2_tick 12000
+scoreboard players set @a[team=guardian,scores={talent_2=7}] talent_2_tick 08000
 
 # 初始化标签
 tag @a[team=soul] add no_hit
@@ -115,4 +114,4 @@ execute as @a[team=!admin] run function main:state/3/inventory_pre
 execute as @a[team=!admin] run function main:state/3/music
 
 # 去逃避
-execute if score $mode data matches 2 run function main:state/4/enter with storage ms:map
+execute if score $mode data matches 2 run function main:state/4/enter
