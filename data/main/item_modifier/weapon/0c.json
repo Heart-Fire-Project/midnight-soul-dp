@@ -1,0 +1,55 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "translate": "ms.weapon.0",
+            "fallback": "祛灵刃",
+            "color": "gray",
+            "italic": false
+        }
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            {
+                "translate": "ms.weapon.0.desc",
+                "fallback": "以锐利之刃斩不净之物",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_custom_model_data",
+        "value": 73100
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "hide_additional_tooltip": {},
+            "unbreakable": {
+                "show_in_tooltip": false
+            },
+            "attribute_modifiers": {
+                "modifiers": [
+                    {
+                        "slot": "mainhand",
+                        "type": "generic.attack_damage",
+                        "amount": -10,
+                        "id": "weapon_atk",
+                        "operation": "add_value"
+                    },
+                    {
+                        "slot": "mainhand",
+                        "type": "generic.attack_speed",
+                        "amount": 777,
+                        "id": "weapon_ats",
+                        "operation": "add_value"
+                    }
+                ],
+                "show_in_tooltip": false
+            }
+        }
+    }
+]

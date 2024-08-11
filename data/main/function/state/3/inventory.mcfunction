@@ -38,6 +38,7 @@ item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air
 
 # 物品栏通用处理
+item replace entity @s weapon.offhand with air
 item replace entity @s hotbar.0 with air
 item replace entity @s hotbar.2 with air
 item replace entity @s hotbar.3 with air
@@ -46,11 +47,11 @@ item replace entity @s hotbar.6 with air
 item replace entity @s[scores={state=1}] hotbar.1 with barrier
 
 # 守卫者武器
-item replace entity @s[scores={extra_weapon=1},team=guardian] hotbar.1 with golden_sword
-item replace entity @s[scores={extra_weapon=2},team=guardian] hotbar.1 with diamond_sword
-item replace entity @s[scores={extra_weapon=3},team=guardian] hotbar.1 with netherite_sword
-item replace entity @s[scores={extra_weapon=4},team=guardian] hotbar.1 with mace
-item replace entity @s[scores={extra_weapon=5},team=guardian] hotbar.1 with blaze_rod
+item replace entity @s hotbar.1 with golden_sword
+item replace entity @s[scores={extra_weapon=1},team=guardian] hotbar.1 with diamond_sword
+item replace entity @s[scores={extra_weapon=2},team=guardian] hotbar.1 with netherite_sword
+item replace entity @s[scores={extra_weapon=3},team=guardian] hotbar.1 with mace
+item replace entity @s[scores={extra_weapon=4},team=guardian] hotbar.1 with blaze_rod
 item replace entity @s[scores={skill=5},tag=skill_on,team=guardian] hotbar.1 with structure_void
 
 # 灵魂宝物
@@ -119,3 +120,23 @@ $item modify entity @s[scores={talent_2=2},team=soul] hotbar.8 {function:set_cou
 $item modify entity @s[scores={talent_2=4},team=guardian] hotbar.8 {function:set_count,count:$(talent_2_tick)}
 $item modify entity @s[scores={talent_2=5},team=guardian] hotbar.8 {function:set_count,count:$(talent_2_tick)}
 $item modify entity @s[scores={talent_2=7,talent_107=0},team=guardian] hotbar.8 {function:set_count,count:$(talent_2_tick)}
+
+# 数据处理
+$item modify entity @s[team=guardian,scores={state=0}] hotbar.1 main:weapon/$(weapon)a
+$item modify entity @s[team=guardian,scores={state=0,damage_tick=1..}] hotbar.1 main:weapon/$(weapon)b
+$item modify entity @s[team=guardian,scores={state=1}] hotbar.1 main:weapon/$(weapon)c
+$item modify entity @s[team=guardian,scores={skill=5},tag=skill_on] hotbar.1 main:weapon/$(weapon)c
+#$item modify entity @s[team=soul] hotbar.1 main:item/$(item)
+#$item modify entity @s[team=soul] hotbar.4 main:skill/0$(skill)
+#$item modify entity @s[team=guardian] hotbar.4 main:skill/1$(skill)
+#$item modify entity @s[team=soul] hotbar.7 main:talent/0$(talent_1)
+#$item modify entity @s[team=guardian] hotbar.7 main:talent/1$(talent_1)
+#$item modify entity @s[team=soul] hotbar.8 main:talent/0$(talent_2)
+#$item modify entity @s[team=guardian] hotbar.8 main:talent/1$(talent_2)
+
+# 光效处理
+item modify entity @s[tag=skill_on] hotbar.4 {function:"set_components",components:{enchantment_glint_override:true}}
+item modify entity @s[tag=talent_1_on] hotbar.7 {function:"set_components",components:{enchantment_glint_override:true}}
+item modify entity @s[tag=talent_2_on] hotbar.8 {function:"set_components",components:{enchantment_glint_override:true}}
+item modify entity @s[scores={damage_tick=1..},team=guardian] hotbar.1 {function:"set_components",components:{enchantment_glint_override:true}}
+item modify entity @s[tag=item_on,team=soul] hotbar.1 {function:"set_components",components:{enchantment_glint_override:true}}
