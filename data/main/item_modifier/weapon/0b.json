@@ -12,14 +12,14 @@
         "function": "set_lore",
         "lore": [
             {
+                "text": "🗡 20 >",
+                "color": "yellow",
+                "italic": false
+            },
+            {
                 "translate": "ms.weapon.0.desc",
                 "fallback": "以锐利之刃斩不净之物",
                 "color": "gray",
-                "italic": false
-            },{
-                "translate": "ms.weapon.double_damage",
-                "fallback": "当前状态下伤害加倍",
-                "color": "yellow",
                 "italic": false
             }
         ],

@@ -4,13 +4,18 @@
         "name": {
             "translate": "ms.weapon.0",
             "fallback": "祛灵刃",
-            "color": "gray",
+            "color": "dark_gray",
             "italic": false
         }
     },
     {
         "function": "set_lore",
         "lore": [
+            {
+                "text": "🗡 -10 >",
+                "color": "dark_gray",
+                "italic": false
+            },
             {
                 "translate": "ms.weapon.0.desc",
                 "fallback": "以锐利之刃斩不净之物",

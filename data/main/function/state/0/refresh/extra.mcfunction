@@ -36,12 +36,12 @@ summon text_display -991 -0.85 -996 {Tags:["extra_entity"],text:'[{"translate":"
 function base:merge_sign {x:"-987",y:"0",z:"-996",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.weapon.0",fallb_2:"00",fallb_3:"祛灵刃",command:"trigger interact_check set 4200"}
 function base:merge_sign {x:"-987",y:"0",z:"-995",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.1",fallb_2:"01",fallb_3:"祛灵刃 α",command:"trigger interact_check set 4201"}
 function base:merge_sign {x:"-987",y:"0",z:"-994",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.2",fallb_2:"02",fallb_3:"祛灵刃 β",command:"trigger interact_check set 4202"}
-function base:merge_sign {x:"-987",y:"0",z:"-993",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.3",fallb_2:"03",fallb_3:"破魂锤",command:"trigger interact_check set 4203"}
+function base:merge_sign {x:"-987",y:"0",z:"-993",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.3",fallb_2:"03",fallb_3:"破魂砖",command:"trigger interact_check set 4203"}
 function base:merge_sign {x:"-987",y:"0",z:"-992",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.4",fallb_2:"04",fallb_3:"散炽棍",command:"trigger interact_check set 4204"}
 summon item -986 -1.1 -996 {Tags:[extra_entity],Item:{id:"golden_sword",components:{custom_model_data:73100}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 summon item -986 -1.1 -995 {Tags:[extra_entity],Item:{id:"diamond_sword",components:{custom_model_data:73101}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 summon item -986 -1.1 -994 {Tags:[extra_entity],Item:{id:"netherite_sword",components:{custom_model_data:73102}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-summon item -986 -1.1 -993 {Tags:[extra_entity],Item:{id:"mace",components:{custom_model_data:73103}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -986 -1.1 -993 {Tags:[extra_entity],Item:{id:"brick",components:{custom_model_data:73103}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 summon item -986 -1.1 -992 {Tags:[extra_entity],Item:{id:"blaze_rod",components:{custom_model_data:73104}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 饰品装配

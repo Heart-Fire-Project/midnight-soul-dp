@@ -2,9 +2,9 @@
     {
         "function": "set_name",
         "name": {
-            "translate": "ms.weapon.0",
-            "fallback": "祛灵刃",
-            "color": "white",
+            "translate": "ms.weapon.2",
+            "fallback": "祛灵刃 β",
+            "color": "#847A84",
             "italic": false
         }
     },
@@ -12,13 +12,13 @@
         "function": "set_lore",
         "lore": [
             {
-                "text": "🗡 10 >",
-                "color": "#7367F0",
+                "text": "🗡 20 >",
+                "color": "#847A84",
                 "italic": false
             },
             {
-                "translate": "ms.weapon.0.desc",
-                "fallback": "以锐利之刃斩不净之物",
+                "translate": "ms.weapon.2.desc",
+                "fallback": "以历战之刃斩不净之物",
                 "color": "gray",
                 "italic": false
             }
@@ -27,7 +27,7 @@
     },
     {
         "function": "set_custom_model_data",
-        "value": 73100
+        "value": 73102
     },
     {
         "function": "set_components",
@@ -41,7 +41,7 @@
                     {
                         "slot": "mainhand",
                         "type": "generic.attack_damage",
-                        "amount": 10,
+                        "amount": 20,
                         "id": "weapon_atk",
                         "operation": "add_value"
                     },

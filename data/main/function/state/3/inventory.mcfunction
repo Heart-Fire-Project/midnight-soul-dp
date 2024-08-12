@@ -47,10 +47,10 @@ item replace entity @s hotbar.6 with air
 item replace entity @s[scores={state=1}] hotbar.1 with barrier
 
 # 守卫者武器
-item replace entity @s hotbar.1 with golden_sword
+item replace entity @s[team=guardian] hotbar.1 with golden_sword
 item replace entity @s[scores={extra_weapon=1},team=guardian] hotbar.1 with diamond_sword
 item replace entity @s[scores={extra_weapon=2},team=guardian] hotbar.1 with netherite_sword
-item replace entity @s[scores={extra_weapon=3},team=guardian] hotbar.1 with mace
+item replace entity @s[scores={extra_weapon=3},team=guardian] hotbar.1 with brick
 item replace entity @s[scores={extra_weapon=4},team=guardian] hotbar.1 with blaze_rod
 item replace entity @s[scores={skill=5},tag=skill_on,team=guardian] hotbar.1 with structure_void
 

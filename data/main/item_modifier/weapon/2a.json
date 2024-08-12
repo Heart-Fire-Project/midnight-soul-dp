@@ -2,8 +2,8 @@
     {
         "function": "set_name",
         "name": {
-            "translate": "ms.weapon.0",
-            "fallback": "祛灵刃",
+            "translate": "ms.weapon.2",
+            "fallback": "祛灵刃 β",
             "color": "white",
             "italic": false
         }
@@ -17,8 +17,8 @@
                 "italic": false
             },
             {
-                "translate": "ms.weapon.0.desc",
-                "fallback": "以锐利之刃斩不净之物",
+                "translate": "ms.weapon.2.desc",
+                "fallback": "以历战之刃斩不净之物",
                 "color": "gray",
                 "italic": false
             }
@@ -27,7 +27,7 @@
     },
     {
         "function": "set_custom_model_data",
-        "value": 73100
+        "value": 73102
     },
     {
         "function": "set_components",

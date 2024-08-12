@@ -2,8 +2,8 @@
     {
         "function": "set_name",
         "name": {
-            "translate": "ms.weapon.0",
-            "fallback": "祛灵刃",
+            "translate": "ms.weapon.4",
+            "fallback": "散炽棍",
             "color": "white",
             "italic": false
         }
@@ -17,8 +17,8 @@
                 "italic": false
             },
             {
-                "translate": "ms.weapon.0.desc",
-                "fallback": "以锐利之刃斩不净之物",
+                "translate": "ms.weapon.4.desc",
+                "fallback": "手感火热……不是用来怼的！",
                 "color": "gray",
                 "italic": false
             }
@@ -27,7 +27,7 @@
     },
     {
         "function": "set_custom_model_data",
-        "value": 73100
+        "value": 73104
     },
     {
         "function": "set_components",

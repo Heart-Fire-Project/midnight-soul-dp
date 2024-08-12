@@ -2,9 +2,9 @@
     {
         "function": "set_name",
         "name": {
-            "translate": "ms.weapon.0",
-            "fallback": "祛灵刃",
-            "color": "white",
+            "translate": "ms.weapon.3",
+            "fallback": "破魂砖",
+            "color": "dark_gray",
             "italic": false
         }
     },
@@ -12,13 +12,13 @@
         "function": "set_lore",
         "lore": [
             {
-                "text": "🗡 10 >",
-                "color": "#7367F0",
+                "text": "🗡 -10 >",
+                "color": "dark_gray",
                 "italic": false
             },
             {
-                "translate": "ms.weapon.0.desc",
-                "fallback": "以锐利之刃斩不净之物",
+                "translate": "ms.weapon.3.desc",
+                "fallback": "这一击，贯穿脑门！",
                 "color": "gray",
                 "italic": false
             }
@@ -27,7 +27,7 @@
     },
     {
         "function": "set_custom_model_data",
-        "value": 73100
+        "value": 73103
     },
     {
         "function": "set_components",
@@ -41,7 +41,7 @@
                     {
                         "slot": "mainhand",
                         "type": "generic.attack_damage",
-                        "amount": 10,
+                        "amount": -10,
                         "id": "weapon_atk",
                         "operation": "add_value"
                     },
