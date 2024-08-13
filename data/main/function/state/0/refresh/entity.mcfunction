@@ -41,7 +41,7 @@ summon item_display -5 12.5 3.99 {Tags:["lobby_entity"],item:{id:"shulker_shell"
 summon item_display 3.99 12.5 -1 {Tags:["lobby_entity"],item:{id:"spectral_arrow",components:{custom_model_data:71101}},billboard:"fixed",interpolation_duration:0,transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 summon item_display 3.99 12.5 -2 {Tags:["lobby_entity"],item:{id:"echo_shard",components:{custom_model_data:71102}},billboard:"fixed",interpolation_duration:0,transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 summon item_display 3.99 12.5 -3 {Tags:["lobby_entity"],item:{id:"compass",components:{custom_model_data:71103}},billboard:"fixed",interpolation_duration:0,transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon item_display 3.99 12.5 -4 {Tags:["lobby_entity"],item:{id:"ender_chest",components:{custom_model_data:71104}},billboard:"fixed",interpolation_duration:0,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon item_display 3.99 12.5 -4 {Tags:["lobby_entity"],item:{id:"ender_chest",components:{custom_model_data:71104}},billboard:"fixed",interpolation_duration:0,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 summon item_display 3.99 12.5 -5 {Tags:["lobby_entity"],item:{id:"light_gray_dye",components:{custom_model_data:71105}},billboard:"fixed",interpolation_duration:0,transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 
 # 图鉴ST
@@ -73,4 +73,4 @@ summon item 1 12.1 -8 {Tags:[lobby_entity],Item:{id:"quartz",components:{custom_
 summon item -8 12.1 -8 {Tags:[lobby_entity],Item:{id:"golden_sword",components:{custom_model_data:73100,enchantment_glint_override:true}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 跑酷区的和平鸽
-execute unless entity @e[tag=parkour_entity] run summon skeleton 8 22 25 {CustomName:'"P1ge0nGG"',ArmorItems:[{id:leather_boots},{id:netherite_leggings},{id:golden_chestplate},{id:player_head,components:{profile:P1ge0nGG}}],HandItems:[{id:bow,components:{enchantments:{punch:2}}},{}],LeftHanded:false,Invulnerable:true,PersistenceRequired:true,Tags:[parkour_entity]}
+summon skeleton 8 22 25 {CustomName:'"P1ge0nGG"',ArmorItems:[{id:leather_boots},{id:netherite_leggings},{id:golden_chestplate},{id:player_head,components:{profile:P1ge0nGG}}],HandItems:[{id:bow,components:{enchantments:{punch:2}}},{}],LeftHanded:false,Invulnerable:true,PersistenceRequired:true,Tags:[lobby_entity]}

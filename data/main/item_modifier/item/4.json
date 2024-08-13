@@ -1,0 +1,33 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "translate": "ms.item.4",
+            "fallback": "相位替换",
+            "color": "#33FFAA",
+            "italic": false
+        }
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            {
+                "translate": "ms.item.4.desc",
+                "fallback": "与最远的灵魂交换位置",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_custom_model_data",
+        "value": 73004
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "translate": "ms.item.1",
+            "fallback": "无懈可击",
+            "color": "#33FFAA",
+            "italic": false
+        }
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            {
+                "text": "⏱ 0.8s >",
+                "color": "#33FFAA",
+                "italic": false
+            },
+            {
+                "translate": "ms.item.1.desc",
+                "fallback": "宝物生效期间不会受到伤害",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_custom_model_data",
+        "value": 73001
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "hide_additional_tooltip": {},
+            "trim": {
+                "material": "amethyst",
+                "pattern": "spire",
+                "show_in_tooltip": false
+            },
+            "attribute_modifiers": {
+                "modifiers": [],
+                "show_in_tooltip": false
+            }
+        }
+    }
+]

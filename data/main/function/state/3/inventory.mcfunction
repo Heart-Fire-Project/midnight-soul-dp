@@ -126,7 +126,7 @@ $item modify entity @s[team=guardian,scores={state=0}] hotbar.1 main:weapon/$(we
 $item modify entity @s[team=guardian,scores={state=0,damage_tick=1..}] hotbar.1 main:weapon/$(weapon)b
 $item modify entity @s[team=guardian,scores={state=1}] hotbar.1 main:weapon/$(weapon)c
 $item modify entity @s[team=guardian,scores={skill=5},tag=skill_on] hotbar.1 main:weapon/$(weapon)c
-#$item modify entity @s[team=soul] hotbar.1 main:item/$(item)
+$item modify entity @s[team=soul] hotbar.1 main:item/$(item)
 #$item modify entity @s[team=soul] hotbar.4 main:skill/0$(skill)
 #$item modify entity @s[team=guardian] hotbar.4 main:skill/1$(skill)
 #$item modify entity @s[team=soul] hotbar.7 main:talent/0$(talent_1)

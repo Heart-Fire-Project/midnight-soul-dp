@@ -1,0 +1,39 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "translate": "ms.item.2",
+            "fallback": "共鸣引力",
+            "color": "#33FFAA",
+            "italic": false
+        }
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            {
+                "translate": "ms.item.2.desc.a",
+                "fallback": "将周围 7.5 格内的灵魂碎片聚集至脚下；",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "translate": "ms.item.2.desc.b",
+                "fallback": "重叠的碎片可同时收集",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_custom_model_data",
+        "value": 73002
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

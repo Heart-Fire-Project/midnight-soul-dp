@@ -1,0 +1,38 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "translate": "ms.item.6",
+            "fallback": "太空体验",
+            "color": "#33FFAA",
+            "italic": false
+        }
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            {
+                "text": "⏱ 5s >",
+                "color": "#33FFAA",
+                "italic": false
+            },
+            {
+                "translate": "ms.item.6.desc",
+                "fallback": "生效期间内守卫者不受重力影响",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_custom_model_data",
+        "value": 73006
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]
