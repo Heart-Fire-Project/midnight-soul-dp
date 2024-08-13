@@ -1,0 +1,86 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.skill.004",
+            "fallback":"铤而走险",
+            "color":"#5599FF",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"🔁 60  ⏱ 12 > ",
+                    "color":"#5599FF",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
+            {
+                "translate":"ms.skill.004.desc.a",
+                "fallback":"若距离 20 格内有守卫者，则",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.004.desc.b",
+                "fallback":"+ 自身移速 +100% 且守卫者移速 -90%",
+                "color":"green",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.004.desc.c",
+                "fallback":"- 或自身移速 -60%",
+                "color":"red",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.004.desc.d",
+                "fallback":"若距离 20 格内无守卫者，则",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.004.desc.e",
+                "fallback":"+ 使最近的守卫者发光并强制进入擦刀状态",
+                "color":"green",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.004.desc.f",
+                "fallback":"- 或自身传送至最近的守卫者处并移速 -100%",
+                "color":"red",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.004.desc.g",
+                "fallback":"触发上述负面效果的概率初始为 5%，但每次使用",
+                "color":"gray",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.004.desc.h",
+                "fallback":"该技能都会增加 7%，至多提升至 40%",
+                "color":"gray",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 71004
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

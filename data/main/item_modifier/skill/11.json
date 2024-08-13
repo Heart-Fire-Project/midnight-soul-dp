@@ -2,9 +2,9 @@
     {
         "function":"set_name",
         "name": {
-            "translate":"ms.item.2",
-            "fallback":"共鸣引力",
-            "color":"#33FFAA",
+            "translate":"ms.skill.101",
+            "fallback":"虔诚力场",
+            "color":"red",
             "italic": false
         }
     },
@@ -13,24 +13,24 @@
         "lore": [
             [
                 {
-                    "text":"> ",
-                    "color":"#33FFAA",
+                    "text":"🔁 70  ⏱ 7 > ",
+                    "color":"red",
                     "italic": false
                 },
                 {
-                    "translate":"ms.tag.collect",
-                    "fallback":"收集"
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
                 }
             ],
             {
-                "translate":"ms.item.2.desc.a",
-                "fallback":"将周围 7.5 格内的灵魂碎片聚集至脚下；",
+                "translate":"ms.skill.101.desc.a",
+                "fallback":"即刻使全部灵魂发光，",
                 "color":"white",
                 "italic": false
             },
             {
-                "translate":"ms.item.2.desc.b",
-                "fallback":"重叠的碎片可同时收集",
+                "translate":"ms.skill.101.desc.b",
+                "fallback":"其中距离你最近的灵魂效果时长翻倍",
                 "color":"white",
                 "italic": false
             }
@@ -39,7 +39,7 @@
     },
     {
         "function":"set_custom_model_data",
-        "value": 73002
+        "value": 71101
     },
     {
         "function":"set_components",

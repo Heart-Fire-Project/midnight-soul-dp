@@ -1,0 +1,67 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.skill.105",
+            "fallback":"雾影阴霾",
+            "color":"red",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"🔁 75  ⏱ 12 > ",
+                    "color":"red",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.kill",
+                    "fallback":"杀戮"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
+            {
+                "translate":"ms.skill.105.desc.a",
+                "fallback":"隐身且移速 +140%；",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.105.desc.b",
+                "fallback":"技能持续时间内无法进行攻击，",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.105.desc.c",
+                "fallback":"技能结束时自动对周围 2 格内的灵魂发动一次斩击，",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.105.desc.d",
+                "fallback":"无论是否命中都会进入擦刀状态",
+                "color":"white",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 71105
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

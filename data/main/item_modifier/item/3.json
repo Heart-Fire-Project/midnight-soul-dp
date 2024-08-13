@@ -1,31 +1,42 @@
 [
     {
-        "function": "set_name",
+        "function":"set_name",
         "name": {
-            "translate": "ms.item.3",
-            "fallback": "无垠时界",
-            "color": "#33FFAA",
+            "translate":"ms.item.3",
+            "fallback":"无垠时界",
+            "color":"#33FFAA",
             "italic": false
         }
     },
     {
-        "function": "set_lore",
+        "function":"set_lore",
         "lore": [
+            [
+                {
+                    "text":"> ",
+                    "color":"#33FFAA",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
             {
-                "translate": "ms.item.3.desc",
-                "fallback": "即刻减少 30 秒技能冷却",
-                "color": "white",
+                "translate":"ms.item.3.desc",
+                "fallback":"即刻减少 30 秒技能冷却",
+                "color":"white",
                 "italic": false
             }
         ],
-        "mode": "replace_all"
+        "mode":"replace_all"
     },
     {
-        "function": "set_custom_model_data",
+        "function":"set_custom_model_data",
         "value": 73003
     },
     {
-        "function": "set_components",
+        "function":"set_components",
         "components": {
             "hide_additional_tooltip": {}
         }

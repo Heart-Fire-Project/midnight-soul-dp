@@ -9,12 +9,12 @@ $tellraw @s[scores={talent_$(num)=6}] [{"translate":"ms.talent","fallback":"[天
 $tellraw @s[scores={talent_$(num)=7}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"gold"},{"translate":"ms.talent.107","fallback":"碎片侵蚀"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{"text":"> ","color":"gold"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
-$tellraw @s[scores={talent_$(num)=2}] [{"text":"⏱ 3s > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"}]
+$tellraw @s[scores={talent_$(num)=2}] [{"text":"⏱ 3 > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"}]
 $tellraw @s[scores={talent_$(num)=3}] [{"text":"> ","color":"gold"},{"translate":"ms.tag.kill","fallback":"杀戮"}]
-$tellraw @s[scores={talent_$(num)=4}] [{"text":"🔁 90s > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"},"/",{"translate":"ms.tag.kill","fallback":"杀戮"}]
-$tellraw @s[scores={talent_$(num)=5}] [{"text":"🔁 60s ⏱ 5s > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"}]
-$tellraw @s[scores={talent_$(num)=6}] [{"text":"⏱ 3s > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"},"/",{"translate":"ms.tag.kill","fallback":"杀戮"}]
-$tellraw @s[scores={talent_$(num)=7}] [{"text":"🔁 40s > ","color":"gold"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
+$tellraw @s[scores={talent_$(num)=4}] [{"text":"🔁 90 > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"},"/",{"translate":"ms.tag.kill","fallback":"杀戮"}]
+$tellraw @s[scores={talent_$(num)=5}] [{"text":"🔁 60  ⏱ 5 > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"}]
+$tellraw @s[scores={talent_$(num)=6}] [{"text":"⏱ 3 > ","color":"gold"},{"translate":"ms.tag.detect","fallback":"感知"},"/",{"translate":"ms.tag.kill","fallback":"杀戮"}]
+$tellraw @s[scores={talent_$(num)=7}] [{"text":"🔁 40 > ","color":"gold"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{"translate":"ms.talent.101.0","fallback":"自身在灵魂方气息探测中生效的范围 -33%"}]
 $tellraw @s[scores={talent_$(num)=2}] [{"translate":"ms.talent.102.0","fallback":"每当有灵魂解除垂死状态时，使全体灵魂发光且移速 -15%"}]

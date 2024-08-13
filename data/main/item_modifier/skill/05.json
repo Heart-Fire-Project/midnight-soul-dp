@@ -1,0 +1,67 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.skill.005",
+            "fallback":"锚定虚影",
+            "color":"#5599FF",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"🔁 90 > ",
+                    "color":"#5599FF",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
+            {
+                "translate":"ms.skill.005.desc.a",
+                "fallback":"首次施放时原地生成一个虚影锚点，",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.005.desc.b",
+                "fallback":"第二次及之后施放时原地生成一个虚影锚点",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.005.desc.c",
+                "fallback":"并传送至上一个虚影锚点",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.005.desc.d",
+                "fallback":"初始冷却减半；生成的锚点仅己方可见",
+                "color":"gray",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 71005
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

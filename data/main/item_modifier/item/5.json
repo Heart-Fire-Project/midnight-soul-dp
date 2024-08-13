@@ -1,43 +1,54 @@
 [
     {
-        "function": "set_name",
+        "function":"set_name",
         "name": {
-            "translate": "ms.item.5",
-            "fallback": "高效制冷",
-            "color": "#33FFAA",
+            "translate":"ms.item.5",
+            "fallback":"高效制冷",
+            "color":"#33FFAA",
             "italic": false
         }
     },
     {
-        "function": "set_lore",
+        "function":"set_lore",
         "lore": [
+            [
+                {
+                    "text":"> ",
+                    "color":"#33FFAA",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
+                }
+            ],
             {
-                "translate": "ms.item.5.desc.a",
-                "fallback": "于当前位置与方向放置一个高效制冷模块，",
-                "color": "white",
+                "translate":"ms.item.5.desc.a",
+                "fallback":"于当前位置与方向放置一个高效制冷模块，",
+                "color":"white",
                 "italic": false
             },
             {
-                "translate": "ms.item.5.desc.b",
-                "fallback": "守卫者经过时移速 -45%",
-                "color": "white",
+                "translate":"ms.item.5.desc.b",
+                "fallback":"守卫者经过时移速 -45%",
+                "color":"white",
                 "italic": false
             },
             {
-                "translate": "ms.item.5.desc.c",
-                "fallback": "另一模块被部署或被拆除时模块消失",
-                "color": "gray",
+                "translate":"ms.item.5.desc.c",
+                "fallback":"另一模块被部署或被拆除时模块消失",
+                "color":"gray",
                 "italic": false
             }
         ],
-        "mode": "replace_all"
+        "mode":"replace_all"
     },
     {
-        "function": "set_custom_model_data",
+        "function":"set_custom_model_data",
         "value": 73005
     },
     {
-        "function": "set_components",
+        "function":"set_components",
         "components": {
             "hide_additional_tooltip": {},
             "profile": {
@@ -49,8 +60,8 @@
                 ],
                 "properties": [
                     {
-                        "name": "textures",
-                        "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk4Njc5NDUyMTg2OWU4MzI3ZWY4MWRiYzM1Yzk4NTZiYzQwNTFkZjk4ODhkODFlYWIyMTI0NDJiMTc2YTgyZiJ9fX0="
+                        "name":"textures",
+                        "value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk4Njc5NDUyMTg2OWU4MzI3ZWY4MWRiYzM1Yzk4NTZiYzQwNTFkZjk4ODhkODFlYWIyMTI0NDJiMTc2YTgyZiJ9fX0="
                     }
                 ]
             }

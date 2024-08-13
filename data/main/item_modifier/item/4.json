@@ -1,31 +1,54 @@
 [
     {
-        "function": "set_name",
+        "function":"set_name",
         "name": {
-            "translate": "ms.item.4",
-            "fallback": "相位替换",
-            "color": "#33FFAA",
+            "translate":"ms.item.4",
+            "fallback":"相位替换",
+            "color":"#33FFAA",
             "italic": false
         }
     },
     {
-        "function": "set_lore",
+        "function":"set_lore",
         "lore": [
+            [
+                {
+                    "text":"> ",
+                    "color":"#33FFAA",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存",
+                    "strikethrough": true
+                },
+                "/",
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害",
+                    "strikethrough": true
+                },
+                "/",
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
             {
-                "translate": "ms.item.4.desc",
-                "fallback": "与最远的灵魂交换位置",
-                "color": "white",
+                "translate":"ms.item.4.desc",
+                "fallback":"与最远的灵魂交换位置",
+                "color":"white",
                 "italic": false
             }
         ],
-        "mode": "replace_all"
+        "mode":"replace_all"
     },
     {
-        "function": "set_custom_model_data",
+        "function":"set_custom_model_data",
         "value": 73004
     },
     {
-        "function": "set_components",
+        "function":"set_components",
         "components": {
             "hide_additional_tooltip": {}
         }

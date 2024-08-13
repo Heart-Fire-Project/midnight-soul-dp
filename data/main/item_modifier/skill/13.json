@@ -1,0 +1,56 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.skill.103",
+            "fallback":"唤灵留迹",
+            "color":"red",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"🔁 60  ⏱ 20 > ",
+                    "color":"red",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                }
+            ],
+            {
+                "translate":"ms.skill.103.desc.a",
+                "fallback":"移速 +20%；",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.103.desc.b",
+                "fallback":"标记最远的灵魂令其发光并传送至其附近，",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.103.desc.c",
+                "fallback":"技能持续时间内被标记的灵魂会持续显示尾迹",
+                "color":"white",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 71103
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

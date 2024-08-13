@@ -2,9 +2,9 @@
     {
         "function":"set_name",
         "name": {
-            "translate":"ms.item.2",
-            "fallback":"共鸣引力",
-            "color":"#33FFAA",
+            "translate":"ms.skill.001",
+            "fallback":"幻影迷踪",
+            "color":"#5599FF",
             "italic": false
         }
     },
@@ -13,24 +13,24 @@
         "lore": [
             [
                 {
-                    "text":"> ",
-                    "color":"#33FFAA",
+                    "text":"🔁 60  ⏱ 10 > ",
+                    "color":"#5599FF",
                     "italic": false
                 },
                 {
-                    "translate":"ms.tag.collect",
-                    "fallback":"收集"
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
                 }
             ],
             {
-                "translate":"ms.item.2.desc.a",
-                "fallback":"将周围 7.5 格内的灵魂碎片聚集至脚下；",
+                "translate":"ms.skill.001.desc.a",
+                "fallback":"隐身且移速 +100%；",
                 "color":"white",
                 "italic": false
             },
             {
-                "translate":"ms.item.2.desc.b",
-                "fallback":"重叠的碎片可同时收集",
+                "translate":"ms.skill.001.desc.b",
+                "fallback":"若距离守卫者 12 格以内则改为移速 +140%",
                 "color":"white",
                 "italic": false
             }
@@ -39,7 +39,7 @@
     },
     {
         "function":"set_custom_model_data",
-        "value": 73002
+        "value": 71001
     },
     {
         "function":"set_components",

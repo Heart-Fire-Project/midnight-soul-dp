@@ -1,31 +1,31 @@
 [
     {
-        "function": "set_name",
+        "function":"set_name",
         "name": {
-            "translate": "ms.item.0",
-            "fallback": "空",
-            "color": "gray",
+            "translate":"ms.item.0",
+            "fallback":"空",
+            "color":"gray",
             "italic": false
         }
     },
     {
-        "function": "set_lore",
+        "function":"set_lore",
         "lore": [
             {
-                "translate": "ms.item.0.desc",
-                "fallback": "开启灵魂宝物盒以获取宝物",
-                "color": "white",
+                "translate":"ms.item.0.desc",
+                "fallback":"开启灵魂宝物盒以获取宝物",
+                "color":"white",
                 "italic": false
             }
         ],
-        "mode": "replace_all"
+        "mode":"replace_all"
     },
     {
-        "function": "set_custom_model_data",
+        "function":"set_custom_model_data",
         "value": 73000
     },
     {
-        "function": "set_components",
+        "function":"set_components",
         "components": {
             "hide_additional_tooltip": {}
         }

@@ -72,7 +72,7 @@ item replace entity @s[scores={skill=5},team=soul] hotbar.4 with shulker_shell
 item replace entity @s[scores={skill=1},team=guardian] hotbar.4 with spectral_arrow
 $item replace entity @s[scores={skill=2},team=guardian] hotbar.4 with echo_shard $(S102)
 item replace entity @s[scores={skill=3},team=guardian] hotbar.4 with compass
-item replace entity @s[scores={skill=4},team=guardian] hotbar.4 with ender_chest
+item replace entity @s[scores={skill=4},team=guardian] hotbar.4 with ominous_bottle
 item replace entity @s[scores={skill=5},team=guardian] hotbar.4 with light_gray_dye
 item replace entity @s[scores={state=0,skill_tick=1..}] hotbar.4 with firework_star
 item replace entity @s[scores={state=1}] hotbar.4 with barrier
@@ -127,8 +127,8 @@ $item modify entity @s[team=guardian,scores={state=0,damage_tick=1..}] hotbar.1 
 $item modify entity @s[team=guardian,scores={state=1}] hotbar.1 main:weapon/$(weapon)c
 $item modify entity @s[team=guardian,scores={skill=5},tag=skill_on] hotbar.1 main:weapon/$(weapon)c
 $item modify entity @s[team=soul] hotbar.1 main:item/$(item)
-#$item modify entity @s[team=soul] hotbar.4 main:skill/0$(skill)
-#$item modify entity @s[team=guardian] hotbar.4 main:skill/1$(skill)
+$item modify entity @s[team=soul] hotbar.4 main:skill/0$(skill)
+$item modify entity @s[team=guardian] hotbar.4 main:skill/1$(skill)
 #$item modify entity @s[team=soul] hotbar.7 main:talent/0$(talent_1)
 #$item modify entity @s[team=guardian] hotbar.7 main:talent/1$(talent_1)
 #$item modify entity @s[team=soul] hotbar.8 main:talent/0$(talent_2)

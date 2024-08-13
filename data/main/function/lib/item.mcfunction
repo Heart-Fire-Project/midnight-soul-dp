@@ -9,12 +9,12 @@ tellraw @s[scores={item=5}] [{"translate":"ms.item","fallback":"[宝物] ","colo
 tellraw @s[scores={item=6}] [{"translate":"ms.item","fallback":"[宝物] ","color":"#33FFAA"},{"translate":"ms.item.06","fallback":"太空体验"}]
 
 tellraw @s[scores={item=-1}] [{"text":"🗡 10 > ","color":"#8A3CF7"}]
-tellraw @s[scores={item=1}] [{"text":"⏱ 0.8s > ","color":"#33FFAA"},{"translate":"ms.tag.survive","fallback":"生存"}]
+tellraw @s[scores={item=1}] [{"text":"⏱ 0.8 > ","color":"#33FFAA"},{"translate":"ms.tag.survive","fallback":"生存"}]
 tellraw @s[scores={item=2}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.collect","fallback":"收集"}]
 tellraw @s[scores={item=3}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.strategy","fallback":"策略"}]
 tellraw @s[scores={item=4}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.survive","fallback":"生存","strikethrough":true},"/",{"translate":"ms.tag.debuff","fallback":"妨害","strikethrough":true},"/",{"translate":"ms.tag.strategy","fallback":"策略"}]
 tellraw @s[scores={item=5}] [{"text":"> ","color":"#33FFAA"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
-tellraw @s[scores={item=6}] [{"text":"⏱ 5s > ","color":"#33FFAA"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
+tellraw @s[scores={item=6}] [{"text":"⏱ 5 > ","color":"#33FFAA"},{"translate":"ms.tag.debuff","fallback":"妨害"}]
 
 tellraw @s[scores={item=-1}] [{"translate":"ms.weapon.desc","fallback":"可用于斩断灵魂；每次击中灵魂将进入 7 秒的擦刀状态"}]
 tellraw @s[scores={item=1}] [{"translate":"ms.item.01.0","fallback":"宝物生效期间不会受到伤害"}]

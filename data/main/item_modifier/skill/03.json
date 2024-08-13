@@ -1,0 +1,67 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.skill.003",
+            "fallback":"逆向追踪",
+            "color":"#5599FF",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"🔁 70 > ",
+                    "color":"#5599FF",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
+                }
+            ],
+            {
+                "translate":"ms.skill.003.desc.a",
+                "fallback":"使所有守卫者获得发光，",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.003.desc.b",
+                "fallback":"若距离 25 格以内还会移速 -30%；",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.003.desc.c",
+                "fallback":"守卫者距离你越近其所获得效果的时长越长",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.skill.003.desc.d",
+                "fallback":"距离 12 格以内时达到上限发光 30 秒与减速 10 秒",
+                "color":"gray",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 71003
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]
