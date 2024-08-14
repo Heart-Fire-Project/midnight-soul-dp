@@ -1,0 +1,56 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.talent.007",
+            "fallback":"灵气感知",
+            "color":"aqua",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.collect",
+                    "fallback":"收集"
+                }
+            ],
+            {
+                "translate":"ms.talent.007.desc.a",
+                "fallback":"碎片收集速度 +5%；",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.talent.007.desc.b",
+                "fallback":"灵气等级每提升 1 级额外提升 5%",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.talent.007.desc.c",
+                "fallback":"至多提升至 20%",
+                "color":"gray",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 72007
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

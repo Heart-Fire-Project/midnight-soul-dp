@@ -1,0 +1,44 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.talent.101",
+            "fallback":"抱火寝薪",
+            "color":"gold",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"> ",
+                    "color":"gold",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
+                }
+            ],
+            {
+                "translate":"ms.talent.101.desc",
+                "fallback":"灵魂方气息探测对自身的生效范围 -33%",
+                "color":"white",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 72101
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

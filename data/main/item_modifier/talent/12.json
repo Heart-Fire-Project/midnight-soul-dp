@@ -1,0 +1,50 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.talent.102",
+            "fallback":"火冒三丈",
+            "color":"gold",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"⏱ 3 > ",
+                    "color":"gold",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                }
+            ],
+            {
+                "translate":"ms.talent.102.desc.a",
+                "fallback":"每当有灵魂解除垂死状态时，",
+                "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.talent.102.desc.b",
+                "fallback":"使全体灵魂发光且移速 -15%",
+                "color":"white",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 72102
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

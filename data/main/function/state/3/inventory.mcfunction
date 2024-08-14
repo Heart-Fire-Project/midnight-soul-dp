@@ -129,10 +129,10 @@ $item modify entity @s[team=guardian,scores={skill=5},tag=skill_on] hotbar.1 mai
 $item modify entity @s[team=soul] hotbar.1 main:item/$(item)
 $item modify entity @s[team=soul] hotbar.4 main:skill/0$(skill)
 $item modify entity @s[team=guardian] hotbar.4 main:skill/1$(skill)
-#$item modify entity @s[team=soul] hotbar.7 main:talent/0$(talent_1)
-#$item modify entity @s[team=guardian] hotbar.7 main:talent/1$(talent_1)
-#$item modify entity @s[team=soul] hotbar.8 main:talent/0$(talent_2)
-#$item modify entity @s[team=guardian] hotbar.8 main:talent/1$(talent_2)
+$item modify entity @s[team=soul] hotbar.7 main:talent/0$(talent_1)
+$item modify entity @s[team=guardian] hotbar.7 main:talent/1$(talent_1)
+$item modify entity @s[team=soul] hotbar.8 main:talent/0$(talent_2)
+$item modify entity @s[team=guardian] hotbar.8 main:talent/1$(talent_2)
 
 # 光效处理
 item modify entity @s[tag=skill_on] hotbar.4 {function:"set_components",components:{enchantment_glint_override:true}}

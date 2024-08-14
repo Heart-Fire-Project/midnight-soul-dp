@@ -1,0 +1,44 @@
+[
+    {
+        "function":"set_name",
+        "name": {
+            "translate":"ms.talent.004",
+            "fallback":"魂魄汲取",
+            "color":"aqua",
+            "italic": false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic": false
+                },
+                {
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
+                }
+            ],
+            {
+                "translate":"ms.talent.004.desc",
+                "fallback":"收集到灵魂碎片时，回复 1 血量",
+                "color":"white",
+                "italic": false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_model_data",
+        "value": 72004
+    },
+    {
+        "function":"set_components",
+        "components": {
+            "hide_additional_tooltip": {}
+        }
+    }
+]

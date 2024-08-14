@@ -84,7 +84,7 @@ function base:merge_sign {x:"-2",y:"11",z:"-11",glow:"1",color:"orange",trans_2:
 function base:merge_sign {x:"-3",y:"11",z:"-11",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.103",fallb_2:"T103",fallb_3:"祛灵十字",command:"trigger interact_check set 2103"}
 function base:merge_sign {x:"-4",y:"11",z:"-11",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.104",fallb_2:"T104",fallb_3:"隐于迷雾",command:"trigger interact_check set 2104"}
 function base:merge_sign {x:"-5",y:"11",z:"-11",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.105",fallb_2:"T105",fallb_3:"舍近求远",command:"trigger interact_check set 2105"}
-function base:merge_sign {x:"-6",y:"11",z:"-11",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.106",fallb_2:"T106",fallb_3:"共鸣感应",command:"trigger interact_check set 2106"}
+function base:merge_sign {x:"-6",y:"11",z:"-11",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.106",fallb_2:"T106",fallb_3:"共振感应",command:"trigger interact_check set 2106"}
 function base:merge_sign {x:"-7",y:"11",z:"-11",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.107",fallb_2:"T107",fallb_3:"碎片侵蚀",command:"trigger interact_check set 2107"}
 
 # 图鉴I
