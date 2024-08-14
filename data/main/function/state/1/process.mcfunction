@@ -136,7 +136,7 @@ execute if score $1_process countdown matches 959 if score $ability_apply settin
 execute if score $1_process countdown matches 959 if score $ability_apply setting matches 5 run data merge storage ms:ability {"0":true,"1":true,"2":true}
 execute if score $1_process countdown matches 959 as @a[team=soul] run function main:state/1/ability/panel_s
 execute if score $1_process countdown matches 959 as @a[team=guardian] run function main:state/1/ability/panel_g
-execute if score $1_process countdown matches 959 run playsound music_disc.13 music @a[tag=game_player] 0 1000000 0 100000
+execute if score $1_process countdown matches 959 run playsound music_disc.5 music @a[tag=game_player] 0 1000000 0 100000
 execute if score $1_process countdown matches 959 if score $ability temp matches 2 run scoreboard players set $1_process countdown 559
 execute if score $1_process countdown matches 959 if score $ability temp matches 3 run scoreboard players set $1_process countdown 759
 

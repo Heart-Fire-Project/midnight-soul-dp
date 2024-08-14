@@ -24,20 +24,19 @@ execute if score $2_starting countdown matches 7 run bossbar set midsoul:info vi
 execute if score $2_starting countdown matches 5 run bossbar set midsoul:info visible true
 execute if score $2_starting countdown matches 3 run bossbar set midsoul:info visible false
 execute if score $2_starting countdown matches 2 run bossbar set midsoul:info visible true
-execute if score $2_starting countdown matches 1 run bossbar set midsoul:info visible false
 execute if score $2_starting countdown matches 7 run bossbar set midsoul:2 visible false
 execute if score $2_starting countdown matches 5 run bossbar set midsoul:2 visible true
 execute if score $2_starting countdown matches 3 run bossbar set midsoul:2 visible false
 execute if score $2_starting countdown matches 2 run bossbar set midsoul:2 visible true
-execute if score $2_starting countdown matches 1 run bossbar set midsoul:2 visible false
+execute if score $2_starting countdown matches 1 run bossbar set midsoul:2 players
 execute if score $2_starting countdown matches 7 run bossbar set midsoul:3 visible false
 execute if score $2_starting countdown matches 5 run bossbar set midsoul:3 visible true
 execute if score $2_starting countdown matches 3 run bossbar set midsoul:3 visible false
 execute if score $2_starting countdown matches 2 run bossbar set midsoul:3 visible true
-execute if score $2_starting countdown matches 1 run bossbar set midsoul:3 visible false
+execute if score $2_starting countdown matches 1 run bossbar set midsoul:3 players
 
 # 时间轴
-execute if score $2_starting countdown matches 60 run playsound minecraft:block.note_block.harp player @a[team=!admin] 0 1000000 0 1000000
-execute if score $2_starting countdown matches 40 run playsound minecraft:block.note_block.harp player @a[team=!admin] 0 1000000 0 1000000
-execute if score $2_starting countdown matches 20 run playsound minecraft:block.note_block.harp player @a[team=!admin] 0 1000000 0 1000000
+execute if score $2_starting countdown matches 60 run playsound block.note_block.harp player @a[team=!admin] 0 1000000 0 1000000
+execute if score $2_starting countdown matches 40 run playsound block.note_block.harp player @a[team=!admin] 0 1000000 0 1000000
+execute if score $2_starting countdown matches 20 run playsound block.note_block.harp player @a[team=!admin] 0 1000000 0 1000000
 execute if score $2_starting countdown matches 0 run function main:state/3/enter with storage ms:map

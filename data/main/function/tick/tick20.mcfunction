@@ -11,3 +11,4 @@ stopsound @a music music.game
 
 # 定向至其他函数
 execute if score $state data matches 0 run function main:state/0/tick20
+execute if score $state data matches 3 run function main:state/3/tick20
