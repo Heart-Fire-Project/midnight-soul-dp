@@ -3,15 +3,16 @@ scoreboard players set $state data 3
 
 # 重设计分板
 scoreboard players set $shard_collect data 0
+scoreboard players set $aura_rank data 0
+scoreboard players set $3_gametime countdown 0
+scoreboard players set $3_echo countdown 0
 scoreboard players set @a state 0
 scoreboard players set @a item 0
 scoreboard players reset @a damage_tick
-scoreboard players reset $aura_rank data
-scoreboard players reset $force_end data
-scoreboard players reset $play_time data
 scoreboard players reset @a countdown
 scoreboard players reset @a sneak_time
 scoreboard players reset @a sleep_detect
+scoreboard players reset @a off_ground
 
 # 游戏用新计分板
 scoreboard players set $talent_007 data 5
@@ -27,8 +28,6 @@ scoreboard objectives add skill_102 dummy "灵力掌控 - 叠加层数"
 scoreboard players set @a[team=guardian,scores={skill=2}] skill_102 0
 scoreboard objectives remove skill_103
 scoreboard objectives add skill_103 dummy "唤灵留迹 - 生效对象"
-scoreboard objectives remove off_ground
-scoreboard objectives add off_ground dummy "滞空时间"
 
 # 生成碎片
 $execute at @e[tag=marker_blue,sort=random,limit=$(shard_summon)] run summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",Count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
@@ -42,7 +41,7 @@ $execute at @e[tag=marker_gray,sort=random,limit=$(chest_summon)] run summon blo
 execute at @e[tag=new_gray] run particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0.1 0.2 0 1 force @a
 execute as @e[tag=new_gray] run team join chest @s
 execute as @e[tag=new_gray] run tag @s remove new_gray
-scoreboard players set $chest_summon countdown 180
+scoreboard players set $3_chest countdown 180
 
 # 标题
 title @a[team=!admin] title ""
@@ -50,6 +49,7 @@ title @a[team=!admin] subtitle [{"text":"» ","color":"#7367F0","bold":true},{"t
 playsound block.end_portal.spawn player @a[team=!admin] 0 1000000 0 1000000 1
 
 # Bossbar
+bossbar set midsoul:info color blue
 bossbar set midsoul:info style progress
 bossbar set midsoul:heed style progress
 bossbar set midsoul:warn style progress
@@ -107,9 +107,6 @@ scoreboard players reset @a temp_track
 
 # 刷新初始状态
 execute as @a[tag=game_player] run function main:state/3/effect
-
-# 刷新一次物品栏
-execute as @a[tag=game_player] run function main:state/3/inventory_pre
 
 # 背景音乐
 execute as @a run function main:state/3/music_roll

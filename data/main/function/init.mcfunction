@@ -82,6 +82,8 @@ scoreboard objectives remove sneak_time
 scoreboard objectives add sneak_time minecraft.custom:sneak_time "蹲下时间"
 scoreboard objectives remove sleep_detect
 scoreboard objectives add sleep_detect minecraft.custom:sleep_in_bed "睡眠检测"
+scoreboard objectives remove off_ground
+scoreboard objectives add off_ground dummy "滞空时间"
 scoreboard objectives remove interact_check
 scoreboard objectives add interact_check trigger "交互检测"
 
@@ -304,7 +306,7 @@ scoreboard players set #182 data 182
 scoreboard players set #200 data 200
 scoreboard players set #256 data 256
 scoreboard players set #10000 data 10000
-scoreboard players set #25200 data 25200
+scoreboard players set #18000 data 18000
 
 # 进入大厅状态
 function main:state/0/enter

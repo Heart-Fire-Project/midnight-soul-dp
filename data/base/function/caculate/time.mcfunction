@@ -1,7 +1,9 @@
 # 时间计算
 # 需要参数：unit[sec/min/hrs/day](最高单位) tick source (以游戏刻为单位的计分板记录值)
 # 输出结果：$day $hrs $min ← 需要设定对应单位 | 必定输出 → $sec $tick $ms
-scoreboard players reset * temp
+scoreboard players set #min temp 0
+scoreboard players set #hrs temp 0
+scoreboard players set #day temp 0
 $scoreboard players set #$(unit) temp 1
 execute if score #day temp matches 1 run scoreboard players set #hrs temp 1
 execute if score #hrs temp matches 1 run scoreboard players set #min temp 1

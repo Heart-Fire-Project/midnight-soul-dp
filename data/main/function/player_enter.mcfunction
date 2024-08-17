@@ -23,3 +23,4 @@ execute if score $state data matches 1 run function main:state/1/player_enter/sp
 execute if score $state data matches 2..6 run gamemode spectator @s
 execute if score $state data matches 2..6 run tp @s @r[limit=1,tag=game_player]
 execute if score $state data matches 2..6 run tellraw @s [{"text":"» ","bold":true},{"translate":"ms.info.mid_enter","fallback":"游戏正在进行中，请稍作等候……","bold":false}]
+execute if score $state data matches 3 run function main:state/3/music_roll

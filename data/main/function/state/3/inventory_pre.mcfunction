@@ -12,15 +12,15 @@ execute if data storage ms:inventory {"S004":0s} run data modify storage ms:inve
 execute if data storage ms:inventory {"S102":0s} run data modify storage ms:inventory S102 set value 1s
 execute if data storage ms:inventory {"T107":0s} run data modify storage ms:inventory T107 set value 1s
 
-scoreboard players operation $tick temp2 = @s talent_1_tick
-scoreboard players operation $tick temp2 /= #10 data
-function base:caculate/time {unit:"sec",tick:"$tick",source:"temp2"}
+scoreboard players operation $tick temp = @s talent_1_tick
+scoreboard players operation $tick temp /= #10 data
+function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
 scoreboard players add $sec temp2 1
 execute store result storage ms:inventory talent_1_tick short 1 run scoreboard players get $sec temp2
 
-scoreboard players operation $tick temp2 = @s talent_2_tick
-scoreboard players operation $tick temp2 /= #10 data
-function base:caculate/time {unit:"sec",tick:"$tick",source:"temp2"}
+scoreboard players operation $tick temp = @s talent_2_tick
+scoreboard players operation $tick temp /= #10 data
+function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
 scoreboard players add $sec temp2 1
 execute store result storage ms:inventory talent_2_tick short 1 run scoreboard players get $sec temp2
 
