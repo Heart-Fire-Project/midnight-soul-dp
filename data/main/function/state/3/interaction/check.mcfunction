@@ -30,6 +30,6 @@ scoreboard players reset @s[tag=!interacting] countdown
 scoreboard players operation @s[tag=interacting] countdown += $collect_speed setting
 
 # 收集完成
-execute as @s[tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..0.5] at @s run function main:state/3/interaction/blue
+execute as @s[tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..0.5] at @s run function main:state/3/interaction/blue with storage ms:map
 execute as @s[tag=gold_interact,scores={countdown=1400..}] as @e[tag=gold,distance=..0.5] at @s run function main:state/3/interaction/gold
 execute as @s[tag=gray_interact,scores={countdown=1000..}] as @e[tag=gray,distance=..0.5] at @s run function main:state/3/interaction/gray
