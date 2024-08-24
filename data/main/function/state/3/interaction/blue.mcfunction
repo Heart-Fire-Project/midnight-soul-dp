@@ -1,10 +1,9 @@
 # 完成碎片收集
-scoreboard players add @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] stat_collect 1
+scoreboard players add @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] temp_collect 1
 execute if score $3_gametime countdown matches ..18000 run scoreboard players add $shard_collect data 1
 execute if score $3_gametime countdown matches 18001.. run scoreboard players add $3_gametime countdown 100
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a ~ ~ ~
-kill @s
 
 # 地图变量
 # 聚光圣殿 - 2*4*6
@@ -63,4 +62,6 @@ execute if score $aura_rank data matches -3 run tellraw @a[team=!admin] [{"text"
 execute if score $aura_rank data matches -3 run execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
 execute if score $aura_rank data matches -3..-1 run scoreboard players add $talent_007 data 5
 execute if score $aura_rank data matches -3..-1 run scoreboard players operation $aura_rank data *= #-1 data
-execute if score $aura_rank data matches 1 run execute at @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..16] run function main:state/3/special/aura_1
+execute if score $aura_rank data matches 1 run execute at @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..16] run function main:state/3/event/aura1
+
+kill @s

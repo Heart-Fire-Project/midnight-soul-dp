@@ -67,7 +67,7 @@
             },
             {
                 "translate":"ms.skill.104.desc.h",
-                "fallback":"开启该灵魂宝物盒时获取一次翻倍效果",
+                "fallback":"开启该灵魂宝物盒时获取更强的上述效果",
                 "color":"gray",
                 "italic": false
             }
