@@ -1,6 +1,6 @@
 # 完成碎片收集
 scoreboard players add @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] temp_collect 1
-execute if score $3_gametime countdown matches ..18000 run scoreboard players add $shard_collect data 1
+scoreboard players add $shard_collect data 1
 execute if score $3_gametime countdown matches 18001.. run scoreboard players add $3_gametime countdown 100
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a ~ ~ ~
@@ -56,9 +56,9 @@ execute if score $shard_collect data = $rank_3 temp run scoreboard players set $
 
 # 解析灵气等级变化
 execute if score $aura_rank data matches -3..-1 run playsound minecraft:block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
-execute if score $aura_rank data matches -1 run tellraw @a[team=!admin] [{"text":" » ","color":"#80FFFF","bold":true},{"translate":"ms.info.rank.1","fallback":"灵气初起 ◆◇◇ 灵魂收集碎片时将与附近的碎片共鸣","bold":false},"\n"]
-execute if score $aura_rank data matches -2 run tellraw @a[team=!admin] [{"text":" » ","color":"#80D5FF","bold":true},{"translate":"ms.info.rank.2","fallback":"灵气渐浓 ◆◆◇ 灵魂将与附近的碎片持续共鸣","bold":false},"\n"]
-execute if score $aura_rank data matches -3 run tellraw @a[team=!admin] [{"text":" » ","color":"#80AAFF","bold":true},{"translate":"ms.info.rank.3","fallback":"灵气全开 ◆◆◆ 场上所有剩余碎片持续进行共鸣","bold":false},"\n"]
+execute if score $aura_rank data matches -1 run tellraw @a[team=!admin] [{"text":"» ","color":"#80FFFF","bold":true},{"translate":"ms.info.rank.1","fallback":"灵气初起 ◆◇◇ 灵魂收集碎片时将与附近的碎片共鸣","bold":false},"\n"]
+execute if score $aura_rank data matches -2 run tellraw @a[team=!admin] [{"text":"» ","color":"#80D5FF","bold":true},{"translate":"ms.info.rank.2","fallback":"灵气弥散 ◆◆◇ 灵魂将与附近的碎片持续共鸣","bold":false},"\n"]
+execute if score $aura_rank data matches -3 run tellraw @a[team=!admin] [{"text":"» ","color":"#80AAFF","bold":true},{"translate":"ms.info.rank.3","fallback":"灵气充盈 ◆◆◆ 场上所有剩余碎片持续进行共鸣","bold":false},"\n"]
 execute if score $aura_rank data matches -3 run execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
 execute if score $aura_rank data matches -3..-1 run scoreboard players add $talent_007 data 5
 execute if score $aura_rank data matches -3..-1 run scoreboard players operation $aura_rank data *= #-1 data

@@ -17,4 +17,5 @@ scoreboard players remove @a[scores={damage_tick=1..}] damage_tick 1
 scoreboard players add @a[tag=game_player] temp_time 1
 
 # 其他的部分
+execute as @a[scores={sleep_detect=1..},team=soul] run function main:state/3/event/wake_up
 kill @e[type=item,tag=!game_entity]
