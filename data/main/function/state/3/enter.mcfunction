@@ -4,6 +4,8 @@ scoreboard players set $state data 3
 # 重设计分板
 scoreboard players set $shard_collect data 0
 scoreboard players set $aura_rank data 0
+scoreboard players set $soul_death data 0
+scoreboard players set $soul_revive data 0
 scoreboard players set $3_gametime countdown 0
 scoreboard players set $3_echo countdown 0
 scoreboard players set @a state 0

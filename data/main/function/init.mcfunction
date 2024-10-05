@@ -125,7 +125,7 @@ scoreboard objectives add stat_talent dummy "总天赋使用"
 scoreboard objectives add stat_item dummy "总宝物使用"
 scoreboard objectives add stat_kill dummy "总有效击杀"
 scoreboard objectives add stat_death dummy "总死亡次数"
-scoreboard objectives add stat_finish dummy "总复活次数"
+scoreboard objectives add stat_revive dummy "总复活次数"
 scoreboard objectives add stat_time dummy "总游玩时间"
 scoreboard objectives add stat_win dummy "总获胜次数"
 scoreboard objectives add stat_win_soul dummy "总获胜次数 - 灵魂"
@@ -186,12 +186,12 @@ team modify dead color dark_gray
 team modify dead collisionRule never
 team modify dead deathMessageVisibility never
 team modify dead seeFriendlyInvisibles false
-team remove finish
-team add finish "复活"
-team modify finish color green
-team modify finish collisionRule never
-team modify finish deathMessageVisibility never
-team modify finish seeFriendlyInvisibles false
+team remove revive
+team add revive "复活"
+team modify revive color green
+team modify revive collisionRule never
+team modify revive deathMessageVisibility never
+team modify revive seeFriendlyInvisibles false
 
 team remove prepare
 team add prepare "已准备"

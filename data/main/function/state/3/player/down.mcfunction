@@ -5,6 +5,8 @@ kill @e[tag=death_mark]
 
 # 统计数据
 scoreboard players add @s temp_dying 1
+scoreboard players add @a[tag=hit_soul] temp_down 1
+tag @a remove hit_soul
 
 # 设置时间
 scoreboard players set @s[scores={temp_dying=1}] countdown 601

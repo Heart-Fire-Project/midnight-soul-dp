@@ -1,0 +1,1 @@
+tellraw @a[team=!admin] [{"text":"» ","color":"red","bold":true},{"translate":"ms.info.3.dead.000","fallback":"%s 已死亡！","bold":false,"with":[{"selector":"@s"}]}]
