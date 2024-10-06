@@ -3,8 +3,8 @@ scoreboard players operation $tick temp = @s[scores={state=0}] skill_tick
 scoreboard players operation $tick temp = @s[scores={state=1}] countdown
 execute if entity @s[tag=skill_on] run scoreboard players operation $tick temp *= #-1 data
 scoreboard players operation $tick temp /= #10 data
+scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
-scoreboard players add $sec temp2 1
 scoreboard players operation @s temp2 = $sec temp2
 scoreboard players set @s[scores={temp=..0}] temp2 0
 

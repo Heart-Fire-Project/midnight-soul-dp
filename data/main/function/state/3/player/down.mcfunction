@@ -2,6 +2,7 @@
 tag @s remove soul_down
 tp @s @e[limit=1,tag=death_mark]
 kill @e[tag=death_mark]
+scoreboard players set @s state 1
 
 # 统计数据
 scoreboard players add @s temp_dying 1
@@ -9,9 +10,9 @@ scoreboard players add @a[tag=hit_soul] temp_down 1
 tag @a remove hit_soul
 
 # 设置时间
-scoreboard players set @s[scores={temp_dying=1}] countdown 601
-scoreboard players set @s[scores={temp_dying=2}] countdown 401
-scoreboard players set @s[scores={temp_dying=3..}] countdown 201
+scoreboard players set @s[scores={temp_dying=1}] countdown 12000
+scoreboard players set @s[scores={temp_dying=2}] countdown 8000
+scoreboard players set @s[scores={temp_dying=3..}] countdown 4000
 
 # 刷新效果
 function main:state/3/effect

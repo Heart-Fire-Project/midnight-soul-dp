@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function":"main:state/3/attack/hit"
+        "function":"main:state/3/player/hit"
     }
 }
