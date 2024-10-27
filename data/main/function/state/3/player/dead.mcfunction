@@ -11,6 +11,10 @@ playsound entity.wither.hurt player @a[team=!admin] 0 1000000 0 1000000 0.7
 kill @e[tag=gold,limit=1]
 effect clear @s
 
+# 恢复玩家属性
+attribute @s generic.movement_speed base set 0.10
+attribute @s generic.jump_strength base set 0.42
+
 # 统计数据
 scoreboard players add @a[team=guardian] stat_kill 1
 scoreboard players add @s stat_death 1
