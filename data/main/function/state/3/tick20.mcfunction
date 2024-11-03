@@ -12,3 +12,8 @@ execute as @e[tag=blue,scores={countdown=0}] run data modify entity @s Glowing s
 # 灵魂宝物箱计时
 execute if score $3_chest countdown matches 1.. run scoreboard players remove $3_chest countdown 1
 execute if score $3_chest countdown matches 0 run function main:state/3/event/new_chest with storage ms:map
+
+# 追踪牵制计时
+scoreboard players remove @e[tag=tracker] countdown 1
+execute as @e[tag=tracker] if score @s countdown matches 0 run kill @s
+execute as @a[tag=game_player] at @s run function main:state/3/player/track
