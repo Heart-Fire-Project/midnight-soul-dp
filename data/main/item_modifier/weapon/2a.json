@@ -13,13 +13,13 @@
         "lore": [
             {
                 "text":"🗡 10 >",
-                "color":"#7367F0",
+                "color":"#CCCCCC",
                 "italic": false
             },
             {
                 "translate":"ms.weapon.2.desc",
                 "fallback":"以历战之刃斩不净之物",
-                "color":"gray",
+                "color":"#CCCCCC",
                 "italic": false
             }
         ],

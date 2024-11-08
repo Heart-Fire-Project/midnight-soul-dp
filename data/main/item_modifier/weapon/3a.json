@@ -13,13 +13,13 @@
         "lore": [
             {
                 "text":"🗡 10 >",
-                "color":"#7367F0",
+                "color":"#CCCCCC",
                 "italic": false
             },
             {
                 "translate":"ms.weapon.3.desc",
                 "fallback":"这一击，贯穿脑门！",
-                "color":"gray",
+                "color":"#CCCCCC",
                 "italic": false
             }
         ],

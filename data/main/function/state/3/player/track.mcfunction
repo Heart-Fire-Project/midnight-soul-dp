@@ -1,4 +1,4 @@
-# 所有非垂死灵魂都会产生标记，两秒后自我销毁
+# 所有非垂死灵魂都会产生标记，四秒后自我销毁
 execute at @s[team=soul,scores={state=0}] run summon marker ~ ~ ~ {Tags:[new_tracker,tracker,game_entity]}
 tp @n[tag=new_tracker] @s
 scoreboard players operation @n[tag=new_tracker] player_id = @s player_id

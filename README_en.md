@@ -19,7 +19,7 @@ Thanks to Mojang, about 2 months after we published the Reset Version, they chan
 Due to it's in construction，**DO NOT** play with this version，also **DO NOT** upload issues based on it.
 
 ### 🛠️ Progress
-🟩🟩🟩🟥🟥🟥🟥
+🟩🟩🟩🟨🟥🟥🟥
 
 ### 🔗 Links
 - [Download](https://alpha.hfpro.top/maps/9-midsoul/) **OLD** Map Download

@@ -13,13 +13,13 @@
         "lore": [
             {
                 "text":"🗡 10 >",
-                "color":"#7367F0",
+                "color":"#CCCCCC",
                 "italic": false
             },
             {
                 "translate":"ms.weapon.4.desc",
                 "fallback":"手感火热……不是用来怼的！",
-                "color":"gray",
+                "color":"#CCCCCC",
                 "italic": false
             }
         ],

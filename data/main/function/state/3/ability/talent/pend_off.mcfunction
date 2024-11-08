@@ -1,0 +1,1 @@
+$scoreboard players add @s[scores={talent_$(num)_tick=..-1}] talent_$(num)_tick 10

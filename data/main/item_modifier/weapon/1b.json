@@ -19,7 +19,7 @@
             {
                 "translate":"ms.weapon.1.desc",
                 "fallback":"以璀璨之刃斩不净之物",
-                "color":"gray",
+                "color":"#CCCCCC",
                 "italic": false
             }
         ],

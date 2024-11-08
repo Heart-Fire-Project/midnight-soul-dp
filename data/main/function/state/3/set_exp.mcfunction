@@ -1,7 +1,7 @@
 # 设置等级数 | 技能 / 第二状态
 scoreboard players operation $tick temp = @s[scores={state=0}] skill_tick
 scoreboard players operation $tick temp = @s[scores={state=1}] countdown
-execute if entity @s[tag=skill_on] run scoreboard players operation $tick temp *= #-1 data
+execute if entity @s[tag=skill_on,scores={state=0}] run scoreboard players operation $tick temp *= #-1 data
 scoreboard players operation $tick temp /= #10 data
 scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}

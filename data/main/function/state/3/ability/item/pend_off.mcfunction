@@ -1,0 +1,1 @@
+scoreboard players add @s[scores={item_tick=..-1}] item_tick 10

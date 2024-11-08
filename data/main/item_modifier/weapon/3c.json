@@ -19,7 +19,7 @@
             {
                 "translate":"ms.weapon.3.desc",
                 "fallback":"这一击，贯穿脑门！",
-                "color":"gray",
+                "color":"#CCCCCC",
                 "italic": false
             }
         ],
