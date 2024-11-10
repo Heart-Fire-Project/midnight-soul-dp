@@ -40,8 +40,8 @@
         "components": {
             "hide_additional_tooltip": {},
             "trim": {
-                "material":"amethyst",
-                "pattern":"spire",
+                "material":"diamond",
+                "pattern":"snout",
                 "show_in_tooltip": false
             },
             "attribute_modifiers": {

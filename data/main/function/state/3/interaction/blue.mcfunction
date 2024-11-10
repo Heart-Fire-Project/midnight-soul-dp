@@ -55,7 +55,7 @@ execute if score $shard_collect data = $rank_2 temp run scoreboard players set $
 execute if score $shard_collect data = $rank_3 temp run scoreboard players set $aura_rank data -3
 
 # 解析灵气等级变化
-execute if score $aura_rank data matches -3..-1 run playsound minecraft:block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
+execute if score $aura_rank data matches -3..-1 run playsound block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
 execute if score $aura_rank data matches -1 run tellraw @a[team=!admin] [{"text":"» ","color":"#80FFFF","bold":true},{"translate":"ms.info.rank.1","fallback":"灵气初起 ◆◇◇ 灵魂收集碎片时将与附近的碎片共鸣","bold":false},"\n"]
 execute if score $aura_rank data matches -2 run tellraw @a[team=!admin] [{"text":"» ","color":"#80D5FF","bold":true},{"translate":"ms.info.rank.2","fallback":"灵气弥散 ◆◆◇ 灵魂将与附近的碎片持续共鸣","bold":false},"\n"]
 execute if score $aura_rank data matches -3 run tellraw @a[team=!admin] [{"text":"» ","color":"#80AAFF","bold":true},{"translate":"ms.info.rank.3","fallback":"灵气充盈 ◆◆◆ 场上所有剩余碎片持续进行共鸣","bold":false},"\n"]

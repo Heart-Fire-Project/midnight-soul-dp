@@ -24,6 +24,14 @@ scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
 execute store result storage ms:inventory talent_2_tick short 1 run scoreboard players get $sec temp2
 
+scoreboard players operation $tick temp = @s item_tick
+scoreboard players operation $tick temp *= #-1 data
+scoreboard players operation $tick temp /= #10 data
+scoreboard players add $tick temp 19
+function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
+execute if score $sec temp2 matches ..0 run scoreboard players set $sec temp2 1
+execute store result storage ms:inventory item_tick short 1 run scoreboard players get $sec temp2
+
 execute store result storage ms:inventory weapon short 1 run scoreboard players get @s extra_weapon
 
 function main:state/3/inventory with storage ms:inventory

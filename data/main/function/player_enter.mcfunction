@@ -2,6 +2,7 @@
 scoreboard players set @s leave_game 0
 team join spectator @s
 attribute @s generic.movement_speed base set 0.1
+attribute @s generic.gravity base set 0.08
 
 # 去除游戏内标签
 tag @s remove hidden_parkour
@@ -17,7 +18,7 @@ execute if score $state data matches 1 run bossbar set midsoul:info players @a[t
 execute if score $state data matches 2 run bossbar set midsoul:info players @a[team=spectator]
 
 # 按照状态进行不同入场流程
-playsound minecraft:entity.experience_orb.pickup player @a 0 1000000 0 1000000 1
+playsound entity.experience_orb.pickup player @a 0 1000000 0 1000000 1
 scoreboard players reset @s music
 execute if score $state data matches 0 run function main:state/0/player_enter
 execute if score $state data matches 1 run function main:state/1/player_enter/spectator

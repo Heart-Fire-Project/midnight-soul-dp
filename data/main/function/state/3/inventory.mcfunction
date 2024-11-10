@@ -61,7 +61,7 @@ execute if entity @s[scores={item=2},team=soul] run item replace block 0 -7 0 co
 execute if entity @s[scores={item=3},team=soul] run item replace block 0 -7 0 container.1 with clock
 execute if entity @s[scores={item=4},team=soul] run item replace block 0 -7 0 container.1 with shaper_armor_trim_smithing_template
 execute if entity @s[scores={item=5},team=soul] run item replace block 0 -7 0 container.1 with player_head
-execute if entity @s[scores={item=6},team=soul] run item replace block 0 -7 0 container.1 with quartz
+$execute if entity @s[scores={item=6},team=soul] run item replace block 0 -7 0 container.1 with quartz $(item_tick)
 
 # 技能物品
 execute if entity @s[scores={skill=1},team=soul] run item replace block 0 -7 0 container.4 with phantom_membrane

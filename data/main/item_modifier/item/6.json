@@ -13,19 +13,30 @@
         "lore": [
             [
                 {
-                    "text":"⏱ 5 > ",
+                    "text":"⏱ 7 > ",
                     "color":"#33FFAA",
                     "italic": false
                 },
                 {
-                    "translate":"ms.tag.debuff",
-                    "fallback":"妨害"
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.collect",
+                    "fallback":"收集"
                 }
             ],
             {
-                "translate":"ms.item.6.desc",
-                "fallback":"生效期间内守卫者不受重力影响",
+                "translate":"ms.item.6.desc.a",
+                "fallback":"生效期间内你将不受重力影响",
                 "color":"white",
+                "italic": false
+            },
+            {
+                "translate":"ms.item.6.desc.b",
+                "fallback":"不会改变初始动量",
+                "color":"gray",
                 "italic": false
             }
         ],

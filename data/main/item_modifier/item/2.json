@@ -24,13 +24,13 @@
             ],
             {
                 "translate":"ms.item.2.desc.a",
-                "fallback":"将周围 7.5 格内的灵魂碎片聚集至脚下；",
+                "fallback":"生成一个灵魂碎片，",
                 "color":"white",
                 "italic": false
             },
             {
                 "translate":"ms.item.2.desc.b",
-                "fallback":"重叠的碎片可同时收集",
+                "fallback":"并将半径 15 格内的灵魂碎片聚集至脚下",
                 "color":"white",
                 "italic": false
             }

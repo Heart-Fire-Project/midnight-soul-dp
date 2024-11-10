@@ -32,7 +32,7 @@ scoreboard objectives remove skill_103
 scoreboard objectives add skill_103 dummy "唤灵留迹 - 生效对象"
 
 # 生成碎片
-$execute at @e[tag=marker_blue,sort=random,limit=$(shard_summon)] run summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",Count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+$execute at @e[tag=marker_blue,sort=random,limit=$(shard_summon)] run summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute at @e[tag=new_blue] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 execute as @e[tag=new_blue] run team join shard @s
 execute as @e[tag=new_blue] run tag @s remove new_blue

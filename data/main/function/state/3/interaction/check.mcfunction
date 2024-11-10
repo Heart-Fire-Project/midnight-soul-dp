@@ -23,6 +23,9 @@ execute as @s[tag=gray_hint,tag=!gray_interact] run title @s actionbar ""
 tag @s[tag=interacting] remove blue_hint
 tag @s[tag=interacting] remove gold_hint
 tag @s[tag=interacting] remove gray_hint
+tag @s[tag=!blue_interact] remove blue_hint
+tag @s[tag=!gold_interact] remove gold_hint
+tag @s[tag=!gray_interact] remove gray_hint
 
 # 刷新进程
 tag @s[tag=!blue_interact,tag=!gold_interact,tag=!gray_interact] remove interacting
