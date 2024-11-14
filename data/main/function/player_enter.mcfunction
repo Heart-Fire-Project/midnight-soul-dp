@@ -11,6 +11,10 @@ tag @s remove quering
 tag @s remove game_player
 tag @s remove join_check
 tag @s remove ability_check
+tag @s remove item_on
+tag @s remove skill_on
+tag @s remove talent_1_on
+tag @s remove talent_2_on
 
 # 重新设置各个 Bossbar
 execute if score $state data matches 0 run bossbar set midsoul:info players @a

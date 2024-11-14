@@ -1,6 +1,4 @@
 # 出击
-advancement revoke @s only main:damage/dealt
-
 # 进入擦刀状态
 scoreboard players set @s countdown 1400
 scoreboard players set @s state 1

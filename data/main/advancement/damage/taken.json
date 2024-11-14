@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function":"main:state/3/player/hurt"
+        "function":"main:lib/player/hurt"
     }
 }

@@ -1,5 +1,5 @@
 # 受击
-advancement revoke @s only main:damage/taken
+# 无伤判定失效
 tag @s remove no_hit
 
 # 判定是否死亡
