@@ -31,7 +31,7 @@ $scoreboard players set $(target) stat_exp 0
 $scoreboard players set $(target) stat_adv 0
 $scoreboard players set $(target) stat_adv_pt 0
 $scoreboard players set $(target) stat_rating 0
-$scoreboard players set $(target) stat_record 0
+$scoreboard players set $(target) stat_single_record 0
 $scoreboard players set $(target) stat_rating_record 0
 $scoreboard players set $(target) stat_parkour_5 -1
 $scoreboard players set $(target) stat_parkour_7 -1

@@ -141,18 +141,10 @@ scoreboard objectives add stat_exp dummy "玩家经验"
 scoreboard objectives add stat_adv dummy "达成进度数"
 scoreboard objectives add stat_adv_pt dummy "进度点数"
 scoreboard objectives add stat_rating dummy "当前短期分"
-scoreboard objectives add stat_record dummy "最高表现分记录"
-scoreboard objectives add stat_rating_record dummy "最高短期分记录"
-scoreboard objectives add stat_parkour_5 dummy "普通跑酷记录"
-scoreboard objectives add stat_parkour_7 dummy "隐藏跑酷记录"
-scoreboard objectives add stat_rank_EX+ dummy "EX+ 等级记录"
-scoreboard objectives add stat_rank_EX dummy "EX 等级记录"
-scoreboard objectives add stat_rank_S+ dummy "S+ 等级记录"
-scoreboard objectives add stat_rank_S dummy "S 等级记录"
-scoreboard objectives add stat_rank_A dummy "A 等级记录"
-scoreboard objectives add stat_rank_B dummy "B 等级记录"
-scoreboard objectives add stat_rank_C dummy "C 等级记录"
-scoreboard objectives add stat_rank_D dummy "D 等级记录"
+scoreboard objectives add stat_single_record dummy "最高表现分纪录"
+scoreboard objectives add stat_rating_record dummy "最高短期分纪录"
+scoreboard objectives add stat_parkour_5 dummy "普通跑酷纪录"
+scoreboard objectives add stat_parkour_7 dummy "隐藏跑酷纪录"
 
 scoreboard objectives add extra_particle dummy "粒子效果"
 scoreboard objectives add extra_headset dummy "饰品装配"
@@ -279,7 +271,7 @@ scoreboard players set $collect_speed setting 10
 scoreboard players set $echo_chance setting 30
 scoreboard players set $initcheck data 7419147
 scoreboard players set $echo_page setting 1
-data merge storage ms:setting {"show_mark":false,"setting_lock":false,"game_lock":false,"ingame_score":true,"reduce_f3":true,"send_feedback":false}
+data merge storage ms:setting {"show_mark":false,"setting_lock":false,"game_lock":false,"reduce_f3":true,"send_feedback":false}
 data merge storage ms:echo {"01":true,"02":true,"03":true,"04":true,"05":true,"06":true,"07":true,"08":true,"09":true}
 
 # 常数项
