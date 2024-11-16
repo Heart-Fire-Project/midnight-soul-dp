@@ -63,7 +63,7 @@ summon item_display -6 12.5 -10.99 {Tags:["lobby_entity"],item:{id:"redstone",co
 summon item_display -7 12.5 -10.99 {Tags:["lobby_entity"],item:{id:"amethyst_shard",components:{custom_model_data:72107}},billboard:"fixed",interpolation_duration:0,transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
 
 # 图鉴I
-summon item -8 12.1 1 {Tags:[lobby_entity],Item:{id:"iron_chestplate",components:{custom_model_data:73001,trim:{material:amethyst,pattern:spire}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -8 12.1 1 {Tags:[lobby_entity],Item:{id:"iron_chestplate",components:{custom_model_data:73001,trim:{material:diamond,pattern:snout}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 summon item -8 12.1 -2 {Tags:[lobby_entity],Item:{id:"prismarine_shard",components:{custom_model_data:73002}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 summon item -8 12.1 -5 {Tags:[lobby_entity],Item:{id:"clock",components:{custom_model_data:73003}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 summon item -5 12.1 -8 {Tags:[lobby_entity],Item:{id:"shaper_armor_trim_smithing_template",components:{custom_model_data:73004}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
