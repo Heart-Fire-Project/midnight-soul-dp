@@ -48,8 +48,8 @@ execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_da
 execute as @s[nbt=!{Inventory:[{Slot:20b}]}] run function main:lib/event/personal_setting {setting:"ingame_score",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:21b}]}] run function main:lib/event/personal_setting {setting:"interact_hint",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:22b}]}] run function main:lib/event/personal_setting {setting:"ability_actionbar",limit:"3"}
-execute as @s[nbt=!{Inventory:[{Slot:23b}]}] run function main:lib/event/personal_setting {setting:"detailed_result",limit:"2"}
-execute as @s[nbt=!{Inventory:[{Slot:24b}]}] run function main:lib/event/personal_setting {setting:"ingame_tip",limit:"2"}
+execute as @s[nbt=!{Inventory:[{Slot:23b}]}] run function main:lib/event/personal_setting {setting:"ingame_tip",limit:"2"}
+execute as @s[nbt=!{Inventory:[{Slot:24b}]}] run function main:lib/event/personal_setting {setting:"detailed_result",limit:"2"}
 
 # 刷新物品
 item replace entity @s[team=spectator] hotbar.8 with gray_dye[item_name='{"translate":"ms.lobby.spectator","fallback":"未准备 - 按 [%s] 准备","italic":false,"color":"gray","with":[{"keybind":"key.swapOffhand"}]}',custom_model_data=70000,hide_additional_tooltip={}]
@@ -59,8 +59,8 @@ item replace block 0 -7 0 container.12 with book
 execute if score @s setting.ability_actionbar matches 2 run item replace block 0 -7 0 container.13 with emerald_block
 execute if score @s setting.ability_actionbar matches 1 run item replace block 0 -7 0 container.13 with honey_block
 execute if score @s setting.ability_actionbar matches 0 run item replace block 0 -7 0 container.13 with red_stained_glass
-item replace block 0 -7 0 container.14 with paper
-item replace block 0 -7 0 container.15 with light[block_state={level:"7"}]
+item replace block 0 -7 0 container.14 with light[block_state={level:"7"}]
+item replace block 0 -7 0 container.15 with flow_banner_pattern
 execute if score @s setting.ingame_score matches 0 run item replace entity @s inventory.11 from block 0 -7 0 container.11 main:setting/ingame_score.0
 execute if score @s setting.ingame_score matches 1 run item replace entity @s inventory.11 from block 0 -7 0 container.11 main:setting/ingame_score.1
 execute if score @s setting.interact_hint matches 0 run item replace entity @s inventory.12 from block 0 -7 0 container.12 main:setting/interact_hint.0
@@ -68,10 +68,10 @@ execute if score @s setting.interact_hint matches 1 run item replace entity @s i
 execute if score @s setting.ability_actionbar matches 0 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.0
 execute if score @s setting.ability_actionbar matches 1 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.1
 execute if score @s setting.ability_actionbar matches 2 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.2
-execute if score @s setting.detailed_result matches 0 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/detailed_result.0
-execute if score @s setting.detailed_result matches 1 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/detailed_result.1
-execute if score @s setting.ingame_tip matches 0 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/ingame_tip.0
-execute if score @s setting.ingame_tip matches 1 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/ingame_tip.1
+execute if score @s setting.ingame_tip matches 0 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/ingame_tip.0
+execute if score @s setting.ingame_tip matches 1 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/ingame_tip.1
+execute if score @s setting.detailed_result matches 0 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/detailed_result.0
+execute if score @s setting.detailed_result matches 1 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/detailed_result.1
 
 
 item replace entity @s weapon.offhand with air

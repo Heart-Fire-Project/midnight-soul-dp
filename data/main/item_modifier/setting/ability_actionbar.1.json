@@ -13,13 +13,13 @@
         "lore":[
             {
                 "translate":"ms.setting.ability_actionbar.1",
-                "fallback":"✦ 仅显示终止信息",
+                "fallback":"✦ 不显示触发信息",
                 "color":"gold",
                 "italic":false
             },
             {
                 "translate":"ms.setting.ability_actionbar.desc",
-                "fallback":"能力触发/终止时在动作栏显示提示",
+                "fallback":"能力状态改变时在动作栏显示提示",
                 "color":"white",
                 "italic":false
             }

@@ -120,8 +120,8 @@ $execute if entity @s[scores={talent_2=7,talent_107=0},team=guardian] run item m
 execute as @s[nbt=!{Inventory:[{Slot:20b}]}] run function main:lib/event/personal_setting {setting:"ingame_score",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:21b}]}] run function main:lib/event/personal_setting {setting:"interact_hint",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:22b}]}] run function main:lib/event/personal_setting {setting:"ability_actionbar",limit:"3"}
-execute as @s[nbt=!{Inventory:[{Slot:23b}]}] run function main:lib/event/personal_setting {setting:"detailed_result",limit:"2"}
-execute as @s[nbt=!{Inventory:[{Slot:24b}]}] run function main:lib/event/personal_setting {setting:"ingame_tip",limit:"2"}
+execute as @s[nbt=!{Inventory:[{Slot:23b}]}] run function main:lib/event/personal_setting {setting:"ingame_tip",limit:"2"}
+execute as @s[nbt=!{Inventory:[{Slot:24b}]}] run function main:lib/event/personal_setting {setting:"detailed_result",limit:"2"}
 
 # 设置物品
 item replace block 0 -7 0 container.11 with ender_eye
@@ -129,8 +129,8 @@ item replace block 0 -7 0 container.12 with book
 execute if score @s setting.ability_actionbar matches 2 run item replace block 0 -7 0 container.13 with emerald_block
 execute if score @s setting.ability_actionbar matches 1 run item replace block 0 -7 0 container.13 with honey_block
 execute if score @s setting.ability_actionbar matches 0 run item replace block 0 -7 0 container.13 with red_stained_glass
-item replace block 0 -7 0 container.14 with paper
-item replace block 0 -7 0 container.15 with light[block_state={level:"7"}]
+item replace block 0 -7 0 container.14 with light[block_state={level:"7"}]
+item replace block 0 -7 0 container.15 with flow_banner_pattern
 
 # 数据处理
 $execute if entity @s[team=guardian,scores={state=0}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)a
@@ -164,7 +164,7 @@ execute if score @s setting.interact_hint matches 1 run item replace entity @s i
 execute if score @s setting.ability_actionbar matches 0 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.0
 execute if score @s setting.ability_actionbar matches 1 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.1
 execute if score @s setting.ability_actionbar matches 2 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.2
-execute if score @s setting.detailed_result matches 0 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/detailed_result.0
-execute if score @s setting.detailed_result matches 1 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/detailed_result.1
-execute if score @s setting.ingame_tip matches 0 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/ingame_tip.0
-execute if score @s setting.ingame_tip matches 1 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/ingame_tip.1
+execute if score @s setting.ingame_tip matches 0 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/ingame_tip.0
+execute if score @s setting.ingame_tip matches 1 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/ingame_tip.1
+execute if score @s setting.detailed_result matches 0 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/detailed_result.0
+execute if score @s setting.detailed_result matches 1 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/detailed_result.1

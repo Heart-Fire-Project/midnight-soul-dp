@@ -17,5 +17,5 @@ execute if score $interact_hint temp matches 1 run clear @s book[custom_model_da
 execute if score $ability_actionbar temp matches 1 run clear @s emerald_block[custom_model_data=74032]
 execute if score $ability_actionbar temp matches 1 run clear @s honey_block[custom_model_data=74031]
 execute if score $ability_actionbar temp matches 1 run clear @s red_stained_glass[custom_model_data=74030]
-execute if score $detailed_result temp matches 1 run clear @s paper[custom_model_data=74040]
-execute if score $ingame_tip temp matches 1 run clear @s light[custom_model_data=74050]
+execute if score $ingame_tip temp matches 1 run clear @s light[custom_model_data=74040]
+execute if score $detailed_result temp matches 1 run clear @s flow_banner_pattern[custom_model_data=74050]

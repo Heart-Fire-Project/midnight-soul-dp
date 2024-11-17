@@ -19,7 +19,7 @@
             },
             {
                 "translate":"ms.setting.ability_actionbar.desc",
-                "fallback":"能力触发/终止时在动作栏显示提示",
+                "fallback":"能力状态改变时在动作栏显示提示",
                 "color":"white",
                 "italic":false
             }
