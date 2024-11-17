@@ -41,7 +41,7 @@ scoreboard objectives add temp2 dummy "临时数据"
 scoreboard objectives remove exp_max
 scoreboard objectives add exp_max dummy "经验上限"
 scoreboard objectives remove exp_temp
-scoreboard objectives add exp_temp dummy "经验结算"
+scoreboard objectives add exp_temp dummy "待计经验"
 scoreboard objectives remove item
 scoreboard objectives add item dummy "携带宝物"
 scoreboard objectives remove skill
@@ -87,73 +87,79 @@ scoreboard objectives add off_ground dummy "滞空时间"
 scoreboard objectives remove interact_check
 scoreboard objectives add interact_check trigger "交互检测"
 
-scoreboard objectives remove temp_collect
-scoreboard objectives add temp_collect dummy "单局碎片搜集"
-scoreboard objectives remove temp_heal
-scoreboard objectives add temp_heal dummy "单局队友救助"
-scoreboard objectives remove temp_open
-scoreboard objectives add temp_open dummy "单局宝盒开启"
-scoreboard objectives remove temp_dying
-scoreboard objectives add temp_dying dummy "单局陷入垂死"
-scoreboard objectives remove temp_hit
-scoreboard objectives add temp_hit dummy "单局玩家命中"
-scoreboard objectives remove temp_down
-scoreboard objectives add temp_down dummy "单局垂死攻击"
-scoreboard objectives remove temp_skill
-scoreboard objectives add temp_skill dummy "单局技能使用"
-scoreboard objectives remove temp_talent
-scoreboard objectives add temp_talent dummy "单局天赋使用"
-scoreboard objectives remove temp_item
-scoreboard objectives add temp_item dummy "单局宝物使用"
-scoreboard objectives remove temp_kill
-scoreboard objectives add temp_kill dummy "单局有效击杀"
-scoreboard objectives remove temp_time
-scoreboard objectives add temp_time dummy "单局游玩时间"
-scoreboard objectives remove temp_track
-scoreboard objectives add temp_track dummy "单局追踪时间"
-scoreboard objectives remove temp_tie
-scoreboard objectives add temp_tie dummy "单局牵制时间"
-
-scoreboard objectives add stat_collect dummy "总碎片搜集"
-scoreboard objectives add stat_heal dummy "总队友救助"
-scoreboard objectives add stat_open dummy "总宝盒开启"
-scoreboard objectives add stat_dying dummy "总陷入垂死"
-scoreboard objectives add stat_hit dummy "总玩家命中"
-scoreboard objectives add stat_down dummy "总垂死攻击"
-scoreboard objectives add stat_skill dummy "总技能使用"
-scoreboard objectives add stat_talent dummy "总天赋使用"
-scoreboard objectives add stat_item dummy "总宝物使用"
-scoreboard objectives add stat_kill dummy "总有效击杀"
-scoreboard objectives add stat_death dummy "总死亡次数"
-scoreboard objectives add stat_revive dummy "总复活次数"
-scoreboard objectives add stat_time dummy "总游玩时间"
-scoreboard objectives add stat_win dummy "总获胜次数"
-scoreboard objectives add stat_win_soul dummy "总获胜次数 - 灵魂"
-scoreboard objectives add stat_win_guar dummy "总获胜次数 - 守卫"
-scoreboard objectives add stat_draw dummy "总平局次数"
-scoreboard objectives add stat_lose dummy "总落败次数"
-scoreboard objectives add stat_play dummy "总游玩次数"
-scoreboard objectives add stat_play_soul dummy "总游玩次数 - 灵魂"
-scoreboard objectives add stat_play_guar dummy "总游玩次数 - 守卫"
-scoreboard objectives add stat_mvp dummy "全场最佳次数"
-scoreboard objectives add stat_level dummy "玩家等级"
-scoreboard objectives add stat_exp dummy "玩家经验"
-scoreboard objectives add stat_adv dummy "达成进度数"
-scoreboard objectives add stat_adv_pt dummy "进度点数"
-scoreboard objectives add stat_rating dummy "当前短期分"
-scoreboard objectives add stat_single_record dummy "最高表现分纪录"
-scoreboard objectives add stat_rating_record dummy "最高短期分纪录"
-scoreboard objectives add stat_parkour_5 dummy "普通跑酷纪录"
-scoreboard objectives add stat_parkour_7 dummy "隐藏跑酷纪录"
-
-scoreboard objectives add extra_particle dummy "粒子效果"
-scoreboard objectives add extra_headset dummy "饰品装配"
-scoreboard objectives add extra_text dummy "文本套组"
-scoreboard objectives add extra_milestone dummy "里程碑"
-scoreboard objectives add extra_weapon dummy "武器样式"
-
 scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
 scoreboard objectives add soul_combo dummy "灵魂连击"
+
+scoreboard objectives remove temp.collect
+scoreboard objectives add temp.collect dummy "单局碎片搜集"
+scoreboard objectives remove temp.heal
+scoreboard objectives add temp.heal dummy "单局队友救助"
+scoreboard objectives remove temp.open
+scoreboard objectives add temp.open dummy "单局宝盒开启"
+scoreboard objectives remove temp.dying
+scoreboard objectives add temp.dying dummy "单局陷入垂死"
+scoreboard objectives remove temp.hit
+scoreboard objectives add temp.hit dummy "单局玩家命中"
+scoreboard objectives remove temp.down
+scoreboard objectives add temp.down dummy "单局垂死攻击"
+scoreboard objectives remove temp.skill
+scoreboard objectives add temp.skill dummy "单局技能使用"
+scoreboard objectives remove temp.talent
+scoreboard objectives add temp.talent dummy "单局天赋使用"
+scoreboard objectives remove temp.item
+scoreboard objectives add temp.item dummy "单局宝物使用"
+scoreboard objectives remove temp.kill
+scoreboard objectives add temp.kill dummy "单局有效击杀"
+scoreboard objectives remove temp.time
+scoreboard objectives add temp.time dummy "单局游玩时间"
+scoreboard objectives remove temp.track
+scoreboard objectives add temp.track dummy "单局追踪时间"
+scoreboard objectives remove temp.tie
+scoreboard objectives add temp.tie dummy "单局牵制时间"
+
+scoreboard objectives add stat.collect dummy "总碎片搜集"
+scoreboard objectives add stat.heal dummy "总队友救助"
+scoreboard objectives add stat.open dummy "总宝盒开启"
+scoreboard objectives add stat.dying dummy "总陷入垂死"
+scoreboard objectives add stat.hit dummy "总玩家命中"
+scoreboard objectives add stat.down dummy "总垂死攻击"
+scoreboard objectives add stat.skill dummy "总技能使用"
+scoreboard objectives add stat.talent dummy "总天赋使用"
+scoreboard objectives add stat.item dummy "总宝物使用"
+scoreboard objectives add stat.kill dummy "总有效击杀"
+scoreboard objectives add stat.death dummy "总死亡次数"
+scoreboard objectives add stat.revive dummy "总复活次数"
+scoreboard objectives add stat.time dummy "总游玩时间"
+scoreboard objectives add stat.win dummy "总获胜次数"
+scoreboard objectives add stat.win_soul dummy "总获胜次数 - 灵魂"
+scoreboard objectives add stat.win_guar dummy "总获胜次数 - 守卫"
+scoreboard objectives add stat.draw dummy "总平局次数"
+scoreboard objectives add stat.lose dummy "总落败次数"
+scoreboard objectives add stat.play dummy "总游玩次数"
+scoreboard objectives add stat.play_soul dummy "总游玩次数 - 灵魂"
+scoreboard objectives add stat.play_guar dummy "总游玩次数 - 守卫"
+scoreboard objectives add stat.mvp dummy "全场最佳次数"
+scoreboard objectives add stat.level dummy "玩家等级"
+scoreboard objectives add stat.exp dummy "玩家经验"
+scoreboard objectives add stat.adv dummy "达成进度数"
+scoreboard objectives add stat.adv_pt dummy "进度点数"
+scoreboard objectives add stat.rating dummy "当前短期分"
+scoreboard objectives add stat.single_record dummy "最高表现分纪录"
+scoreboard objectives add stat.rating_record dummy "最高短期分纪录"
+scoreboard objectives add stat.parkour_5 dummy "普通跑酷纪录"
+scoreboard objectives add stat.parkour_7 dummy "隐藏跑酷纪录"
+
+scoreboard objectives add setting.ingame_score dummy "表现分追踪设置"
+scoreboard objectives add setting.interact_hint dummy "交互提示设置"
+scoreboard objectives add setting.ability_actionbar dummy "能力状态提示设置"
+scoreboard objectives add setting.detailed_result dummy "详细结算设置"
+scoreboard objectives add setting.ingame_tip dummy "Tip! 设置"
+
+scoreboard objectives add extra.particle dummy "粒子效果"
+scoreboard objectives add extra.headset dummy "饰品装配"
+scoreboard objectives add extra.text dummy "文本套组"
+scoreboard objectives add extra.milestone dummy "里程碑"
+scoreboard objectives add extra.weapon dummy "武器样式"
 
 # 队伍
 team remove soul

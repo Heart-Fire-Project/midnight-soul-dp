@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.talent.002",
             "fallback":"赴汤蹈火",
             "color":"aqua",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"🔁 60  ⏱ 3 > ",
                     "color":"aqua",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.survive",
@@ -26,19 +26,19 @@
                 "translate":"ms.talent.002.desc",
                 "fallback":"周围 12 格内有守卫者时，移速 +80%",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 72002
+        "value":72002
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

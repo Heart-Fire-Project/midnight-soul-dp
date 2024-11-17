@@ -1,8 +1,8 @@
-title @s actionbar [{"translate":"ms.item.active","fallback":"宝物触发","color":"#33FFAA"}," » ",{"translate":"ms.item.4","fallback":"相位替换"}]
+title @s[scores={setting.ability_actionbar=2}] actionbar [{"translate":"ms.item.active","fallback":"宝物触发","color":"#33FFAA"}," » ",{"translate":"ms.item.4","fallback":"相位替换"}]
 playsound entity.enderman.teleport player @s 0 1000000 0 1000000
 particle glow_squid_ink ~ ~1 ~ 0.2 0.3 0.2 0.2 128 force @a
 scoreboard players set @s item 0
-scoreboard players add @s temp_item 1
+scoreboard players add @s temp.item 1
 
 # 寻找幸运观众
 tag @a[limit=1,sort=furthest,team=soul] add I4s

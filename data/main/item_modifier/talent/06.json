@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.talent.006",
             "fallback":"碎片注入",
             "color":"aqua",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"> ",
                     "color":"aqua",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.heal",
@@ -26,25 +26,25 @@
                 "translate":"ms.talent.006.desc.a",
                 "fallback":"收集到灵魂碎片时，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.talent.006.desc.b",
                 "fallback":"延长所有处于垂死状态的灵魂 5 秒倒计时",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 72006
+        "value":72006
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

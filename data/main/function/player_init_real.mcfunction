@@ -3,38 +3,45 @@ $scoreboard players reset $(target)
 $advancement revoke $(target) everything
 $scoreboard players set $(target) leave_game 1
 
+# 设置个人设置
+$scoreboard players set $(target) setting.ingame_score 1
+$scoreboard players set $(target) setting.interact_hint 1
+$scoreboard players set $(target) setting.ability_actionbar 2
+$scoreboard players set $(target) setting.detailed_result 1
+$scoreboard players set $(target) setting.ingame_tip 1
+
 # 设置统计数据
-$scoreboard players set $(target) stat_collect 0
-$scoreboard players set $(target) stat_heal 0
-$scoreboard players set $(target) stat_open 0
-$scoreboard players set $(target) stat_dying 0
-$scoreboard players set $(target) stat_hit 0
-$scoreboard players set $(target) stat_down 0
-$scoreboard players set $(target) stat_skill 0
-$scoreboard players set $(target) stat_talent 0
-$scoreboard players set $(target) stat_item 0
-$scoreboard players set $(target) stat_kill 0
-$scoreboard players set $(target) stat_death 0
-$scoreboard players set $(target) stat_revive 0
-$scoreboard players set $(target) stat_time 0
-$scoreboard players set $(target) stat_win 0
-$scoreboard players set $(target) stat_win_soul 0
-$scoreboard players set $(target) stat_win_guar 0
-$scoreboard players set $(target) stat_draw 0
-$scoreboard players set $(target) stat_lose 0
-$scoreboard players set $(target) stat_play 0
-$scoreboard players set $(target) stat_play_soul 0
-$scoreboard players set $(target) stat_play_guar 0
-$scoreboard players set $(target) stat_mvp 0
-$scoreboard players set $(target) stat_level 0
-$scoreboard players set $(target) stat_exp 0
-$scoreboard players set $(target) stat_adv 0
-$scoreboard players set $(target) stat_adv_pt 0
-$scoreboard players set $(target) stat_rating 0
-$scoreboard players set $(target) stat_single_record 0
-$scoreboard players set $(target) stat_rating_record 0
-$scoreboard players set $(target) stat_parkour_5 -1
-$scoreboard players set $(target) stat_parkour_7 -1
+$scoreboard players set $(target) stat.collect 0
+$scoreboard players set $(target) stat.heal 0
+$scoreboard players set $(target) stat.open 0
+$scoreboard players set $(target) stat.dying 0
+$scoreboard players set $(target) stat.hit 0
+$scoreboard players set $(target) stat.down 0
+$scoreboard players set $(target) stat.skill 0
+$scoreboard players set $(target) stat.talent 0
+$scoreboard players set $(target) stat.item 0
+$scoreboard players set $(target) stat.kill 0
+$scoreboard players set $(target) stat.death 0
+$scoreboard players set $(target) stat.revive 0
+$scoreboard players set $(target) stat.time 0
+$scoreboard players set $(target) stat.win 0
+$scoreboard players set $(target) stat.win_soul 0
+$scoreboard players set $(target) stat.win_guar 0
+$scoreboard players set $(target) stat.draw 0
+$scoreboard players set $(target) stat.lose 0
+$scoreboard players set $(target) stat.play 0
+$scoreboard players set $(target) stat.play_soul 0
+$scoreboard players set $(target) stat.play_guar 0
+$scoreboard players set $(target) stat.mvp 0
+$scoreboard players set $(target) stat.level 0
+$scoreboard players set $(target) stat.exp 0
+$scoreboard players set $(target) stat.adv 0
+$scoreboard players set $(target) stat.adv_pt 0
+$scoreboard players set $(target) stat.rating 0
+$scoreboard players set $(target) stat.single_record 0
+$scoreboard players set $(target) stat.rating_record 0
+$scoreboard players set $(target) stat.parkour_5 -1
+$scoreboard players set $(target) stat.parkour_7 -1
 
 # 数值初始化
 $attribute $(target) generic.attack_damage base set 0

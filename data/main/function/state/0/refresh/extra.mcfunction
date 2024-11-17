@@ -1,7 +1,7 @@
 kill @e[tag=extra_entity]
 kill @e[tag=query_entity]
 
-# 俩路标
+# 路标
 summon text_display -994 -0.7 -1013 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.main","fallback":"返回主大厅","color":"gold"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 summon text_display -994 -0.85 -1013 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.main_desc","fallback":"前方左转，然后马上右转","color":"white"}]',background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 summon text_display -992 -0.7 -1001 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.query","fallback":"数据查询","color":"#7C33B8"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

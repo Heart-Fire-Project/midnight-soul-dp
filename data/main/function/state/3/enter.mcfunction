@@ -93,25 +93,32 @@ tag @a remove item_on
 tag @a remove hit_soul
 
 # 清空临时数据
-scoreboard players reset @a temp_collect
-scoreboard players reset @a temp_down
-scoreboard players reset @a temp_dying
-scoreboard players reset @a temp_heal
-scoreboard players reset @a temp_hit
-scoreboard players reset @a temp_item
-scoreboard players reset @a temp_kill
-scoreboard players reset @a temp_open
-scoreboard players reset @a temp_skill
-scoreboard players reset @a temp_talent
-scoreboard players reset @a temp_tie
-scoreboard players reset @a temp_time
-scoreboard players reset @a temp_track
+scoreboard players reset * temp.collect
+scoreboard players reset * temp.down
+scoreboard players reset * temp.dying
+scoreboard players reset * temp.heal
+scoreboard players reset * temp.hit
+scoreboard players reset * temp.item
+scoreboard players reset * temp.kill
+scoreboard players reset * temp.open
+scoreboard players reset * temp.skill
+scoreboard players reset * temp.talent
+scoreboard players reset * temp.tie
+scoreboard players reset * temp.time
+scoreboard players reset * temp.track
 
 # 刷新初始状态
 execute as @a[tag=game_player] run function main:state/3/effect
 
 # 背景音乐
 execute as @a run function main:state/3/music_roll
+
+# 占位符，以免误调设置
+item replace entity @a[tag=game_player] inventory.11 from block 0 -7 0 container.11
+item replace entity @a[tag=game_player] inventory.12 from block 0 -7 0 container.12
+item replace entity @a[tag=game_player] inventory.13 from block 0 -7 0 container.13
+item replace entity @a[tag=game_player] inventory.14 from block 0 -7 0 container.14
+item replace entity @a[tag=game_player] inventory.15 from block 0 -7 0 container.15
 
 # 去逃避
 execute if score $mode data matches 2 run function main:state/4/enter

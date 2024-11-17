@@ -1,4 +1,4 @@
-# 灵魂是能背包吗？显然不能
+# 背的不是包，是思想
 item replace entity @s inventory.0 with air
 item replace entity @s inventory.1 with air
 item replace entity @s inventory.2 with air
@@ -10,11 +10,6 @@ item replace entity @s inventory.7 with air
 item replace entity @s inventory.8 with air
 item replace entity @s inventory.9 with air
 item replace entity @s inventory.10 with air
-item replace entity @s inventory.11 with air
-item replace entity @s inventory.12 with air
-item replace entity @s inventory.13 with air
-item replace entity @s inventory.14 with air
-item replace entity @s inventory.15 with air
 item replace entity @s inventory.16 with air
 item replace entity @s inventory.17 with air
 item replace entity @s inventory.18 with air
@@ -28,11 +23,11 @@ item replace entity @s inventory.25 with air
 item replace entity @s inventory.26 with air
 
 # 装备栏
-execute unless score @s extra_headset matches 1..3 run item replace entity @s armor.head with air
-execute if entity @s[scores={extra_headset=1..3},tag=invisibility] run item replace entity @s armor.head with air
-item replace entity @s[scores={extra_headset=1},tag=!invisibility] armor.head with end_rod[custom_model_data=73201,hide_tooltip={}]
-item replace entity @s[scores={extra_headset=2},tag=!invisibility] armor.head with lightning_rod[custom_model_data=73202,hide_tooltip={}]
-item replace entity @s[scores={extra_headset=3},tag=!invisibility] armor.head with amethyst_cluster[custom_model_data=73203,hide_tooltip={}]
+execute unless score @s extra.headset matches 1..3 run item replace entity @s armor.head with air
+execute if entity @s[scores={extra.headset=1..3},tag=invisibility] run item replace entity @s armor.head with air
+item replace entity @s[scores={extra.headset=1},tag=!invisibility] armor.head with end_rod[custom_model_data=73201,hide_tooltip={}]
+item replace entity @s[scores={extra.headset=2},tag=!invisibility] armor.head with lightning_rod[custom_model_data=73202,hide_tooltip={}]
+item replace entity @s[scores={extra.headset=3},tag=!invisibility] armor.head with amethyst_cluster[custom_model_data=73203,hide_tooltip={}]
 item replace entity @s armor.chest with air
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air
@@ -48,10 +43,10 @@ execute if entity @s[scores={state=1}] run item replace block 0 -7 0 container.1
 
 # 守卫者武器
 execute if entity @s[team=guardian] run item replace block 0 -7 0 container.1 with golden_sword
-execute if entity @s[scores={extra_weapon=1},team=guardian] run item replace block 0 -7 0 container.1 with diamond_sword
-execute if entity @s[scores={extra_weapon=2},team=guardian] run item replace block 0 -7 0 container.1 with netherite_sword
-execute if entity @s[scores={extra_weapon=3},team=guardian] run item replace block 0 -7 0 container.1 with brick
-execute if entity @s[scores={extra_weapon=4},team=guardian] run item replace block 0 -7 0 container.1 with blaze_rod
+execute if entity @s[scores={extra.weapon=1},team=guardian] run item replace block 0 -7 0 container.1 with diamond_sword
+execute if entity @s[scores={extra.weapon=2},team=guardian] run item replace block 0 -7 0 container.1 with netherite_sword
+execute if entity @s[scores={extra.weapon=3},team=guardian] run item replace block 0 -7 0 container.1 with brick
+execute if entity @s[scores={extra.weapon=4},team=guardian] run item replace block 0 -7 0 container.1 with blaze_rod
 execute if entity @s[scores={skill=5},tag=skill_on,team=guardian] run item replace block 0 -7 0 container.1 with structure_void
 
 # 灵魂宝物
@@ -121,6 +116,22 @@ $execute if entity @s[scores={talent_2=4},team=guardian] run item modify block 0
 $execute if entity @s[scores={talent_2=5},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(talent_2_tick)}
 $execute if entity @s[scores={talent_2=7,talent_107=0},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(talent_2_tick)}
 
+# 设置改动侦测
+execute as @s[nbt=!{Inventory:[{Slot:20b}]}] run function main:lib/event/personal_setting {setting:"ingame_score",limit:"2"}
+execute as @s[nbt=!{Inventory:[{Slot:21b}]}] run function main:lib/event/personal_setting {setting:"interact_hint",limit:"2"}
+execute as @s[nbt=!{Inventory:[{Slot:22b}]}] run function main:lib/event/personal_setting {setting:"ability_actionbar",limit:"3"}
+execute as @s[nbt=!{Inventory:[{Slot:23b}]}] run function main:lib/event/personal_setting {setting:"detailed_result",limit:"2"}
+execute as @s[nbt=!{Inventory:[{Slot:24b}]}] run function main:lib/event/personal_setting {setting:"ingame_tip",limit:"2"}
+
+# 设置物品
+item replace block 0 -7 0 container.11 with ender_eye
+item replace block 0 -7 0 container.12 with book
+execute if score @s setting.ability_actionbar matches 2 run item replace block 0 -7 0 container.13 with emerald_block
+execute if score @s setting.ability_actionbar matches 1 run item replace block 0 -7 0 container.13 with honey_block
+execute if score @s setting.ability_actionbar matches 0 run item replace block 0 -7 0 container.13 with red_stained_glass
+item replace block 0 -7 0 container.14 with paper
+item replace block 0 -7 0 container.15 with light[block_state={level:"7"}]
+
 # 数据处理
 $execute if entity @s[team=guardian,scores={state=0}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)a
 $execute if entity @s[team=guardian,scores={state=0,damage_tick=1..}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)b
@@ -146,3 +157,14 @@ item replace entity @s hotbar.1 from block 0 -7 0 container.1
 item replace entity @s hotbar.4 from block 0 -7 0 container.4
 item replace entity @s hotbar.7 from block 0 -7 0 container.7
 item replace entity @s hotbar.8 from block 0 -7 0 container.8
+execute if score @s setting.ingame_score matches 0 run item replace entity @s inventory.11 from block 0 -7 0 container.11 main:setting/ingame_score.0
+execute if score @s setting.ingame_score matches 1 run item replace entity @s inventory.11 from block 0 -7 0 container.11 main:setting/ingame_score.1
+execute if score @s setting.interact_hint matches 0 run item replace entity @s inventory.12 from block 0 -7 0 container.12 main:setting/interact_hint.0
+execute if score @s setting.interact_hint matches 1 run item replace entity @s inventory.12 from block 0 -7 0 container.12 main:setting/interact_hint.1
+execute if score @s setting.ability_actionbar matches 0 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.0
+execute if score @s setting.ability_actionbar matches 1 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.1
+execute if score @s setting.ability_actionbar matches 2 run item replace entity @s inventory.13 from block 0 -7 0 container.13 main:setting/ability_actionbar.2
+execute if score @s setting.detailed_result matches 0 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/detailed_result.0
+execute if score @s setting.detailed_result matches 1 run item replace entity @s inventory.14 from block 0 -7 0 container.14 main:setting/detailed_result.1
+execute if score @s setting.ingame_tip matches 0 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/ingame_tip.0
+execute if score @s setting.ingame_tip matches 1 run item replace entity @s inventory.15 from block 0 -7 0 container.15 main:setting/ingame_tip.1

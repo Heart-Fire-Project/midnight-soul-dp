@@ -10,6 +10,6 @@ effect give @s speed 7 4
 effect give @s resistance 15 4
 
 # 受文本套组影响
-execute unless score @s extra_text matches 1..2 run function main:lib/player/healed/0
-execute if score @s extra_text matches 1 run function main:lib/player/healed/1
-execute if score @s extra_text matches 2 run function main:lib/player/healed/2
+execute unless score @s extra.text matches 1..2 run function main:lib/player/healed/0
+execute if score @s extra.text matches 1 run function main:lib/player/healed/1
+execute if score @s extra.text matches 2 run function main:lib/player/healed/2

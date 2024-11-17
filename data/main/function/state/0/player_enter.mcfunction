@@ -21,7 +21,7 @@ execute unless entity @s[x=-12,y=-1,z=-12,dx=16,dy=16,dz=16] unless entity @s[x=
 execute unless score @s music matches -1 run function main:state/0/music_roll
 
 # 先计算一次经验上限，然后执行经验结算
-scoreboard players operation @s temp = @s[scores={stat_level=..127}] stat_level
-scoreboard players set @s[scores={stat_level=..127}] temp2 0
+scoreboard players operation @s temp = @s[scores={stat.level=..127}] stat.level
+scoreboard players set @s[scores={stat.level=..127}] temp2 0
 function main:state/0/exp/maximum
 function main:state/0/exp/loop

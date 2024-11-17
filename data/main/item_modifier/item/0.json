@@ -1,33 +1,33 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.item.0",
             "fallback":"空",
             "color":"gray",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             {
                 "translate":"ms.item.0.desc",
                 "fallback":"开启灵魂宝物盒以获取宝物",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 73000
+        "value":73000
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

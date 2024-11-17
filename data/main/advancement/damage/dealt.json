@@ -1,17 +1,17 @@
 {
-    "criteria": {
-        "hurt": {
+    "criteria":{
+        "hurt":{
             "trigger":"player_hurt_entity",
-            "conditions": {
-                "damage": {
-                    "taken": {
-                        "min": 0.1
+            "conditions":{
+                "damage":{
+                    "taken":{
+                        "min":0.1
                     }
                 }
             }
         }
     },
-    "rewards": {
+    "rewards":{
         "function":"main:lib/player/hit"
     }
 }

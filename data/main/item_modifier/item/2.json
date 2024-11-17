@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.item.2",
             "fallback":"共鸣引力",
             "color":"#33FFAA",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"> ",
                     "color":"#33FFAA",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.collect",
@@ -26,25 +26,25 @@
                 "translate":"ms.item.2.desc.a",
                 "fallback":"生成一个灵魂碎片，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.item.2.desc.b",
                 "fallback":"并将半径 15 格内的灵魂碎片聚集至脚下",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 73002
+        "value":73002
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

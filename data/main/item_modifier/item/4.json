@@ -1,32 +1,32 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.item.4",
             "fallback":"相位替换",
             "color":"#33FFAA",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"> ",
                     "color":"#33FFAA",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.survive",
                     "fallback":"生存",
-                    "strikethrough": true
+                    "strikethrough":true
                 },
                 "/",
                 {
                     "translate":"ms.tag.debuff",
                     "fallback":"妨害",
-                    "strikethrough": true
+                    "strikethrough":true
                 },
                 "/",
                 {
@@ -38,19 +38,19 @@
                 "translate":"ms.item.4.desc",
                 "fallback":"与最远的灵魂交换位置",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 73004
+        "value":73004
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

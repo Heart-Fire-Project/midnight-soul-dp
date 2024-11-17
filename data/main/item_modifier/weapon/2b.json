@@ -1,59 +1,59 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.weapon.2",
             "fallback":"祛灵刃 β",
             "color":"#847A84",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             {
                 "text":"🗡 20 >",
                 "color":"#847A84",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.weapon.2.desc",
                 "fallback":"以历战之刃斩不净之物",
                 "color":"#CCCCCC",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 73102
+        "value":73102
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {},
-            "unbreakable": {
-                "show_in_tooltip": false
+        "components":{
+            "hide_additional_tooltip":{},
+            "unbreakable":{
+                "show_in_tooltip":false
             },
-            "attribute_modifiers": {
-                "modifiers": [
+            "attribute_modifiers":{
+                "modifiers":[
                     {
                         "slot":"mainhand",
                         "type":"generic.attack_damage",
-                        "amount": 20,
+                        "amount":20,
                         "id":"weapon_atk",
                         "operation":"add_value"
                     },
                     {
                         "slot":"mainhand",
                         "type":"generic.attack_speed",
-                        "amount": 777,
+                        "amount":777,
                         "id":"weapon_ats",
                         "operation":"add_value"
                     }
                 ],
-                "show_in_tooltip": false
+                "show_in_tooltip":false
             }
         }
     }

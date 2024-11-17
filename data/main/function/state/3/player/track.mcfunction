@@ -6,7 +6,7 @@ scoreboard players set @n[tag=new_tracker] countdown 4
 tag @e remove new_tracker
 
 # 守卫者出现在标记半径三格内，视为正在追逐
-execute if entity @e[tag=tracker,distance=..3] run scoreboard players add @s[team=guardian] temp_track 1
+execute if entity @e[tag=tracker,distance=..3] run scoreboard players add @s[team=guardian] temp.track 1
 
 # 灵魂牵制判定条件同上，注意不要每个标记都加分
 scoreboard players operation $player_id temp = @s player_id
@@ -14,4 +14,4 @@ execute as @e[tag=tracker] if score @s player_id = $player_id temp run tag @s ad
 scoreboard players set $pending temp 0
 execute at @e[tag=tie_pend] if entity @e[team=guardian,distance=..3] run scoreboard players set $pending temp 1
 tag @e remove tie_pend
-execute if score $pending temp matches 1 run scoreboard players add @s[team=soul] temp_tie 1
+execute if score $pending temp matches 1 run scoreboard players add @s[team=soul] temp.tie 1

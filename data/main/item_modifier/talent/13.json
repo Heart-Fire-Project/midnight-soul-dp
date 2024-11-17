@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.talent.103",
             "fallback":"祛灵十字",
             "color":"gold",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"> ",
                     "color":"gold",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.kill",
@@ -26,19 +26,19 @@
                 "translate":"ms.talent.103.desc",
                 "fallback":"攻击后的擦刀时间 -20%",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 72103
+        "value":72103
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

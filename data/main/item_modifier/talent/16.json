@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.talent.106",
             "fallback":"共振感应",
             "color":"gold",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"⏱ 3 > ",
                     "color":"gold",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.detect",
@@ -31,19 +31,19 @@
                 "translate":"ms.talent.106.desc",
                 "fallback":"擦刀状态结束时，使最近的灵魂发光",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 72106
+        "value":72106
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

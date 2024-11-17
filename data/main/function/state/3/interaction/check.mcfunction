@@ -14,9 +14,9 @@ execute unless entity @e[tag=gray,distance=..0.5] run tag @s remove gray_interac
 execute as @s[tag=blue_hint] run title @s actionbar [{"translate":"ms.hint.blue","fallback":"长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color":"blue"}]
 execute as @s[tag=gold_hint] run title @s actionbar [{"translate":"ms.hint.gold","fallback":"长按 [%s] 以点亮","with":[{"keybind":"key.sneak"}],"color":"gold"}]
 execute as @s[tag=gray_hint] run title @s actionbar [{"translate":"ms.hint.gray","fallback":"长按 [%s] 以打开","with":[{"keybind":"key.sneak"}],"color":"gray"}]
-execute as @s[tag=!interacting,tag=blue_interact,team=soul] run tag @s add blue_hint
-execute as @s[tag=!interacting,tag=gold_interact,team=soul] run tag @s add gold_hint
-execute as @s[tag=!interacting,tag=gray_interact] run tag @s add gray_hint
+execute as @s[tag=!interacting,tag=blue_interact,team=soul,scores={setting.interact_hint=1}] run tag @s add blue_hint
+execute as @s[tag=!interacting,tag=gold_interact,team=soul,scores={setting.interact_hint=1}] run tag @s add gold_hint
+execute as @s[tag=!interacting,tag=gray_interact,scores={setting.interact_hint=1}] run tag @s add gray_hint
 execute as @s[tag=blue_hint,tag=!blue_interact] run title @s actionbar ""
 execute as @s[tag=gold_hint,tag=!gold_interact] run title @s actionbar ""
 execute as @s[tag=gray_hint,tag=!gray_interact] run title @s actionbar ""

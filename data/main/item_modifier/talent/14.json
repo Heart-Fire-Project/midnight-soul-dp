@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.talent.104",
             "fallback":"隐于迷雾",
             "color":"gold",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"🔁 90 > ",
                     "color":"gold",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.detect",
@@ -31,49 +31,49 @@
                 "translate":"ms.talent.104.desc.a",
                 "fallback":"天赋生效时:",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.b",
                 "fallback":"· 使全体灵魂获得 5 秒黑暗",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.c",
                 "fallback":"· 自身获得持续隐身",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.d",
                 "fallback":"· 持续使距离 40 格以外的灵魂获得发光",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.e",
                 "fallback":"距离 20 格内有灵魂时天赋结束",
                 "color":"gray",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.f",
                 "fallback":"攻击到灵魂时立刻重设冷却为最大值",
                 "color":"gray",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 72104
+        "value":72104
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

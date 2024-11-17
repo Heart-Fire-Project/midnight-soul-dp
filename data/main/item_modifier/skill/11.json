@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.skill.101",
             "fallback":"虔诚力场",
             "color":"red",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"🔁 70  ⏱ 7 > ",
                     "color":"red",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.detect",
@@ -26,25 +26,25 @@
                 "translate":"ms.skill.101.desc.a",
                 "fallback":"即刻使全部灵魂发光，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.101.desc.b",
                 "fallback":"其中距离你最近的灵魂效果时长翻倍",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 71101
+        "value":71101
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

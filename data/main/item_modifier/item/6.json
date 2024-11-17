@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.item.6",
             "fallback":"太空体验",
             "color":"#33FFAA",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"⏱ 7 > ",
                     "color":"#33FFAA",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.survive",
@@ -31,25 +31,25 @@
                 "translate":"ms.item.6.desc.a",
                 "fallback":"生效期间内你将不受重力影响",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.item.6.desc.b",
                 "fallback":"不会改变初始动量",
                 "color":"gray",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 73006
+        "value":73006
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

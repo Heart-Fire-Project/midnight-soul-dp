@@ -7,7 +7,7 @@ tag @a remove join_check
 tag @a remove ability_check
 
 # 强制结算经验
-execute as @a run scoreboard players operation @s stat_exp += @s exp_temp
+execute as @a run scoreboard players operation @s stat.exp += @s exp_temp
 execute as @a run scoreboard players reset @s exp_temp
 
 # 入场

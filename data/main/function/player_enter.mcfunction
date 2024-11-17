@@ -1,3 +1,6 @@
+# 将音效最提前处理以适配管理员退出
+execute if score @s leave_game matches 1.. run playsound entity.experience_orb.pickup player @a 0 1000000 0 1000000 1
+
 # 基础数值设定
 scoreboard players set @s leave_game 0
 team join spectator @s
@@ -22,7 +25,6 @@ execute if score $state data matches 1 run bossbar set midsoul:info players @a[t
 execute if score $state data matches 2 run bossbar set midsoul:info players @a[team=spectator]
 
 # 按照状态进行不同入场流程
-playsound entity.experience_orb.pickup player @a 0 1000000 0 1000000 1
 scoreboard players reset @s music
 execute if score $state data matches 0 run function main:state/0/player_enter
 execute if score $state data matches 1 run function main:state/1/player_enter/spectator

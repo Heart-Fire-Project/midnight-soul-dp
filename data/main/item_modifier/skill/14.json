@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.skill.104",
             "fallback":"恶灵诅咒",
             "color":"red",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"🔁 60 > ",
                     "color":"red",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.debuff",
@@ -26,62 +26,62 @@
                 "translate":"ms.skill.104.desc.a",
                 "fallback":"为一个随机的灵魂宝物盒附加诅咒效果，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.b",
                 "fallback":"若没有未被诅咒的灵魂宝物盒则生成 2 个；",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.c",
                 "fallback":"技能施放时自身在 8 秒内移速 +60%，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.d",
                 "fallback":"场上每有一个被诅咒的灵魂宝物盒延长 8 秒时间",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             "",
             {
                 "translate":"ms.skill.104.desc.e",
                 "fallback":"「诅咒」",
                 "color":"dark_red",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.f",
                 "fallback":"灵魂经过时自身发光且移速 -15%，",
                 "color":"gray",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.g",
                 "fallback":"守卫者经过时全体灵魂发光且自身移速 +20%；",
                 "color":"gray",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.h",
                 "fallback":"开启该灵魂宝物盒时获取更强的上述效果",
                 "color":"gray",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 71104
+        "value":71104
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

@@ -6,4 +6,4 @@ function main:state/3/effect
 tag @s add hit_soul
 
 # 统计数据
-scoreboard players add @s temp_hit 1
+scoreboard players add @s temp.hit 1

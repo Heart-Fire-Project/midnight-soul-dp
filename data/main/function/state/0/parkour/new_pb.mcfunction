@@ -1,5 +1,5 @@
-execute unless entity @s[tag=hidden_parkour] run function main:state/0/parkour/time_format {source:"stat_parkour_5"}
-execute if entity @s[tag=hidden_parkour] run function main:state/0/parkour/time_format {source:"stat_parkour_7"}
+execute unless entity @s[tag=hidden_parkour] run function main:state/0/parkour/time_format {source:"stat.parkour_5"}
+execute if entity @s[tag=hidden_parkour] run function main:state/0/parkour/time_format {source:"stat.parkour_7"}
 
 execute if score @s parkour_tick matches -37 run title @s actionbar ""
 execute if score @s parkour_tick matches -36 run title @s actionbar [{"translate":"ms.parkour.finish","fallback":"跑酷已完成","color":"green"}," | ",{"storage":"ms:string","nbt":"result"}]

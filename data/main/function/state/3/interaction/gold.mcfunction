@@ -1,5 +1,5 @@
 # 完成灵灯点亮
-scoreboard players add @a[distance=..0.5,tag=gold_interact,scores={countdown=1400..}] temp_heal 1
+scoreboard players add @a[distance=..0.5,tag=gold_interact,scores={countdown=1400..}] temp.heal 1
 particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a
 playsound entity.evoker.prepare_summon ambient @a ~ ~ ~
 

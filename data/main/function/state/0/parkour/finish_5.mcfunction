@@ -17,11 +17,11 @@ title @s actionbar [{"translate":"ms.parkour.finish","fallback":"跑酷已完成
 # 展示成绩
 tellraw @s [{"text":"» ","bold":true,"color":"green"},{"translate":"ms.parkour.5","fallback":"大厅跑酷完成","bold":false}]
 tellraw @s ["   ",{"translate":"ms.parkour.time","fallback":"本次用时"}," » ",{"storage":"ms:string","nbt":"result"}]
-execute if entity @s[scores={stat_parkour_5=1..}] run function main:state/0/parkour/time_format {source:"stat_parkour_5"}
-execute if score @s stat_parkour_5 matches ..0 run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ","--:--.--"]
-execute if score @s stat_parkour_5 matches 1.. run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ",{"storage":"ms:string","nbt":"result"}]
+execute if entity @s[scores={stat.parkour_5=1..}] run function main:state/0/parkour/time_format {source:"stat.parkour_5"}
+execute if score @s stat.parkour_5 matches ..0 run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ","--:--.--"]
+execute if score @s stat.parkour_5 matches 1.. run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ",{"storage":"ms:string","nbt":"result"}]
 
 # 个人最佳
-execute if score @s temp2 < @s stat_parkour_5 run scoreboard players set @s parkour_tick -52
-execute if score @s stat_parkour_5 matches ..0 run scoreboard players set @s parkour_tick -52
-execute if score @s parkour_tick matches -52 run scoreboard players operation @s stat_parkour_5 = @s temp2
+execute if score @s temp2 < @s stat.parkour_5 run scoreboard players set @s parkour_tick -52
+execute if score @s stat.parkour_5 matches ..0 run scoreboard players set @s parkour_tick -52
+execute if score @s parkour_tick matches -52 run scoreboard players operation @s stat.parkour_5 = @s temp2

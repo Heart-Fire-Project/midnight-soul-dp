@@ -1,5 +1,5 @@
 # 完成碎片收集
-scoreboard players add @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] temp_collect 1
+scoreboard players add @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] temp.collect 1
 scoreboard players add $shard_collect data 1
 execute if score $3_gametime countdown matches 18001.. run scoreboard players add $3_gametime countdown 100
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a

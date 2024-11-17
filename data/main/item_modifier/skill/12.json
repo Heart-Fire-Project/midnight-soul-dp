@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.skill.102",
             "fallback":"灵力掌控",
             "color":"red",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"🔁 40  ⏱ 30 > ",
                     "color":"red",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.kill",
@@ -26,43 +26,43 @@
                 "translate":"ms.skill.102.desc.a",
                 "fallback":"技能结束后的 10 秒内移速 +100%；",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.b",
                 "fallback":"技能持续期间内每有一个碎片被收集则获取 1 层额外加成，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.c",
                 "fallback":"每层会在技能结束后附加 6 秒的伤害翻倍，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.d",
                 "fallback":"从第 2 层开始每层额外延长 5 秒移速加成",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.e",
                 "fallback":"附加效果最多叠加 5 层",
                 "color":"gray",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 71102
+        "value":71102
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

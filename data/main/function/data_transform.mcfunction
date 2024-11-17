@@ -1,35 +1,35 @@
 # 用于玩家更名后的数据转移
-$scoreboard players operation $(to) stat_collect += $(from) stat_collect
-$scoreboard players operation $(to) stat_heal += $(from) stat_heal
-$scoreboard players operation $(to) stat_open += $(from) stat_open
-$scoreboard players operation $(to) stat_dying += $(from) stat_dying
-$scoreboard players operation $(to) stat_hit += $(from) stat_hit
-$scoreboard players operation $(to) stat_down += $(from) stat_down
-$scoreboard players operation $(to) stat_skill += $(from) stat_skill
-$scoreboard players operation $(to) stat_talent += $(from) stat_talent
-$scoreboard players operation $(to) stat_item += $(from) stat_item
-$scoreboard players operation $(to) stat_kill += $(from) stat_kill
-$scoreboard players operation $(to) stat_death += $(from) stat_death
-$scoreboard players operation $(to) stat_revive += $(from) stat_revive
-$scoreboard players operation $(to) stat_time += $(from) stat_time
-$scoreboard players operation $(to) stat_win += $(from) stat_win
-$scoreboard players operation $(to) stat_win_soul += $(from) stat_win_soul
-$scoreboard players operation $(to) stat_win_guar += $(from) stat_win_guar
-$scoreboard players operation $(to) stat_draw += $(from) stat_draw
-$scoreboard players operation $(to) stat_lose += $(from) stat_lose
-$scoreboard players operation $(to) stat_play += $(from) stat_play
-$scoreboard players operation $(to) stat_play_soul += $(from) stat_play_soul
-$scoreboard players operation $(to) stat_play_guar += $(from) stat_play_guar
-$scoreboard players operation $(to) stat_mvp += $(from) stat_mvp
-$scoreboard players operation $(to) stat_level += $(from) stat_level
-$scoreboard players operation $(to) stat_exp += $(from) stat_exp
-$scoreboard players operation $(to) stat_adv += $(from) stat_adv
-$scoreboard players operation $(to) stat_adv_pt += $(from) stat_adv_pt
-$scoreboard players operation $(to) stat_rating = $(from) stat_rating
-$scoreboard players operation $(to) stat_single_record > $(from) stat_single_record
-$scoreboard players operation $(to) stat_rating_record > $(from) stat_rating_record
-$execute unless score $(from) stat_parkour_5 matches ..-1 run scoreboard players operation $(to) stat_parkour_5 < $(from) stat_parkour_5
-$execute unless score $(from) stat_parkour_7 matches ..-1 run scoreboard players operation $(to) stat_parkour_7 < $(from) stat_parkour_7
+$scoreboard players operation $(to) stat.collect += $(from) stat.collect
+$scoreboard players operation $(to) stat.heal += $(from) stat.heal
+$scoreboard players operation $(to) stat.open += $(from) stat.open
+$scoreboard players operation $(to) stat.dying += $(from) stat.dying
+$scoreboard players operation $(to) stat.hit += $(from) stat.hit
+$scoreboard players operation $(to) stat.down += $(from) stat.down
+$scoreboard players operation $(to) stat.skill += $(from) stat.skill
+$scoreboard players operation $(to) stat.talent += $(from) stat.talent
+$scoreboard players operation $(to) stat.item += $(from) stat.item
+$scoreboard players operation $(to) stat.kill += $(from) stat.kill
+$scoreboard players operation $(to) stat.death += $(from) stat.death
+$scoreboard players operation $(to) stat.revive += $(from) stat.revive
+$scoreboard players operation $(to) stat.time += $(from) stat.time
+$scoreboard players operation $(to) stat.win += $(from) stat.win
+$scoreboard players operation $(to) stat.win_soul += $(from) stat.win_soul
+$scoreboard players operation $(to) stat.win_guar += $(from) stat.win_guar
+$scoreboard players operation $(to) stat.draw += $(from) stat.draw
+$scoreboard players operation $(to) stat.lose += $(from) stat.lose
+$scoreboard players operation $(to) stat.play += $(from) stat.play
+$scoreboard players operation $(to) stat.play_soul += $(from) stat.play_soul
+$scoreboard players operation $(to) stat.play_guar += $(from) stat.play_guar
+$scoreboard players operation $(to) stat.mvp += $(from) stat.mvp
+$scoreboard players operation $(to) stat.level += $(from) stat.level
+$scoreboard players operation $(to) stat.exp += $(from) stat.exp
+$scoreboard players operation $(to) stat.adv += $(from) stat.adv
+$scoreboard players operation $(to) stat.adv_pt += $(from) stat.adv_pt
+$scoreboard players operation $(to) stat.rating = $(from) stat.rating
+$scoreboard players operation $(to) stat.single_record > $(from) stat.single_record
+$scoreboard players operation $(to) stat.rating_record > $(from) stat.rating_record
+$execute unless score $(from) stat.parkour_5 matches ..-1 run scoreboard players operation $(to) stat.parkour_5 < $(from) stat.parkour_5
+$execute unless score $(from) stat.parkour_7 matches ..-1 run scoreboard players operation $(to) stat.parkour_7 < $(from) stat.parkour_7
 
 # 删号
 $scoreboard players reset $(from)

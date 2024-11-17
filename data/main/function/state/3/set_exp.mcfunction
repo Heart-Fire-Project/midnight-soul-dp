@@ -12,9 +12,9 @@ scoreboard players set @s[scores={temp=..0}] temp2 0
 scoreboard players set @s[tag=blue_interact] temp 700
 scoreboard players set @s[tag=gold_interact] temp 1400
 scoreboard players set @s[tag=gray_interact] temp 1000
-scoreboard players set @s[scores={state=1,temp_dying=1},team=soul] temp 12000
-scoreboard players set @s[scores={state=1,temp_dying=2},team=soul] temp 8000
-scoreboard players set @s[scores={state=1,temp_dying=3..},team=soul] temp 4000
+scoreboard players set @s[scores={state=1,temp.dying=1},team=soul] temp 12000
+scoreboard players set @s[scores={state=1,temp.dying=2},team=soul] temp 8000
+scoreboard players set @s[scores={state=1,temp.dying=3..},team=soul] temp 4000
 scoreboard players set @s[scores={state=1},team=guardian] temp 1400
 
 function base:set_exp {current:"countdown",max:"temp",level:"temp2"}

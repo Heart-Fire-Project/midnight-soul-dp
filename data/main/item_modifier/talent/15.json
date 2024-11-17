@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.talent.105",
             "fallback":"舍近求远",
             "color":"gold",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"🔁 60  ⏱ 5 > ",
                     "color":"gold",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.detect",
@@ -26,19 +26,19 @@
                 "translate":"ms.talent.105.desc",
                 "fallback":"使距离你较远的至多 3 位灵魂发光",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 72105
+        "value":72105
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]

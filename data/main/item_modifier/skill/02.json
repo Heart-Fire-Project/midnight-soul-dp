@@ -1,21 +1,21 @@
 [
     {
         "function":"set_name",
-        "name": {
+        "name":{
             "translate":"ms.skill.002",
             "fallback":"灵灯之筑",
             "color":"#5599FF",
-            "italic": false
+            "italic":false
         }
     },
     {
         "function":"set_lore",
-        "lore": [
+        "lore":[
             [
                 {
                     "text":"🔁 75  ⏱ 15 > ",
                     "color":"#5599FF",
-                    "italic": false
+                    "italic":false
                 },
                 {
                     "translate":"ms.tag.heal",
@@ -31,37 +31,37 @@
                 "translate":"ms.skill.002.desc.a",
                 "fallback":"自身持续发光且移速 -60%；",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.b",
                 "fallback":"技能结束后视为点亮一次灵魂之灯，",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.c",
                 "fallback":"若场上没有垂死灵魂则改为使一位守卫者",
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.d",
                 "fallback":"在 15 秒内发光且移速 -75%",
                 "color":"white",
-                "italic": false
+                "italic":false
             }
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_model_data",
-        "value": 71002
+        "value":71002
     },
     {
         "function":"set_components",
-        "components": {
-            "hide_additional_tooltip": {}
+        "components":{
+            "hide_additional_tooltip":{}
         }
     }
 ]
