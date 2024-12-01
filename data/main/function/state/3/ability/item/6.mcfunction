@@ -4,7 +4,7 @@ tag @s add item_on
 scoreboard players add @s temp.item 1
 
 # 给予效果
-attribute @s generic.gravity base set 0
+attribute @s gravity base set 0
 
 # 设置计时
 scoreboard players set @s item_tick -1400

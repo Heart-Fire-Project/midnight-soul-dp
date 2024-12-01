@@ -12,8 +12,8 @@ kill @e[tag=gold,limit=1]
 effect clear @s
 
 # 恢复玩家属性
-attribute @s generic.movement_speed base set 0.10
-attribute @s generic.jump_strength base set 0.42
+attribute @s movement_speed base set 0.10
+attribute @s jump_strength base set 0.42
 
 # 统计数据
 scoreboard players add @a[team=guardian] stat.kill 1

@@ -40,14 +40,14 @@
                 "modifiers":[
                     {
                         "slot":"mainhand",
-                        "type":"generic.attack_damage",
+                        "type":"attack_damage",
                         "amount":-10,
                         "id":"weapon_atk",
                         "operation":"add_value"
                     },
                     {
                         "slot":"mainhand",
-                        "type":"generic.attack_speed",
+                        "type":"attack_speed",
                         "amount":777,
                         "id":"weapon_ats",
                         "operation":"add_value"

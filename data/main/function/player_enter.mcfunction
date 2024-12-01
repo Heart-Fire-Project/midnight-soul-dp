@@ -4,8 +4,8 @@ execute if score @s leave_game matches 1.. run playsound entity.experience_orb.p
 # 基础数值设定
 scoreboard players set @s leave_game 0
 team join spectator @s
-attribute @s generic.movement_speed base set 0.1
-attribute @s generic.gravity base set 0.08
+attribute @s movement_speed base set 0.1
+attribute @s gravity base set 0.08
 
 # 去除游戏内标签
 tag @s remove hidden_parkour

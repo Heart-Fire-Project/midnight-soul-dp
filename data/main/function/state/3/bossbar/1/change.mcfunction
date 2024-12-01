@@ -12,4 +12,4 @@ bossbar set midsoul:heed max 800
 bossbar set midsoul:warn max 800
 
 # 可以调整的就调整基础速度
-execute as @a[team=guardian,scores={state=0}] run attribute @s generic.movement_speed base set 0.14
+execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.14

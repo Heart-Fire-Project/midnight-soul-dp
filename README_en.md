@@ -1,6 +1,6 @@
 ## 🔯 Welcome to Midnight Soul ~~Reset^2~~
 
-> Last Edited » +64 | 2024/08/08  
+> Last Edited » +93 | 2024/12/01  
 > 点击[这里](https://github.com/Heart-Fire-Project/Midsoul/blob/plus/README.md)来访问中文版
 
 🚧 UNDER HEAVY CONSTRUCTION 🚧
@@ -9,7 +9,7 @@ Again, here is the repository of **Midnight Soul's** datapack, branch "plus" thi
 
 Thanks to Mojang, about 2 months after we published the Reset Version, they changed datapacks... Anyway, we will just throw away the old version. In this rewrite, we will try our best to optimize all the aspects, which includes:
 
-- An update to 1.21
+- An update to 1.21.3
 - New lobby and features
 - New balanced game feature
 - ~~Chaos~~ Echo that we have saying about

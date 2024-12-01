@@ -44,4 +44,4 @@ $scoreboard players set $(target) stat.parkour_5 -1
 $scoreboard players set $(target) stat.parkour_7 -1
 
 # 数值初始化
-$attribute $(target) generic.attack_damage base set 0
+$attribute $(target) attack_damage base set 0

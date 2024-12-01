@@ -3,4 +3,4 @@ tag @s remove item_on
 scoreboard players set @s item 0
 
 # 恢复状态
-attribute @s generic.gravity base set 0.08
+attribute @s gravity base set 0.08
