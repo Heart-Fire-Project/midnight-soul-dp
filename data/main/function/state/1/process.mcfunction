@@ -180,9 +180,7 @@ execute if score $1_process countdown matches 110 as @a[team=guardian] run funct
 execute if score $1_process countdown matches 110 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 1000000
 
 # 60 | 小提示
-execute if score $1_process countdown matches 60 run playsound item.book.page_turn player @a[tag=game_player] 0 1000000 0 1000000
-execute if score $1_process countdown matches 60 as @a[tag=game_player,team=soul,scores={setting.ingame_tip=1}] run function main:lib/tip/soul
-execute if score $1_process countdown matches 60 as @a[tag=game_player,team=guardian,scores={setting.ingame_tip=1}] run function main:lib/tip/guar
+execute if score $1_process countdown matches 60 run function main:lib/tip/general
 
 # 40 | 预载地图
 execute if score $1_process countdown matches 40 run forceload remove all

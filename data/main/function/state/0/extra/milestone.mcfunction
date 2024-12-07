@@ -21,7 +21,7 @@ item replace entity @s enderchest.25 with air
 item replace entity @s enderchest.26 with air
 
 # 等现在这堆能力平衡性做好的
-item replace entity @s enderchest.10 with netherite_upgrade_smithing_template[custom_name='{"translate":"ms.milestone.-1","fallback":"敬请期待","italic":false}',lore=['{"translate":"ms.milestone.-1.desc","fallback":"仅供测试使用","color":"gray","italic":false}'],hide_additional_tooltip={}] 1
+item replace entity @s enderchest.10 with netherite_upgrade_smithing_template[custom_name='{"translate":"ms.milestone.-1","fallback":"敬请期待","color":"white","italic":false}',lore=['{"translate":"ms.milestone.-1.desc","fallback":"仅供测试使用","color":"gray","italic":false}'],hide_additional_tooltip={}] 1
 
 # 塞点例子
 execute unless score @s extra.milestone matches 1.. run item replace entity @s enderchest.11 with red_stained_glass_pane[custom_name='{"translate":"ms.milestone.1","fallback":"α","italic":false}',lore=['[{"translate":"ms.lore.locked","fallback":"🔒 未解锁","color":"red","italic":false}]','""','{"translate":"ms.milestone.shard","fallback":"· 累计收集 %s 个碎片","with":["20"],"color":"gray","italic":false}'],hide_additional_tooltip={}] 1

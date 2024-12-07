@@ -55,11 +55,11 @@ execute if score $echo data matches 1..9 run scoreboard players display name $ec
 
 # 然后，在第八日……
 execute if score $echo data matches 1 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.1","fallback":"强制性引导","color":"#F75EEB"}
-execute if score $echo data matches 2 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.2","fallback":"碎片鉴别课","color":"#F75EEB"}
-execute if score $echo data matches 3 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.3","fallback":"轮回经九载","color":"#F75EEB"}
-execute if score $echo data matches 4 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.4","fallback":"以血作置换","color":"#F75EEB"}
-execute if score $echo data matches 5 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.5","fallback":"天不测风云","color":"#F75EEB"}
-execute if score $echo data matches 6 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.6","fallback":"灵气如水汽","color":"#F75EEB"}
-execute if score $echo data matches 7 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.7","fallback":"动能之定理","color":"#F75EEB"}
-execute if score $echo data matches 8 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.8","fallback":"惊喜或惊吓","color":"#F75EEB"}
-execute if score $echo data matches 9 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.9","fallback":"逃离仍如初","color":"#F75EEB"}
+execute if score $echo data matches 2 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.2","fallback":"灵魂鉴碎片","color":"#F75EEB"}
+execute if score $echo data matches 3 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.3","fallback":"九次九碎片","color":"#F75EEB"}
+execute if score $echo data matches 4 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.4","fallback":"技能全靠盒","color":"#F75EEB"}
+execute if score $echo data matches 5 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.5","fallback":"个雷劈落来","color":"#F75EEB"}
+execute if score $echo data matches 6 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.6","fallback":"谁家小灵魂","color":"#F75EEB"}
+execute if score $echo data matches 7 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.7","fallback":"冲刺冲刺冲","color":"#F75EEB"}
+execute if score $echo data matches 8 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.8","fallback":"命运交响曲","color":"#F75EEB"}
+execute if score $echo data matches 9 run scoreboard players display numberformat $echo info fixed {"translate":"ms.echo.9","fallback":"破门直接逃","color":"#F75EEB"}
