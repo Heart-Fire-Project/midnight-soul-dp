@@ -1,1 +1,1 @@
-{"pack":{"pack_format":57,"description":"§9午夜灵魂数据包\nMidnight Soul Datapack"},"filter":{"block":[{"namespace":"minecraft","path":"recipe/.*"},{"namespace":"minecraft","path":"advancement/.*"}]}}
+{"pack":{"pack_format":61,"description":"§9午夜灵魂数据包\nMidnight Soul Datapack"},"filter":{"block":[{"namespace":"minecraft","path":"recipe/.*"},{"namespace":"minecraft","path":"advancement/.*"}]}}

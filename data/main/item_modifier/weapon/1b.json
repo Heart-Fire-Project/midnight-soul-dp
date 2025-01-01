@@ -26,8 +26,11 @@
         "mode":"replace_all"
     },
     {
-        "function":"set_custom_model_data",
-        "value":73101
+        "function": "set_custom_data",
+        "tag": {
+            "type": "weapon",
+            "id": 73101
+        }
     },
     {
         "function":"set_components",

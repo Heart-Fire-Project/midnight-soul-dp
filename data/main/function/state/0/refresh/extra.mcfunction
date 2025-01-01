@@ -38,11 +38,11 @@ function base:merge_sign {x:"-987",y:"0",z:"-995",glow:"1",color:"white",trans_2
 function base:merge_sign {x:"-987",y:"0",z:"-994",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.2",fallb_2:"02",fallb_3:"祛灵刃 β",command:"trigger interact_check set 4202"}
 function base:merge_sign {x:"-987",y:"0",z:"-993",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.3",fallb_2:"03",fallb_3:"破魂砖",command:"trigger interact_check set 4203"}
 function base:merge_sign {x:"-987",y:"0",z:"-992",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.4",fallb_2:"04",fallb_3:"散炽棍",command:"trigger interact_check set 4204"}
-summon item -986 -1.1 -996 {Tags:[extra_entity],Item:{id:"golden_sword",components:{custom_model_data:73100}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-summon item -986 -1.1 -995 {Tags:[extra_entity],Item:{id:"diamond_sword",components:{custom_model_data:73101}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-summon item -986 -1.1 -994 {Tags:[extra_entity],Item:{id:"netherite_sword",components:{custom_model_data:73102}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-summon item -986 -1.1 -993 {Tags:[extra_entity],Item:{id:"brick",components:{custom_model_data:73103}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-summon item -986 -1.1 -992 {Tags:[extra_entity],Item:{id:"blaze_rod",components:{custom_model_data:73104}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -986 -1.1 -996 {Tags:[extra_entity],Item:{id:"golden_sword"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -986 -1.1 -995 {Tags:[extra_entity],Item:{id:"diamond_sword"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -986 -1.1 -994 {Tags:[extra_entity],Item:{id:"netherite_sword"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -986 -1.1 -993 {Tags:[extra_entity],Item:{id:"brick"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+summon item -986 -1.1 -992 {Tags:[extra_entity],Item:{id:"blaze_rod"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 饰品装配
 summon text_display -997 -0.7 -995 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.headset","fallback":"饰品装配","color":"light_purple"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
@@ -54,9 +54,9 @@ function base:merge_sign {x:"-1000",y:"0",z:"-991",glow:"1",color:"white",trans_
 summon item_display -998 -0.48 -990 {Tags:["extra_entity"],item:{id:"player_head",components:{profile:R7sr}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.9f,0.9f,0.9f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon item_display -999 -0.48 -990 {Tags:["extra_entity"],item:{id:"player_head",components:{profile:Rsrsr}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.9f,0.9f,0.9f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon item_display -1000 -0.48 -990 {Tags:["extra_entity"],item:{id:"player_head",components:{profile:ElysiaWaifu}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.9f,0.9f,0.9f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
-summon item_display -998 -0.7 -990 {Tags:["extra_entity"],item:{id:"end_rod",components:{custom_model_data:73201}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.6f,0.6f,0.6f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
-summon item_display -999 -0.7 -990 {Tags:["extra_entity"],item:{id:"lightning_rod",components:{custom_model_data:73202}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.7f,0.7f,0.7f],translation:[-0.05f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
-summon item_display -1000 -0.7 -990 {Tags:["extra_entity"],item:{id:"amethyst_cluster",components:{custom_model_data:73203}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,-0.05f,0.05f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
+summon item_display -998 -0.7 -990 {Tags:["extra_entity"],item:{id:"end_rod"},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.6f,0.6f,0.6f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
+summon item_display -999 -0.7 -990 {Tags:["extra_entity"],item:{id:"lightning_rod"},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.7f,0.7f,0.7f],translation:[-0.05f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
+summon item_display -1000 -0.7 -990 {Tags:["extra_entity"],item:{id:"amethyst_cluster"},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,-0.05f,0.05f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
 
 # 文本套组
 summon text_display -997 -0.7 -1007 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.text","fallback":"文本套组","color":"blue"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

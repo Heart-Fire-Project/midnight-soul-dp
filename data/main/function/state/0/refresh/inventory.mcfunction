@@ -25,9 +25,9 @@ item replace entity @s inventory.26 with air
 # 装备栏
 execute unless score @s extra.headset matches 1..3 run item replace entity @s armor.head with air
 execute if entity @s[scores={extra.headset=1..3},tag=invisibility] run item replace entity @s armor.head with air
-item replace entity @s[scores={extra.headset=1},tag=!invisibility] armor.head with end_rod[custom_model_data=73201,hide_tooltip={}]
-item replace entity @s[scores={extra.headset=2},tag=!invisibility] armor.head with lightning_rod[custom_model_data=73202,hide_tooltip={}]
-item replace entity @s[scores={extra.headset=3},tag=!invisibility] armor.head with amethyst_cluster[custom_model_data=73203,hide_tooltip={}]
+item replace entity @s[scores={extra.headset=1},tag=!invisibility] armor.head with end_rod[hide_tooltip={}]
+item replace entity @s[scores={extra.headset=2},tag=!invisibility] armor.head with lightning_rod[hide_tooltip={}]
+item replace entity @s[scores={extra.headset=3},tag=!invisibility] armor.head with amethyst_cluster[hide_tooltip={}]
 item replace entity @s armor.chest with air
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air
@@ -43,8 +43,8 @@ item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
 
 # 改动侦测
-execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70000}}]}] run function main:lib/event/prepare
-execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_model_data":70001}}]}] run function main:lib/event/spectator
+execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{"id":70000}}}]}] run function main:lib/event/prepare
+execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{"id":70001}}}]}] run function main:lib/event/spectator
 execute as @s[nbt=!{Inventory:[{Slot:20b}]}] run function main:lib/event/personal_setting {setting:"ingame_score",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:21b}]}] run function main:lib/event/personal_setting {setting:"interact_hint",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:22b}]}] run function main:lib/event/personal_setting {setting:"ability_actionbar",limit:"3"}
@@ -52,8 +52,8 @@ execute as @s[nbt=!{Inventory:[{Slot:23b}]}] run function main:lib/event/persona
 execute as @s[nbt=!{Inventory:[{Slot:24b}]}] run function main:lib/event/personal_setting {setting:"detailed_result",limit:"2"}
 
 # 刷新物品
-item replace entity @s[team=spectator] hotbar.8 with gray_dye[item_name='{"translate":"ms.lobby.spectator","fallback":"未准备 - 按 [%s] 准备","italic":false,"color":"gray","with":[{"keybind":"key.swapOffhand"}]}',custom_model_data=70000,hide_additional_tooltip={}]
-item replace entity @s[team=prepare] hotbar.8 with light_blue_dye[item_name='{"translate":"ms.lobby.prepare","fallback":"已准备 - 按 [%s] 取消","italic":false,"color":"aqua","with":[{"keybind":"key.swapOffhand"}]}',custom_model_data=70001,hide_additional_tooltip={}]
+item replace entity @s[team=spectator] hotbar.8 with gray_dye[item_name='{"translate":"ms.lobby.spectator","fallback":"未准备 - 按 [%s] 准备","italic":false,"color":"gray","with":[{"keybind":"key.swapOffhand"}]}',custom_data={"type":"lobby","id":70000},hide_additional_tooltip={}]
+item replace entity @s[team=prepare] hotbar.8 with light_blue_dye[item_name='{"translate":"ms.lobby.prepare","fallback":"已准备 - 按 [%s] 取消","italic":false,"color":"aqua","with":[{"keybind":"key.swapOffhand"}]}',custom_data={"type":"lobby","id":70001},hide_additional_tooltip={}]
 item replace block 0 -7 0 container.11 with ender_eye
 item replace block 0 -7 0 container.12 with book
 execute if score @s setting.ability_actionbar matches 2 run item replace block 0 -7 0 container.13 with emerald_block

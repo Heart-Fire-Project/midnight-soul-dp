@@ -12,10 +12,10 @@ scoreboard players reset $ability_actionbar temp
 scoreboard players reset $detailed_result temp
 scoreboard players reset $ingame_tip temp
 $scoreboard players set $$(setting) temp 1
-execute if score $ingame_score temp matches 1 run clear @s ender_eye[custom_model_data=74010]
-execute if score $interact_hint temp matches 1 run clear @s book[custom_model_data=74020]
-execute if score $ability_actionbar temp matches 1 run clear @s emerald_block[custom_model_data=74032]
-execute if score $ability_actionbar temp matches 1 run clear @s honey_block[custom_model_data=74031]
-execute if score $ability_actionbar temp matches 1 run clear @s red_stained_glass[custom_model_data=74030]
-execute if score $ingame_tip temp matches 1 run clear @s light[custom_model_data=74040]
-execute if score $detailed_result temp matches 1 run clear @s flow_banner_pattern[custom_model_data=74050]
+execute if score $ingame_score temp matches 1 run clear @s ender_eye[custom_data={"id":74010,"type":"setting"}]
+execute if score $interact_hint temp matches 1 run clear @s book[custom_data={"id":74020,"type":"setting"}]
+execute if score $ability_actionbar temp matches 1 run clear @s emerald_block[custom_data={"id":74032,"type":"setting"}]
+execute if score $ability_actionbar temp matches 1 run clear @s honey_block[custom_data={"id":74031,"type":"setting"}]
+execute if score $ability_actionbar temp matches 1 run clear @s red_stained_glass[custom_data={"id":74030,"type":"setting"}]
+execute if score $ingame_tip temp matches 1 run clear @s light[custom_data={"id":74040,"type":"setting"}]
+execute if score $detailed_result temp matches 1 run clear @s flow_banner_pattern[custom_data={"id":74050,"type":"setting"}]

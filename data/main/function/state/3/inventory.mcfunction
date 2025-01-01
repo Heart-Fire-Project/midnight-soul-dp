@@ -25,9 +25,9 @@ item replace entity @s inventory.26 with air
 # 装备栏
 execute unless score @s extra.headset matches 1..3 run item replace entity @s armor.head with air
 execute if entity @s[scores={extra.headset=1..3},tag=invisibility] run item replace entity @s armor.head with air
-item replace entity @s[scores={extra.headset=1},tag=!invisibility] armor.head with end_rod[custom_model_data=73201,hide_tooltip={}]
-item replace entity @s[scores={extra.headset=2},tag=!invisibility] armor.head with lightning_rod[custom_model_data=73202,hide_tooltip={}]
-item replace entity @s[scores={extra.headset=3},tag=!invisibility] armor.head with amethyst_cluster[custom_model_data=73203,hide_tooltip={}]
+item replace entity @s[scores={extra.headset=1},tag=!invisibility] armor.head with end_rod[hide_tooltip={}]
+item replace entity @s[scores={extra.headset=2},tag=!invisibility] armor.head with lightning_rod[hide_tooltip={}]
+item replace entity @s[scores={extra.headset=3},tag=!invisibility] armor.head with amethyst_cluster[hide_tooltip={}]
 item replace entity @s armor.chest with air
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air

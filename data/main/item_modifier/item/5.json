@@ -44,8 +44,11 @@
         "mode":"replace_all"
     },
     {
-        "function":"set_custom_model_data",
-        "value":73005
+        "function": "set_custom_data",
+        "tag": {
+            "type": "item",
+            "id": 73005
+        }
     },
     {
         "function":"set_components",
