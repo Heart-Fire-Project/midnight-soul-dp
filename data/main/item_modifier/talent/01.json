@@ -49,10 +49,10 @@
         "mode":"replace_all"
     },
     {
-        "function": "set_custom_data",
-        "tag": {
-            "type": "talent",
-            "id": 72001
+        "function":"set_custom_data",
+        "tag":{
+            "type":"talent",
+            "id":72001
         }
     },
     {

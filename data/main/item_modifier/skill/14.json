@@ -75,10 +75,10 @@
         "mode":"replace_all"
     },
     {
-        "function": "set_custom_data",
-        "tag": {
-            "type": "skill",
-            "id": 71104
+        "function":"set_custom_data",
+        "tag":{
+            "type":"skill",
+            "id":71104
         }
     },
     {

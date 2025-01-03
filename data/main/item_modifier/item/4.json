@@ -44,10 +44,10 @@
         "mode":"replace_all"
     },
     {
-        "function": "set_custom_data",
-        "tag": {
-            "type": "item",
-            "id": 73004
+        "function":"set_custom_data",
+        "tag":{
+            "type":"item",
+            "id":73004
         }
     },
     {

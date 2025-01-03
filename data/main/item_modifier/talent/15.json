@@ -32,10 +32,10 @@
         "mode":"replace_all"
     },
     {
-        "function": "set_custom_data",
-        "tag": {
-            "type": "talent",
-            "id": 72105
+        "function":"set_custom_data",
+        "tag":{
+            "type":"talent",
+            "id":72105
         }
     },
     {

@@ -38,10 +38,10 @@
         "mode":"replace_all"
     },
     {
-        "function": "set_custom_data",
-        "tag": {
-            "type": "item",
-            "id": 73002
+        "function":"set_custom_data",
+        "tag":{
+            "type":"item",
+            "id":73002
         }
     },
     {

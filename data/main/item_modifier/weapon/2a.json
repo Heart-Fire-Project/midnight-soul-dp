@@ -26,10 +26,10 @@
         "mode":"replace_all"
     },
     {
-        "function": "set_custom_data",
-        "tag": {
-            "type": "weapon",
-            "id": 73102
+        "function":"set_custom_data",
+        "tag":{
+            "type":"weapon",
+            "id":73102
         }
     },
     {
