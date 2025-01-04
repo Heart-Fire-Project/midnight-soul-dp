@@ -14,25 +14,35 @@ bossbar set midsoul:info name {"translate":"ms.bossbar.2.starting","fallback":"�
 bossbar set midsoul:2 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"#52E5E7","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
 bossbar set midsoul:3 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"red","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
 
-# 闪烁
-execute if score $2_starting countdown matches 7 run scoreboard objectives setdisplay sidebar
-execute if score $2_starting countdown matches 5 run scoreboard objectives setdisplay sidebar info
-execute if score $2_starting countdown matches 3 run scoreboard objectives setdisplay sidebar
-execute if score $2_starting countdown matches 2 run scoreboard objectives setdisplay sidebar info
-execute if score $2_starting countdown matches 1 run scoreboard objectives setdisplay sidebar
-execute if score $2_starting countdown matches 7 run bossbar set midsoul:info visible false
-execute if score $2_starting countdown matches 5 run bossbar set midsoul:info visible true
-execute if score $2_starting countdown matches 3 run bossbar set midsoul:info visible false
-execute if score $2_starting countdown matches 2 run bossbar set midsoul:info visible true
-execute if score $2_starting countdown matches 7 run bossbar set midsoul:2 visible false
-execute if score $2_starting countdown matches 5 run bossbar set midsoul:2 visible true
-execute if score $2_starting countdown matches 3 run bossbar set midsoul:2 visible false
-execute if score $2_starting countdown matches 2 run bossbar set midsoul:2 visible true
+# 进入阶段特效
+execute if score $2_starting countdown matches 119 run bossbar set midsoul:2 name ""
+execute if score $2_starting countdown matches 118 run bossbar set midsoul:2 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"#52E5E7","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 117 run bossbar set midsoul:2 name ""
+execute if score $2_starting countdown matches 116 run bossbar set midsoul:2 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"#52E5E7","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 119 run bossbar set midsoul:3 name ""
+execute if score $2_starting countdown matches 118 run bossbar set midsoul:3 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"red","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 117 run bossbar set midsoul:3 name ""
+execute if score $2_starting countdown matches 116 run bossbar set midsoul:3 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"red","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 117 run scoreboard objectives setdisplay sidebar
+execute if score $2_starting countdown matches 115 run scoreboard objectives setdisplay sidebar info
+execute if score $2_starting countdown matches 113 run scoreboard objectives setdisplay sidebar
+execute if score $2_starting countdown matches 112 run scoreboard objectives setdisplay sidebar info
+execute if score $2_starting countdown matches 111 run scoreboard objectives setdisplay sidebar
+
+# 离开阶段特效
+execute if score $2_starting countdown matches 7 run bossbar set midsoul:info name ""
+execute if score $2_starting countdown matches 5 run bossbar set midsoul:info name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"white","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 3 run bossbar set midsoul:info name ""
+execute if score $2_starting countdown matches 2 run bossbar set midsoul:info name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"white","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 7 run bossbar set midsoul:2 name ""
+execute if score $2_starting countdown matches 5 run bossbar set midsoul:2 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"#52E5E7","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 3 run bossbar set midsoul:2 name ""
+execute if score $2_starting countdown matches 2 run bossbar set midsoul:2 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"#52E5E7","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
 execute if score $2_starting countdown matches 1 run bossbar set midsoul:2 players
-execute if score $2_starting countdown matches 7 run bossbar set midsoul:3 visible false
-execute if score $2_starting countdown matches 5 run bossbar set midsoul:3 visible true
-execute if score $2_starting countdown matches 3 run bossbar set midsoul:3 visible false
-execute if score $2_starting countdown matches 2 run bossbar set midsoul:3 visible true
+execute if score $2_starting countdown matches 7 run bossbar set midsoul:3 name ""
+execute if score $2_starting countdown matches 5 run bossbar set midsoul:3 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"red","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $2_starting countdown matches 3 run bossbar set midsoul:3 name ""
+execute if score $2_starting countdown matches 2 run bossbar set midsoul:3 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"red","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
 execute if score $2_starting countdown matches 1 run bossbar set midsoul:3 players
 
 # 时间轴

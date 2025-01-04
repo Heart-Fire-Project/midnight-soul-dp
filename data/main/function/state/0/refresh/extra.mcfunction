@@ -46,7 +46,7 @@ summon item -986 -1.1 -992 {Tags:[extra_entity],Item:{id:"blaze_rod"},PickupDela
 
 # 饰品装配
 summon text_display -997 -0.7 -995 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.headset","fallback":"饰品装配","color":"light_purple"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display -997 -0.85 -995 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.headset_desc","fallback":"装载材质包以享受超精美 3D 模型","color":"white"}]',background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display -997 -0.85 -995 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.headset_desc","fallback":"我去，是时尚小垃圾，我们有救了","color":"white"}]',background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 function base:merge_sign {x:"-997",y:"0",z:"-991",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.headset.0",fallb_2:"--",fallb_3:"空气",command:"trigger interact_check set 4300"}
 function base:merge_sign {x:"-998",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.1",fallb_2:"01",fallb_3:"鬼或独角兽",command:"trigger interact_check set 4301"}
 function base:merge_sign {x:"-999",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.2",fallb_2:"02",fallb_3:"战地通信员",command:"trigger interact_check set 4302"}

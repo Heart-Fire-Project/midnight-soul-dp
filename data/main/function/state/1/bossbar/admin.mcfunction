@@ -11,8 +11,9 @@ execute store result bossbar midsoul:1 value run scoreboard players get $1_singl
 bossbar set midsoul:1 name {"translate":"ms.bossbar.1.admin","fallback":"正在进行 » %s « 管理确认","color":"light_purple","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
 
 # 设置闪烁 | single
-execute if score $1_single countdown matches 7 run bossbar set midsoul:1 visible false
-execute if score $1_single countdown matches 5 run bossbar set midsoul:1 visible true
-execute if score $1_single countdown matches 3 run bossbar set midsoul:1 visible false
-execute if score $1_single countdown matches 2 run bossbar set midsoul:1 visible true
-execute if score $1_single countdown matches 1 run bossbar set midsoul:1 visible false
+execute if score $1_single countdown matches 10 run bossbar set midsoul:1 name ""
+execute if score $1_single countdown matches 7 run bossbar set midsoul:1 name {"translate":"ms.bossbar.1.admin","fallback":"正在进行 » %s « 管理确认","color":"light_purple","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $1_single countdown matches 5 run bossbar set midsoul:1 name ""
+execute if score $1_single countdown matches 3 run bossbar set midsoul:1 name {"translate":"ms.bossbar.1.admin","fallback":"正在进行 » %s « 管理确认","color":"light_purple","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
+execute if score $1_single countdown matches 2 run bossbar set midsoul:1 name ""
+execute if score $1_single countdown matches 1 run bossbar set midsoul:1 name {"translate":"ms.bossbar.1.admin","fallback":"正在进行 » %s « 管理确认","color":"light_purple","with":[{"score":{"objective":"temp2","name":"$sec"}}]}

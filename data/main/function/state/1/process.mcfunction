@@ -66,7 +66,7 @@ execute if score $1_process countdown matches 1021 run scoreboard objectives set
 execute if score $1_process countdown matches 1020 run scoreboard objectives setdisplay sidebar info
 
 # 1020 | 详情信息
-execute if score $1_process countdown matches 1020 unless score $echo data matches 0 as @a run function main:lib/echo
+execute if score $1_process countdown matches 1020 unless score $echo data matches 0 as @a[team=!admin] run function main:lib/echo
 
 # 1019 | 阵营分配标题
 execute if score $1_process countdown matches 1019 run title @a times 3 50 2
@@ -140,11 +140,11 @@ execute if score $1_process countdown matches 959 run playsound music_disc.5 mus
 execute if score $1_process countdown matches 959 if score $ability temp matches 2 run scoreboard players set $1_process countdown 559
 execute if score $1_process countdown matches 959 if score $ability temp matches 3 run scoreboard players set $1_process countdown 759
 
-# 961 / 956 | 过渡性闪几下
-execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible false
-execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 visible true
-execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 visible false
-execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 visible true
+# 961 / 960 | 若有选择阶段，则过渡性闪几下
+execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 name ""
+execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 name [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕ ",{"translate":"ms.soul.desc","fallback":"收集碎片，于月下复活自己","color":"white"}]
+execute if score $1_process countdown matches 961 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 name ""
+execute if score $1_process countdown matches 960 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
 
 # 959 / 160 | 能力选择 中途
 execute if score $1_process countdown matches 160..959 as @a[scores={interact_check=5100..5400},tag=!ability_check,tag=game_player] run function main:state/1/ability/selecting
@@ -161,9 +161,13 @@ execute if score $1_process countdown matches 160 run scoreboard players operati
 
 # 159 | 重设 Bossbar
 execute if score $1_process countdown matches 159 run bossbar set midsoul:2 value 1010000
-execute if score $1_process countdown matches 159 run bossbar set midsoul:2 name [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕ ",{"translate":"ms.soul.desc","fallback":"收集碎片，于月下复活自己","color":"white"}]
 execute if score $1_process countdown matches 159 run bossbar set midsoul:3 value 1010000
-execute if score $1_process countdown matches 159 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
+
+# 159 / 158 | 若有选择阶段，则过渡性闪几下
+execute if score $1_process countdown matches 159 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 name ""
+execute if score $1_process countdown matches 158 unless score $ability_apply setting matches 0 run bossbar set midsoul:2 name [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕ ",{"translate":"ms.soul.desc","fallback":"收集碎片，于月下复活自己","color":"white"}]
+execute if score $1_process countdown matches 159 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 name ""
+execute if score $1_process countdown matches 158 unless score $ability_apply setting matches 0 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
 
 # 159 | 进行技能随机
 execute if score $1_process countdown matches 159 as @a[tag=game_player] run function main:state/1/ability/random
@@ -189,6 +193,16 @@ execute if score $1_process countdown matches 40 if score $map data matches 1 ru
 execute if score $1_process countdown matches 40 if score $map data matches 2 run forceload add 900 -900 1100 -1100
 execute if score $1_process countdown matches 40 if score $map data matches 3 run forceload add -1000 1000 -669 1160
 execute if score $1_process countdown matches 40 if score $map data matches 3 run forceload add -1000 1160 -669 1321
+
+# 3 / 0 | Final Sparkle
+execute if score $1_process countdown matches 3 run bossbar set midsoul:2 name ""
+execute if score $1_process countdown matches 2 run bossbar set midsoul:2 name [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕ ",{"translate":"ms.soul.desc","fallback":"收集碎片，于月下复活自己","color":"white"}]
+execute if score $1_process countdown matches 1 run bossbar set midsoul:2 name ""
+execute if score $1_process countdown matches 0 run bossbar set midsoul:2 name [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.soul","fallback":"灵魂"}," ⚕ ",{"translate":"ms.soul.desc","fallback":"收集碎片，于月下复活自己","color":"white"}]
+execute if score $1_process countdown matches 3 run bossbar set midsoul:3 name ""
+execute if score $1_process countdown matches 2 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
+execute if score $1_process countdown matches 1 run bossbar set midsoul:3 name ""
+execute if score $1_process countdown matches 0 run bossbar set midsoul:3 name [{"text":"⚕ ","color":"red"},{"translate":"ms.guardian","fallback":"灵魂守卫者"}," ⚕ ",{"translate":"ms.guardian.desc","fallback":"阻止灵魂，让他们永困于此","color":"white"}]
 
 # 0 | 进入阶段 2
 execute if score $1_process countdown matches 0 run function main:state/2/enter

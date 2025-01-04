@@ -15,7 +15,7 @@ bossbar set midsoul:info name [{"text":"❖   ","color":"aqua"},{"translate":"ms
 bossbar set midsoul:heed name [{"text":"❖   ","color":"yellow"},{"translate":"ms.bossbar.3.emerge","fallback":"传送门形成"}," » ",{"score":{"objective":"temp2","name":"$sec"},"color":"gold"},"   ❖"]
 bossbar set midsoul:warn name [{"text":"❖   ","color":"red"},{"translate":"ms.bossbar.3.emerge","fallback":"传送门形成"}," » ",{"score":{"objective":"temp2","name":"$sec"},"color":"#E80505"},"   ❖"]
 
-# 典中典闪烁
+# 仍在闪烁
 execute if score $3_gametime countdown matches 18001 run bossbar set midsoul:info visible false
 execute if score $3_gametime countdown matches 18003 run bossbar set midsoul:info visible true
 execute if score $3_gametime countdown matches 18005 run bossbar set midsoul:info visible false
