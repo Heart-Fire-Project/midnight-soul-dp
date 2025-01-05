@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.007.desc.a",
-                "fallback":"碎片收集速度 +5%；",
+                "fallback":"交互速度 +5%；",
                 "color":"white",
                 "italic":false
             },

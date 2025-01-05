@@ -1,6 +1,6 @@
 # 不想做权重系统，因为真的没有必要
 # 优先选择灵魂连击超过 7 的最高者成为灵魂守卫者
-tag @a[tag=game_player,scores={soul_combo=8..}] add guardian_target
+tag @a[tag=game_player,scores={soul_combo=7..}] add guardian_target
 
 # 看看谁最高？
 scoreboard players set $max temp 0

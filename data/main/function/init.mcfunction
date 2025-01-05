@@ -273,7 +273,7 @@ scoreboard players set $mode setting 1
 scoreboard players set $map setting 0
 scoreboard players set $ability_apply setting 0
 scoreboard players set $cooldown_speed setting 10
-scoreboard players set $collect_speed setting 10
+scoreboard players set $interact_speed setting 10
 scoreboard players set $echo_chance setting 30
 scoreboard players set $initcheck data 7419147
 scoreboard players set $echo_page setting 1

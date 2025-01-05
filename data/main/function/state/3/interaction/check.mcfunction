@@ -30,7 +30,7 @@ tag @s[tag=!gray_interact] remove gray_hint
 # 刷新进程
 tag @s[tag=!blue_interact,tag=!gold_interact,tag=!gray_interact] remove interacting
 scoreboard players reset @s[tag=!interacting] countdown
-scoreboard players operation @s[tag=interacting] countdown += $collect_speed setting
+scoreboard players operation @s[tag=interacting] countdown += $interact_speed setting
 
 # 收集完成
 execute as @s[tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..0.5] at @s run function main:state/3/interaction/blue with storage ms:map

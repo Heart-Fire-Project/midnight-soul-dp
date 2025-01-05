@@ -11,8 +11,8 @@ execute if score $echo data matches 8 run tellraw @s [{"text":"","color":"light_
 execute if score $echo data matches 9 run tellraw @s [{"text":"","color":"light_purple"},{"translate":"ms.echo","fallback":"回响"}," ❖ ",{"translate":"ms.echo.9","fallback":"破门直接逃"}]
 
 execute if score $echo data matches 1 run tellraw @s [{"translate":"ms.echo.1.desc.a","fallback":"每过 45~80 秒清除已有标记并随机标记 2~3 个灵魂；被选择的灵魂将持续发光，未被标记的灵魂不会受到伤害"},"\n",{"translate":"ms.echo.1.desc.b","fallback":"剩余灵魂 <3 人时移除所有标记，且不再生效","color":"gray"}]
-execute if score $echo data matches 2 run tellraw @s [{"translate":"ms.echo.2.desc.a","fallback":"碎片收集需求降低 30%，但生成碎片时有 30% 概率生成为外表相同，但不会被判定为灵魂碎片的灵魄碎片；灵魄碎片可收集，效果为原地生成一个烟花"},"\n",{"translate":"ms.echo.2.desc.b","fallback":"若场上所有灵魂碎片或所有灵魄碎片被收集，即刻进入开门阶段","color":"gray"}]
-execute if score $echo data matches 3 run tellraw @s [{"translate":"ms.echo.3.desc","fallback":"碎片收集需求固定为 9；初始仅会生成 1 个碎片，收集碎片时生成 1 个碎片"},"\n",{"translate":"ms.echo.3.desc.b","fallback":"游戏进行 10 分钟时额外生成 1 个碎片","color":"gray"}]
+execute if score $echo data matches 2 run tellraw @s [{"translate":"ms.echo.2.desc.a","fallback":"碎片收集需求降低 30%，但生成碎片时有 30% 概率生成为外表相同，但不会被判定为灵魂碎片的灵魄碎片；灵魄碎片可收集，效果为原地生成一个烟花"},"\n",{"translate":"ms.echo.2.desc.b","fallback":"若场上所有灵魂碎片或所有灵魄碎片被收集，即刻进入开启阶段","color":"gray"}]
+execute if score $echo data matches 3 run tellraw @s [{"translate":"ms.echo.3.desc","fallback":"碎片收集需求固定为 9；初始仅会生成 3 个碎片，收集碎片时生成 1 个碎片"},"\n",{"translate":"ms.echo.3.desc.b","fallback":"游戏进行 10 分钟时额外生成 2 个碎片","color":"gray"}]
 execute if score $echo data matches 4 run tellraw @s [{"translate":"ms.echo.4.desc","fallback":"灵魂的技能不再自然冷却；灵魂宝物盒刷新速度 +200%，且产出无垠时界的概率提升至 50%"}]
 execute if score $echo data matches 5 run tellraw @s [{"translate":"ms.echo.5.desc","fallback":"游戏天气改为雷雨，并每过 20~60 秒降下一次落雷；被落雷击中的玩家在 15 秒内速度 +60%，但灵魂会受到 5 点额外伤害"}]
 execute if score $echo data matches 6 run tellraw @s [{"translate":"ms.echo.6.desc","fallback":"所有灵魂的移速 -10%，交互速度 -20%，自身大小 -30%"}]

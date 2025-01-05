@@ -62,6 +62,6 @@ execute if score $aura_rank data matches -3 run tellraw @a[team=!admin] [{"text"
 execute if score $aura_rank data matches -3 run execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
 execute if score $aura_rank data matches -3..-1 run scoreboard players add $talent_007 data 5
 execute if score $aura_rank data matches -3..-1 run scoreboard players operation $aura_rank data *= #-1 data
-execute if score $aura_rank data matches 1 run execute at @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..16] run function main:state/3/event/aura1
+execute if score $aura_rank data matches 1 run execute at @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..12] run function main:state/3/event/aura1
 
 kill @s

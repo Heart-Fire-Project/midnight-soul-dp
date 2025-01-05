@@ -22,4 +22,4 @@ $tellraw @s[scores={talent_$(num)=3}] [{"translate":"ms.talent.003.desc","fallba
 $tellraw @s[scores={talent_$(num)=4}] [{"translate":"ms.talent.004.desc","fallback":"收集到灵魂碎片时，回复 1 血量"}]
 $tellraw @s[scores={talent_$(num)=5}] [{"translate":"ms.talent.005.desc","fallback":"蹲下时不作为守卫者气息探测目标"}]
 $tellraw @s[scores={talent_$(num)=6}] [{"translate":"ms.talent.006.desc","fallback":"收集到灵魂碎片时，延长所有处于垂死状态的灵魂 5 秒倒计时"}]
-$tellraw @s[scores={talent_$(num)=7}] [{"translate":"ms.talent.007.desc","fallback":"碎片收集速度 +5%；灵气等级每提升 1 级额外提升 5%，至多提升至 20%"}]
+$tellraw @s[scores={talent_$(num)=7}] [{"translate":"ms.talent.007.desc","fallback":"交互速度 +5%；灵气等级每提升 1 级额外提升 5%，至多提升至 20%"}]
