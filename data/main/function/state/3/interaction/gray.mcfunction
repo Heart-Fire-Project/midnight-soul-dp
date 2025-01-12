@@ -1,7 +1,7 @@
 # 完成灵魂宝物盒开启
 scoreboard players add @a[distance=..0.5,tag=gray_interact,scores={countdown=1000..}] temp.open 1
 particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0.1 0.2 0 7 force @a
-playsound block.shulker_box.open player @a ~ ~ ~
+playsound block.shulker_box.open player @a
 
 # 灵魂效果
 function base:random {max:"6",min:"1"}

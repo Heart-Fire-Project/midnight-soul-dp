@@ -13,7 +13,7 @@
         "lore":[
             {
                 "translate":"ms.setting.ability_actionbar.1",
-                "fallback":"✦ 不显示主动触发",
+                "fallback":"✦ 仅显示被动",
                 "color":"gold",
                 "italic":false
             },

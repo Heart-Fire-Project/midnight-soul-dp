@@ -19,7 +19,7 @@
             },
             {
                 "translate":"ms.setting.ingame_score.desc",
-                "fallback":"实时显示表现分来源",
+                "fallback":"实时告知表现分来源",
                 "color":"white",
                 "italic":false
             }

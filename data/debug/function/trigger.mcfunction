@@ -18,8 +18,8 @@ execute if score @s interact_check matches -399 at @s run function debug:sub/mar
 
 execute if score @s interact_check matches -400 run function debug:sub/restore
 execute if score @s interact_check matches -401 run function debug:sub/next {type:"ability_apply",limit:"6"}
-execute if score @s interact_check matches -411 run function debug:sub/speed_minus {type:"collect"}
-execute if score @s interact_check matches -412 run function debug:sub/speed_add {type:"collect"}
+execute if score @s interact_check matches -411 run function debug:sub/speed_minus {type:"interact"}
+execute if score @s interact_check matches -412 run function debug:sub/speed_add {type:"interact"}
 execute if score @s interact_check matches -421 run function debug:sub/speed_minus {type:"cooldown"}
 execute if score @s interact_check matches -422 run function debug:sub/speed_add {type:"cooldown"}
 execute if score @s interact_check matches -431 run function debug:sub/chance_minus {type:"echo"}

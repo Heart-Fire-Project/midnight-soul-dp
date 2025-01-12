@@ -19,7 +19,7 @@
             },
             {
                 "translate":"ms.setting.ingame_tip.desc",
-                "fallback":"游戏内随机出现的小提示",
+                "fallback":"游戏内不定时出现的小提示",
                 "color":"white",
                 "italic":false
             }
