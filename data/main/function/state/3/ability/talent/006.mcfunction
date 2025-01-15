@@ -1,5 +1,5 @@
 title @s[scores={setting.ability_actionbar=1..}] actionbar [{"translate":"ms.talent.active","fallback":"天赋触发","color":"aqua"}," » ",{"translate":"ms.talent.006","fallback":"碎片注入"}]
-playsound minecraft:block.lantern.place player @s
+playsound block.lantern.place player @s
 particle wax_on ~ ~0.3 ~ 0.25 0.3 0.25 3 7 force @a
 scoreboard players add @s temp.talent 1
 

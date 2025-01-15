@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.105.desc",
-                "fallback":"使距离你较远的至多 3 位灵魂发光",
+                "fallback":"使距离你较远的至多 2 位灵魂发光",
                 "color":"white",
                 "italic":false
             }

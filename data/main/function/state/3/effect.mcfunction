@@ -7,6 +7,7 @@ attribute @s[scores={state=0}] jump_strength base set 0.42
 
 effect clear @s
 effect give @s saturation infinite 10 true
+effect give @a[team=guardian] resistance infinite 49 true
 effect give @s[scores={state=1}] darkness infinite 49 true
 effect give @s[scores={state=1}] resistance infinite 49 true
 attribute @s[scores={state=1}] movement_speed base set 0

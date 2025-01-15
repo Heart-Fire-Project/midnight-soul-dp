@@ -12,6 +12,7 @@ execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=
 execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=4}] at @s run function main:state/3/ability/talent/004
 execute if entity @a[team=soul,scores={state=1}] as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=6}] at @s run function main:state/3/ability/talent/006
 execute if entity @a[team=soul,scores={state=1}] as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=6}] at @s run function main:state/3/ability/talent/006
+execute if entity @s[tag=T107] run function main:state/3/ability/talent/107f
 
 # 地图变量
 # 聚光圣殿 - 2*4*6
