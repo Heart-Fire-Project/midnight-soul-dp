@@ -5,6 +5,10 @@ particle campfire_cosy_smoke -6.0 17.7 -6.0 0.1 0.1 0.1 0.1 96
 execute as @a[x=-8,y=-24,z=-8,dx=3,dy=5,dz=3] run function main:state/0/extra/enter
 execute as @a[x=-1003,y=-2,z=-1038,dx=2,dy=2,dz=5] at @s run tp @s ~994 ~2 ~1046
 
+# 三层跳板侦测
+effect give @a[x=-1,y=6,z=-1,dx=1,dy=1,dz=1] jump_boost 1 5 true
+execute as @a[scores={state=0}] unless entity @a[x=-1,y=6,z=-1,dx=1,dy=1,dz=1] run effect clear @s jump_boost
+
 # 隐藏跑酷终点返回侦测
 execute as @a[x=-14,y=39,z=3,dx=2,dy=2,dz=5] at @s run tp @s ~5 ~-39 ~6
 

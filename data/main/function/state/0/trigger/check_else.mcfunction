@@ -4,6 +4,14 @@ execute if score @s interact_check matches 2 run scoreboard players set @s temp 
 execute if score @s interact_check matches 3 run scoreboard players set @s temp 3
 execute if score @s interact_check matches 1..99 run function main:lib/notice
 
+# 图鉴类型
+execute if score @s interact_check matches 601 run function debug:sub/select {type:"index_type",num:"1"}
+execute if score @s interact_check matches 602 run function debug:sub/select {type:"index_type",num:"2"}
+execute if score @s interact_check matches 603 run function debug:sub/select {type:"index_type",num:"3"}
+execute if score @s interact_check matches 604 run function debug:sub/select {type:"index_type",num:"4"}
+execute if score @s interact_check matches 605 run function debug:sub/select {type:"index_type",num:"5"}
+execute if score @s interact_check matches 601..605 run function main:state/0/refresh/index
+
 # 技能类
 execute if score @s interact_check matches 1001 run scoreboard players set @s skill 1
 execute if score @s interact_check matches 1002 run scoreboard players set @s skill 2

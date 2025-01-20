@@ -272,11 +272,12 @@ advancement revoke @a only main:damage/taken
 scoreboard players set $mode setting 1
 scoreboard players set $map setting 0
 scoreboard players set $ability_apply setting 0
+scoreboard players set $echo_chance setting 30
+scoreboard players set $echo_page setting 1
+scoreboard players set $index_type setting 1
 scoreboard players set $cooldown_speed setting 10
 scoreboard players set $interact_speed setting 10
-scoreboard players set $echo_chance setting 30
 scoreboard players set $initcheck data 7419147
-scoreboard players set $echo_page setting 1
 data merge storage ms:setting {"show_mark":false,"setting_lock":false,"game_lock":false,"reduce_f3":true,"send_feedback":false}
 data merge storage ms:echo {"01":true,"02":true,"03":true,"04":true,"05":true,"06":true,"07":true,"08":true,"09":true}
 

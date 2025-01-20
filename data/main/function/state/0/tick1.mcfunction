@@ -26,4 +26,4 @@ execute as @a[scores={countdown=0,exp_temp=1..}] run function main:state/0/exp/l
 execute as @a[team=!admin] run function main:state/0/refresh/inventory
 
 # 清除掉落物
-kill @e[type=item,tag=!game_entity,tag=!lobby_entity,tag=!extra_entity]
+kill @e[type=item,tag=!game_entity,tag=!lobby_entity,tag=!extra_entity,tag=!index_entity]
