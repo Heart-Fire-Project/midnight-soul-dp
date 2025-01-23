@@ -173,14 +173,14 @@ execute if score $1_process countdown matches 158 unless score $ability_apply se
 execute if score $1_process countdown matches 159 as @a[tag=game_player] run function main:state/1/ability/random
 
 # 150 / 110 | 告知技能
-execute if score $1_process countdown matches 150 as @a[team=soul] run function main:lib/skill/soul
-execute if score $1_process countdown matches 150 as @a[team=guardian] run function main:lib/skill/guar
+execute if score $1_process countdown matches 150 as @a[team=soul] run function main:lib/ability/skill/soul
+execute if score $1_process countdown matches 150 as @a[team=guardian] run function main:lib/ability/skill/guar
 execute if score $1_process countdown matches 150 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 1000000
-execute if score $1_process countdown matches 130 as @a[team=soul] run function main:lib/talent/soul {num:"1"}
-execute if score $1_process countdown matches 130 as @a[team=guardian] run function main:lib/talent/guar {num:"1"}
+execute if score $1_process countdown matches 130 as @a[team=soul] run function main:lib/ability/talent/soul {num:"1"}
+execute if score $1_process countdown matches 130 as @a[team=guardian] run function main:lib/ability/talent/guar {num:"1"}
 execute if score $1_process countdown matches 130 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 1000000
-execute if score $1_process countdown matches 110 as @a[team=soul] run function main:lib/talent/soul {num:"2"}
-execute if score $1_process countdown matches 110 as @a[team=guardian] run function main:lib/talent/guar {num:"2"}
+execute if score $1_process countdown matches 110 as @a[team=soul] run function main:lib/ability/talent/soul {num:"2"}
+execute if score $1_process countdown matches 110 as @a[team=guardian] run function main:lib/ability/talent/guar {num:"2"}
 execute if score $1_process countdown matches 110 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 1000000
 
 # 60 | 小提示

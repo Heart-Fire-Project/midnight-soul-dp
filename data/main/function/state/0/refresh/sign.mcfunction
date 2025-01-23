@@ -3,6 +3,14 @@ function base:merge_sign {x:"2",y:"1",z:"3",glow:"1",color:"white",trans_2:"ms.s
 function base:merge_sign {x:"1",y:"1",z:"3",glow:"1",color:"orange",trans_2:"ms.sign.major_update",trans_3:"ms.sign.2",fallb_2:"[重大更新]",fallb_3:"2.0 💠 风吹璨落时",command:"trigger interact_check set 2"}
 function base:merge_sign {x:"0",y:"1",z:"3",glow:"1",color:"light_blue",trans_2:"ms.sign.event",trans_3:"ms.sign.3",fallb_2:"[活动]",fallb_3:"午夜灵魂官方服务器",command:"trigger interact_check set 3"}
 
+# 鸣谢列表
+function base:merge_sign {x:"-2",y:"11",z:"-9",glow:"1",color:"white",trans_2:"ms.credit.roser",trans_3:"ms.credit.1",fallb_2:"Roser",fallb_3:"架构者",command:"trigger interact_check set 901"}
+function base:merge_sign {x:"-4",y:"11",z:"-9",glow:"1",color:"white",trans_2:"ms.credit.seayay",trans_3:"ms.credit.2",fallb_2:"思遥方",fallb_3:"创想家",command:"trigger interact_check set 902"}
+function base:merge_sign {x:"-6",y:"11",z:"-9",glow:"1",color:"white",trans_2:"",trans_3:"ms.credit.yuzuki",fallb_2:"烛月yuzuki",fallb_3:"建筑师",command:"trigger interact_check set 903"}
+function base:merge_sign {x:"-8",y:"11",z:"-9",glow:"1",color:"white",trans_2:"ms.credit.translator",trans_3:"ms.credit.4",fallb_2:"--",fallb_3:"本地化",command:"trigger interact_check set 904"}
+function base:merge_sign {x:"-9",y:"11",z:"-8",glow:"1",color:"white",trans_2:"ms.credit.tester",trans_3:"",fallb_2:"测试人员",fallb_3:"",command:"trigger interact_check set 905"}
+function base:merge_sign {x:"-9",y:"11",z:"-6",glow:"1",color:"white",trans_2:"ms.credit.other",trans_3:"",fallb_2:"以及……",fallb_3:"",command:"trigger interact_check set 906"}
+
 # 地图设置
 execute if score $map setting matches 0 run function base:merge_sign {x:"-11",y:"6",z:"-8",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.map.0",fallb_2:"00",fallb_3:"随机地图",command:"trigger interact_check set 100"}
 execute unless score $map setting matches 0 run function base:merge_sign {x:"-11",y:"6",z:"-8",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.0",fallb_2:"00",fallb_3:"随机地图",command:"trigger interact_check set 100"}
