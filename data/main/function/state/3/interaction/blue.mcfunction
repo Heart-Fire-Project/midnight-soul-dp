@@ -5,7 +5,7 @@ execute if score $3_gametime countdown matches 18001.. run scoreboard players ad
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a
 
-# 天赋判定：收集灵魂碎片后
+# 天赋判定：收集到灵魂碎片时
 execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=1}] at @s run function main:state/3/ability/talent/001a
 execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=1}] at @s run function main:state/3/ability/talent/001a
 execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=4}] at @s run function main:state/3/ability/talent/004

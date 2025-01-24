@@ -29,13 +29,13 @@
             ],
             {
                 "translate":"ms.talent.001.desc.a",
-                "fallback":"收集灵魂碎片后，移速 +40%；",
+                "fallback":"收集到灵魂碎片时，移速 +40%；",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.talent.001.desc.b",
-                "fallback":"下一次收集时直接获取 0.5 秒的进度",
+                "fallback":"下一次收集所需时间 -0.5 秒",
                 "color":"white",
                 "italic":false
             },

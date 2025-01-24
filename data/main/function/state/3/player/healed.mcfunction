@@ -9,7 +9,7 @@ function main:state/3/effect
 effect give @s speed 7 4
 effect give @s resistance 15 4
 
-# 天赋判定：灵魂受到救治后
+# 天赋判定：灵魂解除垂死状态时
 execute as @a[team=guardian,scores={talent_1=2}] at @s run function main:state/3/ability/talent/102
 execute as @a[team=guardian,scores={talent_2=2}] at @s run function main:state/3/ability/talent/102
 

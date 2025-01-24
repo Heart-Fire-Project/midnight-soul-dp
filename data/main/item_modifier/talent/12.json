@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.102.desc.a",
-                "fallback":"每当有灵魂解除垂死状态时，",
+                "fallback":"灵魂解除垂死状态时，",
                 "color":"white",
                 "italic":false
             },

@@ -66,7 +66,7 @@
             },
             {
                 "translate":"ms.skill.004.desc.h",
-                "fallback":"该技能都会增加 7%，至多提升至 40%",
+                "fallback":"该技能都会 +7%，至多提升至 40%",
                 "color":"gray",
                 "italic":false
             }

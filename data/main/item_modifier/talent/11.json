@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.101.desc",
-                "fallback":"灵魂方气息探测对自身的生效范围 -25%",
+                "fallback":"对自身的气息探测生效距离 -25%",
                 "color":"white",
                 "italic":false
             }
