@@ -4,7 +4,7 @@ particle enchant ~ ~0.2 ~ 0.2 0.1 0.2 1 30 force @a
 scoreboard players add @s temp.talent 1
 
 # 给予效果
-effect give @a[team=soul,limit=2,sort=furthest] glowing 5 0
+effect give @a[team=soul,limit=2,sort=furthest,scores={state=0}] glowing 5 0
 
 # 重置冷却
 scoreboard players set @s[scores={talent_1=5}] talent_1_tick 12000

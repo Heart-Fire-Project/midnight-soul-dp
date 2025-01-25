@@ -4,5 +4,5 @@ particle angry_villager ~ ~1.8 ~ 0.3 0.1 0.3 1 4 force @a
 scoreboard players add @s temp.talent 1
 
 # 给予效果
-effect give @a[team=soul] glowing 3 0
-effect give @a[team=soul] slowness 3 0
+effect give @a[team=soul,scores={state=0}] glowing 3 0
+effect give @a[team=soul,scores={state=0}] slowness 3 0

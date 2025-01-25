@@ -14,6 +14,15 @@ scoreboard players set @s[scores={temp.dying=1}] countdown 12000
 scoreboard players set @s[scores={temp.dying=2}] countdown 8000
 scoreboard players set @s[scores={temp.dying=3..}] countdown 4000
 
+# 取消正在进行的所有能力，并重设冷却
+execute as @s[tag=skill_on] run function main:state/3/ability/skill/reset_cooldown
+execute as @s[tag=talent_1_on] run function main:state/3/ability/talent/reset_cooldown {num:"1"}
+execute as @s[tag=talent_2_on] run function main:state/3/ability/talent/reset_cooldown {num:"2"}
+tag @s remove skill_on
+tag @s remove talent_1_on
+tag @s remove talent_2_on
+tag @s remove item_on
+
 # 刷新效果
 function main:state/3/effect
 

@@ -41,7 +41,7 @@
             },
             {
                 "translate":"ms.skill.002.desc.c",
-                "fallback":"若场上没有垂死灵魂则改为使一位守卫者",
+                "fallback":"若场上没有垂死灵魂则改为使最近的守卫者",
                 "color":"white",
                 "italic":false
             },

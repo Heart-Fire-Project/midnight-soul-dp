@@ -4,7 +4,7 @@ particle spit ~ ~1 ~ 0.2 0.1 0.2 0.7 60 force @a
 scoreboard players add @s temp.talent 1
 
 # 给予触发时效果
-effect give @a[team=soul] darkness 5 0
+effect give @a[team=soul,scores={state=0}] darkness 5 0
 effect give @s invisibility infinite 6
 tag @s[scores={talent_1=4}] add talent_1_on
 tag @s[scores={talent_2=4}] add talent_2_on

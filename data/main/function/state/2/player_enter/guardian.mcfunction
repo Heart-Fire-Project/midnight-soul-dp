@@ -4,6 +4,9 @@ tag @e[tag=map_enter] add enter_chosen
 tp @s @e[tag=map_enter,limit=1]
 tag @e[tag=map_enter] remove map_enter
 
+# 如果还有人，则再次执行
+execute as @r[x=0,y=0,z=0,distance=..300,team=guardian] run function main:state/2/player_enter/guardian
+
 # 设置状态
 effect clear @s
 attribute @s movement_speed base set 0
