@@ -29,7 +29,7 @@ scoreboard objectives remove skill_102
 scoreboard objectives add skill_102 dummy "灵力掌控 - 叠加层数"
 scoreboard players set @a[team=guardian,scores={skill=2}] skill_102 0
 scoreboard objectives remove skill_103
-scoreboard objectives add skill_103 dummy "唤灵留迹 - 生效对象"
+scoreboard objectives add skill_103 dummy "唤灵留迹 - 生效计时"
 
 # 生成碎片
 $execute at @e[tag=marker_blue,sort=random,limit=$(shard_summon)] run summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
@@ -91,6 +91,8 @@ tag @a remove talent_1_on
 tag @a remove talent_2_on
 tag @a remove item_on
 tag @a remove hit_soul
+tag @a remove S004_a
+tag @a remove S004_b
 
 # 清空临时数据
 scoreboard players reset * temp.collect
