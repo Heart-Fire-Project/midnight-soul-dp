@@ -5,3 +5,4 @@ execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{"
 execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{"id":71002}}}]},scores={skill_tick=0}] run function main:state/3/ability/skill/002
 execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{"id":71003}}}]},scores={skill_tick=0}] run function main:state/3/ability/skill/003
 execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{"id":71004}}}]},scores={skill_tick=0}] run function main:state/3/ability/skill/004
+execute as @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{"id":71005}}}]},scores={skill_tick=0}] run function main:state/3/ability/skill/005
