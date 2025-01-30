@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 60 > ",
+                    "text":"⚡ 60  ⌚ 12 > ",
                     "color":"red",
                     "italic":false
                 },
@@ -36,13 +36,13 @@
             },
             {
                 "translate":"ms.skill.104.desc.c",
-                "fallback":"技能施放时在 8 秒内移速 +60%，",
+                "fallback":"移速 +40%，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.d",
-                "fallback":"场上每有一个被诅咒的灵魂宝物盒延长 8 秒时间",
+                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%",
                 "color":"white",
                 "italic":false
             },

@@ -1,0 +1,1 @@
+$effect give @s speed 12 $(num)

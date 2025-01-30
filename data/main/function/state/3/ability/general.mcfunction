@@ -2,6 +2,7 @@
 execute as @a[team=soul,scores={skill_tick=-2370..-2350,skill=4}] run function main:state/3/ability/skill/004t
 execute at @e[tag=S005] run particle minecraft:portal ~ ~0.2 ~ 0.2 0.3 0.2 1 4 force @a[team=soul]
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:state/3/ability/skill/102t
+execute as @a[scores={skill_103=1..}] run function main:state/3/ability/skill/103t
 
 # 天赋
 effect give @a[scores={talent_1=3,state=0},team=soul,tag=talent_1_on] speed 1 0

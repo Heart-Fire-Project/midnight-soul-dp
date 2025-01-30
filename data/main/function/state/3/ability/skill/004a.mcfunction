@@ -5,7 +5,7 @@ execute if entity @a[team=guardian,distance=..20] run effect give @s speed 12 4
 
 # 触发远距离效果：实际为击中效果，但需要去除统计与侦测tag
 execute unless entity @a[team=guardian,distance=..20] run tag @p[team=guardian] add S004
-execute as @a[tag=S004] run function main:state/3/player/hit
+execute as @a[tag=S004] run function main:lib/player/hit
 scoreboard players remove @a[tag=S004] temp.hit 1
 execute at @a[tag=S004] run playsound block.respawn_anchor.deplete player @a[tag=S004] ~ ~ ~
 tag @a[tag=S004] remove hit_soul

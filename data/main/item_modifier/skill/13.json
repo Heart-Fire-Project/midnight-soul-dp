@@ -30,7 +30,7 @@
             },
             {
                 "translate":"ms.skill.103.desc.b",
-                "fallback":"标记最远的灵魂令其发光并传送至其附近，",
+                "fallback":"标记最远的灵魂令其发光 5 秒并传送至其附近，",
                 "color":"white",
                 "italic":false
             },
