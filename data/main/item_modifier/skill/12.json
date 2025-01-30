@@ -13,10 +13,15 @@
         "lore":[
             [
                 {
-                    "text":"🔁 40  ⏱ 30 > ",
+                    "text":"⚡ 65  ⌚ 12 > ",
                     "color":"red",
                     "italic":false
                 },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                },
+                "/",
                 {
                     "translate":"ms.tag.kill",
                     "fallback":"杀戮"
@@ -24,31 +29,19 @@
             ],
             {
                 "translate":"ms.skill.102.desc.a",
-                "fallback":"技能结束后的 10 秒内移速 +100%；",
+                "fallback":"造成的伤害加倍；",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.b",
-                "fallback":"技能持续期间内每有一个碎片被收集则获取 1 层额外加成，",
+                "fallback":"标记最近的灵魂并持续发射粒子追踪其位置",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.c",
-                "fallback":"每层会在技能结束后附加 6 秒的伤害翻倍，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.102.desc.d",
-                "fallback":"从第 2 层开始每层额外延长 5 秒移速加成",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.102.desc.e",
-                "fallback":"附加效果最多叠加 5 层",
+                "fallback":"粒子仅你可见",
                 "color":"gray",
                 "italic":false
             }

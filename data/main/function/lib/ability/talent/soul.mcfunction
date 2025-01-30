@@ -8,8 +8,8 @@ $tellraw @s[scores={talent_$(num)=5}] [{"translate":"ms.talent","fallback":"[天
 $tellraw @s[scores={talent_$(num)=6}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.006","fallback":"碎片注入"}]
 $tellraw @s[scores={talent_$(num)=7}] [{"translate":"ms.talent","fallback":"[天赋] ","color":"aqua"},{"translate":"ms.talent.007","fallback":"灵气感知"}]
 
-$tellraw @s[scores={talent_$(num)=1}] [{"text":"⏱ 3 > ","color":"aqua"},{"translate":"ms.tag.collect","fallback":"收集"},"/",{"translate":"ms.tag.survive","fallback":"生存"}]
-$tellraw @s[scores={talent_$(num)=2}] [{"text":"🔁 60  ⏱ 3 > ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"}]
+$tellraw @s[scores={talent_$(num)=1}] [{"text":"⌚ 3 > ","color":"aqua"},{"translate":"ms.tag.collect","fallback":"收集"}]
+$tellraw @s[scores={talent_$(num)=2}] [{"text":"⚡ 60  ⌚ 3 > ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"}]
 $tellraw @s[scores={talent_$(num)=3}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"},"/",{"translate":"ms.tag.heal","fallback":"救助"}]
 $tellraw @s[scores={talent_$(num)=4}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"}]
 $tellraw @s[scores={talent_$(num)=5}] [{"text":"> ","color":"aqua"},{"translate":"ms.tag.survive","fallback":"生存"}]

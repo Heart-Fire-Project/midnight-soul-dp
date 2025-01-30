@@ -26,7 +26,7 @@ scoreboard objectives remove skill_004
 scoreboard objectives add skill_004 dummy "铤而走险 - 负面几率"
 scoreboard players set @a[team=soul,scores={skill=4}] skill_004 5
 scoreboard objectives remove skill_102
-scoreboard objectives add skill_102 dummy "灵力掌控 - 叠加层数"
+scoreboard objectives add skill_102 dummy "灵力掌控 - 生效目标"
 scoreboard players set @a[team=guardian,scores={skill=2}] skill_102 0
 scoreboard objectives remove skill_103
 scoreboard objectives add skill_103 dummy "唤灵留迹 - 生效计时"
@@ -71,7 +71,7 @@ scoreboard players set @a[team=soul,scores={skill=3}] skill_tick 14000
 scoreboard players set @a[team=soul,scores={skill=4}] skill_tick 12000
 scoreboard players set @a[team=soul,scores={skill=5}] skill_tick 09000
 scoreboard players set @a[team=guardian,scores={skill=1}] skill_tick 14000
-scoreboard players set @a[team=guardian,scores={skill=2}] skill_tick 08000
+scoreboard players set @a[team=guardian,scores={skill=2}] skill_tick 13000
 scoreboard players set @a[team=guardian,scores={skill=3}] skill_tick 12000
 scoreboard players set @a[team=guardian,scores={skill=4}] skill_tick 12000
 scoreboard players set @a[team=guardian,scores={skill=5}] skill_tick 15000

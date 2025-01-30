@@ -1,5 +1,5 @@
 title @s[scores={setting.ability_actionbar=2}] actionbar [{"translate":"ms.item.active","fallback":"宝物触发","color":"#33FFAA"}," » ",{"translate":"ms.item.2","fallback":"共鸣引力"}]
-playsound block.sculk.charge player @a
+playsound block.sculk.charge player @s
 particle sculk_charge{roll:6.28} ~ ~0.2 ~ 0.2 0.2 0.2 0 8 force @a
 scoreboard players set @s item 0
 scoreboard players add @s temp.item 1

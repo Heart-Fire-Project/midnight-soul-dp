@@ -32,10 +32,3 @@ scoreboard objectives setdisplay list stat.level
 scoreboard objectives setdisplay below_name stat.level
 scoreboard objectives setdisplay sidebar
 scoreboard players set $0_start countdown 1010000
-
-# 占位符，以免误调设置
-item replace entity @a[team=!admin] inventory.11 from block 0 -7 0 container.11
-item replace entity @a[team=!admin] inventory.12 from block 0 -7 0 container.12
-item replace entity @a[team=!admin] inventory.13 from block 0 -7 0 container.13
-item replace entity @a[team=!admin] inventory.14 from block 0 -7 0 container.14
-item replace entity @a[team=!admin] inventory.15 from block 0 -7 0 container.15

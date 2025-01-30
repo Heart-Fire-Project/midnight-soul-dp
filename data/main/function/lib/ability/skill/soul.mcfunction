@@ -6,11 +6,11 @@ tellraw @s[scores={skill=3}] [{"translate":"ms.skill","fallback":"[技能] ","co
 tellraw @s[scores={skill=4}] [{"translate":"ms.skill","fallback":"[技能] ","color":"#5599FF"},{"translate":"ms.skill.004","fallback":"铤而走险"}]
 tellraw @s[scores={skill=5}] [{"translate":"ms.skill","fallback":"[技能] ","color":"#5599FF"},{"translate":"ms.skill.005","fallback":"锚定虚影"}]
 
-tellraw @s[scores={skill=1}] [{"text":"🔁 60  ⏱ 10 > ","color":"#5599FF"},{"translate":"ms.tag.survive","fallback":"生存"}]
-tellraw @s[scores={skill=2}] [{"text":"🔁 75  ⏱ 15 > ","color":"#5599FF"},{"translate":"ms.tag.heal","fallback":"救助"},"/",{"translate":"ms.tag.debuff","fallback":"妨害"}]
-tellraw @s[scores={skill=3}] [{"text":"🔁 70 > ","color":"#5599FF"},{"translate":"ms.tag.detect","fallback":"感知"},"/",{"translate":"ms.tag.debuff","fallback":"妨害"}]
-tellraw @s[scores={skill=4}] [{"text":"🔁 60  ⏱ 12 > ","color":"#5599FF"},{"translate":"ms.tag.strategy","fallback":"策略"}]
-tellraw @s[scores={skill=5}] [{"text":"🔁 90 > ","color":"#5599FF"},{"translate":"ms.tag.survive","fallback":"生存"},"/",{"translate":"ms.tag.strategy","fallback":"策略"}]
+tellraw @s[scores={skill=1}] [{"text":"⚡ 60  ⌚ 10 > ","color":"#5599FF"},{"translate":"ms.tag.survive","fallback":"生存"}]
+tellraw @s[scores={skill=2}] [{"text":"⚡ 75  ⌚ 15 > ","color":"#5599FF"},{"translate":"ms.tag.heal","fallback":"救助"},"/",{"translate":"ms.tag.debuff","fallback":"妨害"}]
+tellraw @s[scores={skill=3}] [{"text":"⚡ 70 > ","color":"#5599FF"},{"translate":"ms.tag.detect","fallback":"感知"},"/",{"translate":"ms.tag.debuff","fallback":"妨害"}]
+tellraw @s[scores={skill=4}] [{"text":"⚡ 60  ⌚ 12 > ","color":"#5599FF"},{"translate":"ms.tag.strategy","fallback":"策略"}]
+tellraw @s[scores={skill=5}] [{"text":"⚡ 90 > ","color":"#5599FF"},{"translate":"ms.tag.survive","fallback":"生存"},"/",{"translate":"ms.tag.strategy","fallback":"策略"}]
 
 tellraw @s[scores={skill=1}] [{"translate":"ms.skill.001.desc","fallback":"隐身且移速 +100%；若距离守卫者 12 格以内则改为移速 +140%"}]
 tellraw @s[scores={skill=2}] [{"translate":"ms.skill.002.desc","fallback":"自身持续发光且移速 -60%；技能结束后视为点亮一次灵魂之灯，若场上没有垂死灵魂则改为使最近的守卫者在 15 秒内发光且移速 -75%"}]

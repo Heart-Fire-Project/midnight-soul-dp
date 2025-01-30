@@ -53,7 +53,7 @@ execute as @s[nbt=!{Inventory:[{Slot:24b}]}] run function main:lib/event/persona
 
 # 刷新物品
 item replace entity @s[team=spectator] hotbar.8 with gray_dye[item_name='{"translate":"ms.lobby.spectator","fallback":"未准备 - 按 [%s] 准备","italic":false,"color":"gray","with":[{"keybind":"key.swapOffhand"}]}',custom_data={"type":"lobby","id":70000},hide_additional_tooltip={}]
-item replace entity @s[team=prepare] hotbar.8 with light_blue_dye[item_name='{"translate":"ms.lobby.prepare","fallback":"已准备 - 按 [%s] 取消","italic":false,"color":"aqua","with":[{"keybind":"key.swapOffhand"}]}',custom_data={"type":"lobby","id":70001},hide_additional_tooltip={}]
+item replace entity @s[team=prepare] hotbar.8 with purple_dye[item_name='{"translate":"ms.lobby.prepare","fallback":"已准备 - 按 [%s] 取消","italic":false,"color":"#BE73E5","with":[{"keybind":"key.swapOffhand"}]}',custom_data={"type":"lobby","id":70001},hide_additional_tooltip={}]
 item replace block 0 -7 0 container.11 with ender_eye
 item replace block 0 -7 0 container.12 with book
 execute if score @s setting.ability_actionbar matches 2 run item replace block 0 -7 0 container.13 with emerald_block

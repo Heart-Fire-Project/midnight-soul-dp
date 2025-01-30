@@ -13,18 +13,13 @@
         "lore":[
             [
                 {
-                    "text":"⏱ 3 > ",
+                    "text":"⌚ 3 > ",
                     "color":"aqua",
                     "italic":false
                 },
                 {
                     "translate":"ms.tag.collect",
                     "fallback":"收集"
-                },
-                "/",
-                {
-                    "translate":"ms.tag.survive",
-                    "fallback":"生存"
                 }
             ],
             {

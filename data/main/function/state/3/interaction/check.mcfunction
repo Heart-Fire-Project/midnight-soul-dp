@@ -27,7 +27,7 @@ tag @s[tag=!blue_interact] remove blue_hint
 tag @s[tag=!gold_interact] remove gold_hint
 tag @s[tag=!gray_interact] remove gray_hint
 
-# 天赋判定：进行交互时
+# 判定：进行交互时
 execute as @s[scores={talent_1=1},team=soul,tag=blue_interact,tag=interacting,tag=talent_1_on] at @s run function main:state/3/ability/talent/001b
 execute as @s[scores={talent_2=1},team=soul,tag=blue_interact,tag=interacting,tag=talent_2_on] at @s run function main:state/3/ability/talent/001b
 execute as @s[scores={talent_1=7},team=soul,tag=blue_interact,tag=interacting] at @s run function main:state/3/ability/talent/007
