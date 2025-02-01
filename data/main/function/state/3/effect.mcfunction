@@ -12,3 +12,6 @@ effect give @s[scores={state=1}] darkness infinite 49 true
 effect give @s[scores={state=1}] resistance infinite 49 true
 attribute @s[scores={state=1}] movement_speed base set 0
 attribute @s[scores={state=1}] jump_strength base set 0
+
+# 但回响效果不会重置，再度施加
+execute if score $echo data matches 1 run function main:state/3/echo/01a

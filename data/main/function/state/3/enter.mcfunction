@@ -7,7 +7,7 @@ scoreboard players set $aura_rank data 0
 scoreboard players set $soul_death data 0
 scoreboard players set $soul_revive data 0
 scoreboard players set $3_gametime countdown 0
-scoreboard players set $3_echo countdown 0
+scoreboard players set $3_echo countdown -1
 scoreboard players set @a state 0
 scoreboard players set @a item 0
 scoreboard players reset @a damage_tick
@@ -86,6 +86,7 @@ scoreboard players set @a[team=guardian,scores={talent_2=7}] talent_2_tick 08000
 
 # 初始化标签
 tag @a[team=soul] add no_hit
+tag @a remove echo_target
 tag @a remove skill_on
 tag @a remove talent_1_on
 tag @a remove talent_2_on
@@ -111,6 +112,9 @@ scoreboard players reset * temp.track
 
 # 刷新初始状态
 execute as @a[tag=game_player] run function main:state/3/effect
+
+# 回响效果
+execute if score $echo data matches 1 run function main:state/3/echo/01i
 
 # 背景音乐
 execute as @a run function main:state/3/music_roll
