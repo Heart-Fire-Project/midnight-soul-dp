@@ -1,3 +1,5 @@
+playsound minecraft:item.book.page_turn block @s ~ ~ ~
+
 # 1 - 交流反馈
 tellraw @s[scores={temp=1}] [{"text":"\n","color":"#EEEEEE"},{"text":"» ","bold":true},{"translate":"ms.notice.contact","fallback":"[联系我们]"}," ",{"translate":"ms.notice.1","fallback":"交流与反馈"}]
 tellraw @s[scores={temp=1}] ["",{"text":"» ","bold":true},{"translate":"ms.notice.1.1","fallback":"[QQ 群]","color":"#FFA488","clickEvent":{"action":"open_url","value":"https://qm.qq.com/cgi-bin/qm/qr?k=YNaHDYBSXIR-Fo-bBjaANk5GCmKOZogo&authKey=t4k2yVndCqo/5jzIxYEpL1hxHRu44roVJ32G8meHgPHCMen05GsvcGLVz+f9LQGK"}}," ",{"translate":"ms.notice.1.2","fallback":"[Discord]","color":"#0066FF","clickEvent":{"action":"open_url","value":"https://discord.gg/GfuK87kP"}}," ",{"translate":"ms.notice.1.3","fallback":"[Github]","color":"#7B63AB","clickEvent":{"action":"open_url","value":"https://github.com/Heart-Fire-Project/Midsoul"}}," ",{"translate":"ms.notice.1.4","fallback":"[官网]","color":"#FFDD55","clickEvent":{"action":"open_url","value":"https://alpha.hfpro.top/"}}]

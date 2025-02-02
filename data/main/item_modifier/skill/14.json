@@ -1,6 +1,7 @@
 [
     {
-        "function":"set_name",
+        "function"
+        :"set_name",
         "name":{
             "translate":"ms.skill.104",
             "fallback":"恶灵诅咒",
@@ -84,7 +85,8 @@
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "hide_additional_tooltip":{},
+            "!ominous_bottle_amplifier":{}
         }
     }
 ]

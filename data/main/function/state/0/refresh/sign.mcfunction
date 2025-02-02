@@ -28,7 +28,7 @@ execute if score $mode setting matches 2 run function base:merge_sign {x:"-7",y:
 execute unless score $mode setting matches 2 run function base:merge_sign {x:"-7",y:"6",z:"-11",glow:"1",color:"white",trans_2:"",trans_3:"ms.mode.2",fallb_2:"02",fallb_3:"针锋奔逃",command:"trigger interact_check set 202"}
 
 # 回响概率
-data merge block 0 7 3 {front_text:{has_glowing_text:1b,color:"yellow",messages:['""','{"translate":"ms.echo.chance","fallback":"回响触发几率"}','[{"score":{"name":"$echo_chance","objective":"setting"}},"%"]','{"text":""}']},is_waxed:1b}
+data merge block 0 7 3 {front_text:{has_glowing_text:1b,color:"yellow",messages:['""','{"translate":"ms.echo.chance","fallback":"回响触发几率"}','[{"score":{"name":"$echo_chance","objective":"setting"}},"%"]','{"text":""}']}}
 function base:merge_sign {x:"-1",y:"7",z:"3",glow:"1",color:"white",trans_2:"",trans_3:"",fallb_2:">>>",fallb_3:"+5%",command:"trigger interact_check set 301"}
 function base:merge_sign {x:"1",y:"7",z:"3",glow:"1",color:"white",trans_2:"",trans_3:"",fallb_2:"<<<",fallb_3:"-5%",command:"trigger interact_check set 302"}
 
