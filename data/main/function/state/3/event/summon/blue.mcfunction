@@ -8,6 +8,6 @@ execute as @e[tag=new_blue] run team join shard @s
 execute as @e[tag=new_blue] run tag @s remove new_blue
 
 # 灵气判定
-execute if score $aura_rank data matches 3 as @e[tag=blue] run data modify entity @s Glowing set value 1b
+execute if score $aura_rank data matches 3.. as @e[tag=blue] run data modify entity @s Glowing set value 1b
 
 tag @e remove no_summon

@@ -45,6 +45,7 @@ execute at @e[tag=new_gray] run particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.
 execute as @e[tag=new_gray] run team join chest @s
 execute as @e[tag=new_gray] run tag @s remove new_gray
 scoreboard players set $3_chest countdown 180
+execute if score $echo data matches 4 run scoreboard players set $3_chest countdown 60
 
 # 标题
 title @a[team=!admin] title ""

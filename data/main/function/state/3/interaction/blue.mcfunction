@@ -1,17 +1,19 @@
+tag @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] add interact_fin
+
 # 完成碎片收集
-scoreboard players add @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] temp.collect 1
+scoreboard players add @a[tag=interact_fin] temp.collect 1
 scoreboard players add $shard_collect data 1
 execute if score $3_gametime countdown matches 18001.. run scoreboard players add $3_gametime countdown 100
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a
 
 # 判定：收集到灵魂碎片时
-execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=1}] at @s run function main:state/3/ability/talent/001a
-execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=1}] at @s run function main:state/3/ability/talent/001a
-execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=4}] at @s run function main:state/3/ability/talent/004
-execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=4}] at @s run function main:state/3/ability/talent/004
-execute if entity @a[team=soul,scores={state=1}] as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=6}] at @s run function main:state/3/ability/talent/006
-execute if entity @a[team=soul,scores={state=1}] as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=6}] at @s run function main:state/3/ability/talent/006
+execute as @a[tag=interact_fin,scores={talent_1=1}] at @s run function main:state/3/ability/talent/001a
+execute as @a[tag=interact_fin,scores={talent_2=1}] at @s run function main:state/3/ability/talent/001a
+execute as @a[tag=interact_fin,scores={talent_1=4}] at @s run function main:state/3/ability/talent/004
+execute as @a[tag=interact_fin,scores={talent_2=4}] at @s run function main:state/3/ability/talent/004
+execute if entity @a[team=soul,scores={state=1}] as @a[tag=interact_fin,scores={talent_1=6}] at @s run function main:state/3/ability/talent/006
+execute if entity @a[team=soul,scores={state=1}] as @a[tag=interact_fin,scores={talent_2=6}] at @s run function main:state/3/ability/talent/006
 execute if entity @s[tag=T107] run function main:state/3/ability/talent/107f
 execute if score $echo data matches 3 run function main:state/3/event/summon/blue {num:"1"}
 
@@ -60,9 +62,9 @@ scoreboard players operation $rank_2 temp /= #10 data
 scoreboard players operation $rank_3 temp = $goal temp
 scoreboard players operation $rank_3 temp *= #8 data
 scoreboard players operation $rank_3 temp /= #10 data
-execute if score $shard_collect data = $rank_1 temp run scoreboard players set $aura_rank data -1
-execute if score $shard_collect data = $rank_2 temp run scoreboard players set $aura_rank data -2
-execute if score $shard_collect data = $rank_3 temp run scoreboard players set $aura_rank data -3
+execute if score $shard_collect data matches ..0 if score $shard_collect data = $rank_1 temp run scoreboard players set $aura_rank data -1
+execute if score $shard_collect data matches ..1 if score $shard_collect data = $rank_2 temp run scoreboard players set $aura_rank data -2
+execute if score $shard_collect data matches ..2 if score $shard_collect data = $rank_3 temp run scoreboard players set $aura_rank data -3
 
 # 解析灵气等级变化
 execute if score $aura_rank data matches -3..-1 run playsound block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
@@ -72,6 +74,7 @@ execute if score $aura_rank data matches -3 run tellraw @a[team=!admin] [{"text"
 execute if score $aura_rank data matches -3 as @e[tag=blue] run data modify entity @s Glowing set value 1b
 execute if score $aura_rank data matches -3..-1 run scoreboard players add $talent_007 data 5
 execute if score $aura_rank data matches -3..-1 run scoreboard players operation $aura_rank data *= #-1 data
-execute if score $aura_rank data matches 1 at @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..12] run function main:state/3/event/aura/1
+execute if score $aura_rank data matches 1 at @a[tag=interact_fin] as @e[tag=blue,distance=..12] run function main:state/3/event/aura/1
 
+tag @a remove interact_fin
 kill @s
