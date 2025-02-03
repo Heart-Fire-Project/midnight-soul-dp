@@ -1,4 +1,8 @@
-# 30% 几率转为虚影碎片
-function base:random {min:"1",max:"10"}
-execute if score $random temp2 matches 1..3 run tag @s add fake_blue
-tag @s[tag=fake_blue] remove blue
+# 完成假碎片收集
+particle smoke ~ ~0.2 ~ 0.2 0.1 0.2 0.03 16 force @a
+playsound block.respawn_anchor.charge player @a ~ ~ ~ 1 0.7
+
+# 花火
+function main:state/3/event/firework
+
+kill @s

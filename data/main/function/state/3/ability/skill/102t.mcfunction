@@ -9,7 +9,7 @@ execute store result storage ms:temp y double 1 run data get storage r7s:base y 
 execute store result storage ms:temp z double 1 run data get storage r7s:base z 1
 
 # 获取粒子运动时间 | 速度为 20 格/秒
-function base:caculate/get_pos_2 {target1:"@s",target2:"@p[tag=S102_t]"}
+function base:caculate/selector_distance {target1:"@s",target2:"@p[tag=S102_t]"}
 execute store result storage ms:temp duartion int 1 run scoreboard players get $front temp2
 
 # 执行粒子生成

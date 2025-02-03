@@ -11,3 +11,6 @@ tp @e[tag=blue,distance=..15] ~ ~0.2 ~
 summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute as @e[tag=new_blue] run team join shard @s
 execute as @e[tag=new_blue] run tag @s remove new_blue
+
+# 灵气判定
+execute if score $aura_rank data matches 3 as @e[tag=blue] run data modify entity @s Glowing set value 1b

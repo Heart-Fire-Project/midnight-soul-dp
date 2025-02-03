@@ -32,5 +32,5 @@ execute if score @s extra.text matches 1 run function main:lib/player/down/1
 execute if score @s extra.text matches 2 run function main:lib/player/down/2
 
 # 灯噔咚
-function main:state/3/event/new_light
+function main:state/3/event/summon/gold
 playsound block.conduit.deactivate player @a[team=!admin] 0 1000000 0 1000000

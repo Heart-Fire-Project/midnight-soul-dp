@@ -5,14 +5,14 @@ tag @a[tag=game_player,scores={soul_combo=7..}] add guardian_target
 # 看看谁最高？
 scoreboard players set $max temp 0
 scoreboard players operation $max temp > @a[tag=guardian_target] soul_combo
-execute as @a[tag=guardian_target] run execute if score @s soul_combo = $max temp run tag @s add guardian_max
+execute as @a[tag=guardian_target] if score @s soul_combo = $max temp run tag @s add guardian_max
 team join guardian @r[tag=guardian_max]
 
 # 看看谁第二高？
 tag @a[team=guardian] remove guardian_target
 scoreboard players set $max temp 0
 scoreboard players operation $max temp > @a[tag=guardian_target] soul_combo
-execute as @a[tag=guardian_target] run execute if score @s soul_combo = $max temp run tag @s add guardian_sub
+execute as @a[tag=guardian_target] if score @s soul_combo = $max temp run tag @s add guardian_sub
 
 # 可惜是有条件哒！
 scoreboard players set $player temp 0

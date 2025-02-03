@@ -6,4 +6,4 @@ execute as @a[team=soul,scores={state=1,countdown=..0}] run function main:state/
 execute as @a[team=guardian,scores={state=1,countdown=..0}] run function main:state/3/player/recover
 
 # 灵气弥散
-execute if score $aura_rank data matches 2 as @e[tag=blue] at @s run function main:state/3/event/aura2
+execute if score $aura_rank data matches 2 as @e[tag=blue] at @s run function main:state/3/event/aura/2

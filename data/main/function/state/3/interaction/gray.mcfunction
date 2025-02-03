@@ -14,7 +14,7 @@ execute if entity @a[team=guardian,distance=..0.5,tag=gray_interact,scores={coun
 
 # 特殊机制
 # 诅咒
-execute if entity @s[tag=cursed_gray] as @r[team=soul,distance=..0.5,tag=gray_interact,scores={countdown=1000..}] run function main:state/3/event/curse_gray_s
-execute if entity @s[tag=cursed_gray] as @r[team=guardian,distance=..0.5,tag=gray_interact,scores={countdown=1000..}] run function main:state/3/event/curse_gray_g
+execute if entity @s[tag=cursed_gray] as @r[team=soul,distance=..0.5,tag=gray_interact,scores={countdown=1000..}] run function main:state/3/event/cursed/soul
+execute if entity @s[tag=cursed_gray] as @r[team=guardian,distance=..0.5,tag=gray_interact,scores={countdown=1000..}] run function main:state/3/event/cursed/guardian
 
 kill @s

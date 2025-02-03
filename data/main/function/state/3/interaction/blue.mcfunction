@@ -13,6 +13,7 @@ execute as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=
 execute if entity @a[team=soul,scores={state=1}] as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_1=6}] at @s run function main:state/3/ability/talent/006
 execute if entity @a[team=soul,scores={state=1}] as @a[distance=..0.5,tag=blue_interact,scores={countdown=700..,talent_2=6}] at @s run function main:state/3/ability/talent/006
 execute if entity @s[tag=T107] run function main:state/3/ability/talent/107f
+execute if score $echo data matches 3 run function main:state/3/event/summon/blue {num:"1"}
 
 # 地图变量
 # 聚光圣殿 - 2*4*6
@@ -68,9 +69,9 @@ execute if score $aura_rank data matches -3..-1 run playsound block.sculk_shriek
 execute if score $aura_rank data matches -1 run tellraw @a[team=!admin] [{"text":"» ","color":"#80FFFF","bold":true},{"translate":"ms.info.rank.1","fallback":"灵气初起 ◆◇◇ 灵魂收集碎片时将与附近的碎片共鸣","bold":false},"\n"]
 execute if score $aura_rank data matches -2 run tellraw @a[team=!admin] [{"text":"» ","color":"#80D5FF","bold":true},{"translate":"ms.info.rank.2","fallback":"灵气弥散 ◆◆◇ 灵魂将与附近的碎片持续共鸣","bold":false},"\n"]
 execute if score $aura_rank data matches -3 run tellraw @a[team=!admin] [{"text":"» ","color":"#80AAFF","bold":true},{"translate":"ms.info.rank.3","fallback":"灵气充盈 ◆◆◆ 场上所有剩余碎片持续进行共鸣","bold":false},"\n"]
-execute if score $aura_rank data matches -3 run execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
+execute if score $aura_rank data matches -3 as @e[tag=blue] run data modify entity @s Glowing set value 1b
 execute if score $aura_rank data matches -3..-1 run scoreboard players add $talent_007 data 5
 execute if score $aura_rank data matches -3..-1 run scoreboard players operation $aura_rank data *= #-1 data
-execute if score $aura_rank data matches 1 run execute at @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..12] run function main:state/3/event/aura1
+execute if score $aura_rank data matches 1 at @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..12] run function main:state/3/event/aura/1
 
 kill @s

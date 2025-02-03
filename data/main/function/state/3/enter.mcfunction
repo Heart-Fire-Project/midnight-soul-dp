@@ -36,7 +36,8 @@ $execute at @e[tag=marker_blue,sort=random,limit=$(shard_summon)] run summon ite
 execute at @e[tag=new_blue] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 execute as @e[tag=new_blue] run team join shard @s
 execute as @e[tag=new_blue] run tag @s remove new_blue
-execute if score $echo data matches 2 as @e[tag=blue] run function main:state/3/echo/02a
+execute if score $echo data matches 2 store result storage ms:temp num short 1 run data get storage ms:map shard_summon 0.3
+execute if score $echo data matches 2 run function main:state/3/echo/02 with storage ms:temp
 
 # 生成初始宝盒
 $execute at @e[tag=marker_gray,sort=random,limit=$(chest_summon)] run summon block_display ~ ~ ~ {Tags:[game_entity,new_gray,gray],block_state:{Name:light_gray_shulker_box},transformation:{scale:[0.5f,0.5f,0.5f],translation:[-0.25f,0f,-0.25f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
@@ -114,7 +115,7 @@ scoreboard players reset * temp.track
 execute as @a[tag=game_player] run function main:state/3/effect
 
 # 回响效果
-execute if score $echo data matches 1 run function main:state/3/echo/01i
+execute if score $echo data matches 1 run function main:state/3/echo/init {min:"45",max:"80"}
 
 # 背景音乐
 execute as @a run function main:state/3/music_roll
