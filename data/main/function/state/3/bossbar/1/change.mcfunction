@@ -13,7 +13,7 @@ bossbar set midsoul:warn max 1200
 
 # 视为灵气等级 4
 scoreboard players set $aura_rank data 4
-scoreboard players set $talent_007 data 25
+scoreboard players set $talent_007 data 20
 execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
 
 # 可以调整的就调整基础速度

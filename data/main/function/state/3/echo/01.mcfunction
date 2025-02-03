@@ -1,4 +1,4 @@
-tellraw @a[team=!admin] [{"translate":"ms.echo.1","fallback":"强制性引导","color":"light_purple"},{"text":" ❖ "},{"translate":"ms.echo.active","fallback":"回响效果已触发"}]
+tellraw @a[team=!admin] [{"translate":"ms.echo.1","fallback":"强制性引导","color":"light_purple"},{"text":" ❖ "},{"translate":"ms.echo.active","fallback":"回响效果触发"}]
 
 # 去除掉已有 tag 与效果
 effect clear @a[tag=echo_target] glowing
@@ -17,5 +17,4 @@ effect give @a[tag=echo_target] glowing infinite 0 true
 effect give @a[tag=!echo_target] resistance infinite 4 true
 
 # 重设倒计时
-function base:random {min:"45",max:"80"}
-scoreboard players operation $3_echo countdown = $random temp2
+function main:state/3/echo/init {min:"45",max:"80"}

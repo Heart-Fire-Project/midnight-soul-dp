@@ -14,7 +14,7 @@ execute if score $echo data matches 1 run tellraw @s [{"translate":"ms.echo.1.de
 execute if score $echo data matches 2 run tellraw @s [{"translate":"ms.echo.2.desc.a","fallback":"碎片收集需求降低 30%，但有 30% 的碎片为假碎片；假碎片可收集，效果为原地生成一个烟花"},"\n",{"translate":"ms.echo.2.desc.b","fallback":"与碎片有关的效果不会选中假碎片","color":"gray"}]
 execute if score $echo data matches 3 run tellraw @s [{"translate":"ms.echo.3.desc","fallback":"碎片收集需求固定为 9；初始仅会生成 3 个碎片，收集碎片时生成 1 个碎片"}]
 execute if score $echo data matches 4 run tellraw @s [{"translate":"ms.echo.4.desc","fallback":"技能不再自然冷却；灵魂宝物盒刷新速度 +200%，且产出无垠时界的概率提升至 50%；守卫者开启灵魂宝物盒时额外 -20s 冷却"}]
-execute if score $echo data matches 5 run tellraw @s [{"translate":"ms.echo.5.desc","fallback":"游戏天气改为雷雨，并每过 20~60 秒降下多处落雷；被落雷击中的玩家在 15 秒内速度 +60%，但灵魂会受到 5 点额外伤害"}]
+execute if score $echo data matches 5 run tellraw @s [{"translate":"ms.echo.5.desc","fallback":"每过 20~60 秒降下多处落雷；被落雷击中的灵魂受到 5 点伤害，但在 7 秒内无敌并移速 +100%"}]
 execute if score $echo data matches 6 run tellraw @s [{"translate":"ms.echo.6.desc","fallback":"所有灵魂的移速 +10%，交互速度 -20%，自身大小 -30%"}]
 execute if score $echo data matches 7 run tellraw @s [{"translate":"ms.echo.7.desc","fallback":"所有玩家的移速 +50%，进入下一阶段时额外 +25%"}]
 execute if score $echo data matches 8 run tellraw @s [{"translate":"ms.echo.8.desc","fallback":"每过 30~120 秒，随机交换所有玩家位置"}]
