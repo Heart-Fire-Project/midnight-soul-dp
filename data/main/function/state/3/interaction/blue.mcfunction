@@ -62,9 +62,9 @@ scoreboard players operation $rank_2 temp /= #10 data
 scoreboard players operation $rank_3 temp = $goal temp
 scoreboard players operation $rank_3 temp *= #8 data
 scoreboard players operation $rank_3 temp /= #10 data
-execute if score $shard_collect data matches ..0 if score $shard_collect data = $rank_1 temp run scoreboard players set $aura_rank data -1
-execute if score $shard_collect data matches ..1 if score $shard_collect data = $rank_2 temp run scoreboard players set $aura_rank data -2
-execute if score $shard_collect data matches ..2 if score $shard_collect data = $rank_3 temp run scoreboard players set $aura_rank data -3
+execute if score $aura_rank data matches ..0 if score $shard_collect data = $rank_1 temp run scoreboard players set $aura_rank data -1
+execute if score $aura_rank data matches ..1 if score $shard_collect data = $rank_2 temp run scoreboard players set $aura_rank data -2
+execute if score $aura_rank data matches ..2 if score $shard_collect data = $rank_3 temp run scoreboard players set $aura_rank data -3
 
 # 解析灵气等级变化
 execute if score $aura_rank data matches -3..-1 run playsound block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000

@@ -7,3 +7,7 @@ execute if score $echo data matches 5 if score $3_echo countdown matches 5 store
 execute if score $echo data matches 5 if score $3_echo countdown matches 5 run function main:state/3/echo/05a with storage ms:temp
 execute if score $echo data matches 5 if score $3_echo countdown matches 1..5 run function main:state/3/echo/05b
 execute if score $echo data matches 5 if score $3_echo countdown matches 0 run function main:state/3/echo/05
+
+# 命运交响曲 | 有提示音……有人会用这战略？
+execute if score $echo data matches 8 if score $3_echo countdown matches 5 run function main:state/3/echo/warn
+execute if score $echo data matches 8 if score $3_echo countdown matches 0 run function main:state/3/echo/08

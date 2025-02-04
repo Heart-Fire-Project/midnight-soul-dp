@@ -14,6 +14,11 @@ execute as @r[x=0,y=0,z=0,distance=..300,team=soul] run function main:state/2/pl
 execute unless entity @a[x=0,y=0,z=0,distance=..300,] run tag @e remove enter_chosen
 execute unless entity @a[x=0,y=0,z=0,distance=..300,] run tag @e remove soul_select
 
+# 回响效果
+execute if score $echo data matches 6 run attribute @s movement_speed base set 0.11
+execute if score $echo data matches 6 run attribute @s scale base set 0.7
+execute if score $echo data matches 7 run attribute @s movement_speed base set 0.15
+
 # 设置状态
 effect clear @s
 effect give @s speed 7 2 true

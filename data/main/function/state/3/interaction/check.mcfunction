@@ -11,6 +11,7 @@ execute unless entity @e[tag=blue,distance=..0.5] run tag @s remove blue_interac
 execute unless entity @e[tag=gold,distance=..0.5] run tag @s remove gold_interact
 execute unless entity @e[tag=gray,distance=..0.5] run tag @s remove gray_interact
 execute unless entity @e[tag=fake_blue,distance=..0.5] run tag @s remove E02
+execute if entity @s[tag=!blue_interact,tag=!gold_interact,tag=!gray_interact,tag=!E02] run tag @s remove interacting
 
 # 交互提示
 execute as @s[tag=blue_hint] run title @s actionbar [{"translate":"ms.hint.blue","fallback":"长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color":"blue"}]
@@ -33,8 +34,9 @@ tag @s[tag=!gray_interact] remove gray_hint
 # 判定：进行交互时
 execute as @s[scores={talent_1=1},tag=blue_interact,tag=interacting,tag=talent_1_on] at @s run function main:state/3/ability/talent/001b
 execute as @s[scores={talent_2=1},tag=blue_interact,tag=interacting,tag=talent_2_on] at @s run function main:state/3/ability/talent/001b
-execute as @s[scores={talent_1=7},tag=blue_interact,tag=interacting] at @s run function main:state/3/ability/talent/007
-execute as @s[scores={talent_2=7},tag=blue_interact,tag=interacting] at @s run function main:state/3/ability/talent/007
+execute as @s[scores={talent_1=7},tag=interacting] at @s run function main:state/3/ability/talent/007
+execute as @s[scores={talent_2=7},tag=interacting] at @s run function main:state/3/ability/talent/007
+execute if score $echo data matches 6 as @s[team=soul,tag=interacting] run function main:state/3/echo/06
 
 # 刷新进程
 tag @s[tag=!blue_interact,tag=!gold_interact,tag=!gray_interact,tag=!E02] remove interacting

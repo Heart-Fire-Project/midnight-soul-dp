@@ -22,6 +22,7 @@ bossbar set midsoul:warn players
 function main:state/0/refresh/block
 function main:state/0/refresh/sign
 function main:state/0/refresh/entity
+function main:state/0/refresh/index
 
 # 设置变量组
 execute if score $mode setting matches 1 run data merge storage ms:mode {start:"5",cancel:"4"}

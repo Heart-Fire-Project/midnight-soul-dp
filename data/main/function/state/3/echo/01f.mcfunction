@@ -1,4 +1,4 @@
-tellraw @a[team=!admin] [{"translate":"ms.echo.1","fallback":"强制性引导","color":"light_purple"},{"text":" ❖ "},{"translate":"ms.echo.invaild","fallback":"回响效果已失效"}]
+tellraw @a[team=!admin] [{"text":"","color":"light_purple"},{"text":"» ","bold":true},{"translate":"ms.echo.1","fallback":"强制性引导"},{"text":" ❖ "},{"translate":"ms.echo.invaild","fallback":"回响效果已结束"}]
 playsound block.respawn_anchor.deplete player @a[team=!admin] 0 1000000 0 1000000
 scoreboard players set $3_echo countdown -1
 

@@ -1,4 +1,4 @@
-tellraw @a[team=!admin] [{"translate":"ms.echo.1","fallback":"强制性引导","color":"light_purple"},{"text":" ❖ "},{"translate":"ms.echo.active","fallback":"回响效果触发"}]
+tellraw @a[team=!admin] [{"text":"","color":"light_purple"},{"text":"» ","bold":true},{"translate":"ms.echo.1","fallback":"强制性引导"},{"text":" ❖ "},{"translate":"ms.echo.active","fallback":"回响效果已触发"}]
 
 # 去除掉已有 tag 与效果
 effect clear @a[tag=echo_target] glowing

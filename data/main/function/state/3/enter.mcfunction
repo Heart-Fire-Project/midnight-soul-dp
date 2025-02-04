@@ -119,6 +119,7 @@ execute as @a[tag=game_player] run function main:state/3/effect
 # 回响效果
 execute if score $echo data matches 1 run function main:state/3/echo/init {min:"45",max:"80"}
 execute if score $echo data matches 5 run function main:state/3/echo/init {min:"20",max:"60"}
+execute if score $echo data matches 8 run function main:state/3/echo/init {min:"30",max:"120"}
 
 # 背景音乐
 execute as @a run function main:state/3/music_roll
