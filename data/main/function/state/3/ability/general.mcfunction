@@ -1,6 +1,6 @@
 # 技能
 execute as @a[team=soul,scores={skill_tick=-2370..-2350,skill=4}] run function main:state/3/ability/skill/004t
-execute at @e[tag=S005] run particle minecraft:portal ~ ~0.2 ~ 0.2 0.3 0.2 1 4 force @a[team=soul]
+execute at @e[tag=S005] run particle portal ~ ~0.2 ~ 0.2 0.3 0.2 1 4 force @a[team=soul]
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:state/3/ability/skill/102t
 execute as @a[scores={skill_103=1..}] run function main:state/3/ability/skill/103t
 

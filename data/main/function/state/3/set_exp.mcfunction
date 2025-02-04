@@ -6,7 +6,7 @@ scoreboard players operation $tick temp /= #10 data
 scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
 scoreboard players operation @s temp2 = $sec temp2
-scoreboard players set @s[scores={temp=..0}] temp2 0
+scoreboard players set @s[scores={temp2=..0}] temp2 0
 
 # 设置经验进度条 | 收集 / 第二状态
 scoreboard players set @s[tag=blue_interact] temp 700

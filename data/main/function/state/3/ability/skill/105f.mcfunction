@@ -1,6 +1,6 @@
 title @s[scores={setting.ability_actionbar=1..}] actionbar [{"translate":"ms.skill.over","fallback":"技能终止","color":"red"}," 🔁 ",{"translate":"ms.skill.105","fallback":"雾影阴霾"}]
-playsound minecraft:entity.player.attack.sweep player @a
-particle minecraft:sweep_attack ~ ~1 ~ 0.7 0.3 0.7 1 16
+playsound entity.player.attack.sweep player @a
+particle sweep_attack ~ ~1 ~ 0.7 0.3 0.7 1 16
 tag @s remove skill_on
 
 # 触发击中效果，至多记录一次击中

@@ -1,4 +1,4 @@
-playsound minecraft:item.book.page_turn block @s ~ ~ ~
+playsound item.book.page_turn block @s ~ ~ ~
 
 # 1 - Roser
 execute if score @s temp matches 1 run tellraw @s [{"text":"","color":"gold"},{"text":"\n» ","bold":true},{"translate":"ms.credit.roser","fallback":"Roser"}," | ",{"translate":"ms.credit.1","fallback":"架构者"}]

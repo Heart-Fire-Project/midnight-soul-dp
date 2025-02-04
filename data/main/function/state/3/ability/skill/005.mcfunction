@@ -11,7 +11,7 @@ tp @e[tag=S005_n] @s
 scoreboard players operation $player_id temp = @s player_id
 execute as @e[tag=S005,tag=!S005_n] if score @s player_id = $player_id temp run tag @s add S005_t
 tp @s @e[tag=S005_t,limit=1]
-execute if entity @e[tag=S005_t] run particle minecraft:falling_obsidian_tear ~ ~1.2 ~ 0.2 0.3 0.2 3 256 force @a
+execute if entity @e[tag=S005_t] run particle falling_obsidian_tear ~ ~1.2 ~ 0.2 0.3 0.2 3 256 force @a
 execute if entity @e[tag=S005_t] run playsound entity.enderman.teleport player @s 0 1000000 0 1000000
 kill @e[tag=S005_t]
 tag @e remove S005_n

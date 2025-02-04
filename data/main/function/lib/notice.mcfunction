@@ -1,4 +1,4 @@
-playsound minecraft:item.book.page_turn block @s ~ ~ ~
+playsound item.book.page_turn block @s ~ ~ ~
 
 # 1 - 交流反馈
 tellraw @s[scores={temp=1}] [{"text":"\n","color":"#EEEEEE"},{"text":"» ","bold":true},{"translate":"ms.notice.contact","fallback":"[联系我们]"}," ",{"translate":"ms.notice.1","fallback":"交流与反馈"}]

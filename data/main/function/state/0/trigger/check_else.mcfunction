@@ -63,7 +63,7 @@ execute if score @s interact_check matches 3006 run scoreboard players set @s it
 execute if score @s interact_check matches 3100 run scoreboard players set @s item -1
 execute if score @s interact_check matches 3001..3100 run function main:lib/ability/item
 
-execute if score @s interact_check matches 1001..3999 run playsound minecraft:item.book.page_turn block @s ~ ~ ~
+execute if score @s interact_check matches 1001..3999 run playsound item.book.page_turn block @s ~ ~ ~
 
 # 粒子效果
 execute if score @s interact_check matches 4100 run scoreboard players set @s temp 0
