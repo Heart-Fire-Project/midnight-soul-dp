@@ -1,6 +1,3 @@
-# 将音效最提前处理以适配管理员退出
-execute if score @s leave_game matches 1.. run playsound entity.experience_orb.pickup player @a 0 1000000 0 1000000 1
-
 # 基础数值设定
 team join spectator @s
 attribute @s movement_speed base set 0.1
