@@ -3,7 +3,7 @@ tag @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] add interact_f
 # 完成碎片收集
 scoreboard players add @a[tag=interact_fin] temp.collect 1
 scoreboard players add $shard_collect data 1
-execute if score $3_gametime countdown matches 18001.. run scoreboard players add $3_gametime countdown 100
+execute if score $3_process countdown matches 18001.. run scoreboard players add $3_process countdown 100
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a
 

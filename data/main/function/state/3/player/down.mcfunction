@@ -24,7 +24,7 @@ tag @s remove talent_2_on
 tag @s remove item_on
 
 # 刷新效果
-function main:state/3/effect
+function main:state/3/player/effect
 
 # 受文本套组影响
 execute unless score @s extra.text matches 1..2 run function main:lib/player/down/0

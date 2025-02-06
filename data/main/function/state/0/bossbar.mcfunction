@@ -4,7 +4,7 @@ $execute if score $prepare data matches $(start).. run bossbar set midsoul:info 
 
 # 正常倒计时
 $execute if score $prepare data matches $(start)..10 run bossbar set midsoul:info color blue
-$execute if score $0_start countdown matches ..10 if score $prepare data matches $(start)..10 run bossbar set midsoul:info name [{"translate":"ms.bossbar.0.start","fallback":"人数已达标 | 游戏将在 %s 秒后开始","color":"aqua","with":[{"score":{"objective":"countdown","name":"$0_start"},"color":"blue"}]}]
+$execute if score $0_start countdown matches ..10 if score $prepare data matches $(start)..10 run bossbar set midsoul:info name [{"translate":"ms.bossbar.0.start","fallback":"人数已达标 | 游戏将在 %s 秒后开始","color":"aqua","with":[{"score":{"objective":"countdown","name":"$0_start"},"color":"#50A7D9"}]}]
 
 # 人数超限倒计时
 execute if score $prepare data matches 11.. run bossbar set midsoul:info color green

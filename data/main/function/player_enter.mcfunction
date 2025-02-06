@@ -15,5 +15,5 @@ execute if score $state data matches 1 run bossbar set midsoul:info players @a[t
 execute if score $state data matches 2 run bossbar set midsoul:info players @a[team=spectator]
 
 # 守卫者刷新当前状态
-execute if score $state data matches 3 as @s[team=guardian] run function main:state/3/effect
+execute if score $state data matches 3 as @s[team=guardian] run function main:state/3/player/effect
 execute if score $state data matches 3..4 run tellraw @s[team=guardian] [{"text":"» ","bold":true,"color":"red"},{"translate":"ms.info.reconnected","fallback":"游戏仍未结束，你可以继续进行游戏！","bold":false}]

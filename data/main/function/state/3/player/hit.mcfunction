@@ -2,7 +2,7 @@
 # 进入擦刀状态
 scoreboard players set @s countdown 1400
 scoreboard players set @s state 1
-function main:state/3/effect
+function main:state/3/player/effect
 tag @s add hit_soul
 
 # 判定：进入擦刀状态时

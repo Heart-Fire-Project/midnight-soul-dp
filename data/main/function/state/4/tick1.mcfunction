@@ -3,7 +3,7 @@ scoreboard players reset $alive data
 execute as @a[team=soul] run scoreboard players add $alive data 1
 
 # 刷新 Bossbar
-function main:state/3/bossbar/general
+function main:state/4/bossbar/pend
 
 # 能力施放与冷却
 execute as @a[team=soul,tag=!item_on,scores={state=0}] at @s run function main:state/3/ability/item/pend_on
@@ -31,14 +31,12 @@ scoreboard players remove @a[scores={sneak_time=1..}] sneak_time 1
 execute as @a[tag=game_player] run function main:state/3/set_exp
 
 # 计时部分
+scoreboard players remove $4_portal countdown 1
 scoreboard players add $stat_gametime countdown 1
-scoreboard players add $3_process countdown 1
+scoreboard players add $4_process countdown 1
 scoreboard players remove @a[scores={damage_tick=1..}] damage_tick 1
 scoreboard players add @a[tag=game_player] temp.time 1
 
 # 其他的部分
 execute as @a[scores={sleep_detect=1..},team=soul] run function main:state/3/event/wake_up
 kill @e[type=item,tag=!game_entity]
-
-# 进程判定
-execute if score $mode data matches 1 run function main:state/3/check_end/1

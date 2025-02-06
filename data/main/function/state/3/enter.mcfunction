@@ -6,7 +6,8 @@ scoreboard players set $shard_collect data 0
 scoreboard players set $aura_rank data 0
 scoreboard players set $soul_death data 0
 scoreboard players set $soul_revive data 0
-scoreboard players set $3_gametime countdown 0
+scoreboard players set $stat_gametime countdown 0
+scoreboard players set $3_process countdown 0
 scoreboard players set $3_echo countdown -1
 scoreboard players set @a state 0
 scoreboard players set @a item 0
@@ -114,7 +115,7 @@ scoreboard players reset * temp.time
 scoreboard players reset * temp.track
 
 # 刷新初始状态
-execute as @a[tag=game_player] run function main:state/3/effect
+execute as @a[tag=game_player] run function main:state/3/player/effect
 
 # 回响效果
 execute if score $echo data matches 1 run function main:state/3/echo/init {min:"45",max:"80"}

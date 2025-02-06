@@ -14,4 +14,4 @@ execute as @a[scores={extra.particle=9},tag=!invisibility,team=!admin,gamemode=!
 
 # 重定向至其他函数
 execute if score $state data matches 0 run function main:state/0/tick5
-execute if score $state data matches 3 run function main:state/3/tick5
+execute if score $state data matches 3..4 run function main:state/3/tick5

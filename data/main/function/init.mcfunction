@@ -213,9 +213,9 @@ team modify admin seeFriendlyInvisibles false
 team remove shard
 team add shard "灵魂碎片"
 team modify shard color blue
-team remove lamp
-team add lamp "灵魂之灯"
-team modify lamp color gold
+team remove light
+team add light "灵魂之灯"
+team modify light color gold
 team remove portal
 team add portal "传送门"
 team modify portal color light_purple

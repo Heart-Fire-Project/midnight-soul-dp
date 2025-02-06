@@ -30,20 +30,20 @@ execute if score $2_starting countdown matches 112 run scoreboard objectives set
 execute if score $2_starting countdown matches 111 run scoreboard objectives setdisplay sidebar
 
 # 离开阶段特效
-execute if score $2_starting countdown matches 7 run bossbar set midsoul:info name ""
-execute if score $2_starting countdown matches 5 run bossbar set midsoul:info name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"white","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
-execute if score $2_starting countdown matches 3 run bossbar set midsoul:info name ""
-execute if score $2_starting countdown matches 2 run bossbar set midsoul:info name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"white","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
-execute if score $2_starting countdown matches 7 run bossbar set midsoul:2 name ""
-execute if score $2_starting countdown matches 5 run bossbar set midsoul:2 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"#52E5E7","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
-execute if score $2_starting countdown matches 3 run bossbar set midsoul:2 name ""
-execute if score $2_starting countdown matches 2 run bossbar set midsoul:2 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"#52E5E7","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
-execute if score $2_starting countdown matches 1 run bossbar set midsoul:2 players
-execute if score $2_starting countdown matches 7 run bossbar set midsoul:3 name ""
-execute if score $2_starting countdown matches 5 run bossbar set midsoul:3 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"red","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
-execute if score $2_starting countdown matches 3 run bossbar set midsoul:3 name ""
-execute if score $2_starting countdown matches 2 run bossbar set midsoul:3 name {"translate":"ms.bossbar.2.starting","fallback":"即将 » %s « 开始","color":"red","with":[{"score":{"objective":"temp2","name":"$sec"}}]}
-execute if score $2_starting countdown matches 1 run bossbar set midsoul:3 players
+execute if score $2_starting countdown matches 4 run bossbar set midsoul:info visible false
+execute if score $2_starting countdown matches 3 run bossbar set midsoul:info visible true
+execute if score $2_starting countdown matches 2 run bossbar set midsoul:info visible false
+execute if score $2_starting countdown matches 1 run bossbar set midsoul:info visible true
+execute if score $2_starting countdown matches 4 run bossbar set midsoul:2 visible false
+execute if score $2_starting countdown matches 3 run bossbar set midsoul:2 visible true
+execute if score $2_starting countdown matches 2 run bossbar set midsoul:2 visible false
+execute if score $2_starting countdown matches 1 run bossbar set midsoul:2 visible true
+execute if score $2_starting countdown matches 0 run bossbar set midsoul:2 players
+execute if score $2_starting countdown matches 4 run bossbar set midsoul:3 visible false
+execute if score $2_starting countdown matches 3 run bossbar set midsoul:3 visible true
+execute if score $2_starting countdown matches 2 run bossbar set midsoul:3 visible false
+execute if score $2_starting countdown matches 1 run bossbar set midsoul:3 visible true
+execute if score $2_starting countdown matches 0 run bossbar set midsoul:3 players
 
 # 时间轴
 execute if score $2_starting countdown matches 60 run playsound block.note_block.harp player @a[team=!admin] 0 1000000 0 1000000

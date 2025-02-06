@@ -5,7 +5,7 @@ damage @s 10 out_of_world
 playsound block.conduit.activate player @a[team=!admin] 0 1000000 0 1000000
 
 # 刷新效果
-function main:state/3/effect
+function main:state/3/player/effect
 effect give @s speed 7 4
 effect give @s resistance 15 4
 

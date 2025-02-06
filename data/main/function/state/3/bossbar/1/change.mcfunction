@@ -4,9 +4,9 @@ tellraw @a[team=guardian] [{"text":"» ","color":"#8080FF","bold":true},{"transl
 playsound block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
 
 # Bossbar 调整 | 60 秒自动开门
-bossbar set midsoul:info style notched_20
-bossbar set midsoul:heed style notched_20
-bossbar set midsoul:warn style notched_20
+bossbar set midsoul:info style notched_12
+bossbar set midsoul:heed style notched_12
+bossbar set midsoul:warn style notched_12
 bossbar set midsoul:info max 1200
 bossbar set midsoul:heed max 1200
 bossbar set midsoul:warn max 1200
