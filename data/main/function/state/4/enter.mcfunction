@@ -1,9 +1,6 @@
 # 状态 4 - 充能
 scoreboard players set $state data 4
 
-kill @e[tag=purple]
-kill @e[tag=purple_progress]
-
 # 生成传送门
 execute at @e[tag=marker_purple,limit=2,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 execute as @e[tag=new_purple] run team join portal @s
