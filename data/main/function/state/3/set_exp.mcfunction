@@ -19,3 +19,8 @@ scoreboard players set @s[scores={state=1,temp.dying=3..},team=soul] temp 4000
 scoreboard players set @s[scores={state=1},team=guardian] temp 1400
 
 function base:set_exp {current:"countdown",max:"temp",level:"temp2"}
+
+tag @s remove blue_interact
+tag @s remove gold_interact
+tag @s remove gray_interact
+tag @s remove E02

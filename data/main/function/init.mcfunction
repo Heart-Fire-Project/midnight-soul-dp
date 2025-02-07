@@ -149,11 +149,11 @@ scoreboard objectives add stat.rating_record dummy "最高短期分纪录"
 scoreboard objectives add stat.parkour_5 dummy "普通跑酷纪录"
 scoreboard objectives add stat.parkour_7 dummy "隐藏跑酷纪录"
 
-scoreboard objectives add setting.ingame_score dummy "表现分追踪设置"
+scoreboard objectives add setting.echo_info dummy "回响效果提示设置"
 scoreboard objectives add setting.interact_hint dummy "交互提示设置"
 scoreboard objectives add setting.ability_actionbar dummy "能力状态提示设置"
 scoreboard objectives add setting.ingame_tip dummy "Tip! 设置"
-scoreboard objectives add setting.detailed_result dummy "详细结算设置"
+scoreboard objectives add setting.simplified_result dummy "简洁结算设置"
 
 scoreboard objectives add extra.particle dummy "粒子效果"
 scoreboard objectives add extra.headset dummy "饰品装配"

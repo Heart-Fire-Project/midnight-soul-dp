@@ -12,6 +12,12 @@ bossbar set midsoul:2 max 120
 bossbar set midsoul:3 style notched_12
 bossbar set midsoul:3 max 120
 
+# 重置所有人属性
+execute as @a[team=!admin] run attribute @s movement_speed base set 0.1
+execute as @a[team=!admin] run attribute @s scale base set 1.0
+execute as @a[team=!admin] run attribute @s gravity base set 0.08
+execute as @a[team=!admin] run attribute @s jump_strength base set 0.42
+
 # 计分板
 scoreboard players set $2_starting countdown 120
 

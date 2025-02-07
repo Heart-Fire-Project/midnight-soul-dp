@@ -18,6 +18,10 @@ execute if score $3_chest countdown matches 0 run function main:state/3/event/su
 execute if score $ingame_tip countdown matches 1.. run scoreboard players remove $ingame_tip countdown 1
 execute if score $ingame_tip countdown matches 0 run function main:lib/tip/general
 
+# 回响提示计时
+execute if score $echo_info countdown matches 1.. run scoreboard players remove $echo_info countdown 1
+execute if score $echo_info countdown matches 0 as @a[scores={setting.echo_info=1}] run function main:lib/echo
+
 # 回响计时
 execute if score $3_echo countdown matches 1.. run scoreboard players remove $3_echo countdown 1
 execute if score $echo data matches 1.. run function main:state/3/echo/general

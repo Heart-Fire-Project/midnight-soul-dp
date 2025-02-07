@@ -2,8 +2,8 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.setting.detailed_result",
-            "fallback":"详细结算",
+            "translate":"ms.setting.simplified_result",
+            "fallback":"简洁结算",
             "color":"red",
             "italic":false
         }
@@ -18,8 +18,8 @@
                 "italic":false
             },
             {
-                "translate":"ms.setting.detailed_result.desc",
-                "fallback":"结算时显示更多数据",
+                "translate":"ms.setting.simplified_result.desc",
+                "fallback":"结算时隐藏额外数据",
                 "color":"white",
                 "italic":false
             }

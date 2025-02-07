@@ -2,9 +2,9 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.setting.ingame_score",
-            "fallback":"表现分追踪",
-            "color":"red",
+            "translate":"ms.setting.simplified_result",
+            "fallback":"简洁结算",
+            "color":"green",
             "italic":false
         }
     },
@@ -12,14 +12,14 @@
         "function":"set_lore",
         "lore":[
             {
-                "translate":"ms.lore.disable",
-                "fallback":"✧ 已关闭",
-                "color":"red",
+                "translate":"ms.lore.enable",
+                "fallback":"✦ 已启用",
+                "color":"green",
                 "italic":false
             },
             {
-                "translate":"ms.setting.ingame_score.desc",
-                "fallback":"实时告知表现分来源",
+                "translate":"ms.setting.simplified_result.desc",
+                "fallback":"结算时隐藏额外数据",
                 "color":"white",
                 "italic":false
             }
@@ -31,12 +31,13 @@
         "function":"set_custom_data",
         "tag":{
             "type":"setting",
-            "id":74010
+            "id":74050
         }
     },
     {
         "function":"set_components",
         "components":{
+            "enchantment_glint_override":true,
             "hide_additional_tooltip":{}
         }
     }

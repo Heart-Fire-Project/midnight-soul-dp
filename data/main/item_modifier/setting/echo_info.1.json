@@ -2,8 +2,8 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.setting.detailed_result",
-            "fallback":"详细结算",
+            "translate":"ms.setting.echo_info",
+            "fallback":"回响效果提示",
             "color":"green",
             "italic":false
         }
@@ -18,8 +18,8 @@
                 "italic":false
             },
             {
-                "translate":"ms.setting.detailed_result.desc",
-                "fallback":"结算时显示更多数据",
+                "translate":"ms.setting.echo_info.desc",
+                "fallback":"周期性提示回响效果",
                 "color":"white",
                 "italic":false
             }
@@ -31,7 +31,7 @@
         "function":"set_custom_data",
         "tag":{
             "type":"setting",
-            "id":74050
+            "id":74010
         }
     },
     {

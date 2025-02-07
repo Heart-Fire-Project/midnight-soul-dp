@@ -4,11 +4,11 @@ $advancement revoke $(target) everything
 $scoreboard players set $(target) leave_game 1
 
 # 设置个人设置
-$scoreboard players set $(target) setting.ingame_score 0
+$scoreboard players set $(target) setting.echo_info 1
 $scoreboard players set $(target) setting.interact_hint 1
 $scoreboard players set $(target) setting.ability_actionbar 2
 $scoreboard players set $(target) setting.ingame_tip 1
-$scoreboard players set $(target) setting.detailed_result 0
+$scoreboard players set $(target) setting.simplified_result 1
 
 # 设置统计数据
 $scoreboard players set $(target) stat.collect 0

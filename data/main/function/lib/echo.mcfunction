@@ -19,3 +19,6 @@ execute if score $echo data matches 6 run tellraw @s [{"translate":"ms.echo.6.de
 execute if score $echo data matches 7 run tellraw @s [{"translate":"ms.echo.7.desc","fallback":"所有玩家的移速 +50%，进入下一阶段时额外 +25%"}]
 execute if score $echo data matches 8 run tellraw @s [{"translate":"ms.echo.8.desc","fallback":"每过 30~120 秒，随机交换所有玩家位置"}]
 execute if score $echo data matches 9 run tellraw @s [{"translate":"ms.echo.9.desc","fallback":"碎片收集达标后跳过充能阶段，直接开启传送门"}]
+
+# 重设倒计时
+scoreboard players set $echo_info countdown 75
