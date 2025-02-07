@@ -1,6 +1,6 @@
 ## 🔯 Welcome to Midnight Soul ~~Reset^2~~
 
-> Last Edited » +116 | 2025/02/05
+> Last Edited » +116 | 2025/02/05  
 > 点击[这里](https://github.com/Heart-Fire-Project/Midsoul/blob/plus/README.md)来访问中文版
 
 🚧 UNDER HEAVY CONSTRUCTION 🚧

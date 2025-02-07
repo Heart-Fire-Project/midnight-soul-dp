@@ -4,6 +4,7 @@ gamemode spectator @s
 tp @s 0 -5 0
 
 # 状态刷新
+clear @s
 effect clear @s
 effect give @s darkness infinite 0 true
 

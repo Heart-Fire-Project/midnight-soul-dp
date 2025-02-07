@@ -11,7 +11,6 @@ execute as @a run scoreboard players operation @s stat.exp += @s exp_temp
 execute as @a run scoreboard players reset @s exp_temp
 
 # 入场
-clear @a[team=!admin]
 execute as @a[team=prepare,limit=10,sort=random] run function main:state/1/player_enter/prepare
 execute as @a[tag=!game_player,team=!admin] run function main:state/1/player_enter/spectator
 

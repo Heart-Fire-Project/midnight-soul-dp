@@ -49,18 +49,18 @@ execute if score $shard_collect data matches 35 run setblock -870 20 1098 crying
 execute if score $shard_collect data matches 40 run setblock -870 20 1100 crying_obsidian
 
 # 灵气等级 | 为玩家提供碎片提示
-# 1 - 收集展示邻近碎片 - 40%
-# 2 - 持续展示邻近碎片 - 60%
-# 3 - 高亮全部剩余碎片 - 80%
+# 1 - 收集展示邻近碎片 - 50%
+# 2 - 持续展示邻近碎片 - 70%
+# 3 - 高亮全部剩余碎片 - 90%
 $scoreboard players set $goal temp $(shard_goal)
 scoreboard players operation $rank_1 temp = $goal temp
-scoreboard players operation $rank_1 temp *= #4 data
+scoreboard players operation $rank_1 temp *= #5 data
 scoreboard players operation $rank_1 temp /= #10 data
 scoreboard players operation $rank_2 temp = $goal temp
-scoreboard players operation $rank_2 temp *= #6 data
+scoreboard players operation $rank_2 temp *= #7 data
 scoreboard players operation $rank_2 temp /= #10 data
 scoreboard players operation $rank_3 temp = $goal temp
-scoreboard players operation $rank_3 temp *= #8 data
+scoreboard players operation $rank_3 temp *= #9 data
 scoreboard players operation $rank_3 temp /= #10 data
 execute if score $aura_rank data matches ..0 if score $shard_collect data = $rank_1 temp run scoreboard players set $aura_rank data -1
 execute if score $aura_rank data matches ..1 if score $shard_collect data = $rank_2 temp run scoreboard players set $aura_rank data -2

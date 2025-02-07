@@ -25,16 +25,22 @@ execute as @a[tag=game_player] run function main:state/3/inventory_pre
 
 # 蹲下交互侦测
 execute as @a[tag=game_player,scores={state=0}] at @s run function main:state/3/interaction/check
+execute as @a[team=soul,scores={state=0}] at @s run function main:state/4/charge/check
 scoreboard players remove @a[scores={sneak_time=1..}] sneak_time 1
 
+# 刷新传送门开启进度
+scoreboard players add $4_process_color countdown 1
+execute as @e[tag=purple,tag=!open_purple] at @s run function main:state/4/charge/settle
+execute as @e[tag=purple] at @s run function main:state/4/set_progress
+
 # 刷新经验条
-execute as @a[tag=game_player] run function main:state/3/set_exp
+execute as @a[tag=game_player] at @s run function main:state/4/set_exp
 
 # 计时部分
 scoreboard players remove $4_portal countdown 1
 scoreboard players add $stat_gametime countdown 1
 scoreboard players add $4_process countdown 1
-scoreboard players remove @a[scores={damage_tick=1..}] damage_tick 1
+scoreboard players set @a[team=guardian] damage_tick 100
 scoreboard players add @a[tag=game_player] temp.time 1
 
 # 其他的部分

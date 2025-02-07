@@ -295,15 +295,14 @@ scoreboard players set #10 data 10
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
-scoreboard players set #40 data 40
-scoreboard players set #50 data 50
 scoreboard players set #60 data 60
 scoreboard players set #61 data 61
 scoreboard players set #64 data 64
 scoreboard players set #100 data 100
 scoreboard players set #182 data 182
-scoreboard players set #200 data 200
 scoreboard players set #256 data 256
+scoreboard players set #400 data 400
+scoreboard players set #8000 data 8000
 scoreboard players set #10000 data 10000
 scoreboard players set #18000 data 18000
 

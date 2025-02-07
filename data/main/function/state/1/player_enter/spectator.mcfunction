@@ -5,6 +5,7 @@ gamemode spectator @s
 tp @s 0 777 0
 
 # 状态刷新
+clear @s
 effect clear @s
 
 # 放首歌
