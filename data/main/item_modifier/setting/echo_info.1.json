@@ -3,7 +3,7 @@
         "function":"set_name",
         "name":{
             "translate":"ms.setting.echo_info",
-            "fallback":"回响效果提示",
+            "fallback":"回响提示",
             "color":"green",
             "italic":false
         }

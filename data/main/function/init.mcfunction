@@ -149,7 +149,7 @@ scoreboard objectives add stat.rating_record dummy "最高短期分纪录"
 scoreboard objectives add stat.parkour_5 dummy "普通跑酷纪录"
 scoreboard objectives add stat.parkour_7 dummy "隐藏跑酷纪录"
 
-scoreboard objectives add setting.echo_info dummy "回响效果提示设置"
+scoreboard objectives add setting.echo_info dummy "回响提示设置"
 scoreboard objectives add setting.interact_hint dummy "交互提示设置"
 scoreboard objectives add setting.ability_actionbar dummy "能力状态提示设置"
 scoreboard objectives add setting.ingame_tip dummy "Tip! 设置"
@@ -249,20 +249,6 @@ bossbar remove midsoul:2
 bossbar add midsoul:2 "B"
 bossbar remove midsoul:3
 bossbar add midsoul:3 "C"
-bossbar remove midsoul:4
-bossbar add midsoul:4 "D"
-bossbar remove midsoul:5
-bossbar add midsoul:5 "E"
-bossbar remove midsoul:6
-bossbar add midsoul:6 "F"
-bossbar remove midsoul:7
-bossbar add midsoul:7 "G"
-bossbar remove midsoul:8
-bossbar add midsoul:8 "H"
-bossbar remove midsoul:9
-bossbar add midsoul:9 "I"
-bossbar remove midsoul:10
-bossbar add midsoul:10 "J"
 
 # 伤害侦测初始化
 advancement revoke @a only main:damage/dealt
@@ -295,6 +281,9 @@ scoreboard players set #10 data 10
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
+scoreboard players set #30 data 30
+scoreboard players set #40 data 40
+scoreboard players set #50 data 50
 scoreboard players set #60 data 60
 scoreboard players set #61 data 61
 scoreboard players set #64 data 64

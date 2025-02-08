@@ -8,13 +8,6 @@ bossbar set midsoul:info players @a
 bossbar set midsoul:1 players
 bossbar set midsoul:2 players
 bossbar set midsoul:3 players
-bossbar set midsoul:4 players
-bossbar set midsoul:5 players
-bossbar set midsoul:6 players
-bossbar set midsoul:7 players
-bossbar set midsoul:8 players
-bossbar set midsoul:9 players
-bossbar set midsoul:10 players
 bossbar set midsoul:heed players
 bossbar set midsoul:warn players
 

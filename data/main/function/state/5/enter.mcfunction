@@ -15,25 +15,7 @@ scoreboard players set @a[tag=game_player] state 0
 execute if score $mode data matches 1..2 as @a[team=guardian] run function main:state/3/effect
 
 # 重设计分板
-scoreboard objectives remove result.1
-scoreboard objectives remove result.2
-scoreboard objectives remove result.3
-scoreboard objectives remove result.4
-scoreboard objectives remove result.5
-scoreboard objectives remove result.6
-scoreboard objectives remove result.7
-scoreboard objectives remove result.8
-scoreboard objectives remove result.9
-scoreboard objectives remove result.10
-scoreboard objectives add result.1 dummy
-scoreboard objectives add result.2 dummy
-scoreboard objectives add result.3 dummy
-scoreboard objectives add result.4 dummy
-scoreboard objectives add result.5 dummy
-scoreboard objectives add result.6 dummy
-scoreboard objectives add result.7 dummy
-scoreboard objectives add result.8 dummy
-scoreboard objectives add result.9 dummy
-scoreboard objectives add result.10 dummy
-scoreboard players reset * countdown
 scoreboard players set $5_ending countdown 250
+
+# 回归初心，最终循环
+execute if score $mode data matches 1..2 run function main:state/5/loop/1

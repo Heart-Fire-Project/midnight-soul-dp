@@ -19,7 +19,7 @@
             },
             {
                 "translate":"ms.setting.simplified_result.desc",
-                "fallback":"结算时隐藏额外数据",
+                "fallback":"结算时仅显示必要数据",
                 "color":"white",
                 "italic":false
             }
