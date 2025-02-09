@@ -9,7 +9,7 @@ summon text_display -992 -0.85 -1001 {Tags:["extra_entity"],text:'[{"translate":
 
 # 粒子效果
 summon text_display -991 -0.7 -1006 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.particle","fallback":"粒子效果","color":"dark_blue"}]',background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display -991 -0.85 -1006 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.particle_desc","fallback":"放心，你的粒子效果仅队友可见","color":"white"}]',background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display -991 -0.85 -1006 {Tags:["extra_entity"],text:'[{"translate":"ms.extra.particle_desc","fallback":"放心，你的粒子效果敌方看不见","color":"white"}]',background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 function base:merge_sign {x:"-991",y:"0",z:"-1011",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.particle.0",fallb_2:"--",fallb_3:"无粒子效果",command:"trigger interact_check set 4100"}
 function base:merge_sign {x:"-990",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.1",fallb_2:"Lv.10",fallb_3:"午夜繁星",command:"trigger interact_check set 4101"}
 function base:merge_sign {x:"-989",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.2",fallb_2:"Lv.25",fallb_3:"氤氲灵气",command:"trigger interact_check set 4102"}

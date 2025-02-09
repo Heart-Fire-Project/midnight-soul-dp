@@ -30,6 +30,14 @@ execute as @a[tag=stat_query,tag=!quering] run function main:state/0/extra/query
 tag @a remove stat_query
 execute unless entity @a[x=-990,y=-1,z=-1001,dx=0,dy=1.2,dz=0] run setblock -990 -2 -1001 redstone_lamp[lit=false]
 
+# 里程碑自动刷新
+execute as @a[x=-1000,y=0,z=-1000,distance=..50] run function main:state/0/extra/milestone
+
+# 开始游戏侦测
+team join spectator @a[team=!admin,team=!prepare]
+function main:state/0/starting_check with storage ms:mode
+function main:state/0/bossbar with storage ms:mode
+
 # 额外区域粒子效果
 execute as @e[tag=particle_1] at @s run particle electric_spark ~ ~0.2 ~ 0.1 0.1 0.1 0 1
 execute as @e[tag=particle_2] at @s run particle glow ~ ~0.2 ~ 0.15 0.15 0.15 0 1

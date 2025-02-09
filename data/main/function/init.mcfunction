@@ -108,8 +108,6 @@ scoreboard objectives remove temp.talent
 scoreboard objectives add temp.talent dummy "单局天赋使用"
 scoreboard objectives remove temp.item
 scoreboard objectives add temp.item dummy "单局宝物使用"
-scoreboard objectives remove temp.kill
-scoreboard objectives add temp.kill dummy "单局有效击杀"
 scoreboard objectives remove temp.time
 scoreboard objectives add temp.time dummy "单局游玩时间"
 scoreboard objectives remove temp.track
@@ -231,7 +229,6 @@ worldborder warning distance 1000000
 # 全局计时
 schedule function main:tick/tick1 1t replace
 schedule function main:tick/tick2 2t replace
-schedule function main:tick/tick5 5t replace
 schedule function main:tick/tick20 20t replace
 
 # Bossbar 初始化

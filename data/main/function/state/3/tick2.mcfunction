@@ -7,3 +7,10 @@ execute as @a[team=guardian,scores={state=1,countdown=..0}] run function main:st
 
 # 灵气弥散
 execute if score $aura_rank data matches 2 as @e[tag=blue] at @s run function main:state/3/event/aura/2
+
+# 特殊效果
+# 诅咒
+execute at @e[tag=cursed_gray] run function main:state/3/event/cursed/surround
+
+# 不允许离开场地
+execute as @a[gamemode=spectator] at @s unless entity @e[tag=game_entity,distance=..100] run tp @s @r[tag=game_player]
