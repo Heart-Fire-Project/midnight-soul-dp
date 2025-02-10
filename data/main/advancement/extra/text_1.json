@@ -1,0 +1,57 @@
+{
+    "parent":"main:extra/text_0",
+    "display": {
+        "icon": {
+            "id":"gilded_blackstone"
+        },
+        "title": [
+            {
+                "translate":"ms.text.1",
+                "fallback":"回溯"
+            },
+            "            01"
+        ],
+        "description": [
+            {
+                "translate":"ms.goal.play",
+                "fallback":"· 完成 %s 场游戏",
+                "with": [
+                    "16"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.text.1.desc",
+                "fallback":"译者骂其旨如古文。",
+                "color":"gray",
+                "italic": true
+            }
+        ],
+        "frame":"task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "play": {
+            "trigger":"location",
+            "conditions": {
+                "player": [
+                    {
+                        "scores": {
+                            "stat.play": {
+                                "min": 16
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function":"main:lib/advancement/extra/text"
+    }
+}

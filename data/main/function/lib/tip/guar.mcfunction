@@ -1,4 +1,4 @@
-function base:random {min:"1",max:"15"}
+function base:random {min:"1",max:"16"}
 tellraw @s "\n"
 
 execute if score $random temp2 matches 01 run tellraw @s [{"text":"» ","color":"#7367F0","bold":true},{"text":"Tip! ","bold":false},{"translate":"ms.tip.1g","fallback":"灵魂之灯不只是救助点，还可以是一个诱饵","bold":false}]
@@ -16,3 +16,4 @@ execute if score $random temp2 matches 12 run tellraw @s [{"text":"» ","color":
 execute if score $random temp2 matches 13 run tellraw @s [{"text":"» ","color":"#7367F0","bold":true},{"text":"Tip! ","bold":false},{"translate":"ms.tip.13","fallback":"如果没有明确规定……把实体渲染距离拉满是一个好选择！","bold":false}]
 execute if score $random temp2 matches 14 run tellraw @s [{"text":"» ","color":"#7367F0","bold":true},{"text":"Tip! ","bold":false},{"translate":"ms.tip.14","fallback":"如果你嫌我们这些提示烦的话，可以在物品栏里关掉……","bold":false}]
 execute if score $random temp2 matches 15 run tellraw @s [{"text":"» ","color":"#7367F0","bold":true},{"text":"Tip! ","bold":false},{"translate":"ms.tip.15","fallback":"很久很久以前，守卫者的擦刀只有三秒……最后大家都死光啦！","bold":false}]
+execute if score $random temp2 matches 16 run tellraw @s [{"text":"» ","color":"#7367F0","bold":true},{"text":"Tip! ","bold":false},{"translate":"ms.tip.16","fallback":"Mojang 小时候学中文，有空格就想换行，导致原版端上排版很怪……","bold":false}]

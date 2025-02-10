@@ -91,29 +91,29 @@ scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
 scoreboard objectives add soul_combo dummy "灵魂连击"
 
 scoreboard objectives remove temp.collect
-scoreboard objectives add temp.collect dummy "单局碎片搜集"
+scoreboard objectives add temp.collect dummy "单场碎片搜集"
 scoreboard objectives remove temp.heal
-scoreboard objectives add temp.heal dummy "单局队友救助"
+scoreboard objectives add temp.heal dummy "单场队友救助"
 scoreboard objectives remove temp.open
-scoreboard objectives add temp.open dummy "单局宝盒开启"
+scoreboard objectives add temp.open dummy "单场宝盒开启"
 scoreboard objectives remove temp.dying
-scoreboard objectives add temp.dying dummy "单局陷入垂死"
+scoreboard objectives add temp.dying dummy "单场陷入垂死"
 scoreboard objectives remove temp.hit
-scoreboard objectives add temp.hit dummy "单局玩家命中"
+scoreboard objectives add temp.hit dummy "单场玩家命中"
 scoreboard objectives remove temp.down
-scoreboard objectives add temp.down dummy "单局垂死攻击"
+scoreboard objectives add temp.down dummy "单场垂死攻击"
 scoreboard objectives remove temp.skill
-scoreboard objectives add temp.skill dummy "单局技能使用"
+scoreboard objectives add temp.skill dummy "单场技能使用"
 scoreboard objectives remove temp.talent
-scoreboard objectives add temp.talent dummy "单局天赋使用"
+scoreboard objectives add temp.talent dummy "单场天赋使用"
 scoreboard objectives remove temp.item
-scoreboard objectives add temp.item dummy "单局宝物使用"
+scoreboard objectives add temp.item dummy "单场宝物使用"
 scoreboard objectives remove temp.time
-scoreboard objectives add temp.time dummy "单局游玩时间"
+scoreboard objectives add temp.time dummy "单场游玩时间"
 scoreboard objectives remove temp.track
-scoreboard objectives add temp.track dummy "单局追踪时间"
+scoreboard objectives add temp.track dummy "单场追踪时间"
 scoreboard objectives remove temp.tie
-scoreboard objectives add temp.tie dummy "单局牵制时间"
+scoreboard objectives add temp.tie dummy "单场牵制时间"
 
 scoreboard objectives add stat.collect dummy "总碎片搜集"
 scoreboard objectives add stat.heal dummy "总队友救助"

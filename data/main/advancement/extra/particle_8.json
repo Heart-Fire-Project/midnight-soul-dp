@@ -1,0 +1,57 @@
+{
+    "parent":"main:extra/particle_7",
+    "display": {
+        "icon": {
+            "id":"cherry_leaves"
+        },
+        "title": [
+            {
+                "translate":"ms.particle.8",
+                "fallback":"桃起樱落"
+            },
+            "             08"
+        ],
+        "description": [
+            {
+                "translate":"ms.goal.level",
+                "fallback":"· 游戏等级达到 Lv.%s",
+                "with": [
+                    "114"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.particle.8.desc",
+                "fallback":"绯色烟幕弥散，漫天迷乱花瓣。",
+                "color":"gray",
+                "italic": true
+            }
+        ],
+        "frame":"task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "level": {
+            "trigger":"location",
+            "conditions": {
+                "player": [
+                    {
+                        "scores": {
+                            "stat.level": {
+                                "min": 114
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function":"main:lib/advancement/extra/particle"
+    }
+}

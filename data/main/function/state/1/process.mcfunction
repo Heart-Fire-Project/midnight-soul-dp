@@ -57,7 +57,7 @@ execute if score $1_process countdown matches 1022 unless score $echo data match
 execute if score $1_process countdown matches 1022 unless score $echo data matches 0 run title @a[tag=game_player] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#F75EEB"}
 execute if score $1_process countdown matches 1021 unless score $echo data matches 0 run title @a[tag=game_player] clear
 
-# 1025 / 1020 | 本局详情 [包含选择地图]
+# 1025 / 1020 | 本场详情 [包含选择地图]
 execute if score $1_process countdown matches 1025 run function main:state/1/game_info
 execute if score $1_process countdown matches 1024 run scoreboard objectives setdisplay sidebar info
 execute if score $1_process countdown matches 1023 run scoreboard objectives setdisplay sidebar

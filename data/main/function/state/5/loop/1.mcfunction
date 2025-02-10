@@ -63,14 +63,15 @@ execute if score $5_ending countdown matches 125 as @a if score @s exp_temp = $h
 execute if score $5_ending countdown matches 125 if score $mode data matches 1 as @a[tag=game_player] run function main:state/5/stat/record
 
 # 全场最佳
-execute if score $5_ending countdown matches 80 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
-execute if score $5_ending countdown matches 80 run title @a[team=!admin] title {"translate":"ms.info.end.mvp","fallback":"全场最佳","color":"#96CBF1"}
-execute if score $5_ending countdown matches 80 run title @a[team=!admin] subtitle {"selector":"@a[tag=mvp]","color":"yellow"}
-execute if score $5_ending countdown matches 80 if score $mode data matches 2 run scoreboard players set @a exp_temp 0
+execute if score $5_ending countdown matches 100 run title @a times 2 60 3
+execute if score $5_ending countdown matches 100 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
+execute if score $5_ending countdown matches 100 run title @a[team=!admin] title {"translate":"ms.info.end.mvp","fallback":"全场最佳","color":"#96CBF1"}
+execute if score $5_ending countdown matches 100 run title @a[team=!admin] subtitle {"selector":"@a[tag=mvp]","color":"yellow"}
+execute if score $5_ending countdown matches 100 if score $mode data matches 2 run scoreboard players set @a exp_temp 0
 
 # 剩下的部分
 execute if score $5_ending countdown matches 80 run tellraw @a[team=!admin] [{"text":"» ","bold":true},{"translate":"ms.end.return","fallback":"稍后返回大厅……","bold":false}]
-execute if score $5_ending countdown matches 40 run function main:state/0/enter
+execute if score $5_ending countdown matches 30 run function main:state/0/enter
 execute if score $5_ending countdown matches 20 run kill @e[tag=game_entity]
 execute if score $5_ending countdown matches 10 run title @a reset
 execute if score $5_ending countdown matches 10 run forceload remove all

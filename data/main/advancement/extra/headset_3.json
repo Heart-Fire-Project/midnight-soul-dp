@@ -1,0 +1,57 @@
+{
+    "parent":"main:extra/headset_2",
+    "display": {
+        "icon": {
+            "id":"amethyst_cluster"
+        },
+        "title": [
+            {
+                "translate":"ms.headset.3",
+                "fallback":"紫水晶皇冠"
+            },
+            "              03"
+        ],
+        "description": [
+            {
+                "translate":"ms.goal.milestone",
+                "fallback":"· 里程碑解锁至 Rank %s",
+                "with": [
+                    "6"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.headset.3.desc",
+                "fallback":"根据我们 Mid Sojica 的世界观，灵魂确实可以戴头饰。",
+                "color":"gray",
+                "italic": true
+            }
+        ],
+        "frame":"task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "milestone": {
+            "trigger":"location",
+            "conditions": {
+                "player": [
+                    {
+                        "scores": {
+                            "extra.milestone": {
+                                "min": 6
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function":"main:lib/advancement/extra/headset"
+    }
+}
