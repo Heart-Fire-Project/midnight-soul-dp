@@ -25,13 +25,13 @@
                 "translate":"ms.particle.8.desc",
                 "fallback":"绯色烟幕弥散，漫天迷乱花瓣。",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "level":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.level":{
-                                "min": 114
+                                "min":114
                             }
                         },
                         "condition":"entity_scores",

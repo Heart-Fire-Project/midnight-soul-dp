@@ -34,3 +34,7 @@ execute if score $echo data matches 7 as @a[team=guardian,scores={state=0}] run 
 
 # 回响效果
 execute if score $echo data matches 9 run scoreboard players set @e[tag=purple] countdown 999999999
+
+# 教程
+advancement grant @a[tag=game_player] only main:tutorial/interact_4
+advancement grant @a[team=guardian] only main:tutorial/attack_4

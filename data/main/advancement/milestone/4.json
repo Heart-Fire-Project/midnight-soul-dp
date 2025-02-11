@@ -19,7 +19,7 @@
                     "7"
                 ],
                 "color":"white",
-                "italic": false
+                "italic":false
             },
             "\n",
             {
@@ -31,9 +31,9 @@
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "win":{
@@ -43,7 +43,7 @@
                     {
                         "scores":{
                             "stat.win":{
-                                "min": 7
+                                "min":7
                             }
                         },
                         "condition":"entity_scores",
@@ -52,7 +52,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 3
+                                "min":3
                             }
                         },
                         "condition":"entity_scores",
@@ -68,7 +68,7 @@
                     {
                         "scores":{
                             "stat.rating_record":{
-                                "min": 4500
+                                "min":4500
                             }
                         },
                         "condition":"entity_scores",
@@ -77,7 +77,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 3
+                                "min":3
                             }
                         },
                         "condition":"entity_scores",

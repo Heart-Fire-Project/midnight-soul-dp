@@ -44,9 +44,9 @@
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "down":{
@@ -56,7 +56,7 @@
                     {
                         "scores":{
                             "stat.down":{
-                                "min": 5
+                                "min":5
                             }
                         },
                         "condition":"entity_scores",
@@ -65,7 +65,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 2
+                                "min":2
                             }
                         },
                         "condition":"entity_scores",
@@ -85,7 +85,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:stat/kill_2": true
+                                    "main:stat/kill_2":true
                                 }
                             }
                         }
@@ -93,7 +93,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 2
+                                "min":2
                             }
                         },
                         "condition":"entity_scores",

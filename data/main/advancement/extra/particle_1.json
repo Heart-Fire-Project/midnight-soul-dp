@@ -25,13 +25,13 @@
                 "translate":"ms.particle.1.desc",
                 "fallback":"星辉指引方向，刃尖挑破虚妄。",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "level":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.level":{
-                                "min": 10
+                                "min":10
                             }
                         },
                         "condition":"entity_scores",

@@ -25,13 +25,13 @@
                 "translate":"ms.particle.3.desc",
                 "fallback":"湖岸微凝成霜，月痕刻写迷章。",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "level":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.level":{
-                                "min": 40
+                                "min":40
                             }
                         },
                         "condition":"entity_scores",

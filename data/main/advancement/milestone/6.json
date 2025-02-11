@@ -49,9 +49,9 @@
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "rating_single":{
@@ -61,7 +61,7 @@
                     {
                         "scores":{
                             "stat.single_record":{
-                                "min": 700
+                                "min":700
                             }
                         },
                         "condition":"entity_scores",
@@ -70,7 +70,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 5
+                                "min":5
                             }
                         },
                         "condition":"entity_scores",
@@ -86,7 +86,7 @@
                     {
                         "scores":{
                             "stat.kill":{
-                                "min": 30
+                                "min":30
                             }
                         },
                         "condition":"entity_scores",
@@ -95,7 +95,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 5
+                                "min":5
                             }
                         },
                         "condition":"entity_scores",
@@ -111,7 +111,7 @@
                     {
                         "scores":{
                             "stat.time":{
-                                "min": 108000
+                                "min":108000
                             }
                         },
                         "condition":"entity_scores",
@@ -120,7 +120,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 5
+                                "min":5
                             }
                         },
                         "condition":"entity_scores",

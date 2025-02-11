@@ -13,3 +13,6 @@ scoreboard players set @s[scores={talent_2=4}] talent_2_tick 18000
 
 # 统计数据
 scoreboard players add @s temp.hit 1
+
+# 教程
+advancement grant @s only main:tutorial/attack_2

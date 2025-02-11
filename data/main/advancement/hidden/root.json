@@ -5,15 +5,15 @@
         },
         "title":{
             "translate":"ms.adv.hidden",
-            "fallback":"未记录"
+            "fallback":"未知"
         },
         "description":[
             ""
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false,
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false,
         "background":"textures/block/blackstone.png"
     },
     "criteria":{

@@ -1,0 +1,53 @@
+{
+    "parent":"main:hidden/3",
+    "display":{
+        "icon":{
+            "id":"tuff_bricks"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.hidden.4",
+                "fallback":"还是跑酷高手"
+            },
+            "    04"
+        ],
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.4.desc.0",
+                "fallback":"在 5:00 内完成隐藏跑酷"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.hidden.4.desc.1",
+                "fallback":"制作者纪录是 3:42",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点数 +%s",
+                "with":[
+                    "20"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"challenge",
+        "show_toast":true,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/normal/20"
+    }
+}

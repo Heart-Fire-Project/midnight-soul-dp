@@ -1,0 +1,24 @@
+{
+    "display":{
+        "icon":{
+            "id":"book"
+        },
+        "title":{
+            "translate":"ms.adv.tutorial",
+            "fallback":"教程"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false,
+        "background":"textures/block/oak_planks.png"
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

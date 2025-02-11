@@ -24,3 +24,6 @@ tag @e remove gold_empty
 tag @e remove no_summon
 tag @e remove good_summon
 tag @e remove gold_select
+
+# 教程
+advancement grant @a[tag=game_player] only main:tutorial/interact_2

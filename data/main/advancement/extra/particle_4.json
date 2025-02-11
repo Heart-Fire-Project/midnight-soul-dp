@@ -25,13 +25,13 @@
                 "translate":"ms.particle.4.desc",
                 "fallback":"萤灯灼穿怨骨，灵魂永不为奴。",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "level":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.level":{
-                                "min": 55
+                                "min":55
                             }
                         },
                         "condition":"entity_scores",

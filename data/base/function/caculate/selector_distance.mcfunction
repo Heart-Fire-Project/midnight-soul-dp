@@ -1,7 +1,7 @@
 # 便捷处理用于 caculate/distance 的数据
 # 需要参数：target1 target2 (目标选择器形式)
 # 后置条件：caculate/distance
-# 输出结果: r7s:base{xA,yA,zA,xB,yB,zB}
+# 输出结果：r7s:base{xA,yA,zA,xB,yB,zB}
 
 # 获取第一个实体坐标
 $execute as $(target1) run function base:get_pos

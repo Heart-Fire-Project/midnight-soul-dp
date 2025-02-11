@@ -18,20 +18,20 @@
             },
             {
                 "text":"seayaySoCute",
-                "obfuscated": true
+                "obfuscated":true
             },
             "\n\n",
             {
                 "translate":"ms.weapon.3.desc",
                 "fallback":"这一击，贯穿脑门！",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "secret":{
@@ -45,7 +45,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:hidden/2": true
+                                    "main:hidden/2":true
                                 }
                             }
                         }

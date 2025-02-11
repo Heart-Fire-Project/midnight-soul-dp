@@ -25,13 +25,13 @@
                 "translate":"ms.text.1.desc",
                 "fallback":"译者骂其旨如古文。",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "play":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.play":{
-                                "min": 16
+                                "min":16
                             }
                         },
                         "condition":"entity_scores",

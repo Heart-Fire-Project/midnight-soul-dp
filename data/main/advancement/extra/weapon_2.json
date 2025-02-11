@@ -25,13 +25,13 @@
                 "translate":"ms.weapon.2.desc",
                 "fallback":"以历战之刃斩不净之物",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "adv":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.adv_pt":{
-                                "min": 100
+                                "min":100
                             }
                         },
                         "condition":"entity_scores",

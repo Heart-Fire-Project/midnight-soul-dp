@@ -13,3 +13,6 @@ effect give @s[tag=!soul_down] resistance 7 4
 # 没救了
 execute at @s[tag=soul_down] run summon marker ~ ~0.2 ~ {Tags:[death_mark,game_entity]}
 tp @n[tag=death_mark] @s
+
+# 教程
+advancement grant @s only main:tutorial/attack_1

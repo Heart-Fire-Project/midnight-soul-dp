@@ -16,3 +16,6 @@ effect give @s glowing 7 6 true
 
 # 更改模式
 gamemode adventure @s
+
+# 教程
+advancement grant @s only main:tutorial/role_2

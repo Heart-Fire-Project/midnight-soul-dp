@@ -22,13 +22,13 @@
                 "translate":"ms.weapon.0.desc",
                 "fallback":"以锐利之刃斩不净之物",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "free":{

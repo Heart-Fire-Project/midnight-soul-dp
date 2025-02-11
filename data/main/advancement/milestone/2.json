@@ -22,9 +22,9 @@
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "mvp":{
@@ -34,7 +34,7 @@
                     {
                         "scores":{
                             "stat.mvp":{
-                                "min": 1
+                                "min":1
                             }
                         },
                         "condition":"entity_scores",
@@ -43,7 +43,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 1
+                                "min":1
                             }
                         },
                         "condition":"entity_scores",

@@ -25,13 +25,13 @@
                 "translate":"ms.weapon.4.desc",
                 "fallback":"手感火热……不是用来怼的！",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "milestone":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 3
+                                "min":3
                             }
                         },
                         "condition":"entity_scores",

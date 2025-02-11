@@ -25,13 +25,13 @@
                 "translate":"ms.headset.2.desc",
                 "fallback":"喂听的到吗？救命救命救命",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "win_guar":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.win_guar":{
-                                "min": 3
+                                "min":3
                             }
                         },
                         "condition":"entity_scores",

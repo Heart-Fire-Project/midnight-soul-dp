@@ -25,13 +25,13 @@
                 "translate":"ms.particle.2.desc",
                 "fallback":"碎片凝于大地，灵烬蚀尽伪契。",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "level":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.level":{
-                                "min": 25
+                                "min":25
                             }
                         },
                         "condition":"entity_scores",

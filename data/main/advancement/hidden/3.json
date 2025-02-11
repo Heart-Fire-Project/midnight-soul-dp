@@ -1,0 +1,53 @@
+{
+    "parent":"main:hidden/2",
+    "display":{
+        "icon":{
+            "id":"music_disc_creator_music_box"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.hidden.3",
+                "fallback":"出金了"
+            },
+            "                 03"
+        ],
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.3.desc.0",
+                "fallback":"在大厅中听到 1% 概率的八音盒"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.hidden.3.desc.1",
+                "fallback":"为什么要演奏八音盒版本？",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点数 +%s",
+                "with":[
+                    "10"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/normal/10"
+    }
+}

@@ -18,20 +18,20 @@
             },
             {
                 "text":"roserAlsoCute",
-                "obfuscated": true
+                "obfuscated":true
             },
             "\n\n",
             {
                 "translate":"ms.text.2.desc",
                 "fallback":"这是哪个神经病写的？",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "secret":{
@@ -45,7 +45,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:hidden/1": true
+                                    "main:hidden/1":true
                                 }
                             }
                         }

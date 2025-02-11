@@ -1,6 +1,9 @@
 stopsound @s music
 scoreboard players operation @s music = @s temp
 
+# ???
+execute if score @s temp matches 0 run advancement grant @s only main:hidden/3
+
 # Creator(SP) [1:14]
 execute if score @s temp matches 0 run playsound music_disc.creator_music_box music @s 0 1000000 0 100000
 execute if score @s temp matches 0 run scoreboard players set @s music_time 81

@@ -3,6 +3,9 @@ scoreboard players operation @s temp2 = @s parkour_tick
 scoreboard players set @s state 0
 function main:state/0/parkour/time_format {source:"parkour_tick"}
 
+# ???
+execute if score @s temp2 matches ..6000 run advancement grant @s only main:hidden/4
+
 # 完成特效
 execute at @s run summon firework_rocket ~ ~2 ~ {LifeTime:7,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{flight_duration:1,explosions:[{has_twinkle:1b,has_trail:1b,shape:small_ball,colors:[I;6688755],fade_colors:[I;6648575]}]}}}}
 execute at @s anchored eyes positioned ^ ^ ^0.1 run particle flash ~ ~ ~ 0 0 0 1 1 force @s

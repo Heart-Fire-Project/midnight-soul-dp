@@ -15,15 +15,15 @@
         },
         "title":{
             "translate":"ms.adv.extra.root",
-            "fallback":"装饰品"
+            "fallback":"装饰"
         },
         "description":[
             ""
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false,
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false,
         "background":"textures/block/deepslate_tiles.png"
     },
     "criteria":{

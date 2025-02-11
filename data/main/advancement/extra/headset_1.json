@@ -25,13 +25,13 @@
                 "translate":"ms.headset.1.desc",
                 "fallback":"相信武魂真身，我戳死你！",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "win_soul":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "stat.win_soul":{
-                                "min": 12
+                                "min":12
                             }
                         },
                         "condition":"entity_scores",

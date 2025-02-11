@@ -4,12 +4,13 @@
         "icon":{
             "id":"powder_snow_bucket"
         },
-        "title": 
+        "title":[
             {
                 "translate":"ms.adv.hidden.2",
-                "fallback":"飞的没边了         02"
-            }
-        ,
+                "fallback":"飞的没边了"
+            },
+            "         02"
+        ],
         "description":[
             {
                 "text":"· ",
@@ -18,13 +19,25 @@
             {
                 "translate":"ms.adv.hidden.2.desc.0",
                 "fallback":"在游戏中，持续滞空 10 秒"
-            },"\n\n",
+            },
+            "\n\n",
             {
                 "translate":"ms.adv.hidden.2.desc.1",
                 "fallback":"知不知道？我已经，你等着。",
                 "color":"gray",
-                "italic": true
-            },"\n\n",{"translate":"ms.adv.pts","fallback":"💠 进度点数 +%s","with":["20"],"color":"aqua"},"\n",{
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点数 +%s",
+                "with":[
+                    "10"
+                ],
+                "color":"aqua"
+            },
+            "\n",
+            {
                 "translate":"ms.adv.reward",
                 "fallback":"奖励：",
                 "color":"green"
@@ -36,9 +49,9 @@
             }
         ],
         "frame":"task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": true
+        "show_toast":true,
+        "announce_to_chat":false,
+        "hidden":true
     },
     "criteria":{
         "secret":{
@@ -48,7 +61,7 @@
                     {
                         "scores":{
                             "off_ground":{
-                                "min": 200
+                                "min":200
                             }
                         },
                         "condition":"entity_scores",
@@ -59,6 +72,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/20"
+        "function":"main:lib/advancement/normal/10"
     }
 }

@@ -40,3 +40,7 @@ execute at @a[scores={extra.particle=9},tag=!invisibility,team=!guardian,team=!s
 function debug:tick2
 execute if score $state data matches 0 run function main:state/0/tick2
 execute if score $state data matches 3..4 run function main:state/3/tick2
+
+# 教程
+execute as @a[tag=game_player] at @s if entity @e[tag=blue,distance=..3] run advancement grant @s only main:tutorial/interact_1
+execute as @a[tag=game_player] at @s if entity @e[tag=gray,distance=..3] run advancement grant @s only main:tutorial/interact_3

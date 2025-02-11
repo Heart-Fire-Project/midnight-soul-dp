@@ -34,3 +34,6 @@ execute if score @s extra.text matches 2 run function main:lib/player/down/2
 # 灯噔咚
 function main:state/3/event/summon/gold
 playsound block.conduit.deactivate player @a[team=!admin] 0 1000000 0 1000000
+
+# 教程
+advancement grant @s only main:tutorial/attack_3

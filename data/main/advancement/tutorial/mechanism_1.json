@@ -1,0 +1,35 @@
+{
+    "parent":"main:tutorial/root",
+    "display":{
+        "icon":{
+            "id":"yellow_dye"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.2-1",
+                "fallback":"气息探测"
+            },
+            "       2-1"
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.2-1.desc",
+                "fallback":"    我建议灵魂先跑到进度条变蓝再看这条，守卫者在变蓝之前别看这条……\n    气息探测是游戏中的警戒机制，在双方距离较近时其将会变色，同时提醒两方玩家。\n    守卫者和灵魂都可以触发黄条，但只有灵魂会触发红条。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+            
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial"
+    }
+}

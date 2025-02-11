@@ -25,13 +25,13 @@
                 "translate":"ms.headset.3.desc",
                 "fallback":"根据我们 Mid Sojica 的世界观，灵魂确实可以戴头饰。",
                 "color":"gray",
-                "italic": true
+                "italic":true
             }
         ],
         "frame":"task",
-        "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": false
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
     },
     "criteria":{
         "milestone":{
@@ -41,7 +41,7 @@
                     {
                         "scores":{
                             "extra.milestone":{
-                                "min": 6
+                                "min":6
                             }
                         },
                         "condition":"entity_scores",
