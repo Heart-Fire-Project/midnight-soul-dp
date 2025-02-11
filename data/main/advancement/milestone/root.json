@@ -1,20 +1,20 @@
 {
-    "parent":"main:extra/root",
     "display":{
         "icon":{
-            "id":"writable_book"
+            "id":"ender_chest"
         },
         "title":{
-            "translate":"ms.text",
-            "fallback":"文本套组"
+            "translate":"ms.adv.milestone",
+            "fallback":"里程碑"
         },
         "description":[
             ""
         ],
-        "frame":"goal",
+        "frame":"task",
         "show_toast": false,
         "announce_to_chat": false,
-        "hidden": false
+        "hidden": false,
+        "background":"textures/block/stone_bricks.png"
     },
     "criteria":{
         "unlock":{

@@ -1,21 +1,21 @@
 {
     "parent":"main:extra/weapon_0",
-    "display": {
-        "icon": {
+    "display":{
+        "icon":{
             "id":"diamond_sword"
         },
-        "title": [
+        "title":[
             {
                 "translate":"ms.weapon.1",
                 "fallback":"祛灵刃 α"
             },
             "        01"
         ],
-        "description": [
+        "description":[
             {
                 "translate":"ms.goal.adv_pts",
                 "fallback":"· 进度点数达到 %s 点",
-                "with": [
+                "with":[
                     "30"
                 ],
                 "color":"white"
@@ -33,14 +33,14 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "criteria": {
-        "adv": {
+    "criteria":{
+        "adv":{
             "trigger":"location",
-            "conditions": {
-                "player": [
+            "conditions":{
+                "player":[
                     {
-                        "scores": {
-                            "stat.adv_pt": {
+                        "scores":{
+                            "stat.adv_pt":{
                                 "min": 30
                             }
                         },
@@ -51,7 +51,7 @@
             }
         }
     },
-    "rewards": {
+    "rewards":{
         "function":"main:lib/advancement/extra/weapon"
     }
 }

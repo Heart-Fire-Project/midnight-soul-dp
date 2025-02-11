@@ -1,7 +1,7 @@
 {
     "parent":"main:extra/headset_3",
-    "criteria": {
-        "command": {
+    "criteria":{
+        "command":{
             "trigger":"location"
         }
     }

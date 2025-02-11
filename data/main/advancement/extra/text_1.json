@@ -1,21 +1,21 @@
 {
     "parent":"main:extra/text_0",
-    "display": {
-        "icon": {
+    "display":{
+        "icon":{
             "id":"gilded_blackstone"
         },
-        "title": [
+        "title":[
             {
                 "translate":"ms.text.1",
                 "fallback":"回溯"
             },
             "            01"
         ],
-        "description": [
+        "description":[
             {
                 "translate":"ms.goal.play",
                 "fallback":"· 完成 %s 场游戏",
-                "with": [
+                "with":[
                     "16"
                 ],
                 "color":"white"
@@ -33,14 +33,14 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "criteria": {
-        "play": {
+    "criteria":{
+        "play":{
             "trigger":"location",
-            "conditions": {
-                "player": [
+            "conditions":{
+                "player":[
                     {
-                        "scores": {
-                            "stat.play": {
+                        "scores":{
+                            "stat.play":{
                                 "min": 16
                             }
                         },
@@ -51,7 +51,7 @@
             }
         }
     },
-    "rewards": {
+    "rewards":{
         "function":"main:lib/advancement/extra/text"
     }
 }

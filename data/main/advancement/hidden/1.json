@@ -1,0 +1,51 @@
+{
+    "parent":"main:hidden/root",
+    "display":{
+        "icon":{
+            "id":"acacia_sign"
+        },
+        "title": 
+            {
+                "translate":"ms.adv.hidden.1",
+                "fallback":"有点强，，      01"
+            }
+        ,
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.1.desc.0",
+                "fallback":"找到隐秘的告示牌"
+            },"\n\n",
+            {
+                "translate":"ms.adv.hidden.1.desc.1",
+                "fallback":"对，就是他写的。",
+                "color":"gray",
+                "italic": true
+            },"\n\n",{"translate":"ms.adv.pts","fallback":"💠 进度点数 +%s","with":["5"],"color":"aqua"},"\n",{
+                "translate":"ms.adv.reward",
+                "fallback":"奖励：",
+                "color":"green"
+            },
+            {
+                "translate":"ms.text.2",
+                "fallback":"无拘",
+                "color":"blue"
+            }
+        ],
+        "frame":"task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/normal/5"
+    }
+}

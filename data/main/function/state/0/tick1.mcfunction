@@ -2,7 +2,7 @@
 execute if data storage ms:setting {"setting_lock":false} as @a[scores={interact_check=100..500}] run function main:state/0/trigger/check_setting
 execute if data storage ms:setting {"setting_lock":true} as @a[scores={interact_check=100..500},team=admin] run function main:state/0/trigger/check_setting
 scoreboard players set @a[scores={interact_check=100..500}] interact_check 0
-execute as @a[scores={interact_check=1..5000}] at @s run function main:state/0/trigger/check_else
+execute as @a[scores={interact_check=1..}] at @s run function main:state/0/trigger/check_else
 
 # 跑酷计时
 execute as @a[scores={state=1}] run scoreboard players add @s parkour_tick 1

@@ -10,6 +10,7 @@ function base:merge_sign {x:"-6",y:"11",z:"-9",glow:"1",color:"white",trans_2:""
 function base:merge_sign {x:"-8",y:"11",z:"-9",glow:"1",color:"white",trans_2:"ms.credit.translator",trans_3:"ms.credit.4",fallb_2:"--",fallb_3:"本地化",command:"trigger interact_check set 904"}
 function base:merge_sign {x:"-9",y:"11",z:"-8",glow:"1",color:"white",trans_2:"ms.credit.tester",trans_3:"",fallb_2:"测试人员",fallb_3:"",command:"trigger interact_check set 905"}
 function base:merge_sign {x:"-9",y:"11",z:"-6",glow:"1",color:"white",trans_2:"ms.credit.other",trans_3:"",fallb_2:"以及……",fallb_3:"",command:"trigger interact_check set 906"}
+function base:merge_sign {x:"-2",y:"11",z:"-11",glow:"false",color:"orange",trans_2:"",trans_3:"",fallb_2:"?",fallb_3:"",command:"trigger interact_check set 7001"}
 
 # 地图设置
 execute if score $map setting matches 0 run function base:merge_sign {x:"-11",y:"6",z:"-8",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.map.0",fallb_2:"00",fallb_3:"随机地图",command:"trigger interact_check set 100"}

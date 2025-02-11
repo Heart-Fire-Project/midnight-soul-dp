@@ -1,0 +1,64 @@
+{
+    "parent":"main:hidden/1",
+    "display":{
+        "icon":{
+            "id":"powder_snow_bucket"
+        },
+        "title": 
+            {
+                "translate":"ms.adv.hidden.2",
+                "fallback":"飞的没边了         02"
+            }
+        ,
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.2.desc.0",
+                "fallback":"在游戏中，持续滞空 10 秒"
+            },"\n\n",
+            {
+                "translate":"ms.adv.hidden.2.desc.1",
+                "fallback":"知不知道？我已经，你等着。",
+                "color":"gray",
+                "italic": true
+            },"\n\n",{"translate":"ms.adv.pts","fallback":"💠 进度点数 +%s","with":["20"],"color":"aqua"},"\n",{
+                "translate":"ms.adv.reward",
+                "fallback":"奖励：",
+                "color":"green"
+            },
+            {
+                "translate":"ms.weapon.3",
+                "fallback":"破魂砖",
+                "color":"dark_purple"
+            }
+        ],
+        "frame":"task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "off_ground":{
+                                "min": 200
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/normal/20"
+    }
+}

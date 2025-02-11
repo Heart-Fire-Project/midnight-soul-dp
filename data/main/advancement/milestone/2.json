@@ -1,31 +1,24 @@
 {
-    "parent":"main:extra/weapon_3",
+    "parent":"main:milestone/1",
     "display":{
         "icon":{
-            "id":"blaze_rod"
+            "id":"orange_stained_glass"
         },
         "title":[
             {
-                "translate":"ms.weapon.4",
-                "fallback":"散炽棍"
+                "translate":"ms.milestone.2",
+                "fallback":"β"
             },
-            "            04"
+            "                   02"
         ],
         "description":[
             {
-                "translate":"ms.goal.milestone",
-                "fallback":"· 里程碑解锁至 Rank %s",
+                "translate":"ms.goal.mvp",
+                "fallback":"· 在 %s 场游戏中成为全场最佳",
                 "with":[
-                    "3"
+                    "1"
                 ],
                 "color":"white"
-            },
-            "\n\n",
-            {
-                "translate":"ms.weapon.4.desc",
-                "fallback":"手感火热……不是用来怼的！",
-                "color":"gray",
-                "italic": true
             }
         ],
         "frame":"task",
@@ -34,14 +27,23 @@
         "hidden": false
     },
     "criteria":{
-        "milestone":{
+        "mvp":{
             "trigger":"location",
             "conditions":{
                 "player":[
                     {
                         "scores":{
+                            "stat.mvp":{
+                                "min": 1
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    },
+                    {
+                        "scores":{
                             "extra.milestone":{
-                                "min": 3
+                                "min": 1
                             }
                         },
                         "condition":"entity_scores",
@@ -52,6 +54,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/weapon"
+        "function":"main:lib/advancement/milestone"
     }
 }

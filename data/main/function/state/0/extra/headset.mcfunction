@@ -2,10 +2,10 @@ tag @s remove can_equip
 tellraw @s ""
 
 # 解锁条件
-execute if score @s temp matches 0 run tag @s add can_equip
-execute if score @s temp matches 1 run tag @s add can_equip
-execute if score @s temp matches 2 run tag @s add can_equip
-execute if score @s[scores={extra.milestone=6..}] temp matches 3 run tag @s add can_equip
+execute if score @s[advancements={main:extra/headset=true}] temp matches 0 run tag @s add can_equip
+execute if score @s[advancements={main:extra/headset_1=true}] temp matches 1 run tag @s add can_equip
+execute if score @s[advancements={main:extra/headset_2=true}] temp matches 2 run tag @s add can_equip
+execute if score @s[advancements={main:extra/headset_3=true}] temp matches 3 run tag @s add can_equip
 
 # 可以使用
 execute as @s[tag=can_equip] run scoreboard players operation @s extra.headset = @s temp

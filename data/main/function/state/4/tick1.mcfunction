@@ -48,6 +48,9 @@ execute if entity @e[tag=open_purple] run effect give @e[team=soul,scores={state
 execute as @a[team=soul] at @s if entity @e[tag=open_purple,distance=..0.5] run function main:state/4/revive
 execute as @a[scores={sleep_detect=1..},team=soul] run function main:state/3/event/wake_up
 kill @e[type=item,tag=!game_entity]
+execute as @a at @s unless block ~ ~ ~ air run scoreboard players reset @s off_ground
+execute as @a unless data entity @s {OnGround:0b} run scoreboard players reset @s off_ground
+execute as @a if block ~ ~ ~ air if data entity @s {OnGround:0b} run scoreboard players add @s off_ground 1
 
 # 最后的侦测
 function main:state/4/check_end

@@ -1,21 +1,21 @@
 {
     "parent":"main:extra/headset_1",
-    "display": {
-        "icon": {
+    "display":{
+        "icon":{
             "id":"lightning_rod"
         },
-        "title": [
+        "title":[
             {
                 "translate":"ms.headset.2",
                 "fallback":"战场通讯员"
             },
             "                  02"
         ],
-        "description": [
+        "description":[
             {
                 "translate":"ms.goal.win_guar",
                 "fallback":"· 作为守卫者，在 %s 场游戏中取得胜利",
-                "with": [
+                "with":[
                     "3"
                 ],
                 "color":"white"
@@ -23,7 +23,7 @@
             "\n\n",
             {
                 "translate":"ms.headset.2.desc",
-                "fallback":"知不知道？我已经，等着吧。",
+                "fallback":"喂听的到吗？救命救命救命",
                 "color":"gray",
                 "italic": true
             }
@@ -33,14 +33,14 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "criteria": {
-        "win_guar": {
+    "criteria":{
+        "win_guar":{
             "trigger":"location",
-            "conditions": {
-                "player": [
+            "conditions":{
+                "player":[
                     {
-                        "scores": {
-                            "stat.win_guar": {
+                        "scores":{
+                            "stat.win_guar":{
                                 "min": 3
                             }
                         },
@@ -51,7 +51,7 @@
             }
         }
     },
-    "rewards": {
+    "rewards":{
         "function":"main:lib/advancement/extra/headset"
     }
 }

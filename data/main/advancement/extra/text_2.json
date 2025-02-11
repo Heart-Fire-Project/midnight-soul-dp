@@ -1,17 +1,17 @@
 {
     "parent":"main:extra/text_1",
-    "display": {
-        "icon": {
+    "display":{
+        "icon":{
             "id":"dragon_breath"
         },
-        "title": [
+        "title":[
             {
                 "translate":"ms.text.2",
                 "fallback":"无拘"
             },
             "            02"
         ],
-        "description": [
+        "description":[
             {
                 "text":"· ",
                 "color":"white"
@@ -33,12 +33,28 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "criteria": {
-        "secret": {
-            "trigger":"impossible"
+    "criteria":{
+        "secret":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "condition":"entity_properties",
+                        "entity":"this",
+                        "predicate":{
+                            "type_specific":{
+                                "type":"player",
+                                "advancements":{
+                                    "main:hidden/1": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     },
-    "rewards": {
+    "rewards":{
         "function":"main:lib/advancement/extra/text"
     }
 }

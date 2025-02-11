@@ -1,17 +1,17 @@
 {
     "parent":"main:extra/text",
-    "display": {
-        "icon": {
+    "display":{
+        "icon":{
             "id":"soul_campfire"
         },
-        "title": [
+        "title":[
             {
                 "translate":"ms.text.0",
                 "fallback":"趋光"
             },
             "            00"
         ],
-        "description": [
+        "description":[
             {
                 "translate":"ms.goal.init",
                 "fallback":"· 游戏开始",
@@ -30,8 +30,8 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "criteria": {
-        "free": {
+    "criteria":{
+        "free":{
             "trigger":"location"
         }
     }

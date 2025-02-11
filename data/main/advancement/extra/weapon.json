@@ -1,14 +1,14 @@
 {
     "parent":"main:extra/root",
-    "display": {
-        "icon": {
+    "display":{
+        "icon":{
             "id":"mace"
         },
-        "title": {
+        "title":{
             "translate":"ms.weapon",
             "fallback":"武器样式"
         },
-        "description": [
+        "description":[
             ""
         ],
         "frame":"goal",
@@ -16,8 +16,8 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "criteria": {
-        "unlock": {
+    "criteria":{
+        "unlock":{
             "trigger":"location"
         }
     }

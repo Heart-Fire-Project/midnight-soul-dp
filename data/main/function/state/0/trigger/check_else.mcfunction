@@ -99,4 +99,7 @@ execute if score @s interact_check matches 4401 run scoreboard players set @s te
 execute if score @s interact_check matches 4402 run scoreboard players set @s temp 2
 execute if score @s interact_check matches 4400..4499 run function main:state/0/extra/text
 
+# ???
+execute if score @s interact_check matches 7001 run advancement grant @s only main:hidden/1
+
 scoreboard players set @s interact_check 0
