@@ -1,0 +1,66 @@
+{
+    "parent":"main:general/attack",
+    "display":{
+        "icon":{
+            "id":"wooden_sword"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.attack.1",
+                "fallback":"桃木驱灵"
+            },
+            "        01"
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.hit.single",
+                "fallback":"· 单场攻击到灵魂 %s 次",
+                "with":[
+                    "3"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.attack.1.desc",
+                "fallback":"您已经正式开始守卫工作。",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点数 +%s",
+                "with":[
+                    "5"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "hit_single":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "temp.hit":{
+                                "min":3
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/normal/5"
+    }
+}

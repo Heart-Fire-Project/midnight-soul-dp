@@ -1,5 +1,5 @@
 {
-    "parent":"main:tutorial/root",
+    "parent":"main:tutorial/attack",
     "display":{
         "icon":{
             "id":"resin_clump"

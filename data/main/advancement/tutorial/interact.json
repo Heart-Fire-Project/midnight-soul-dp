@@ -1,20 +1,20 @@
 {
+    "parent":"main:tutorial/root",
     "display":{
         "icon":{
-            "id":"ender_chest"
+            "id":"glow_squid_spawn_egg"
         },
         "title":{
-            "translate":"ms.adv.milestone",
-            "fallback":"里程碑"
+            "translate":"ms.turorial.1",
+            "fallback":"交互物件"
         },
         "description":[
             ""
         ],
-        "frame":"task",
+        "frame":"goal",
         "show_toast":false,
         "announce_to_chat":false,
-        "hidden":false,
-        "background":"textures/block/stone_bricks.png"
+        "hidden":false
     },
     "criteria":{
         "unlock":{

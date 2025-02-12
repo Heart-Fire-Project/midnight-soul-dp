@@ -1,5 +1,5 @@
 {
-    "parent":"main:tutorial/root",
+    "parent":"main:tutorial/role",
     "display":{
         "icon":{
             "id":"soul_campfire"

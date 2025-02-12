@@ -1,7 +1,6 @@
 [
     {
-        "function"
-        :"set_name",
+        "function":"set_name",
         "name":{
             "translate":"ms.skill.104",
             "fallback":"恶灵诅咒",

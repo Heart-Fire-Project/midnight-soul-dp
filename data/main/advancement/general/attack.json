@@ -1,20 +1,20 @@
 {
+    "parent":"main:general/root",
     "display":{
         "icon":{
-            "id":"ender_chest"
+            "id":"iron_sword"
         },
         "title":{
-            "translate":"ms.adv.milestone",
-            "fallback":"里程碑"
+            "translate":"ms.adv.attack",
+            "fallback":"出击"
         },
         "description":[
             ""
         ],
-        "frame":"task",
+        "frame":"goal",
         "show_toast":false,
         "announce_to_chat":false,
-        "hidden":false,
-        "background":"textures/block/stone_bricks.png"
+        "hidden":false
     },
     "criteria":{
         "unlock":{

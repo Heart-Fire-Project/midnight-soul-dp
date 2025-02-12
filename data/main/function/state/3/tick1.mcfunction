@@ -41,6 +41,7 @@ execute as @a[scores={sleep_detect=1..},team=soul] run function main:state/3/eve
 kill @e[type=item,tag=!game_entity]
 execute as @a at @s unless block ~ ~ ~ air run scoreboard players reset @s off_ground
 execute as @a unless data entity @s {OnGround:0b} run scoreboard players reset @s off_ground
+scoreboard players reset @a[gamemode=spectator] off_ground
 execute as @a if block ~ ~ ~ air if data entity @s {OnGround:0b} run scoreboard players add @s off_ground 1
 
 # 进程判定

@@ -1,11 +1,11 @@
 {
     "display":{
         "icon":{
-            "id":"ender_chest"
+            "id":"creeper_banner_pattern"
         },
         "title":{
-            "translate":"ms.adv.milestone",
-            "fallback":"里程碑"
+            "translate":"ms.adv.general",
+            "fallback":"综合"
         },
         "description":[
             ""
@@ -14,7 +14,7 @@
         "show_toast":false,
         "announce_to_chat":false,
         "hidden":false,
-        "background":"textures/block/stone_bricks.png"
+        "background":"textures/block/chiseled_quartz_block.png"
     },
     "criteria":{
         "unlock":{

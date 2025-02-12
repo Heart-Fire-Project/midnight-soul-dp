@@ -26,7 +26,7 @@
                 "fallback":"· 达成进度 %s",
                 "with":[
                     {
-                        "translate":"ms.adv.kill.2",
+                        "translate":"ms.adv.attack.2",
                         "fallback":"祛灵烈斩"
                     }
                 ]
@@ -85,7 +85,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:stat/kill_2":true
+                                    "main:general/attack_2":true
                                 }
                             }
                         }

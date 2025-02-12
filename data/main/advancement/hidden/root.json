@@ -5,7 +5,7 @@
         },
         "title":{
             "translate":"ms.adv.hidden",
-            "fallback":"未知"
+            "fallback":"未定义"
         },
         "description":[
             ""
